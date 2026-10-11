@@ -1,72 +1,101 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { Badge, Callout, Fact, Facts, PageHeader, Section } from '@/components/ui';
-import { DATA_DATE, GAME_URL, NAV, SEASON_DATES, SEASON_NAME } from '@/lib/site';
+import { M } from '@/components/ui';
+import { DATA_DATE_LABEL, GAME_URL, MAIN_NAV, MORE_NAV, SEASON_END } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Accueil',
-  description: 'Wiki de fans non officiel de RpgMasters : mécaniques relevées sur les pages publiques du jeu, avec leur niveau de certitude.',
+  description: 'Wiki de fans non officiel de RpgMasters : classes, caractéristiques, arène, saison, énergie, XP et Prestige, en bref.',
 };
 
 export default function Home() {
   return (
     <>
-      <PageHeader
-        title="Wiki RpgMasters (non officiel)"
-        lead={
-          <>
-            Un petit wiki de fans qui rassemble, en français clair, les mécaniques du jeu{' '}
-            <a href={GAME_URL} rel="noopener noreferrer">RpgMasters</a> relevées sur ses pages publiques.
-          </>
-        }
-      />
-
-      <Callout kind="warn">
-        <p>
-          <strong>Avertissement.</strong> Ce wiki n’est <strong>pas officiel</strong>. Il n’est affilié ni à l’équipe du jeu
-          ni à Ankama Games. RpgMasters est lui-même un projet de fans, gratuit et à but non lucratif, non affilié à
-          Ankama Games. Les informations peuvent contenir des erreurs : vérifiez en jeu.
+      <header className="page-header">
+        <h1>Wiki RpgMasters</h1>
+        <p className="intro">
+          Les mécaniques du jeu <a href={GAME_URL} rel="noopener noreferrer">RpgMasters</a>, en clair et en bref.
         </p>
-      </Callout>
+      </header>
 
-      <Section id="donnees" title="Date des données">
-        <Facts>
-          <Fact s="T">
-            Données relevées le <strong>{DATA_DATE}</strong> (heure de Paris). Rien n’est mis à jour automatiquement.
-          </Fact>
-          <Fact s="T">
-            Saison relevée : <strong>{SEASON_NAME}</strong>, {SEASON_DATES}. Voir la page{' '}
-            <Link href="/saison/">Saison</Link> (données du {DATA_DATE}).
-          </Fact>
-        </Facts>
-      </Section>
-
-      <Section id="legende" title="Comment lire ce wiki">
-        <p>Chaque fait est précédé d’un badge qui indique d’où il vient :</p>
-        <Facts>
-          <Fact s="T">Écrit tel quel dans une page publique du jeu ou dans son code client public.</Fact>
-          <Fact s="D">Interprétation des auteurs des notes sources, à confirmer en jeu.</Fact>
-          <Fact s="C">Calcul fait à partir de valeurs trouvées.</Fact>
-          <Fact s="N">Information absente des sources publiques (lacune) : rien n’a été inventé pour la combler.</Fact>
-        </Facts>
+      <div className="callout callout-warn">
         <p>
-          Détails sur la méthode : <Link href="/sources/">Sources et limites</Link>. Les badges <Badge s="T" /> et{' '}
-          <Badge s="D" /> reprennent les marqueurs des notes d’origine.
+          <strong>Non officiel.</strong> Wiki de fans, non affilié au jeu ni à Ankama Games. Peut contenir des erreurs :
+          vérifiez en jeu. <span className="date-chip">📅 {DATA_DATE_LABEL}</span>
         </p>
-      </Section>
+      </div>
 
-      <Section id="sections" title="Sections">
-        <ul className="cards">
-          {NAV.map((n) => (
-            <li key={n.href} className="card">
-              <Link className="card-title" href={n.href}>
-                {n.label}
+      <nav aria-label="Sujets principaux">
+        <ul className="hub">
+          {MAIN_NAV.map((n) => (
+            <li key={n.href}>
+              <Link href={n.href}>
+                <span className="hub-icon" aria-hidden="true">
+                  {n.icon}
+                </span>
+                <span>
+                  <span className="hub-title">{n.label}</span>
+                  <span className="hub-desc">{n.desc}</span>
+                  {n.href === '/saison/' ? (
+                    <span className="date-badge">
+                      📅 {DATA_DATE_LABEL} · fin {SEASON_END}
+                    </span>
+                  ) : null}
+                </span>
               </Link>
-              <p>{n.desc}</p>
             </li>
           ))}
         </ul>
-      </Section>
+      </nav>
+
+      <section id="astuces" className="section">
+        <h2>Les 5 astuces pour grimper vite</h2>
+        <ol className="tips">
+          <li>
+            <div>
+              <strong>Lie ton Discord <M s="T" /></strong>
+              <p>+10 % XP, +10 % butin, +5 % stats. À vie, partout, arène comprise.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Ne laisse pas l’énergie pleine <M s="T" /></strong>
+              <p>+1 toutes les 6 min, même hors ligne, 100 au maximum. Dépense-la avant qu’elle soit pleine.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Compare l’XP Aventure vs Chasse <M s="T" /></strong>
+              <p>Regarde l’XP de fin de combat : c’est le conseil de la FAQ pour savoir ce qui paie à ton niveau.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Ouvre tes coffres gratuits avant 6 <M s="T" /></strong>
+              <p>1 coffre toutes les 20 min, réserve de 6 : pleine, la recharge s’arrête.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Joue tes 10 tickets d’arène chaque jour <M s="T" /></strong>
+              <p>Non cumulables. Chaque victoire : +1 à une stat au hasard (jusqu’à +300 par stat), gardé au Prestige.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="plus" className="section">
+        <h2>Aller plus loin</h2>
+        <ul className="links-secondary">
+          {MORE_NAV.map((n) => (
+            <li key={n.href}>
+              <Link href={n.href}>
+                <span aria-hidden="true">{n.icon}</span> {n.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
     </>
   );
 }

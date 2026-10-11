@@ -45,7 +45,8 @@ for (const file of await walk(OUT)) {
   const html = await readFile(file, 'utf8');
   const rel = relative(OUT, file).split(sep).join('/');
   const url = '/' + rel.replace(/index\.html$/, '');
-  const main = html.match(/<main[^>]*>([\s\S]*?)<\/main>/i)?.[1] ?? '';
+  // Les <nav> (fil d'Ariane, « Voir aussi », précédent/suivant, sommaires) ne sont pas du contenu : on les retire.
+  const main = (html.match(/<main[^>]*>([\s\S]*?)<\/main>/i)?.[1] ?? '').replace(/<nav[\s\S]*?<\/nav>/gi, ' ');
   const page = toText(main.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] ?? '') || url;
 
   const parts = main.split(/<section id="/i);

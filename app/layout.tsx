@@ -8,11 +8,11 @@ import './globals.css';
 export const metadata: Metadata = {
   title: { default: SITE_NAME, template: `%s · ${SITE_NAME}` },
   description:
-    'Wiki de fans NON OFFICIEL pour RpgMasters : classes, Crâ, Prestige, arène, saison, énergie, XP, économie. Uniquement des faits relevés sur les pages publiques.',
+    'Wiki de fans NON OFFICIEL pour RpgMasters : classes, Crâ, caractéristiques, arène, saison, énergie, XP, Prestige. Uniquement des faits relevés sur les pages publiques.',
 };
 
 export const viewport: Viewport = {
-  themeColor: '#14171c',
+  themeColor: '#121419',
   width: 'device-width',
   initialScale: 1,
 };
@@ -28,17 +28,19 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <main id="contenu" className="container">
           {children}
         </main>
-        <footer className="site-footer container">
-          <p>
-            <strong>Wiki non officiel</strong>, réalisé par des fans à partir des pages publiques de{' '}
-            <a href={GAME_URL} rel="noopener noreferrer">
-              rpgmasters.houk.fr
-            </a>
-            . Non affilié à Ankama Games ni à l’équipe du jeu. Peut contenir des erreurs. {DATA_DATE_LABEL}.
-          </p>
-          <p>
-            <Link href="/sources/">Sources et limites</Link>
-          </p>
+        <footer className="site-footer">
+          <div className="container">
+            <p>
+              <strong>Wiki de fans non officiel</strong>, non affilié à Ankama Games ni à l’équipe du jeu. Peut contenir des
+              erreurs. {DATA_DATE_LABEL}.
+            </p>
+            <p>
+              <a href={GAME_URL} rel="noopener noreferrer">
+                Jouer à RpgMasters
+              </a>{' '}
+              · <Link href="/sources/">Sources et limites</Link>
+            </p>
+          </div>
         </footer>
       </body>
     </html>

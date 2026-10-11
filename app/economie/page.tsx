@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { Fact, Facts, PageHeader, Section, Src, TableWrap, fmt } from '@/components/ui';
+import { Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, fmt } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Économie',
-  description: 'Coffres (gratuits, boutique, Élan, raretés et poids de tirage), kamas, HDV, fusion et Rayonnant, bris, compagnon, Discord dans RpgMasters.',
+  description: 'Coffres (gratuits, boutique, Élan, raretés), fusion et Rayonnant, bris et Bouclier de forge, compagnon, kamas, HDV, Discord dans RpgMasters.',
 };
 
 const RARITIES: [string, number][] = [
@@ -16,10 +16,9 @@ const RARITIES: [string, number][] = [
   ['Légendaire', 0.5],
 ];
 const RARITY_TOTAL = RARITIES.reduce((s, [, w]) => s + w, 0);
-const RARITY_MAX = Math.max(...RARITIES.map(([, w]) => w));
 
 const FUSION: [string, number][] = [
-  ['Tiers 1 (base)', 0],
+  ['Tiers 1', 0],
   ['Tiers 2', 10],
   ['Rayonnant +0', 20],
   ['Rayonnant +1', 25],
@@ -29,33 +28,71 @@ const FUSION: [string, number][] = [
   ['Rayonnant +5', 45],
 ];
 
-const pct = (n: number) => n.toLocaleString('fr-FR') + ' %';
-
 export default function EconomiePage() {
   return (
     <>
-      <PageHeader title="Économie" lead="Coffres, kamas, fusion, bris d’objets, compagnon et autres multiplicateurs." />
+      <PageHeader title="Économie" intro="Coffres, fusion, bris d’objets, compagnon et kamas : où trouver du stuff et des bonus." />
+
+      <Essentiel>
+        <li>
+          <strong>1 coffre gratuit toutes les 20 min</strong>, réserve de 6 : ouvrez-les avant qu’elle soit pleine. <M s="T" />
+        </li>
+        <li>
+          <strong>Fusion</strong> : 3 objets identiques → tiers supérieur ; Rayonnant de <strong>+20 % à +45 %</strong>.{' '}
+          <M s="T" />
+        </li>
+        <li>
+          <strong>Briser</strong> des objets nourrit le Bouclier de forge (jusqu’à <strong>+300 %</strong>). <M s="T" />
+        </li>
+        <li>
+          <strong>Discord</strong> lié : +10 % XP, +10 % butin, +5 % stats. <M s="T" />
+        </li>
+      </Essentiel>
+
+      <Fiche
+        title="💰 Fiche économie"
+        rows={[
+          ['Coffre gratuit', '1 toutes les 20 min'],
+          ['Réserve max', '6'],
+          ['Coffre par combat', '≈ 5 %'],
+          ['Élan', '25 combats = 1 Épique'],
+          ['Orbes', '8 000 max par jour'],
+          ['Taxe HDV', '8 %'],
+          ['Vente PNJ', '10 k × niveau (max 2 000)'],
+          ['Changer de classe', '300 000 k (1er gratuit)'],
+        ]}
+      />
 
       <Section id="coffres-gratuits" title="Coffres gratuits">
-        <Facts>
-          <Fact s="T">
-            <strong>1 coffre toutes les 20 minutes</strong> (3 par heure, <code>periodSec: 1200</code>), réserve de{' '}
-            <strong>6 au maximum</strong> : au-delà, la recharge s’arrête jusqu’à ce qu’on en ouvre.
-          </Fact>
-          <Fact s="T">
-            Coffres gagnés (sans limite de réserve) : environ <strong>5 %</strong> de chance par combat gagné, étages de
-            l’Ascension (plus gros coffre tous les 5 étages), récompenses d’arène, de Faille et de saison.
-          </Fact>
-          <Fact s="T">
-            Un coffre donne un équipement du niveau du personnage au moment de l’ouverture. Les coffres non ouverts restent après
-            un Prestige.
-          </Fact>
-        </Facts>
-        <Src>txt_faq.txt, mecaniques.md §8</Src>
+        <ul className="kpis">
+          <li>
+            <span className="kpi-val">🎁 ×3 / h</span>
+            <span className="kpi-lab">1 toutes les 20 min</span>
+          </li>
+          <li>
+            <span className="kpi-val">6 max</span>
+            <span className="kpi-lab">en réserve, puis la recharge s’arrête</span>
+          </li>
+        </ul>
+        <Tip>
+          <p>
+            Réserve pleine en 2 h <M s="C" /> : ouvrez vos coffres avant pour ne pas perdre de recharge. <M s="T" />
+          </p>
+        </Tip>
+        <ul>
+          <li>
+            <strong>Coffres gagnés</strong> (sans limite de réserve) : ≈ 5 % par combat gagné, étages d’Ascension (plus gros tous
+            les 5 étages), arène, Faille, saison. <M s="T" />
+          </li>
+          <li>
+            Un coffre donne un équipement <strong>du niveau du perso à l’ouverture</strong>. Les coffres non ouverts restent
+            après un Prestige. <M s="T" />
+          </li>
+        </ul>
       </Section>
 
       <Section id="boutique" title="Boutique de coffres">
-        <TableWrap caption="Coffres achetables contre des kamas [TROUVÉ]">
+        <TableWrap caption="Coffres achetables contre des kamas">
           <thead>
             <tr>
               <th>Coffre</th>
@@ -72,175 +109,205 @@ export default function EconomiePage() {
             <tr>
               <td>Chanceux</td>
               <td className="num">{fmt(10000)} k</td>
-              <td>Chances de bonnes raretés ×3</td>
+              <td>Bonnes raretés ×3</td>
             </tr>
             <tr>
               <td>Épique</td>
               <td className="num">{fmt(20000)} k</td>
-              <td>Objet Épique ou mieux garanti</td>
+              <td>Épique ou mieux garanti</td>
             </tr>
           </tbody>
         </TableWrap>
-        <Facts>
-          <Fact s="T">
-            Jusqu’à <strong>100 par jour et par type</strong> ; les 20 premiers au prix normal, puis le prix augmente.
-          </Fact>
-          <Fact s="N">Barème de hausse du prix après le 20e achat : non trouvé.</Fact>
-        </Facts>
+        <p>
+          Jusqu’à <strong>100 par jour et par type</strong> ; les 20 premiers au prix normal, puis plus cher. <M s="T" /> Barème
+          de la hausse : non trouvé. <M s="N" />
+        </p>
       </Section>
 
       <Section id="elan" title="Élan et autres sources">
-        <Facts>
-          <Fact s="T">
-            Élan : chaque combat remplit une jauge ; <strong>25 combats = 1 Coffre Épique</strong>, 3 par jour au plus.
-          </Fact>
-          <Fact s="T">3 défis courts par jour (« 3 boss d’affilée », « 5 victoires sans mourir »…) rapportent des kamas.</Fact>
-          <Fact s="T">
-            Parrainage : quand l’ami atteint le niveau 30, le parrain reçoit 1 Coffre Royal et 2 Coffres Épiques (une fois par
-            ami, 5 parrainages valides par semaine au plus).
-          </Fact>
-          <Fact s="T">Série de connexion : calendrier de 7 jours avec un coffre de plus en plus gros (perso principal).</Fact>
-        </Facts>
-        <Src>txt_faq.txt</Src>
+        <ul>
+          <li>
+            <strong>Élan</strong> : chaque combat remplit une jauge ; <strong>25 combats = 1 Coffre Épique</strong>, 3 par jour
+            au plus. <M s="T" />
+          </li>
+          <li>
+            <strong>3 défis courts</strong> par jour (« 3 boss d’affilée », « 5 victoires sans mourir »…) rapportent des kamas.{' '}
+            <M s="T" />
+          </li>
+          <li>
+            <strong>Série de connexion</strong> : calendrier de 7 jours, coffre de plus en plus gros (perso principal). <M s="T" />
+          </li>
+        </ul>
+        <More title="Parrainage">
+          <p>
+            Quand l’ami atteint le niveau 30, le parrain reçoit 1 Coffre Royal et 2 Coffres Épiques (une fois par ami, 5
+            parrainages valides par semaine au plus). <M s="T" />
+          </p>
+        </More>
       </Section>
 
-      <Section id="types-recompense" title="Types de coffres de récompense">
-        <Facts>
-          <Fact s="T">Royal : objet Épique ou mieux, carte Rare ou mieux.</Fact>
-          <Fact s="T">Légendaire : objet Mythique ou mieux, carte Épique ou mieux, 5 % de Rayonnant.</Fact>
-          <Fact s="T">Ultime : Rayonnant ou Dofus.</Fact>
-          <Fact s="T">Rayonnant +5 au choix (et d’autres types non détaillés dans les notes).</Fact>
-          <Fact s="T">
-            Rayonnant en coffre : <strong>1 %</strong> de base (<code>CHEST.radiantPct: 1</code>), plus avec un Coffre
-            chanceux. Chance de carte par coffre : 20 %.
-          </Fact>
-        </Facts>
-        <Src>mecaniques.md §3 et §8 (GIFT_CHESTS)</Src>
-      </Section>
-
-      <Section id="raretes" title="Raretés et poids de tirage">
-        <p>
-          Poids de tirage en coffre (<code>RARITIES.chestWeight</code>) [TROUVÉ]. Le total vaut {fmt(RARITY_TOTAL)}, donc
-          chaque poids se lit aussi comme un pourcentage [calcul].
-        </p>
-        <figure className="chart">
-          <ul className="bars" aria-label="Poids de tirage par rareté">
-            {RARITIES.map(([name, w]) => (
-              <li key={name} title={`${name} : poids ${pct(w)}`}>
-                <span className="bar-label">{name}</span>
-                <span className="bar-track">
-                  <span className="bar-fill" style={{ width: `${(w / RARITY_MAX) * 100}%` }} />
-                </span>
-                <span className="bar-val">{w.toLocaleString('fr-FR')}</span>
-              </li>
-            ))}
+      <Section id="types-recompense" title="Coffres de récompense">
+        <ul>
+          <li>
+            <strong>Royal</strong> : objet Épique ou mieux, carte Rare ou mieux. <M s="T" />
+          </li>
+          <li>
+            <strong>Légendaire</strong> : objet Mythique ou mieux, carte Épique ou mieux, 5 % de Rayonnant. <M s="T" />
+          </li>
+          <li>
+            <strong>Ultime</strong> : Rayonnant ou Dofus. <M s="T" />
+          </li>
+        </ul>
+        <More title="Autres coffres et chances">
+          <ul>
+            <li>
+              Rayonnant +5 au choix (et d’autres types non détaillés dans les notes, <code>GIFT_CHESTS</code>). <M s="T" />
+            </li>
+            <li>
+              Rayonnant en coffre : <strong>1 %</strong> de base (<code>CHEST.radiantPct: 1</code>), plus avec un Coffre
+              chanceux. Chance de carte par coffre : 20 %. <M s="T" />
+            </li>
           </ul>
-          <figcaption>Poids de tirage d’une rareté dans un coffre classique (avant bonus de Coffre chanceux/Épique).</figcaption>
-        </figure>
+        </More>
+      </Section>
+
+      <Section id="raretes" title="Raretés">
+        <Bars
+          label="Poids de tirage par rareté dans un coffre"
+          max={46}
+          items={RARITIES.map(([name, w]) => ({ name, value: w, display: `${w.toLocaleString('fr-FR')} %` }))}
+          caption={
+            <>
+              Poids de tirage en coffre (<code>RARITIES.chestWeight</code>) <M s="T" />. Total = {fmt(RARITY_TOTAL)}, donc chaque
+              poids se lit comme un % <M s="C" />. Avant bonus de Coffre chanceux/Épique.
+            </>
+          }
+        />
       </Section>
 
       <Section id="fusion" title="Fusion et Rayonnant">
-        <Facts>
-          <Fact s="T">
-            Dans l’Inventaire : 3 exemplaires du même objet au même tiers. 3 Tiers 1 → 1 Tiers 2 ; 3 Tiers 2 → 1 Rayonnant.
-            Bouton « Tout fusionner ».
-          </Fact>
-          <Fact s="T">
-            Un Rayonnant monte de +0 à +5 en lui ajoutant des Rayonnants +0 du même objet : 1 pour les premiers niveaux, 2
-            ensuite (<code>radiantFeed</code> : &lt;2 → 0, &lt;4 → 1, sinon 2).
-          </Fact>
-          <Fact s="T">
-            <code>FUSION.bonusPct = [0, 10, 20, 25, 30, 35, 40, 45]</code> (<code>max: 7</code>, <code>copies: 3</code>). FAQ :
-            « 20 % de stats en plus au départ jusqu’à 45 % à +5 ».
-          </Fact>
-          <Fact s="D">Alignement des valeurs sur les niveaux de fusion (tableau ci-dessous).</Fact>
-          <Fact s="T">PA, PM, PO et Invocations ne sont pas multipliés par la fusion.</Fact>
-          <Fact s="T">
-            Dofus : fusion max 4, Dofus Rayonnant = +100 %, PA compris. Drop d’un Dofus ≤ 2 % tous bonus compris.
-          </Fact>
-        </Facts>
-        <TableWrap caption="Bonus de stats par niveau de fusion [TROUVÉ + alignement DÉDUIT]">
-          <thead>
-            <tr>
-              <th>Niveau</th>
-              <th className="num">Bonus de stats</th>
-            </tr>
-          </thead>
-          <tbody>
-            {FUSION.map(([n, b]) => (
-              <tr key={n}>
-                <td>{n}</td>
-                <td className="num">+{b} %</td>
-              </tr>
-            ))}
-          </tbody>
-        </TableWrap>
-        <Src>mecaniques.md §4, txt_faq.txt</Src>
+        <ul>
+          <li>
+            Dans l’Inventaire : <strong>3 T1 → 1 T2</strong> ; <strong>3 T2 → 1 Rayonnant</strong>. Bouton « Tout fusionner ».{' '}
+            <M s="T" />
+          </li>
+          <li>
+            Un Rayonnant monte de <strong>+0 à +5</strong> en ajoutant des Rayonnants +0 du même objet (1 pour les premiers
+            niveaux, 2 ensuite). <M s="T" />
+          </li>
+        </ul>
+        <Bars
+          label="Bonus de stats par niveau de fusion"
+          max={45}
+          items={FUSION.map(([n, b]) => ({ name: n, value: b, display: `+${b} %`, hl: n === 'Rayonnant +0' || n === 'Rayonnant +5' }))}
+          caption={
+            <>
+              FAQ : « 20 % de stats en plus au départ jusqu’à 45 % à +5 » <M s="T" /> ; alignement des valeurs sur chaque niveau{' '}
+              <M s="D" />.
+            </>
+          }
+        />
+        <Tip title="À savoir">
+          <p>
+            PA, PM, PO et Invocations <strong>ne sont pas multipliés</strong> par la fusion. <M s="T" />
+          </p>
+        </Tip>
+        <More title="Détails du code et Dofus">
+          <ul>
+            <li>
+              <code>FUSION.bonusPct = [0, 10, 20, 25, 30, 35, 40, 45]</code> (<code>max: 7</code>, <code>copies: 3</code>) ;{' '}
+              <code>radiantFeed</code> : &lt;2 → 0, &lt;4 → 1, sinon 2. <M s="T" />
+            </li>
+            <li>
+              Dofus : fusion max 4, Dofus Rayonnant = +100 %, PA compris. Drop d’un Dofus ≤ 2 % tous bonus compris. <M s="T" />
+            </li>
+          </ul>
+        </More>
       </Section>
 
       <Section id="bris" title="Bris d’objets et Bouclier de forge">
-        <Facts>
-          <Fact s="T">
-            Briser un objet donne des orbes : <strong>1</strong> sous le niveau 70, <strong>2</strong> jusqu’au 139,{' '}
-            <strong>3</strong> au-delà, <strong>×3</strong> pour un Rayonnant ; <strong>8 000 orbes par jour</strong> au
-            maximum.
-          </Fact>
-          <Fact s="T">
-            Les orbes alimentent le Bouclier de forge (page Forgemagie) : il monte sans aucun échec et renforce tout
-            l’équipement, jusqu’à <strong>+300 % au niveau 400</strong>. Conservé après Prestige.
-          </Fact>
-          <Fact s="T">Un objet verrouillé (cadenas) est protégé contre la vente et le bris.</Fact>
-        </Facts>
+        <ul>
+          <li>
+            Orbes par objet brisé : <strong>1</strong> sous le niveau 70, <strong>2</strong> jusqu’au 139, <strong>3</strong>{' '}
+            au-delà, <strong>×3</strong> pour un Rayonnant ; <strong>8 000 par jour</strong> max. <M s="T" />
+          </li>
+          <li>
+            Le <strong>Bouclier de forge</strong> (page Forgemagie) monte sans échec et renforce tout l’équipement, jusqu’à{' '}
+            <strong>+300 % au niveau 400</strong>. Gardé au Prestige. <M s="T" />
+          </li>
+          <li>
+            Un objet <strong>verrouillé</strong> (cadenas) est protégé contre la vente et le bris. <M s="T" />
+          </li>
+        </ul>
       </Section>
 
       <Section id="compagnon" title="Compagnon">
-        <Facts>
-          <Fact s="T">
-            +<strong>0,2 %</strong> à tout l’équipement par niveau, jusqu’à <strong>+79,8 % au niveau 400</strong>, en plus du
-            Prestige et du Bouclier de forge. Deux fois plus long à monter que le Bouclier.
-          </Fact>
-          <Fact s="T">
-            Croquette : 5 % de chance par combat gagné (tous modes ; la Prospection n’y change rien). Aucune en Auto AFK (l’Auto
-            normal en donne). 100 croquettes données par jour au plus, le reste en stock.
-          </Fact>
-          <Fact s="T">
-            N’agit pas aux Abysses ni sur PA, PM, PO, invocations. Lié au perso principal ; niveau et croquettes gardés au
-            Prestige.
-          </Fact>
-        </Facts>
+        <ul>
+          <li>
+            <strong>+0,2 %</strong> à tout l’équipement par niveau, jusqu’à <strong>+79,8 % au niveau 400</strong>, en plus du
+            Prestige et du Bouclier. Deux fois plus long à monter que le Bouclier. <M s="T" />
+          </li>
+          <li>
+            <strong>Croquette</strong> : 5 % par combat gagné, tous modes ; aucune en Auto AFK (l’Auto normal en donne). 100
+            données par jour max, le reste en stock. <M s="T" />
+          </li>
+        </ul>
+        <More title="Limites du compagnon">
+          <p>
+            La Prospection ne change pas la chance de croquette. N’agit pas aux Abysses ni sur PA, PM, PO, invocations. Lié au
+            perso principal ; niveau et croquettes gardés au Prestige. <M s="T" />
+          </p>
+        </More>
       </Section>
 
-      <Section id="kamas" title="Kamas">
-        <Facts>
-          <Fact s="T">
-            Vente aux PNJ : <strong>10 kamas × niveau</strong> de l’objet, maximum <strong>2 000</strong>.
-          </Fact>
-          <Fact s="T">
-            HDV : taxe de <strong>8 %</strong> sur le prix de vente, <strong>20 ventes</strong> simultanées au plus, objet
-            acheté lié <strong>24 h</strong>. Objets éternels et verrouillés invendables. HDV séparé pour la saison.
-          </Fact>
-          <Fact s="T">
-            Changement de classe : 1er gratuit, puis <strong>300 000 kamas</strong>.
-          </Fact>
-          <Fact s="T">
-            Énergie : 300 kamas le point (prix croissant au-delà de 600 points/jour) — voir{' '}
-            <Link href="/energie-xp/#achat-energie">Énergie et XP</Link>.
-          </Fact>
-          <Fact s="T">Doublon de carte avant le Prestige 1 : converti en 3 000 kamas.</Fact>
-          <Fact s="T">Avant le Prestige 4, les kamas sont perdus au Prestige.</Fact>
-        </Facts>
-        <Src>txt_faq.txt, mecaniques.md §3–4</Src>
+      <Section id="kamas" title="Kamas et HDV">
+        <ul>
+          <li>
+            <strong>Vente aux PNJ</strong> : 10 kamas × niveau de l’objet, max <strong>2 000</strong>. <M s="T" />
+          </li>
+          <li>
+            <strong>HDV</strong> : taxe de <strong>8 %</strong>, <strong>20 ventes</strong> à la fois, objet acheté lié{' '}
+            <strong>24 h</strong>. <M s="T" />
+          </li>
+          <li>
+            Avant le Prestige 4, les kamas sont <strong>perdus</strong> au Prestige. <M s="T" />
+          </li>
+        </ul>
+        <More title="Autres dépenses et sources de kamas">
+          <ul>
+            <li>
+              Objets éternels et verrouillés invendables. HDV séparé pour la saison. <M s="T" />
+            </li>
+            <li>
+              Changement de classe : 1er gratuit, puis 300 000 kamas. <M s="T" />
+            </li>
+            <li>
+              Énergie : 300 kamas le point (plus cher au-delà de 600 points/jour) —{' '}
+              <Link href="/energie-xp/#achat-energie">Énergie & XP</Link>. <M s="T" />
+            </li>
+            <li>
+              Doublon de carte avant le Prestige 1 : converti en 3 000 kamas. <M s="T" />
+            </li>
+          </ul>
+        </More>
       </Section>
 
       <Section id="discord" title="Bonus Discord">
-        <Facts>
-          <Fact s="T">
-            Lier son Discord (depuis le Tableau de bord, compte sauvegardé) : <strong>+10 % XP, +10 % butin, +5 % stats</strong>,
-            à vie tant que le compte reste lié, partout, arène comprise. Partagé avec le perso de saison.
-          </Fact>
-        </Facts>
-        <Src>txt_faq.txt</Src>
+        <p>
+          Liez votre Discord (Tableau de bord, compte sauvegardé) : <strong>+10 % XP, +10 % butin, +5 % stats</strong>, à vie
+          tant que le compte reste lié, partout, arène comprise. Partagé avec le perso de saison. <M s="T" />
+        </p>
       </Section>
+
+      <PageEnd
+        current="/economie/"
+        see={[
+          { href: '/prestige/', label: 'Prestige' },
+          { href: '/caracteristiques/#objets', label: 'Stats des objets' },
+          { href: '/energie-xp/#achat-energie', label: 'Acheter de l’énergie' },
+        ]}
+        sources="txt_faq.txt, mecaniques.md §3, §4, §8"
+      />
     </>
   );
 }

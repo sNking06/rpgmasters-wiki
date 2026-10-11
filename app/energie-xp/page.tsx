@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
+import EnergyPriceChart from '@/components/EnergyPriceChart';
 import XpChart from '@/components/XpChart';
-import { Badge, Callout, Fact, Facts, PageHeader, Section, Src, TableWrap, fmt } from '@/components/ui';
-import { MONSTER_XP_REF_KNOWN, XP_SOURCE_POINTS, cumulativeXp, energyPointPrice, energyTotalCost } from '@/lib/xp';
+import { Bars, Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn, fmt } from '@/components/ui';
+import { ENERGY, MONSTER_XP_REF_KNOWN, XP_SOURCE_POINTS, cumulativeXp, energyPointPrice, energyTotalCost } from '@/lib/xp';
 
 export const metadata: Metadata = {
   title: 'Énergie et XP',
-  description: 'Énergie dans RpgMasters (constantes, coût d’achat et sa formule) et courbe d’XP des niveaux (points connus, bonus d’XP).',
+  description: 'Énergie dans RpgMasters (100 max, +1 toutes les 6 min, coût des combats, achat) et XP (sources, bonus, courbe des niveaux).',
 };
 
 // Calculs effectués au build (rendu statique).
@@ -16,220 +17,275 @@ const TOTAL_POINTS = [600, 1000];
 export default function EnergieXpPage() {
   return (
     <>
-      <PageHeader title="Énergie et XP" lead="Ce que coûtent les combats, comment racheter de l’énergie, et combien d’XP demandent les niveaux." />
+      <PageHeader title="Énergie & XP" intro="Ce que coûte un combat, comment recharger, et combien d’XP demandent les niveaux." />
+
+      <Essentiel>
+        <li>
+          <strong>100 d’énergie max</strong>, <strong>+1 toutes les 6 min</strong>, même hors ligne. <M s="T" />
+        </li>
+        <li>
+          Chasse ou Aventure <strong>1</strong> · boss ou étage d’Ascension <strong>2</strong> · Abysses <strong>20</strong>.{' '}
+          <M s="T" />
+        </li>
+        <li>
+          L’XP vient des <strong>combats gagnés</strong> ; comparez l’XP Aventure vs Chasse en fin de combat. <M s="T" />
+        </li>
+        <li>
+          Bonus : <strong>Discord +10 % XP</strong> ; <strong>Auto AFK ×0,5</strong> ; saison <strong>×4</strong>. <M s="T" />
+        </li>
+      </Essentiel>
 
       <Section id="energie" title="Énergie">
-        <Facts>
-          <Fact s="T">
-            Maximum <strong>100</strong> points ; <strong>+1 toutes les 6 minutes</strong> (10 par heure), même hors connexion.
-          </Fact>
-          <Fact s="C">Soit 240 points régénérés par jour.</Fact>
-          <Fact s="T">
-            Coûts : combat de Chasse ou d’Aventure <strong>1</strong> ; boss ou étage d’Ascension <strong>2</strong> ; descente
-            dans les Abysses <strong>20</strong> ; entrée de la Dimension Écarlate 20 (vagues suivantes gratuites).
-          </Fact>
-          <Fact s="T">
-            Arène : la FAQ parle d’<strong>un ticket</strong> par combat ; le code contient <code>pvpCost: 2</code>.
-          </Fact>
-          <Fact s="D">D’après une note source, l’arène coûterait aussi 2 d’énergie : à vérifier en jeu.</Fact>
-          <Fact s="T">On ne peut pas dépasser le maximum. Le perso de saison n’utilise pas d’énergie.</Fact>
-          <Fact s="T">FAQ : mieux vaut ne pas laisser l’énergie pleine trop longtemps.</Fact>
-        </Facts>
-        <TableWrap caption="Constantes ENERGY [TROUVÉ]">
-          <thead>
-            <tr>
-              <th>Constante</th>
-              <th className="num">Valeur</th>
-            </tr>
-          </thead>
-          <tbody>
-            {[
-              ['max', '100'],
-              ['periodSec', '360'],
-              ['pveCost', '1'],
-              ['pvpCost', '2'],
-              ['bossCost', '2'],
-              ['buyPrice', '300'],
-              ['buyDaily', '1000'],
-              ['buyRampFrom', '600'],
-              ['buyTopPrice', '2000'],
-            ].map(([k, v]) => (
-              <tr key={k}>
-                <td>
-                  <code>{k}</code>
-                </td>
-                <td className="num">{v}</td>
-              </tr>
-            ))}
-          </tbody>
-        </TableWrap>
-        <Src>txt_faq.txt, rea_classement.md §2, mecaniques.md §8</Src>
+        <Meter
+          max={100}
+          label="Jauge d’énergie : 100 au maximum, +1 toutes les 6 minutes, 10 heures pour remplir une jauge vide."
+          segments={[
+            {
+              value: 100,
+              kind: 'a',
+              legend: (
+                <>
+                  +1 toutes les 6 min, soit 10 par heure <M s="T" />
+                </>
+              ),
+            },
+          ]}
+          ticks={[
+            { at: 0, label: '0' },
+            { at: 50, label: '50' },
+            { at: 100, label: '100 max' },
+          ]}
+          caption={
+            <>
+              Vide → plein : 10 h ; 240 points régénérés par jour. <M s="C" />
+            </>
+          }
+        />
+        <Fiche
+          title="⚡ Coût en énergie"
+          rows={[
+            ['Chasse / Aventure', '1'],
+            ['Boss / étage d’Ascension', '2'],
+            ['Abysses (descente)', '20'],
+            ['Dimension Écarlate', '20 à l’entrée, vagues suivantes gratuites'],
+            ['Arène', '1 ticket (voir plus bas)'],
+            ['Perso de saison', 'aucune énergie'],
+          ]}
+        />
+        <Tip>
+          <p>
+            Ne laissez pas l’énergie pleine trop longtemps (conseil de la FAQ). On ne peut pas dépasser le maximum. <M s="T" />
+          </p>
+        </Tip>
+        <More title="Arène : ticket ou énergie ? · Constantes ENERGY">
+          <ul>
+            <li>
+              La FAQ parle d’<strong>un ticket</strong> par combat d’arène ; le code contient <code>pvpCost: 2</code>. <M s="T" />
+            </li>
+            <li>
+              D’après une note source, l’arène coûterait aussi 2 d’énergie : à vérifier en jeu. <M s="D" />
+            </li>
+          </ul>
+          <p>
+            <code>
+              ENERGY = {'{'}max: {ENERGY.max}, periodSec: {ENERGY.periodSec}, pveCost: {ENERGY.pveCost}, pvpCost: {ENERGY.pvpCost},
+              bossCost: {ENERGY.bossCost}, buyPrice: {ENERGY.buyPrice}, buyDaily: {ENERGY.buyDaily}, buyRampFrom:{' '}
+              {ENERGY.buyRampFrom}, buyTopPrice: {ENERGY.buyTopPrice}
+              {'}'}
+            </code>{' '}
+            <M s="T" />
+          </p>
+        </More>
       </Section>
 
-      <Section id="achat-energie" title="Coût d’achat de l’énergie">
-        <Facts>
-          <Fact s="T">
-            Achat contre des kamas : <strong>300 kamas le point</strong>, jusqu’à <strong>1 000 points par jour</strong> ; le
-            prix monte au-delà de 600 points achetés dans la journée, jusqu’à 2 000.
-          </Fact>
-          <Fact s="T">
-            Prix du point n (n = achats déjà faits aujourd’hui + 1) : 300 si n ≤ 600, sinon :
-          </Fact>
-        </Facts>
-        <code className="formula">prix(n) = round(300 + 1700 × (n − 600) / 400)   → 2 000 à n = 1 000</code>
-        <TableWrap caption="Prix d’un point selon son rang dans la journée [calcul sur TROUVÉ]">
-          <thead>
-            <tr>
-              <th className="num">n-ième point</th>
-              <th className="num">Prix (kamas)</th>
-            </tr>
-          </thead>
-          <tbody>
-            {PRICE_POINTS.map((n) => (
-              <tr key={n}>
-                <td className="num">{fmt(n)}</td>
-                <td className="num">{fmt(energyPointPrice(n))}</td>
+      <Section id="achat-energie" title="Acheter de l’énergie">
+        <ul>
+          <li>
+            <strong>300 kamas le point</strong>, jusqu’à <strong>1 000 points par jour</strong>. <M s="T" />
+          </li>
+          <li>
+            Au-delà de <strong>600 points</strong> achetés dans la journée, le prix monte jusqu’à <strong>2 000</strong>.{' '}
+            <M s="T" />
+          </li>
+        </ul>
+        <EnergyPriceChart />
+        <Warn>
+          <p>
+            1 combat PvE ≈ 300 kamas d’énergie achetée (≈ 600 pour un combat à 2 points) : rentable seulement si vos kamas sont
+            en surplus. <M s="D" />
+          </p>
+        </Warn>
+        <More title="Formule et prix détaillés">
+          <p>
+            Prix du point n (n = achats déjà faits aujourd’hui + 1) : 300 si n ≤ 600, sinon : <M s="T" />
+          </p>
+          <code className="formula">prix(n) = round(300 + 1700 × (n − 600) / 400)</code>
+          <TableWrap caption="Prix d’un point selon son rang dans la journée (calcul)">
+            <thead>
+              <tr>
+                <th className="num">n-ième point</th>
+                <th className="num">Prix (kamas)</th>
               </tr>
+            </thead>
+            <tbody>
+              {PRICE_POINTS.map((n) => (
+                <tr key={n}>
+                  <td className="num">{fmt(n)}</td>
+                  <td className="num">{fmt(energyPointPrice(n))}</td>
+                </tr>
+              ))}
+            </tbody>
+          </TableWrap>
+          <ul>
+            {TOTAL_POINTS.map((n) => (
+              <li key={n}>
+                Acheter {fmt(n)} points dans la journée coûte au total <strong>{fmt(energyTotalCost(n))} kamas</strong>.{' '}
+                <M s="C" />
+              </li>
             ))}
-          </tbody>
-        </TableWrap>
-        <Facts>
-          {TOTAL_POINTS.map((n) => (
-            <Fact key={n} s="C">
-              Acheter {fmt(n)} points dans la journée coûte au total <strong>{fmt(energyTotalCost(n))} kamas</strong>.
-            </Fact>
-          ))}
-          <Fact s="D">
-            1 combat PvE ≈ 300 kamas d’énergie achetée (≈ 600 pour un combat à 2 points) : rentable seulement si les kamas sont en
-            surplus.
-          </Fact>
-        </Facts>
-        <Src>rea_classement.md §2</Src>
+          </ul>
+        </More>
       </Section>
 
       <Section id="xp" title="XP : d’où elle vient">
-        <Facts>
-          <Fact s="T">
-            L’XP vient des <strong>combats gagnés</strong> : Aventure, Chasse, boss, Ascension… Niveau maximum 200.
-          </Fact>
-          <Fact s="T">
-            La Grotte de l’Aéfka rapporte coffres, kamas et XP pendant l’absence du joueur.
-          </Fact>
-          <Fact s="T">
-            Conseil FAQ : comparer l’XP gagnée en fin de combat entre l’Aventure et la Chasse pour voir ce qui marche le mieux
-            avec son niveau et son build.
-          </Fact>
-          <Fact s="N">
-            XP réellement donnée par combat : <strong>non trouvée</strong> (calcul côté serveur). Impossible de calculer le
-            nombre exact de combats par niveau.
-          </Fact>
-        </Facts>
+        <ul>
+          <li>
+            Des <strong>combats gagnés</strong> : Aventure, Chasse, boss, Ascension… Niveau max <strong>200</strong>. <M s="T" />
+          </li>
+          <li>
+            La <strong>Grotte de l’Aéfka</strong> rapporte coffres, kamas et XP pendant votre absence. <M s="T" />
+          </li>
+          <li>
+            À la Chasse, une zone est accessible dès son niveau minimum <strong>moins 5</strong>. <M s="T" />
+          </li>
+        </ul>
+        <Tip>
+          <p>
+            Comparez l’XP de fin de combat entre l’Aventure et la Chasse : c’est le meilleur moyen de voir ce qui marche à votre
+            niveau et avec votre build (FAQ). <M s="T" />
+          </p>
+        </Tip>
+        <p>
+          XP réellement donnée par combat : <strong>inconnue</strong> (calcul côté serveur), donc pas de nombre exact de combats
+          par niveau. <M s="N" />
+        </p>
       </Section>
 
-      <Section id="courbe" title="Courbe de niveaux">
-        <p>Formule de la table d’XP cumulée trouvée dans le code client <Badge s="T" /> :</p>
-        <code className="formula">{`n[0] = n[1] = 0
-n[L+1] = n[L] + round(2.5 × MONSTER_XP_REF[L−1] × (2 + 0.12 × L))
-Niveau = plus grand L tel que XP ≥ n[L]`}</code>
-        <Callout kind="warn">
-          <p>
-            <Badge s="N" /> La table <code>MONSTER_XP_REF</code> compte 200 valeurs, mais <strong>les sources n’en citent
-            que les 5 premières</strong> (16, 52, 104, 171, 251) et la dernière (143 043). La courbe complète n’est donc pas
-            recalculée ici : aucune valeur n’est inventée.
-          </p>
-          <p>
-            <Badge s="D" /> Interprétation : la table serait l’« XP de référence d’un monstre du niveau L ».
-          </p>
-        </Callout>
+      <Section id="bonus-xp" title="Bonus d’XP">
+        <Bars
+          label="Multiplicateurs d’XP connus"
+          max={4}
+          items={[
+            { name: 'Saison Héroïque', value: 4, display: '×4' },
+            { name: 'Discord lié', value: 1.1, display: '+10 %', hl: true },
+            { name: 'Normal / Auto', value: 1, display: '×1' },
+            { name: 'Auto AFK', value: 0.5, display: '×0,5' },
+          ]}
+          caption={
+            <>
+              Tous trouvés dans la FAQ, la page Saison ou le code. <M s="T" />
+            </>
+          }
+        />
+        <More title="Détails des bonus">
+          <ul>
+            <li>
+              <strong>Discord</strong> : +10 % XP à vie tant que le compte reste lié ; aussi +10 % butin, +5 % stats. <M s="T" />
+            </li>
+            <li>
+              <strong>Auto AFK</strong> : moitié moins d’XP, de kamas et de butin (<code>AUTO.rewardMult 0.5</code>). L’« Auto »
+              simple garde les récompenses normales. <M s="T" />
+            </li>
+            <li>
+              <strong>Saison</strong> : ×4 ; ×2 en plus pour un perso recréé après une mort, tant qu’il est sous le niveau du perso
+              tombé. <M s="T" />
+            </li>
+            <li>
+              <code>HUNT_LEVEL_MARGIN 5</code> (Chasse) ; <code>LEVEL_BRACKET: 20</code> existe sans usage visible <M s="T" />,
+              probablement une tranche de niveau de monstres/zones. <M s="D" />
+            </li>
+          </ul>
+        </More>
+      </Section>
 
-        <h3>Points connus</h3>
-        <TableWrap caption="XP cumulée pour atteindre le niveau">
-          <thead>
-            <tr>
-              <th className="num">Niveau</th>
-              <th className="num">XP cumulée</th>
-              <th>Statut</th>
-            </tr>
-          </thead>
-          <tbody>
-            {COMPUTED.map((p) => (
-              <tr key={`c${p.level}`}>
-                <td className="num">{p.level}</td>
-                <td className="num">{fmt(p.xp)}</td>
-                <td>
-                  <Badge s="C" /> calculé au build avec la formule et les 5 premières valeurs connues
-                </td>
-              </tr>
-            ))}
-            {XP_SOURCE_POINTS.map((p) => (
-              <tr key={`s${p.level}`}>
-                <td className="num">{p.level}</td>
-                <td className="num">{fmt(p.xp)}</td>
-                <td>
-                  <Badge s="C" /> cité dans les sources (calcul des notes sur la table complète)
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </TableWrap>
-        <Facts>
-          <Fact s="C">Passer du niveau 30 au niveau 31 demande 76 608 XP.</Fact>
-        </Facts>
-
+      <Section id="courbe" title="Combien d’XP par niveau ?">
+        <Fiche
+          title="📈 XP cumulée pour atteindre…"
+          rows={[
+            ['Niveau 10', `${fmt(18_674)} XP`],
+            ['Niveau 30', `${fmt(661_088)} XP`],
+            ['Niveau 100', `${fmt(42_231_421)} XP`],
+            ['Niveau 200', `${fmt(509_344_483)} XP`],
+          ]}
+        />
+        <p>
+          Valeurs calculées dans les notes sources sur la table complète du jeu. <M s="C" /> Passer du niveau 30 au 31 demande{' '}
+          <strong>{fmt(76_608)} XP</strong>. <M s="C" />
+        </p>
         <XpChart
           points={[
             ...COMPUTED.map((p) => ({ ...p, kind: 'calc' as const })),
             ...XP_SOURCE_POINTS.map((p) => ({ ...p, kind: 'source' as const })),
           ]}
         />
-        <Src>rea_classement.md §1</Src>
+        <More title="Tous les points connus (12) et la formule">
+          <TableWrap caption="XP cumulée pour atteindre le niveau">
+            <thead>
+              <tr>
+                <th className="num">Niveau</th>
+                <th className="num">XP cumulée</th>
+                <th>Origine</th>
+              </tr>
+            </thead>
+            <tbody>
+              {COMPUTED.map((p) => (
+                <tr key={`c${p.level}`}>
+                  <td className="num">{p.level}</td>
+                  <td className="num">{fmt(p.xp)}</td>
+                  <td>
+                    calculé au build (5 premières valeurs) <M s="C" />
+                  </td>
+                </tr>
+              ))}
+              {XP_SOURCE_POINTS.map((p) => (
+                <tr key={`s${p.level}`}>
+                  <td className="num">{p.level}</td>
+                  <td className="num">{fmt(p.xp)}</td>
+                  <td>
+                    cité dans les sources <M s="C" />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </TableWrap>
+          <p>
+            Formule de la table d’XP cumulée, trouvée dans le code client : <M s="T" />
+          </p>
+          <code className="formula">{`n[0] = n[1] = 0
+n[L+1] = n[L] + round(2.5 × MONSTER_XP_REF[L−1] × (2 + 0.12 × L))
+Niveau = plus grand L tel que XP ≥ n[L]`}</code>
+          <ul>
+            <li>
+              La table <code>MONSTER_XP_REF</code> compte 200 valeurs, mais les sources n’en citent que les 5 premières (16, 52,
+              104, 171, 251) et la dernière (143 043) : la courbe complète n’est pas recalculée ici. <M s="N" />
+            </li>
+            <li>
+              Cette table serait l’« XP de référence d’un monstre du niveau L ». <M s="D" />
+            </li>
+          </ul>
+        </More>
       </Section>
 
-      <Section id="bonus-xp" title="Bonus d’XP connus">
-        <TableWrap caption="Modificateurs d’XP trouvés">
-          <thead>
-            <tr>
-              <th>Bonus</th>
-              <th>Effet</th>
-              <th>Détail</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Discord lié <Badge s="T" /></td>
-              <td>+10 % XP</td>
-              <td>À vie tant que le compte reste lié ; aussi +10 % butin, +5 % stats.</td>
-            </tr>
-            <tr>
-              <td>Auto AFK <Badge s="T" /></td>
-              <td>×0,5</td>
-              <td>
-                Moitié moins d’XP, de kamas et de butin (<code>AUTO.rewardMult 0.5</code>). L’« Auto » simple garde les
-                récompenses normales.
-              </td>
-            </tr>
-            <tr>
-              <td>Saison Héroïque <Badge s="T" /></td>
-              <td>×4</td>
-              <td>Perso de saison ; ×2 en plus pour un perso recréé après une mort, tant qu’il est sous le niveau du perso tombé.</td>
-            </tr>
-            <tr>
-              <td>Chasse <Badge s="T" /></td>
-              <td>niveau −5</td>
-              <td>
-                Une zone est accessible dès son niveau minimum moins 5 (<code>HUNT_LEVEL_MARGIN 5</code>).
-              </td>
-            </tr>
-          </tbody>
-        </TableWrap>
-        <Facts>
-          <Fact s="T">
-            <code>LEVEL_BRACKET: 20</code> existe dans le code, sans usage visible.
-          </Fact>
-          <Fact s="D">Il s’agirait d’une tranche de niveau de monstres/zones.</Fact>
-        </Facts>
-        <Src>txt_faq.txt, txt_saison.txt, rea_classement.md §1</Src>
-      </Section>
+      <PageEnd
+        current="/energie-xp/"
+        see={[
+          { href: '/economie/#kamas', label: 'Kamas' },
+          { href: '/saison/', label: 'Saison (XP ×4)' },
+          { href: '/prestige/', label: 'Prestige' },
+          { href: '/faq/#progresser', label: 'FAQ : progresser' },
+        ]}
+        sources="txt_faq.txt, txt_saison.txt, rea_classement.md §1–2, mecaniques.md §8"
+      />
     </>
   );
 }

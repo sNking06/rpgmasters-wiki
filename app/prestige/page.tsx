@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { Badge, Callout, Fact, Facts, PageHeader, Section, Src, TableWrap } from '@/components/ui';
+import { Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Prestige',
-  description: 'Prestige dans RpgMasters : bonus par Prestige, conditions P1 à P15, ce qu’on perd et garde, objet éternel, plafond de PA.',
+  description: 'Prestige dans RpgMasters : +25 % de stats par Prestige, conditions P1 à P15, ce qu’on perd et garde, objet éternel, plafond de PA.',
 };
 
 type Row = { p: number; cond: string; bonus: string; pa: number };
@@ -29,139 +29,202 @@ const ROWS: Row[] = [
   { p: 15, cond: 'Étage 260 de l’Ascension terminé', bonus: '—' },
 ].map((r) => ({ ...r, pa: paCap(r.p) }));
 
+const MILESTONES: { head: string; tag?: string; key?: boolean; text: string }[] = [
+  { head: 'P1 → P3', text: 'Niveau 200. Bonus : +1 PA, +2 PO, +2 PM. PA max 13 dès P2.' },
+  { head: 'P4', tag: 'plus aucune perte', key: true, text: 'Étage 20 de l’Ascension. +1 PA.' },
+  { head: 'P5', text: 'Étage 30 + 500 000 dégâts sur le Kralamoure. +3 PO. PA max 14.' },
+  { head: 'P6 → P7', text: 'Étage 40 (+ 1 000 000 dégâts pour P6). +3 PM, +1 PA.' },
+  { head: 'P8', text: 'Étage 60. PA max 15.' },
+  { head: 'P10', tag: 'max en saison', text: 'Étage 110.' },
+  { head: 'P15', tag: 'maximum actuel', key: true, text: 'Étage 260. Les suivants : « bientôt disponibles ».' },
+];
+
 export default function PrestigePage() {
   return (
     <>
-      <PageHeader title="Prestige" lead="Repartir du niveau 1 avec un équipement plus fort : bonus, conditions, pertes et gardes." />
+      <PageHeader title="Prestige" intro="Au niveau 200, repartir au niveau 1 avec un équipement plus fort." />
 
-      <Section id="principe" title="Principe">
-        <Facts>
-          <Fact s="T">
-            Au niveau 200, on peut repartir au niveau 1. Bouton « Faire Prestige » (page Personnage), confirmation en tapant{' '}
-            <strong>« PRESTIGE »</strong>. Maximum actuel : <strong>Prestige 15</strong> ; les suivants sont annoncés
-            « bientôt disponibles ».
-          </Fact>
-          <Fact s="T">Rien n’oblige à faire Prestige tout de suite au niveau 200.</Fact>
-          <Fact s="T">
-            En saison, les Prestiges s’arrêtent au <strong>10</strong> (<code>seasonMax: 10</code>) ; les suivants ne
-            s’ouvrent que sur le personnage principal.
-          </Fact>
-        </Facts>
-        <Src>txt_faq.txt, mecaniques.md §5, rea_classement.md §5</Src>
+      <Essentiel>
+        <li>
+          <strong>+25 % de stats</strong> sur tout l’équipement porté, à chaque Prestige (cumulable). <M s="T" />
+        </li>
+        <li>
+          <strong>+1 carte</strong> dans les decks par Prestige ; l’<strong>Ascension</strong> s’ouvre. <M s="T" />
+        </li>
+        <li>
+          <strong>Avant le Prestige 4</strong> : équipement, inventaire et kamas sont perdus (sauf l’objet gardé). <M s="T" />
+        </li>
+        <li>
+          <strong>Dès le Prestige 4</strong> : plus aucune perte. <M s="T" />
+        </li>
+        <li>
+          Maximum : <strong>Prestige 15</strong> (10 en saison). <M s="T" />
+        </li>
+      </Essentiel>
+
+      <Fiche
+        title="⭐ Fiche Prestige"
+        rows={[
+          ['Condition', 'niveau 200 (puis Ascension)'],
+          ['Équipement', '+25 % par Prestige'],
+          ['Deck', '+1 carte par Prestige'],
+          ['Plus de pertes', 'dès P4'],
+          ['PA max', '12 → 13 (P2) → 14 (P5) → 15 (P8)'],
+          ['Maximum', 'P15 (saison : P10)'],
+        ]}
+      />
+
+      <Section id="principe" title="Comment faire">
+        <ul>
+          <li>
+            Page Personnage, bouton « Faire Prestige », puis tapez <strong>« PRESTIGE »</strong> pour confirmer. <M s="T" />
+          </li>
+          <li>
+            Rien n’oblige à le faire tout de suite au niveau 200. <M s="T" />
+          </li>
+          <li>
+            À partir du Prestige 1, un sort en double <strong>renforce le sort</strong> au lieu d’être converti en kamas.{' '}
+            <M s="T" />
+          </li>
+        </ul>
       </Section>
 
-      <Section id="bonus" title="Bonus par Prestige">
-        <Facts>
-          <Fact s="T">
-            <strong>+25 %</strong> de stats sur tout ce qui est équipé, cumulable à chaque Prestige (
-            <code>PRESTIGE.gearPct: 25</code>). PA, PM, PO et Invocations des objets ne sont pas multipliés.
-          </Fact>
-          <Fact s="T">
-            <strong>+1 carte</strong> dans les decks par Prestige.
-          </Fact>
-          <Fact s="T">Accès à l’Ascension (tour de boss) dès 1 Prestige, en étant de nouveau niveau 200.</Fact>
-          <Fact s="T">À partir du Prestige 1, un sort en double renforce le sort au lieu d’être converti en kamas.</Fact>
-          <Fact s="T">
-            Bonus de combat cumulatifs sur les Prestiges 1 à 7 (<code>PRESTIGE.combat</code>) : +1 PA, +2 PO, +2 PM, +1 PA, +3
-            PO, +3 PM, +1 PA.
-          </Fact>
-          <Fact s="D">L’association de ces bonus aux numéros de Prestige (P1 = +1 PA, P2 = +2 PO…) suit l’ordre du tableau.</Fact>
-          <Fact s="T">
-            Plafond de PA total : 12 de base, 13 dès P2, 14 dès P5, 15 dès P8 (hors Abysses).
-          </Fact>
-        </Facts>
-      </Section>
-
-      <Section id="conditions" title="Conditions P1 → P15">
-        <TableWrap caption="Conditions, bonus de combat et plafond de PA par Prestige">
-          <thead>
-            <tr>
-              <th className="num">Prestige</th>
-              <th>Condition [TROUVÉ]</th>
-              <th>Bonus de combat [TROUVÉ, ordre DÉDUIT]</th>
-              <th className="num">PA max [TROUVÉ]</th>
-            </tr>
-          </thead>
-          <tbody>
-            {ROWS.map((r) => (
-              <tr key={r.p}>
-                <td className="num">P{r.p}</td>
-                <td>{r.cond}</td>
-                <td>{r.bonus}</td>
-                <td className="num">{r.pa}</td>
-              </tr>
-            ))}
-          </tbody>
-        </TableWrap>
+      <Section id="conditions" title="Les étapes P1 → P15">
+        <ol className="timeline">
+          {MILESTONES.map((m) => (
+            <li key={m.head} className={m.key ? 'is-key' : undefined}>
+              <span className="tl-head">{m.head}</span>
+              {m.tag ? <span className="tl-tag">{m.tag}</span> : null}
+              <p>{m.text}</p>
+            </li>
+          ))}
+        </ol>
         <p>
-          Les étages de l’Ascension atteints sont conservés après un Prestige. Chaque étage coûte 2 d’énergie <Badge s="T" />.
+          Conditions et plafonds de PA <M s="T" /> ; bonus de combat (+1 PA, +2 PO…) <M s="T" /> attribués aux numéros de Prestige
+          dans l’ordre du tableau du code <M s="D" />.
         </p>
-        <Src>txt_faq.txt (« Comment passer Prestige ? »), mecaniques.md §5</Src>
+        <Tip>
+          <p>
+            Les étages d’Ascension atteints sont <strong>conservés</strong> après un Prestige. Chaque étage coûte 2 d’énergie.{' '}
+            <M s="T" />
+          </p>
+        </Tip>
+        <More title="Tableau complet P1 → P15">
+          <TableWrap caption="Conditions, bonus de combat et plafond de PA par Prestige">
+            <thead>
+              <tr>
+                <th className="num">Prestige</th>
+                <th>Condition</th>
+                <th>Bonus</th>
+                <th className="num">PA max</th>
+              </tr>
+            </thead>
+            <tbody>
+              {ROWS.map((r) => (
+                <tr key={r.p}>
+                  <td className="num">P{r.p}</td>
+                  <td>{r.cond}</td>
+                  <td>{r.bonus}</td>
+                  <td className="num">{r.pa}</td>
+                </tr>
+              ))}
+            </tbody>
+          </TableWrap>
+          <ul>
+            <li>
+              <code>PRESTIGE.combat</code> : +1 PA, +2 PO, +2 PM, +1 PA, +3 PO, +3 PM, +1 PA (Prestiges 1 à 7). <M s="T" />
+            </li>
+            <li>
+              <code>PRESTIGE.gearPct: 25</code> ; <code>seasonMax: 10</code>. PA, PM, PO et Invocations des objets ne sont pas
+              multipliés. Plafond de PA hors Abysses. <M s="T" />
+            </li>
+          </ul>
+        </More>
       </Section>
 
       <Section id="pertes" title="Ce qu’on perd, ce qu’on garde">
-        <h3>Toujours perdu</h3>
-        <Facts>
-          <Fact s="T">Le niveau, les points de caractéristiques répartis, l’étape de l’Aventure.</Fact>
-        </Facts>
-        <h3>Perdu tant qu’on n’a pas atteint le Prestige 4</h3>
-        <Facts>
-          <Fact s="T">
-            L’équipement, l’inventaire, les ventes en cours à l’HDV et les kamas — sauf l’objet choisi pour être gardé et les
-            objets éternels.
-          </Fact>
-          <Fact s="T">
-            Un coffre ouvert juste avant le Prestige donne un objet qui sera perdu avec l’inventaire (avant P4). Les coffres non
-            ouverts, eux, sont conservés.
-          </Fact>
-        </Facts>
-        <Callout>
+        <div className="cards">
+          <div className="card">
+            <h3>❌ Toujours perdu</h3>
+            <ul>
+              <li>Niveau</li>
+              <li>Points de caractéristiques répartis</li>
+              <li>Étape de l’Aventure</li>
+            </ul>
+          </div>
+          <div className="card">
+            <h3>✅ Toujours gardé</h3>
+            <ul>
+              <li>Cartes et decks, album / collection</li>
+              <li>Coffres non ouverts, énergie, Elo</li>
+              <li>Records et étage d’Ascension</li>
+              <li>Parchemins, Bouclier de forge, Compagnon</li>
+            </ul>
+          </div>
+        </div>
+        <Warn title="Avant le Prestige 4">
           <p>
-            <Badge s="T" /> <strong>À partir du Prestige 4</strong>, les Prestiges suivants ne font plus rien perdre :
-            l’équipement revient dans l’inventaire et les kamas sont conservés.
+            Vous perdez <strong>équipement, inventaire, ventes en cours à l’HDV et kamas</strong> — sauf l’objet choisi et les
+            objets éternels. <M s="T" />
           </p>
-        </Callout>
-        <h3>Toujours gardé</h3>
-        <Facts>
-          <Fact s="T">
-            Cartes de sort et decks, album/collection, coffres (non ouverts), énergie, Elo, records (Abysses, Ascension),
-            étage d’Ascension.
-          </Fact>
-          <Fact s="T">
-            Parchemins de caractéristique (d’arène ou en objet), niveau et XP du Bouclier de forge.
-          </Fact>
-          <Fact s="T">Niveau et croquettes du Compagnon.</Fact>
-        </Facts>
-        <Src>txt_faq.txt</Src>
+          <p>
+            Un coffre ouvert juste avant donne un objet perdu avec l’inventaire ; les coffres <strong>non ouverts</strong> sont
+            gardés. <M s="T" />
+          </p>
+        </Warn>
+        <More title="Détail de ce qui est gardé">
+          <ul>
+            <li>
+              Cartes de sort et decks, album/collection, coffres (non ouverts), énergie, Elo, records (Abysses, Ascension), étage
+              d’Ascension. <M s="T" />
+            </li>
+            <li>
+              Parchemins de caractéristique (d’arène ou en objet), niveau et XP du Bouclier de forge. <M s="T" />
+            </li>
+            <li>
+              Niveau et croquettes du Compagnon. <M s="T" />
+            </li>
+            <li>
+              À partir du Prestige 4, l’équipement revient dans l’inventaire et les kamas sont conservés. <M s="T" />
+            </li>
+          </ul>
+        </More>
       </Section>
 
-      <Section id="objet-eternel" title="Objet éternel">
-        <Facts>
-          <Fact s="T">
-            À chaque Prestige, on choisit un objet (porté ou en inventaire). Il devient <strong>éternel</strong> : lié à vie,
-            invendable, et il revient à tous les Prestiges suivants.
-          </Fact>
-          <Fact s="T">
-            Il passe <strong>au moins au niveau Rayonnant</strong>.
-          </Fact>
-          <Fact s="T">
-            Conseil de la FAQ : choisir un objet durable (un Dofus, une pièce forte du build…). Un objet mis en vente à l’HDV
-            peut aussi être gardé avant le Prestige 4.
-          </Fact>
-          <Fact s="T">
-            En saison : l’objet éternel n’est donné que si le Prestige dépasse le record déjà récompensé sur le compte ; à la
-            mort du perso de saison, les objets éternels sont mis à l’abri dans la Banque.
-          </Fact>
-        </Facts>
-        <Src>txt_faq.txt, txt_saison.txt</Src>
+      <Section id="objet-eternel" title="L’objet éternel">
+        <ul>
+          <li>
+            À chaque Prestige, vous choisissez un objet (porté ou en inventaire) : il devient <strong>éternel</strong>. <M s="T" />
+          </li>
+          <li>
+            Lié à vie, invendable, il revient à chaque Prestige et passe <strong>au moins Rayonnant</strong>. <M s="T" />
+          </li>
+        </ul>
+        <Tip>
+          <p>
+            Choisissez un objet durable : un Dofus, une pièce forte du build… (FAQ). Un objet en vente à l’HDV peut aussi être
+            gardé avant le Prestige 4. <M s="T" />
+          </p>
+        </Tip>
+        <More title="En saison">
+          <p>
+            L’objet éternel n’est donné que si le Prestige dépasse le record déjà récompensé sur le compte ; si le perso de
+            saison meurt, les objets éternels sont mis à l’abri dans la Banque. <M s="T" /> Voir{' '}
+            <Link href="/saison/#banque">Saison</Link>.
+          </p>
+        </More>
       </Section>
 
-      <Section id="voir-aussi" title="Voir aussi">
-        <p>
-          <Link href="/caracteristiques/">Caractéristiques</Link> · <Link href="/saison/">Saison</Link> ·{' '}
-          <Link href="/guide-cra/">Guide Crâ</Link>
-        </p>
-      </Section>
+      <PageEnd
+        current="/prestige/"
+        see={[
+          { href: '/caracteristiques/', label: 'Caractéristiques' },
+          { href: '/saison/', label: 'Saison' },
+          { href: '/economie/#fusion', label: 'Fusion et Rayonnant' },
+          { href: '/guide-cra/', label: 'Guide Crâ' },
+        ]}
+        sources="txt_faq.txt, txt_saison.txt, mecaniques.md §5, rea_classement.md §5"
+      />
     </>
   );
 }

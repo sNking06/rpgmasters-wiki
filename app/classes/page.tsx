@@ -1,87 +1,64 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { Badge, Callout, Fact, Facts, PageHeader, Section, Src, TableWrap } from '@/components/ui';
+import ClassGrid from '@/components/ClassGrid';
+import { Essentiel, M, More, PageEnd, PageHeader, Section, TableWrap, Tip } from '@/components/ui';
 import { CLASSES, IOP_CARDS } from '@/lib/classes';
 
 export const metadata: Metadata = {
   title: 'Classes',
-  description: 'Les 19 classes de RpgMasters et leur passif, changement de classe, cartes exclusives.',
+  description: 'Les 19 classes de RpgMasters et leur passif en une ligne, changement de classe, fiche Crâ.',
 };
 
 export default function ClassesPage() {
   return (
     <>
-      <PageHeader title="Classes" lead="Les 19 classes jouables, avec le texte de leur passif." />
+      <PageHeader title="Classes" intro="19 classes jouables, chacune avec un passif et 3 cartes exclusives." />
 
-      <Section id="regles" title="Règles générales">
-        <Facts>
-          <Fact s="T">
-            Chaque classe possède <strong>1 passif</strong> et <strong>3 cartes de sorts exclusives</strong>. Toutes les autres
-            cartes se gagnent en combat et dans les coffres, et se partagent entre toutes les classes.
-          </Fact>
-          <Fact s="T">
-            Changement de classe (page Personnage) : le <strong>premier est gratuit</strong>, les suivants coûtent{' '}
-            <strong>300 000 kamas</strong>.
-          </Fact>
-          <Fact s="T">
-            Le jeu ne désigne pas de « meilleure » classe : chacune a son style (dégâts, soutien, invocations…). Le premier
-            changement étant gratuit, on peut tester.
-          </Fact>
-        </Facts>
-        <Src>txt_classes.txt, txt_faq.txt, mecaniques.md §2</Src>
-      </Section>
+      <Essentiel>
+        <li>
+          Chaque classe : <strong>1 passif</strong> + <strong>3 cartes exclusives</strong>. Les autres cartes sont communes à
+          toutes les classes. <M s="T" />
+        </li>
+        <li>
+          Changer de classe : <strong>1er changement gratuit</strong>, puis <strong>300 000 kamas</strong> (page Personnage).{' '}
+          <M s="T" />
+        </li>
+        <li>
+          Le jeu ne désigne <strong>aucune « meilleure » classe</strong> : chacune a son style. <M s="T" />
+        </li>
+      </Essentiel>
+
+      <Link href="/classes/cra/" className="feature">
+        <span className="hub-title">🏹 Crâ — fiche détaillée</span>
+        <span className="hub-desc">Build conseillé, cartes exclusives, vision spectrale et PO.</span>
+      </Link>
 
       <Section id="liste" title="Les 19 classes et leur passif">
-        <Callout>
-          <p>
-            <Badge s="T" /> Les textes des passifs sont repris de la page publique /classes.{' '}
-            <Badge s="D" /> L’association classe → passif suit l’ordre d’apparition sur la page (même ordre que la liste des
-            19 classes) et est cohérente avec le nom des passifs : très probable, mais déduite.
-          </p>
-        </Callout>
-        <TableWrap caption="Passifs des classes (ordre de la page /classes)">
-          <thead>
-            <tr>
-              <th>Classe</th>
-              <th>Passif</th>
-              <th>Effet</th>
-            </tr>
-          </thead>
-          <tbody>
-            {CLASSES.map((c) => (
-              <tr key={c.name} id={c.slug ? `classe-${c.slug}` : undefined}>
-                <td>
-                  {c.slug ? (
-                    <Link href={`/classes/${c.slug}/`}>
-                      <strong>{c.name}</strong> → fiche
-                    </Link>
-                  ) : (
-                    <strong>{c.name}</strong>
-                  )}
-                </td>
-                <td>{c.passive}</td>
-                <td>{c.text}</td>
-              </tr>
-            ))}
-          </tbody>
-        </TableWrap>
-        <Src>passifs_classes.txt</Src>
-        <p>
-          Fiche détaillée disponible : <Link href="/classes/cra/">Crâ</Link>. Les autres classes n’ont pas de fiche : leurs
-          cartes exclusives ne figurent pas dans les sources (sauf l’exemple du Iop ci-dessous).
-        </p>
+        <p>Touchez une classe pour lire le texte complet de son passif.</p>
+        <ClassGrid classes={CLASSES} />
+        <More title="D’où viennent ces textes ?">
+          <ul>
+            <li>
+              Textes des passifs repris de la page publique /classes. <M s="T" />
+            </li>
+            <li>
+              L’association classe → passif suit l’ordre de la page (même ordre que la liste des 19 classes) et colle au nom
+              des passifs : très probable, mais déduite. <M s="D" />
+            </li>
+          </ul>
+        </More>
       </Section>
 
-      <Section id="exemple-iop" title="Exemple affiché : cartes exclusives du Iop">
+      <Section id="exemple-iop" title="Exemple : les cartes du Iop">
         <p>
-          La page publique /classes affiche par défaut le Iop (« Guerrier téméraire », difficulté ★☆☆) <Badge s="T" /> :
+          La page /classes affiche le Iop par défaut (« Guerrier téméraire », difficulté ★☆☆). <M s="T" />
         </p>
-        <TableWrap caption="Cartes exclusives du Iop (page /classes)">
+        <TableWrap caption="Cartes exclusives du Iop">
           <thead>
             <tr>
               <th>Carte</th>
               <th className="num">PA</th>
-              <th>Effet affiché</th>
+              <th>Effet</th>
             </tr>
           </thead>
           <tbody>
@@ -94,15 +71,33 @@ export default function ClassesPage() {
             ))}
           </tbody>
         </TableWrap>
-        <Src>txt_classes.txt</Src>
+        <Tip>
+          <p>Le 1er changement de classe est gratuit : vous pouvez en tester une autre sans rien payer.</p>
+        </Tip>
       </Section>
 
-      <Section id="lacunes" title="Lacunes">
-        <Facts>
-          <Fact s="N">Cartes exclusives des autres classes (hors Crâ et Iop) : non relevées dans les sources.</Fact>
-          <Fact s="N">Classement de puissance des classes : aucun, le jeu n’en désigne pas.</Fact>
-        </Facts>
+      <Section id="lacunes" title="Ce qu’on ne sait pas">
+        <More title="Lacunes des sources (2)">
+          <ul>
+            <li>
+              Cartes exclusives des autres classes (hors Crâ et Iop) : non relevées. <M s="N" />
+            </li>
+            <li>
+              Classement de puissance des classes : aucun, le jeu n’en désigne pas. <M s="N" />
+            </li>
+          </ul>
+        </More>
       </Section>
+
+      <PageEnd
+        current="/classes/"
+        see={[
+          { href: '/classes/cra/', label: 'Fiche Crâ' },
+          { href: '/caracteristiques/', label: 'Caractéristiques' },
+          { href: '/guide-cra/', label: 'Guide Crâ' },
+        ]}
+        sources="passifs_classes.txt, txt_classes.txt, txt_faq.txt"
+      />
     </>
   );
 }

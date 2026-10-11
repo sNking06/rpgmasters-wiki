@@ -1,115 +1,131 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
-import { Badge, Callout, Fact, Facts, PageHeader, Section, Src, type Status } from '@/components/ui';
+import { Essentiel, M, PageEnd, PageHeader, Section, Warn, type Status } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Guide Crâ',
-  description: 'Guide Crâ pour RpgMasters : 10 recommandations d’optimisation fondées uniquement sur des éléments vérifiés, et points à vérifier en jeu.',
+  description: 'Guide Crâ pour RpgMasters : 10 conseils courts fondés sur des éléments vérifiés, et ce qu’il reste à vérifier en jeu.',
 };
 
-type Reco = { title: string; s: Status[]; body: ReactNode };
+type Reco = { id: string; icon: string; title: string; short: ReactNode; s: Status[]; body: ReactNode };
 
 const RECOS: Reco[] = [
   {
-    title: 'Choisir Force (Terre) ou Intelligence (Feu)',
+    id: 'element',
+    icon: '💪',
+    title: 'Force (Terre) ou Intelligence (Feu)',
+    short: 'Force est le choix le plus cohérent : le gros sort mono-cible est Terre.',
     s: ['T', 'D'],
     body: (
       <>
         Ce sont les éléments des sorts de signature (Flèche Punitive = Terre 23–26 ; Flèche Explosive = Feu 14–17 en zone). La
         FAQ dit de mettre les points dans la caractéristique de l’élément des sorts de dégâts. Le gros sort mono-cible (4 PA)
-        est Terre → Force est le choix le plus cohérent tant que le deck repose sur lui <em>[déduit du tableau, non chiffré]</em>.
-        Éviter de disperser sur Chance/Agilité, sauf si les cartes communes choisies sont de ces éléments.
+        est Terre → Force est le choix le plus cohérent tant que le deck repose sur lui (déduit, non chiffré). Éviter de
+        disperser sur Chance/Agilité, sauf si les cartes communes choisies sont de ces éléments.
       </>
     ),
   },
   {
+    id: 'po',
+    icon: '🎯',
     title: 'Maximiser la PO',
+    short: 'Chaque PO augmente la chance de double dégâts, jusqu’à ≈ 85 PO.',
     s: ['T', 'C', 'D'],
     body: (
       <>
-        Le passif ajoute +26 % de double dégâts (« vision spectrale »), avec +0,4 % par PO (<code>spectralPerPo</code>), plafond
-        total 60 % : il reste donc ~34 points de marge à gagner par la PO (≈ 85 PO d’équipement/bonus){' '}
-        <em>[chiffres calculés ; l’applicabilité de 0,4 %/PO est déduite]</em>. Les bonus de Prestige en PO (+2 à P2, +3 à P5) y
-        contribuent.
+        Le passif donne +26 % de double dégâts (« vision spectrale »), avec +0,4 % par PO (<code>spectralPerPo</code>), plafond
+        total 60 % : il reste ~34 points de marge à gagner par la PO (≈ 85 PO d’équipement/bonus). Chiffres calculés ;
+        l’application de 0,4 %/PO est déduite. Les bonus de Prestige en PO (+2 à P2, +3 à P5) y contribuent.
       </>
     ),
   },
   {
+    id: 'plafond',
+    icon: '📏',
     title: 'Respecter le plafond de 60 %',
+    short: 'Au-delà de 60 % de vision spectrale, la PO en plus ne sert plus à ça.',
     s: ['T', 'D'],
     body: <>Ne pas sur-investir au-delà du plafond de 60 % de chance de vision spectrale.</>,
   },
   {
-    title: 'Tirs Puissants (1 PA) en premier',
+    id: 'tirs-puissants',
+    icon: '⚡',
+    title: 'Tirs Puissants en premier',
+    short: '1 PA pour +100 Puissance et +10 % de critique jusqu’au prochain tour.',
     s: ['T', 'D'],
-    body: (
-      <>
-        +100 Puissance et +10 % de critique pour 1 PA, jusqu’au prochain tour : à lancer en premier chaque tour s’il est dans le
-        deck.
-      </>
-    ),
+    body: <>À lancer en premier chaque tour s’il est dans le deck.</>,
   },
   {
+    id: 'deck',
+    icon: '🃏',
     title: 'Deck',
+    short: '10 cartes dont les 3 exclusives, complétées par des dégâts du même élément.',
     s: ['T'],
     body: (
       <>
-        10 cartes dont les 3 exclusives ; compléter avec des cartes de dégâts du même élément (toutes les autres cartes se
-        partagent entre classes). Garder au moins 7 cartes. PA total plafonné à 12 (puis 13/14/15 selon le Prestige).
+        Toutes les autres cartes se partagent entre classes. Garder au moins 7 cartes. PA total plafonné à 12 (puis 13/14/15
+        selon le Prestige).
       </>
     ),
   },
   {
+    id: 'objets',
+    icon: '🛡️',
     title: 'Objets',
+    short: 'Fusionner par 3 et viser le Rayonnant (+20 % → +45 %) sur les pièces fortes.',
     s: ['T', 'D'],
     body: (
       <>
-        Fusionner par 3 ; viser le Rayonnant (+20 % → +45 % à +5) sur les pièces fortes. PA/PM/PO ne sont pas multipliés par la
-        fusion → privilégier les objets qui donnent directement des PO/PA (valeur brute) ; les stats élémentaires, elles, sont
-        multipliées.
+        PA/PM/PO ne sont pas multipliés par la fusion → privilégier les objets qui donnent directement des PO/PA (valeur
+        brute) ; les stats élémentaires, elles, sont multipliées.
       </>
     ),
   },
   {
-    title: 'Multiplicateurs permanents gratuits',
+    id: 'multiplicateurs',
+    icon: '🎁',
+    title: 'Bonus permanents gratuits',
+    short: 'Lier Discord, monter le Bouclier de forge et le Compagnon.',
     s: ['T'],
     body: (
       <>
-        Lier Discord (+10 % XP, +10 % butin, +5 % stats) ; faire avancer le Bouclier de forge (briser les objets, jusqu’à 8 000
-        orbes/jour) et le Compagnon (croquettes).
+        Discord : +10 % XP, +10 % butin, +5 % stats. Bouclier de forge : briser les objets, jusqu’à 8 000 orbes/jour. Compagnon :
+        croquettes.
       </>
     ),
   },
   {
-    title: 'Arène',
+    id: 'arene',
+    icon: '⚔️',
+    title: 'Arène tous les jours',
+    short: '10 tickets gratuits : chaque victoire donne +1 stat (jusqu’à 300 par stat).',
     s: ['T', 'D'],
     body: (
       <>
-        10 tickets gratuits par jour ; chaque victoire donne +1 stat aléatoire (parchemin) jusqu’à 300 par stat → utiliser tous
-        les tickets chaque jour. Éviter de rejouer le même adversaire (gain ×0,5 puis ×0,25 puis 0 dans les 24 h,{' '}
-        <em>déduit</em>).
+        Utiliser tous les tickets chaque jour. Éviter de rejouer le même adversaire : gain ×0,5 puis ×0,25 puis 0 dans les
+        24 h (déduit).
       </>
     ),
   },
   {
+    id: 'progression',
+    icon: '⭐',
     title: 'Progression',
+    short: 'Pas de Prestige avant le niveau 200 ; le Prestige 4 supprime les pertes.',
     s: ['T'],
-    body: (
-      <>
-        Pas de Prestige avant le niveau 200 ; à long terme, le Prestige 4 supprime les pertes ; les PO/PA/PM de Prestige servent
-        directement le Crâ (P2 +2 PO, P5 +3 PO).
-      </>
-    ),
+    body: <>Les PO/PA/PM de Prestige servent directement le Crâ (P2 +2 PO, P5 +3 PO).</>,
   },
   {
+    id: 'saison',
+    icon: '🏆',
     title: 'Saison',
+    short: 'Aucun Crâ dans le top 30 affiché : n’en rien conclure sur la classe.',
     s: ['T', 'D'],
     body: (
       <>
-        La saison Héroïque finit le lundi 12 octobre 2026 à 08:00 (données du 11 oct 2026). Aucun Crâ dans le haut du classement
-        affiché (top 30) : n’en rien conclure de fiable sur la force de la classe. Ne pas utiliser de script/bot (interdit par
-        les règles).
+        La saison Héroïque finit le lundi 12 octobre 2026 à 08:00 (données du 11 oct 2026). Aucun Crâ dans le haut du
+        classement affiché (top 30) : n’en rien conclure de fiable sur la force de la classe.
       </>
     ),
   },
@@ -120,53 +136,83 @@ export default function GuideCraPage() {
     <>
       <PageHeader
         title="Guide Crâ"
-        lead="Dix recommandations d’optimisation fondées uniquement sur des éléments vérifiés, avec leurs réserves."
+        crumbs={[{ href: '/classes/cra/', label: 'Crâ' }]}
+        intro="10 conseils courts, fondés uniquement sur des éléments vérifiés."
       />
 
-      <Callout kind="warn">
+      <Essentiel>
+        <li>
+          <strong>Force (Terre)</strong> et <strong>PO jusqu’au plafond de 60 %</strong> de vision spectrale. <M s={['T', 'D']} />
+        </li>
+        <li>
+          <strong>Tirs Puissants</strong> en premier à chaque tour. <M s="D" />
+        </li>
+        <li>
+          <strong>Tous les tickets d’arène</strong>, chaque jour. <M s="T" />
+        </li>
+      </Essentiel>
+
+      <Warn title="Bots et scripts interdits">
         <p>
-          <strong>Règles du jeu :</strong> « Pas de triche : scripts, robots ou exploitation de bugs (signale-les plutôt !). »
-          et « Un seul compte et un seul personnage par personne. » Les comptes en infraction peuvent être supprimés{' '}
-          <Badge s="T" />. Seuls les modes « Auto » et « Auto AFK » intégrés au jeu sont prévus.
+          « Pas de triche : scripts, robots ou exploitation de bugs (signale-les plutôt !). » Les comptes en infraction peuvent
+          être supprimés. <M s="T" />
         </p>
-      </Callout>
+        <p>Seuls les modes « Auto » et « Auto AFK » intégrés au jeu sont prévus. Un seul compte et un seul personnage par personne.</p>
+      </Warn>
 
       <p>
-        Fiche de la classe : <Link href="/classes/cra/">Crâ</Link>. Les mentions <em>[déduit]</em> et les badges indiquent les
-        parties qui ne sont pas écrites telles quelles dans le jeu.
+        Fiche de la classe : <Link href="/classes/cra/">Crâ</Link>.
       </p>
 
-      <Section id="recommandations" title="Recommandations d’optimisation">
-        <ol className="facts">
+      <Section id="recommandations" title="Les 10 conseils">
+        <ol className="cards">
           {RECOS.map((r, i) => (
-            <li key={i} className="fact" id={`reco-${i + 1}`}>
-              <span className="fact-badges">
-                {r.s.map((s) => (
-                  <Badge key={s} s={s} />
-                ))}
-              </span>
-              <span className="fact-text">
-                <strong>
-                  {i + 1}. {r.title}.
-                </strong>{' '}
-                {r.body}
-              </span>
+            <li key={r.id} className="card" id={`reco-${i + 1}`}>
+              <h3>
+                <span aria-hidden="true">{r.icon}</span> {i + 1}. {r.title}
+              </h3>
+              <p>
+                {r.short} <M s={r.s} />
+              </p>
+              <details className="more">
+                <summary>Détail</summary>
+                <div className="more-body">
+                  <p>{r.body}</p>
+                </div>
+              </details>
             </li>
           ))}
         </ol>
-        <Src>mecaniques.md, « Recommandations d’optimisation pour un Crâ »</Src>
       </Section>
 
-      <Section id="a-verifier" title="À vérifier dans le jeu">
-        <p>Points non accessibles sans connexion, à contrôler en jeu par un humain :</p>
-        <Facts>
-          <Fact s="N">Fiche Personnage : valeurs réelles Force → dégâts, plafond de caractéristique.</Fact>
-          <Fact s="N">Bonus de panoplies.</Fact>
-          <Fact s="N">Bonus des cartes communes de dégâts Terre/Feu.</Fact>
-          <Fact s="N">XP Aventure vs Chasse (à comparer en fin de combat, comme le conseille la FAQ).</Fact>
-        </Facts>
-        <Src>mecaniques.md, « À vérifier dans le jeu »</Src>
+      <Section id="a-verifier" title="À vérifier en jeu">
+        <p>Non accessible sans connexion ; à contrôler en jeu :</p>
+        <ul>
+          <li>
+            Fiche Personnage : effet réel de la Force sur les dégâts, plafond de caractéristique. <M s="N" />
+          </li>
+          <li>
+            Bonus de panoplies. <M s="N" />
+          </li>
+          <li>
+            Bonus des cartes communes de dégâts Terre/Feu. <M s="N" />
+          </li>
+          <li>
+            XP Aventure vs Chasse (à comparer en fin de combat, comme le conseille la FAQ). <M s="N" />
+          </li>
+        </ul>
       </Section>
+
+      <PageEnd
+        current="/guide-cra/"
+        see={[
+          { href: '/classes/cra/', label: 'Fiche Crâ' },
+          { href: '/arene/', label: 'Arène' },
+          { href: '/economie/#fusion', label: 'Fusion' },
+          { href: '/prestige/', label: 'Prestige' },
+        ]}
+        sources="mecaniques.md (« Recommandations d’optimisation pour un Crâ », « À vérifier dans le jeu »), txt_mentions.txt"
+      />
     </>
   );
 }
