@@ -1,0 +1,20 @@
+Passifs de classes (source: page_classes.html). L'association classe→passif suit l'ordre d'apparition (même ordre que la liste des 19 classes de /classes) et est cohérente avec le nom des passifs : [DÉDUIT par l'ordre, très probable]. Textes des passifs : [TROUVÉ].
+- Féca — Armure Féca : Chaque sort de bouclier, de soin ou de résistance lancé donne 1 charge d’Armure (5 au maximum, pour tout le combat). Chaque charge : −6 % de dégâts subis et +6 % de dégâts infligés (au maximum −30 % et +30 %).
+- Osamodas — Dompteur : Ses invocations infligent +100 % de dégâts. Chaque invocation active (hors bombes) donne +20 % de dégâts à ses sorts et à son arme (3 au maximum : +60 %).
+- Enutrof — Avarice : Chaque sort de 2 PA ou moins lancé rapporte 1 Pièce (10 au maximum, pour tout le combat). Chaque Pièce : +5 % de dégâts (au maximum +50 %).
+- Sram — Assassinat : Ses sorts, son arme et ses pièges infligent +30 % de dégâts à un ennemi sous 50 % de ses PV, et +60 % sous 25 %.
+- Xélor — Distorsion temporelle : Chaque PA qu’il tente de retirer ou de voler (réussi ou esquivé) donne 1 charge (10 au maximum, pour tout le combat). Chaque charge : +6 % de dégâts (au maximum +60 %).
+- Ecaflip — Chance d’Ecaflip : Chaque sort de dégâts a 32 % de chances d’infliger le double de dégâts (coup de chance) et 2 % de chances de n’en infliger que la moitié (coup de malchance).
+- Eniripsa — Mots : Chaque sort de soin ou de bouclier lancé donne 1 Mot (5 au maximum, pour tout le combat). Chaque Mot : +9 % de dégâts et +9 % de soins (au maximum +45 % et +45 %).
+- Iop — Enchaînement : Chaque sort lancé augmente de 15 % les dégâts des sorts suivants du même tour (au maximum +45 %, remis à zéro à chaque tour).
+- Crâ — Œil de lynx : +26 % de chances de vision spectrale : chaque sort de dégâts peut infliger le double de dégâts (chance totale avec la PO plafonnée à 60 %).
+- Sadida — Puissance sylvestre : Chaque sort de dégâts empoisonne la cible : elle perd 3 % de ses PV max au début de chacun de ses tours pendant 3 tours, cumulable jusqu’à 12 %. Ses sorts de poison s’ajoutent au poison déjà posé au lieu de le remplacer (20 % par tour au maximum ; boss : 3 % au maximum). Pas de poison dans la Faille.
+- Sacrieur — Souffrance : +7 % de dégâts par tranche de 10 % de PV manquants (au maximum +63 %, presque mort).
+- Pandawa — Ivresse : Chaque sort lancé donne 1 niveau d’Ivresse (6 au maximum, pour tout le combat). Chaque niveau : +5 % de dégâts, et 1 % de ses PV max récupérés au début de chacun de ses tours (au maximum +30 % et 6 % par tour). Ces soins ne sont jamais réduits ni inversés par les mécaniques anti-soin des boss.
+- Roublard — Artificier : Ses bombes et ses invocations infligent +50 % de dégâts. Chaque bombe qui explose donne +10 % de dégâts à ses sorts et à son arme (au maximum +30 %, pour tout le combat).
+- Zobal — Masques : Change de masque à chaque tour : Classique (+10 % de dégâts, −10 % de dégâts subis), puis Psychopathe (+25 % de dégâts), puis Pleutre (−25 % de dégâts subis), et ainsi de suite. Le masque reste jusqu’à son tour suivant.
+- Steamer — Évolution : À partir de son 2e tour, il évolue au début de chacun de ses tours : +7 % de dégâts par évolution pour ses sorts, son arme et ses invocations (6 évolutions au maximum : +42 %).
+- Eliotrope — Portails : Une attaque sur 2 (sort de dégâts ou arme : la 2e, la 4e… du combat) passe par un portail : +50 % de dégâts.
+- Huppermage — Runes élémentaires : Chaque sort de dégâts pose une rune de son élément, gardée tout le combat. Chaque rune d’un élément différent donne +11 % de dégâts (4 runes au maximum : +44 %).
+- Ouginak — Proie : Le dernier ennemi frappé par ses sorts devient sa Proie : chaque sort qui la frappe ajoute +12 % de dégâts contre elle (au maximum +60 % ; changer de cible remet à zéro). Quand sa Proie meurt pendant son tour, il regagne 2 PA (une fois par tour).
+- Forgelance — Lance projetée : Le premier sort de dégâts de chaque tour inflige +45 % de dégâts.

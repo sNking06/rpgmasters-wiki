@@ -1,0 +1,149 @@
+ FAQ · DofusMasters 
+ Rpg Masters 
+ Se connecter 
+ Annonce 🏦 Récompenses supplémentaires : en plus du top 100, TOUT le contenu de votre BANQUE de saison sera transféré sur votre perso principal à la fin de la saison, lundi ! La Banque se trouve dans votre inventaire de saison. Allez, tentez une run ! 
+ 1 / 2 
+ Chargement… 
+ Le jeu RpgMasters est un projet de fans non officiel , gratuit et à but non lucratif , créé dans un but purement ludique. Il n’est ni affilié, ni soutenu, ni approuvé par Ankama Games.
+ Le jeu, ses mécaniques et ses systèmes sont originaux et n’ont aucun lien avec le jeu officiel. Cependant, les classes, objets, monstres, noms, images et contenus associés de l’univers DOFUS sont la propriété exclusive d’ Ankama Games . Tous droits réservés.
+ Mentions & règles FAQ 
+ Discord 
+ Chat Discute avec les autres joueurs 
+ Aide
+ FAQ
+ Les questions que les joueurs posent le plus, avec les réponses.
+ 38 questions
+ Débuter et progresser
+ ▸ Comment monter de niveau vite ? L’XP vient des combats gagnés : Aventure, Chasse, boss, Ascension… Le niveau maximum est 200. Chaque combat coûte de l’énergie, qui se recharge toute seule : mieux vaut ne pas la laisser pleine trop longtemps.
+ Lier ton Discord donne un bonus permanent d’XP. Le mode « Auto » joue le combat pour toi quand tu veux aller plus vite. Compare l’XP gagnée en fin de combat entre l’Aventure et la Chasse : c’est le meilleur moyen de voir ce qui marche le mieux avec ton niveau et ton build.
+ Aventure → Chasse → 
+ ▸ Quelle différence entre l’Aventure et la Chasse ? L’Aventure (le « Chemin ») est une suite d’étapes qui s’enchaînent, avec un boss toutes les 5 étapes. Plus tu avances, plus les monstres sont forts.
+ À la Chasse, c’est toi qui choisis la zone et le groupe de monstres. Une zone est accessible à partir de son niveau minimum moins 5 niveaux. C’est aussi là que se trouvent les boss de zone, qui n’apparaissent que quelques minutes à intervalles réguliers (un badge te prévient).
+ Aventure → Chasse → 
+ ▸ Peut-on changer de classe ? Laquelle est la meilleure ? Oui, depuis la page Personnage : le premier changement est gratuit, les suivants coûtent 300 000 kamas.
+ Le jeu ne désigne pas de « meilleure » classe : chacune a son style (dégâts, soutien, invocations…). Comme le premier changement est gratuit, tu peux tester.
+ Personnage → 
+ ▸ Que faire une fois niveau 200 ? Tu as le choix : faire Prestige (tu repars au niveau 1 avec plus de stats), ou rester niveau 200 pour farmer du stuff, faire l’arène, les Abysses ou la Faille avec ta guilde. L’Ascension (tour de boss) est ouverte dès que tu as fait au moins un Prestige.
+ Rien ne t’oblige à faire Prestige tout de suite : prends le temps de te préparer (voir la rubrique Prestige).
+ ▸ Comment répartir mes points de caractéristiques ? Tu gagnes 5 points par niveau, à répartir sur la page Personnage (Force, Intelligence, Chance, Agilité, Vitalité, Sagesse). Choisis la caractéristique de l’élément de tes sorts de dégâts.
+ Au Prestige, tes points répartis sont remis à zéro (tu repars niveau 1). Les parchemins de caractéristique, eux, sont définitifs et restent.
+ Personnage → 
+ Prestige et Ascension
+ ▸ Qu’est-ce que le Prestige ? Qu’est-ce que je perds, qu’est-ce que je garde ? Au niveau 200, tu peux repartir au niveau 1 : tout ce que tu équipes gagne 25 % de stats en plus, cumulables à chaque Prestige. Tu gagnes aussi des bonus de combat sur les premiers Prestiges, une carte de plus dans tes decks, et l’accès à l’Ascension.
+ Tu perds : ton niveau, tes points de caractéristiques, ton étape de l’Aventure et, tant que tu n’as pas atteint le Prestige 4, ton équipement, ton inventaire, tes ventes en cours à l’HDV et tes kamas, sauf l’objet que tu choisis de garder et tes objets éternels.
+ À partir du moment où tu es Prestige 4, le Prestige suivant (et les suivants) ne te fait plus rien perdre : ton équipement revient dans ton inventaire et tu gardes tes kamas.
+ Tu gardes toujours tes cartes de sort et tes decks, ton album, tes coffres, ton énergie, ton Elo, tes records et ton Ascension.
+ Faire Prestige (page Personnage) → 
+ ▸ Comment passer Prestige ? Y a-t-il un maximum ? Sur la page Personnage, une fois niveau 200, le bouton « Faire Prestige » demande de taper « PRESTIGE » pour confirmer.
+ Jusqu’au Prestige 3 : il suffit d’être niveau 200.
+ Prestige 4 : étage 20 de l’Ascension terminé.
+ Prestige 5 : étage 30 de l’Ascension terminé + 500 000 dégâts cumulés sur le Kralamoure de la Faille.
+ Prestige 6 : étage 40 de l’Ascension terminé + 1 000 000 dégâts cumulés sur le Kralamoure de la Faille.
+ Prestige 7 : étage 40 de l’Ascension terminé.
+ Prestige 8 : étage 60 de l’Ascension terminé.
+ Prestige 9 : étage 80 de l’Ascension terminé.
+ Prestige 10 : étage 110 de l’Ascension terminé.
+ Prestige 11 : étage 140 de l’Ascension terminé.
+ Prestige 12 : étage 170 de l’Ascension terminé.
+ Prestige 13 : étage 200 de l’Ascension terminé.
+ Prestige 14 : étage 230 de l’Ascension terminé.
+ Prestige 15 : étage 260 de l’Ascension terminé.
+ Aujourd’hui, le Prestige 15 est le plus haut ouvert ; les suivants sont annoncés « bientôt disponibles ».
+ En saison, les Prestiges s’arrêtent au 10 : ceux d’après (jusqu’au 15) ne s’ouvrent que sur le personnage principal, avec son record d’Ascension.
+ Personnage → 
+ ▸ Quel objet garder au Prestige ? Comment marche l’objet éternel ? À chaque Prestige, tu peux choisir un objet (porté ou dans ton inventaire). Il devient « éternel » : lié à toi à vie, invendable, et il revient à tous tes Prestiges suivants. Il passe au moins au niveau Rayonnant.
+ C’est donc un choix durable : prends un objet qui te servira longtemps (un Dofus, une pièce forte de ton build…) plutôt qu’un objet que tu remplaceras vite. Un objet que tu mets en vente à l’HDV peut aussi être gardé avant le Prestige 4.
+ ▸ Dois-je ouvrir mes coffres avant de passer Prestige ? Non : tes coffres non ouverts restent à toi après le Prestige, tu ne les perds pas.
+ Ce qui change, c’est leur contenu : un coffre donne un équipement de ton niveau au moment où tu l’ouvres. Avant le Prestige 4, ce que tu as ouvert juste avant de passer Prestige est perdu avec ton inventaire (sauf l’objet gardé). À partir du moment où tu es Prestige 4, plus rien n’est perdu, que tu ouvres tes coffres avant ou après.
+ Coffres → 
+ ▸ Est-ce que je garde mes parchemins, ma forgemagie, mon Elo… après un Prestige ? Oui : tes parchemins de caractéristique (d’arène ou en objet), le niveau et l’XP de ton Bouclier de forge (forgemagie), ton Elo, tes records (Abysses, Ascension) et ta collection restent après un Prestige. Seuls le niveau, les points répartis, l’étape de l’Aventure et (avant le Prestige 4) les objets et kamas sont remis à zéro.
+ ▸ À quoi sert l’Ascension et comment y entrer ? L’Ascension est une tour de boss : tu affrontes un ou plusieurs boss à chaque étage, de plus en plus durs, avec des mécaniques cachées (certaines sont annoncées avant le combat). Pour y entrer, il faut avoir fait au moins 1 Prestige et être (de nouveau) niveau 200.
+ Chaque étage coûte 2 d’énergie. Chaque nouvel étage franchi donne un coffre, et tous les 5 étages de plus gros coffres. Si tu perds, tu retentes le même étage. Ton étage atteint reste après un Prestige, et il sert de condition pour passer aux Prestiges suivants.
+ Ascension → 
+ Coffres et énergie
+ ▸ Comment avoir des coffres ? Combien en ai-je par jour ? Tu reçois 3 coffres gratuits par heure (un toutes les 20 minutes), avec 6 en réserve au maximum : au-delà, la recharge s’arrête jusqu’à ce que tu en ouvres. Ouvre-les avant que la réserve soit pleine pour ne pas perdre de recharge.
+ Tu peux aussi en gagner : environ 5 % de chances à chaque combat gagné, étages de l’Ascension, récompenses d’arène, de Faille et de saison. Ces coffres gagnés s’ajoutent sans limite de réserve.
+ Coffres → 
+ ▸ Quel coffre acheter ? La boutique des coffres vend : Coffre classique (5 000 kamas), Coffre chanceux (10 000 kamas), Coffre épique (20 000 kamas), contre des kamas. Le Chanceux multiplie par 3 les chances de bonnes raretés, et l’Épique garantit un objet Épique ou mieux.
+ Tu peux en acheter jusqu’à 100 par jour et par type, et le prix augmente au fil des achats du jour (les 20 premiers au prix normal, puis plus cher). Le détail des chances est affiché sur la page des coffres.
+ Coffres → 
+ ▸ Comment fonctionne l’énergie ? Comment en regagner ? Tu as 100 points d’énergie au maximum et tu en regagnes 1 toutes les 6 minutes (10 par heure), même quand tu n’es pas connecté.
+ Un combat de chasse ou d’aventure coûte 1 point, un boss ou un étage d’Ascension 2, un combat d’arène un ticket (voir l’arène), et une descente dans les Abysses 20.
+ Tu peux aussi en acheter avec des kamas : 300 kamas le point, jusqu’à 1 000 points par jour (le prix monte au-delà de 600 points achetés dans la journée). On ne peut pas dépasser le maximum. Le perso de saison n’utilise pas d’énergie.
+ Objets, fusion et forgemagie
+ ▸ Comment fusionner des objets ? Dans l’Inventaire, en réunissant 3 exemplaires du même objet au même tiers : 3 objets Tiers 1 donnent un Tiers 2, puis 3 Tiers 2 donnent un Rayonnant. Chaque tiers augmente les stats de l’objet.
+ Un objet Rayonnant monte ensuite de +0 à +5 en lui ajoutant d’autres Rayonnants +0 du même objet (1 pour les premiers niveaux, 2 ensuite). Le bouton « Tout fusionner » fait le travail pour toi. Les PA, PM, PO et Invocations d’un objet ne sont pas multipliés par la fusion.
+ Inventaire → 
+ ▸ C’est quoi un objet Rayonnant ? Comment en avoir ? C’est le plus haut niveau de fusion d’un objet : Rayonnant +0 à +5, avec 20 % de stats en plus au départ jusqu’à 45 % à +5.
+ Tu peux en obtenir en fusionnant, mais aussi par chance : dans les coffres (1 % de base, plus avec un Coffre chanceux), en butin de combat et sur les boss, et dans certains coffres de récompense.
+ ▸ Y a-t-il des bonus de panoplie ? Oui. Quand tu portes au moins 2 pièces différentes d’une même panoplie, tu reçois un bonus, de plus en plus fort avec le nombre de pièces portées. Tu vois les panoplies que tu portes et leurs bonus sur la page Personnage.
+ Personnage → 
+ ▸ Où trouver un objet précis ? Comment obtenir un Dofus ? Le Bestiaire te dit quels monstres et quels boss lâchent chaque objet : cherche l’objet, puis farme ces monstres (à la Chasse ou dans l’Aventure). Chaque combat a aussi une petite chance de butin supplémentaire.
+ Les Dofus sont très rares : leur chance de tomber ne dépasse jamais 2 %, tous bonus compris. Ils tombent sur les boss et en butin supplémentaire, ou dans certains coffres de récompense.
+ Bestiaire → 
+ ▸ À quoi sert de briser des objets ? Que sont les orbes ? Briser un objet de l’inventaire donne des orbes (1 sous le niveau 70, 2 jusqu’au 139, 3 au-delà, ×3 pour un Rayonnant), dans la limite de 8 000 par jour. Tu les verses dans ton Bouclier de forge (page Forgemagie) : il monte de niveau sans aucun échec et renforce tout ton équipement, jusqu’à +300 % au niveau 400.
+ Tu peux aussi vendre un objet aux PNJ : 10 kamas par niveau de l’objet, au maximum 2 000. Un objet verrouillé (cadenas) est protégé contre la vente et le bris.
+ Forgemagie → Inventaire → 
+ Combat, deck et automatique
+ ▸ Comment marchent le deck et les sorts ? Ton deck contient jusqu’à 10 sorts au départ (1 de plus par Prestige) et au minimum 7 pour combattre. Tu peux préparer 6 decks et choisir celui que tu emmènes. Chaque sort coûte des PA, que tu dépenses à chaque tour.
+ Le total de PA de ta fiche est plafonné (12 de base, 13 dès le Prestige 2, 14 dès le Prestige 5, 15 dès le Prestige 8), hors Abysses. Les sorts en double ne sont pas inutiles : à partir du Prestige 1, un doublon renforce le sort au lieu d’être converti en kamas.
+ Deck → 
+ ▸ Quelle différence entre « Auto » et « Auto AFK » ? « Auto » joue le combat en cours à ta place, avec les récompenses normales, mais tu dois lancer chaque combat. Une petite vérification de présence arrive tous les 20 combats.
+ « Auto AFK » enchaîne les combats tout seul jusqu’à une défaite, à court d’énergie ou à ton arrêt, avec moitié moins d’XP, de kamas et de butin. Il ne marche pas en arène, aux Abysses, à la Faille, en Ascension, contre les boss de zone ni en capture. Il demande de cliquer sur une vérification de présence toutes les 60 minutes.
+ ▸ Pourquoi suis-je « inactif » ou dans une file d’attente ? Pour que le jeu reste fluide, le nombre de joueurs actifs en même temps est limité (réglé par l’équipe, 500 par défaut). Si tu ne cliques sur rien pendant 10 minutes, ta place est libérée : tu reviens d’un clic, ou tu patientes dans la file si c’est plein.
+ Un combat en cours est protégé : tu ne perds pas ta place en plein combat.
+ Modes de jeu
+ ▸ Comment fonctionnent les Abysses ? Les Abysses sont une descente de 1000 étages, ouverte à tous, qui coûte 20 d’énergie. Ton équipement et tes stats sont ignorés : tout le monde part du même point (6 PA, 3 PM, 100 partout) avec un sort choisi parmi 3.
+ Après chaque victoire, tu choisis un bonus parmi 3 cartes ; tous les 5 étages, un nouveau sort. Tout se joue sur tes choix. Si tu perds, tu peux reprendre 25 étages sous ton record. Ton record est gardé après un Prestige.
+ Abysses → 
+ ▸ Comment marche l’arène (Elo, tickets, classement de la semaine) ? Tu défies des joueurs proposés par le jeu (leur équipe joue pour eux) ; la liste est choisie autour de ton Elo et change toutes les 10 minutes environ, élargie s’il n’y a pas assez d’adversaires proches. Chaque défi coûte 1 ticket : tu en reçois 10 gratuits par jour (non cumulables d’un jour à l’autre), plus ceux gagnés dans les coffres.
+ Rejouer contre le même adversaire rapporte de moins en moins d’Elo dans la journée. Chaque victoire te donne aussi +1 à une caractéristique au hasard (parchemin d’arène, jusqu’à +300 par caractéristique).
+ Chaque semaine (reset le vendredi à 23 h 59, heure de Paris), l’Elo repart de 1 000 et il faut au moins 10 combats pour être classé. Le haut du classement reçoit des coffres : le top 100 des Légendaires, le top 10 des Ultimes, et le podium un coffre Rayonnant +5 au choix et une couronne.
+ Arène → 
+ ▸ À quoi servent les guildes ? Comment combattre le Krala ? Une guilde regroupe jusqu’à 40 joueurs. Elle sert à affronter ensemble le Kralamoure de la Faille : chaque membre peut le combattre toutes les 20 minutes, les dégâts de toute la guilde s’additionnent, et à la fin de la journée la guilde reçoit des coffres selon sa place au classement du jour.
+ Tu peux créer une guilde ou postuler à une guilde existante depuis la page Guilde ; les guildes qui recrutent sont listées là-bas. Les dégâts cumulés sur le Kralamoure sont aussi une condition pour certains Prestiges.
+ Guilde → 
+ ▸ C’est quoi la saison Héroïque ? Une saison est un événement limité dans le temps : tu peux y créer, en plus de ton personnage principal (qui reste intact), un personnage de saison, créé de zéro. Tu changes de personnage avec le sélecteur Principal / Saison en haut de la page.
+ Le perso de saison n’utilise pas d’énergie et gagne beaucoup plus d’XP, mais il risque la mort définitive face aux boss. Un classement de saison est tenu, et des récompenses sont versées sur ton personnage principal à la fin. À la fin de la saison, le contenu de ta Banque (8 emplacements, +3 par Prestige, accessible depuis l’Inventaire) est à toi : il est transféré définitivement dans l’inventaire de ton personnage principal. Si ton personnage de saison meurt, tes objets éternels sont automatiquement mis à l’abri dans ta Banque. Les dates et le détail des règles sont sur la page Saison.
+ Saison → 
+ Hôtel de vente et kamas
+ ▸ Comment vendre et acheter à l’HDV ? Sur la page HDV, tu mets un objet en vente au prix que tu veux (jusqu’à 20 ventes en même temps). Une taxe de 8 % est retenue sur le prix de vente. Un objet acheté à l’HDV est lié à toi pendant 24 h : tu ne peux pas le remettre aussitôt en vente.
+ Les objets éternels (gardés au Prestige) et les objets verrouillés par un cadenas ne peuvent pas être vendus.
+ HDV → 
+ Compte et communauté
+ ▸ Je joue en invité : comment sauvegarder mon compte ? Et mot de passe, e-mail ? Un compte invité est lié à ton navigateur : si tu vides tes données ou changes d’appareil, tu le perds. Sauvegarde-le dès que possible (le jeu te le rappelle après 12 minutes de jeu) avec une adresse e-mail et un mot de passe.
+ Ensuite, tu peux changer ton e-mail ou ton mot de passe, ou supprimer ton compte, dans les Paramètres. Mot de passe oublié : utilise le lien « mot de passe oublié » sur la page de connexion.
+ Sauvegarder ma progression → Paramètres → 
+ ▸ Quel est le bonus Discord ? Comment le lier ? En liant ton compte Discord à ton personnage, tu obtiens +10 % XP, +10 % butin, +5 % stats, à vie tant que le compte reste lié. Il s’applique partout, arène comprise.
+ La liaison se fait depuis le Tableau de bord. Il faut d’abord avoir sauvegardé ton compte si tu jouais en invité. Le bonus est partagé avec ton perso de saison : lie-le depuis ton perso principal.
+ Tableau de bord → 
+ ▸ J’ai un bug ou un problème : que faire ? Rafraîchis d’abord la page : la plupart des soucis (combat bloqué, affichage figé) disparaissent. Si le problème reste, décris-le sur le chat ou, mieux, sur le serveur Discord (salon des bugs et suggestions) avec ce que tu faisais, ton pseudo et l’heure.
+ Pour ne pas fausser ton jeu, n’exploite pas un bug : signale-le (voir les règles de la communauté).
+ Mentions & règles → 
+ ▸ Le jeu est-il payant ? Quelles nouveautés arrivent ? Non : RpgMasters est un projet de fans, gratuit, sans publicité ni achat. Le jeu n’est pas affilié à Ankama.
+ Les nouveautés et les mises à jour sont annoncées sur le chat et sur le Discord. Les Prestiges au-delà du 15 sont annoncés « bientôt disponibles », sans date promise ici.
+ Nouveautés : fidélité, compagnon, Dimension
+ ▸ Comment fonctionne le guide de départ ? Sur ton tableau de bord, un encart « Premiers pas » te propose 10 étapes dans l’ordre (premier combat, équipement, deck, coffre, Chemin, arène, Abysses, guilde, Auto…), chacune avec un bouton « Y aller » et un petit cadeau. Une mission de bienvenue de 7 jours s’y ajoute, avec un gros cadeau à la fin.
+ Les joueurs déjà avancés ne le voient pas, et tu peux le masquer quand tu veux. Des bulles d’aide apparaissent aussi la première fois que tu ouvres une page (deck, forgemagie, arène…).
+ Tableau de bord → 
+ ▸ À quoi sert la série de connexion ? Chaque jour (heure de Paris), connecte-toi et réclame ton cadeau sur le tableau de bord : un calendrier de 7 jours avec un coffre de plus en plus gros, et un gros cadeau au jour 7. Si tu rates un jour, la série repart du jour 1.
+ Absent depuis 2 jours ou plus ? Un petit pack « Bon retour » est ajouté à ton cadeau. Tout ça concerne le personnage principal.
+ Tableau de bord → 
+ ▸ Que fait mon personnage quand je ne suis pas là ? Si tu l’as envoyé dans la Grotte de l’Aéfka, il y ramasse des coffres, des kamas et de l’XP. À ton retour, une fenêtre « Pendant ton absence » te montre le butin : clique sur Récupérer, puis relance la grotte en un clic.
+ Pas encore dans la grotte ? Un rappel te suggère de la lancer avant de partir.
+ Grotte de l’Aéfka → 
+ ▸ Qu’est-ce que l’Élan (coffre qui se remplit, défis) ? Chaque combat remplit une jauge : 25 combats donnent un Coffre Épique (3 par jour au plus). Tu vois aussi en permanence « prochain niveau dans X combats », et 3 défis courts par jour (« 3 boss d’affilée », « 5 victoires sans mourir »…) rapportent des kamas.
+ Les effets de butin (couleurs, brillance, compteurs) se règlent dans Paramètres, où les sons sont désactivés par défaut.
+ Tableau de bord → Paramètres → 
+ ▸ Comment inviter un ami ? Que gagne le parrain ? Dans Paramètres (ou sur ton accueil), clique sur « Obtenir mon lien d’invitation » et envoie-le. Ton ami s’inscrit avec ce lien et reçoit un cadeau de bienvenue ; quand il atteint le niveau 30, tu reçois 1 Coffre Royal et 2 Coffres Épiques, une seule fois par ami.
+ La limite est de 5 parrainages valides par semaine (du lundi au dimanche). Ton ami doit être un nouveau joueur, sur une autre connexion internet que toi, et ne peut être parrainé qu’une fois. S’il n’a pas reçu son cadeau, c’est souvent que vous partagez la même connexion.
+ Ton adresse IP n’est jamais stockée en clair : seulement une empreinte non réversible, effacée sous 30 jours, utilisée uniquement pour repérer les faux comptes.
+ Paramètres → 
+ ▸ Qu’est-ce que le compagnon ? Comment trouver des croquettes ? Le compagnon est un petit allié qui grandit en mangeant des croquettes. À chaque niveau, il renforce tout ton équipement, à raison de +0,2 % par niveau, jusqu’à +79,8 % au niveau 400, en plus du Prestige et du Bouclier de forge. Il est deux fois plus long à monter que le Bouclier.
+ Chaque combat gagné, dans tous les modes, a 5 % de chances de donner une croquette ; la Prospection n’y change rien. Aucune croquette en mode AFK (l’Auto normal en donne). Tu peux en donner 100 par jour au plus, le reste reste en stock. Il n’agit pas aux Abysses ni sur les PA, PM, PO et invocations, et reste lié à ton personnage principal. Niveau et croquettes sont gardés au Prestige.
+ Compagnon → 
+ ▸ Qu’est-ce que la Dimension Écarlate ? Un mode de guilde (Guilde → Dimension) : des vagues de monstres qui ne s’arrêtent jamais et deviennent toujours plus fortes. Tu combats jusqu’à ta défaite ou ta fuite. Chaque guilde a son propre chemin, identique pour tous ses membres et renouvelé chaque lundi ; les monstres s’adaptent à ton niveau et à ta puissance.
+ Chaque vague franchie rapporte des points, de plus en plus avec la vague et beaucoup plus avec une difficulté élevée (de ×1 à ×7,5). Ta meilleure descente de la semaine compte ; ta guilde est classée sur la somme de ses 10 meilleurs membres. Il n’y a ni XP ni butin en combat : le lundi, les membres des meilleures guildes qui ont joué reçoivent des coffres.
+ L’entrée coûte 20 énergie, les vagues suivantes sont gratuites, et tu peux fermer la page puis reprendre. Les boss cumulent peu à peu les mécaniques de tous les boss du jeu, et un Seigneur de la Dimension t’attend toutes les 50 vagues.
+ Dimension Écarlate → 
+ 
