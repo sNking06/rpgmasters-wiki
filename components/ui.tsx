@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import type { ReactNode } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 import { DATA_DATE_LABEL, PAGE_ORDER } from '@/lib/site';
+import { ElementIcon, Icon, SectionIcon, type ElementKey, type SectionKey } from './icons';
 
 /** Statut d'une information : T = [TROUVÉ], D = [DÉDUIT], C = calcul sur valeurs trouvées, N = non trouvé (lacune). */
 export type Status = 'T' | 'D' | 'C' | 'N';
@@ -36,17 +37,33 @@ export function M({ s }: { s: Status | Status[] }) {
 
 export type Crumb = { href: string; label: string };
 
+/** Petite puce « Données du … ». */
+export function DateChip({ extra, strong = false }: { extra?: string; strong?: boolean }) {
+  return (
+    <p className={strong ? 'date-badge' : 'date-chip'}>
+      <Icon name="calendar" size={16} /> {DATA_DATE_LABEL}
+      {extra ? ` · ${extra}` : null}
+    </p>
+  );
+}
+
 export function PageHeader({
   title,
   intro,
   crumbs = [],
   dateBadge = false,
+  section,
+  icon,
 }: {
   title: string;
   intro: ReactNode;
   crumbs?: Crumb[];
   /** Badge de date appuyé (page Saison) au lieu de la petite puce ; une chaîne est ajoutée après la date. */
   dateBadge?: boolean | string;
+  /** Pictogramme de section (médaillon à côté du titre). */
+  section?: SectionKey;
+  /** Pictogramme personnalisé (ex. classe), prioritaire sur `section`. */
+  icon?: ReactNode;
 }) {
   return (
     <header className="page-header">
@@ -63,12 +80,16 @@ export function PageHeader({
           <li aria-current="page">{title}</li>
         </ol>
       </nav>
-      <h1>{title}</h1>
+      <div className="title-row">
+        {icon || section ? (
+          <span className="medal medal-lg" aria-hidden="true">
+            {icon ?? (section ? <SectionIcon section={section} size={28} /> : null)}
+          </span>
+        ) : null}
+        <h1>{title}</h1>
+      </div>
       <p className="intro">{intro}</p>
-      <p className={dateBadge ? 'date-badge' : 'date-chip'}>
-        <span aria-hidden="true">📅</span> {DATA_DATE_LABEL}
-        {typeof dateBadge === 'string' ? ` · ${dateBadge}` : null}
-      </p>
+      <DateChip strong={!!dateBadge} extra={typeof dateBadge === 'string' ? dateBadge : undefined} />
     </header>
   );
 }
@@ -77,17 +98,26 @@ export function PageHeader({
 export function Essentiel({ children, title = 'L’essentiel', list = 'ul' }: { children: ReactNode; title?: string; list?: 'ul' | 'build' }) {
   return (
     <aside className="essentiel" aria-labelledby="essentiel-h">
-      <h2 id="essentiel-h">{title}</h2>
+      <h2 id="essentiel-h">
+        <Icon name="sparkle" size={18} /> {title}
+      </h2>
       {list === 'build' ? <ol className="build">{children}</ol> : <ul>{children}</ul>}
     </aside>
   );
 }
 
 /** Fiche récapitulative (infobox) : libellé → valeur. */
-export function Fiche({ title, rows }: { title: string; rows: [ReactNode, ReactNode][] }) {
+export function Fiche({ title, rows, icon }: { title: string; rows: [ReactNode, ReactNode][]; icon?: ReactNode }) {
   return (
     <div className="fiche">
-      <p className="fiche-title">{title}</p>
+      <p className="fiche-title">
+        {icon ? (
+          <span className="medal" aria-hidden="true">
+            {icon}
+          </span>
+        ) : null}
+        {title}
+      </p>
       <dl>
         {rows.map(([k, v], i) => (
           <div key={i} className="fiche-row">
@@ -117,7 +147,10 @@ export function Section({ id, title, children }: { id: string; title: string; ch
 export function More({ title, children, id }: { title: ReactNode; children: ReactNode; id?: string }) {
   return (
     <details className="more" id={id}>
-      <summary>{title}</summary>
+      <summary>
+        <span>{title}</span>
+        <Icon name="chevron" size={18} className="sum-chev" />
+      </summary>
       <div className="more-body">{children}</div>
     </details>
   );
@@ -127,7 +160,7 @@ export function Tip({ title = 'Astuce', children }: { title?: string; children: 
   return (
     <div className="callout callout-tip">
       <p className="callout-title">
-        <span aria-hidden="true">💡</span> {title}
+        <Icon name="bulb" size={18} /> {title}
       </p>
       {children}
     </div>
@@ -138,10 +171,33 @@ export function Warn({ title = 'Attention', children }: { title?: string; childr
   return (
     <div className="callout callout-warn">
       <p className="callout-title">
-        <span aria-hidden="true">⚠️</span> {title}
+        <Icon name="warning" size={18} /> {title}
       </p>
       {children}
     </div>
+  );
+}
+
+export function Info({ title, icon, children }: { title: ReactNode; icon?: ReactNode; children: ReactNode }) {
+  return (
+    <div className="callout callout-info">
+      <p className="callout-title">
+        {icon ?? <Icon name="info" size={18} />} {title}
+      </p>
+      {children}
+    </div>
+  );
+}
+
+const EL_KEY: Record<string, ElementKey> = { terre: 'terre', feu: 'feu', eau: 'eau', air: 'air', none: 'neutre' };
+
+/** Pastille d'élément : pictogramme + texte (jamais la couleur seule). */
+export function El({ kind, children }: { kind: 'terre' | 'feu' | 'eau' | 'air' | 'none'; children: ReactNode }) {
+  return (
+    <span className={`el el-${kind}`}>
+      <ElementIcon element={EL_KEY[kind]} size={16} strokeWidth={2} />
+      {children}
+    </span>
   );
 }
 
@@ -176,7 +232,7 @@ export function Bars({
           <li key={i} className={it.hl ? 'is-hl' : undefined}>
             <span className="bar-label">{it.name}</span>
             <span className="bar-track" aria-hidden="true">
-              <span className="bar-fill" style={{ width: `${Math.max(0, (it.value / max) * 100)}%` }} />
+              <span className="bar-fill" style={{ '--w': `${Math.max(0, (it.value / max) * 100)}%` } as CSSProperties} />
             </span>
             <span className="bar-val">{it.display}</span>
           </li>
@@ -244,7 +300,10 @@ export function PageEnd({ current, see, sources }: { current: string; see: Crumb
           <ul className="see-also">
             {see.map((s) => (
               <li key={s.href}>
-                <Link href={s.href}>{s.label}</Link>
+                <Link href={s.href}>
+                  {s.label}
+                  <Icon name="arrowRight" size={16} />
+                </Link>
               </li>
             ))}
           </ul>
@@ -258,7 +317,9 @@ export function PageEnd({ current, see, sources }: { current: string; see: Crumb
       <div className="prev-next">
         {prev ? (
           <Link href={prev.href} className="pn pn-prev">
-            <span className="pn-dir">← Précédent</span>
+            <span className="pn-dir">
+              <Icon name="arrowLeft" size={16} /> Précédent
+            </span>
             {prev.label}
           </Link>
         ) : (
@@ -266,7 +327,9 @@ export function PageEnd({ current, see, sources }: { current: string; see: Crumb
         )}
         {next ? (
           <Link href={next.href} className="pn pn-next">
-            <span className="pn-dir">Suivant →</span>
+            <span className="pn-dir">
+              Suivant <Icon name="arrowRight" size={16} />
+            </span>
             {next.label}
           </Link>
         ) : null}

@@ -28,7 +28,7 @@ const LEGEND: [Status, string][] = [
 export default function SourcesPage() {
   return (
     <>
-      <PageHeader title="Sources et limites" intro="D’où viennent les infos, comment lire les pastilles, et ce qu’on ne sait pas." />
+      <PageHeader section="sources" title="Sources et limites" intro="D’où viennent les infos, comment lire les pastilles, et ce qu’on ne sait pas." />
 
       <Essentiel>
         <li>

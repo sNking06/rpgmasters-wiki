@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn } from '@/components/ui';
+import { ClassIcon, ElementIcon, Icon, SectionIcon, type ElementKey } from '@/components/icons';
+import { El, Essentiel, Fiche, Info, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn } from '@/components/ui';
 import { CRA_CARDS } from '@/lib/classes';
 
 export const metadata: Metadata = {
@@ -8,12 +9,14 @@ export const metadata: Metadata = {
   description: 'Crâ dans RpgMasters : build conseillé en 5 lignes, passif Œil de lynx, 3 cartes exclusives, PO et vision spectrale (plafond 60 %).',
 };
 
-const EL_CLASS: Record<string, string> = { Terre: 'el-terre', Feu: 'el-feu', '—': 'el-none' };
+const EL_KIND: Record<string, 'terre' | 'feu' | 'none'> = { Terre: 'terre', Feu: 'feu', '—': 'none' };
+const EL_ICON: Record<string, ElementKey> = { Terre: 'terre', Feu: 'feu', '—': 'neutre' };
 
 export default function CraPage() {
   return (
     <>
       <PageHeader
+        icon={<ClassIcon name="Crâ" size={30} />}
         title="Crâ"
         crumbs={[{ href: '/classes/', label: 'Classes' }]}
         intro="L’Archer : ses sorts de dégâts peuvent doubler leurs dégâts, et la PO augmente cette chance."
@@ -21,32 +24,42 @@ export default function CraPage() {
 
       <Essentiel title="Build conseillé en 5 lignes" list="build">
         <li>
-          <span className="build-ico" aria-hidden="true">💪</span>
+          <span className="build-ico" aria-hidden="true">
+            <ElementIcon element="terre" size={20} />
+          </span>
           <span>
             <strong>Stats : Force (Terre)</strong> en priorité — le gros sort Flèche Punitive est Terre. <M s={['T', 'D']} />
           </span>
         </li>
         <li>
-          <span className="build-ico" aria-hidden="true">🎯</span>
+          <span className="build-ico" aria-hidden="true">
+            <Icon name="target" size={20} />
+          </span>
           <span>
             <strong>PO : monte jusqu’au plafond de 60 %</strong> de vision spectrale (≈ 85 PO), pas au-delà.{' '}
             <M s={['C', 'D']} />
           </span>
         </li>
         <li>
-          <span className="build-ico" aria-hidden="true">⚡</span>
+          <span className="build-ico" aria-hidden="true">
+            <Icon name="bolt" size={20} />
+          </span>
           <span>
             <strong>Chaque tour : Tirs Puissants (1 PA) en premier.</strong> <M s={['T', 'D']} />
           </span>
         </li>
         <li>
-          <span className="build-ico" aria-hidden="true">🃏</span>
+          <span className="build-ico" aria-hidden="true">
+            <Icon name="cards" size={20} />
+          </span>
           <span>
             <strong>Deck : 10 cartes dont les 3 exclusives</strong>, + des cartes de dégâts du même élément. <M s="T" />
           </span>
         </li>
         <li>
-          <span className="build-ico" aria-hidden="true">⚔️</span>
+          <span className="build-ico" aria-hidden="true">
+            <SectionIcon section="arene" size={20} />
+          </span>
           <span>
             <strong>Arène : joue tous tes tickets chaque jour</strong> (+1 stat par victoire). <M s="T" />
           </span>
@@ -54,7 +67,8 @@ export default function CraPage() {
       </Essentiel>
 
       <Fiche
-        title="🏹 Fiche Crâ"
+        title="Fiche Crâ"
+        icon={<ClassIcon name="Crâ" size={20} />}
         rows={[
           ['Rôle', 'Archer'],
           ['Complexité', '1'],
@@ -66,25 +80,29 @@ export default function CraPage() {
       />
 
       <Section id="cartes" title="Le passif et les 3 cartes">
-        <div className="callout callout-info">
-          <p className="callout-title">👁️ Passif : Œil de lynx</p>
+        <Info title="Passif : Œil de lynx" icon={<Icon name="eye" size={18} />}>
           <p>
             « +26 % de chances de vision spectrale : chaque sort de dégâts peut infliger le double de dégâts (chance totale
             avec la PO plafonnée à 60 %). » <M s="T" />
           </p>
-        </div>
+        </Info>
         <ul className="spells">
           {CRA_CARDS.map((c) => (
-            <li key={c.id} className="spell">
-              <span className="spell-pa" aria-hidden="true">
-                {c.pa}
+            <li key={c.id} className={`spell spell-${EL_KIND[c.element]}`}>
+              <span className="spell-el-ico" aria-hidden="true">
+                <ElementIcon element={EL_ICON[c.element]} size={110} strokeWidth={1.2} />
               </span>
-              <h3>{c.name}</h3>
+              <div className="spell-head">
+                <span className="spell-pa" aria-hidden="true">
+                  <span>{c.pa}</span>
+                </span>
+                <h3>{c.name}</h3>
+              </div>
               <p>
                 <strong>{c.pa} PA</strong> · {c.effect}
               </p>
-              <p>
-                <span className={`el ${EL_CLASS[c.element]}`}>{c.element === '—' ? 'Buff' : c.element}</span>
+              <p className="spell-el">
+                <El kind={EL_KIND[c.element]}>{c.element === '—' ? 'Buff' : c.element}</El>
               </p>
             </li>
           ))}
@@ -186,10 +204,10 @@ export default function CraPage() {
       <Section id="elements" title="Éléments : Terre et Feu">
         <ul className="chips" aria-label="Éléments du Crâ">
           <li>
-            <span className="el el-terre">Terre = Force</span>
+            <El kind="terre">Terre = Force</El>
           </li>
           <li>
-            <span className="el el-feu">Feu = Intelligence</span>
+            <El kind="feu">Feu = Intelligence</El>
           </li>
         </ul>
         <p>

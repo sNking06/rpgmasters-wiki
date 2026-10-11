@@ -39,8 +39,19 @@
 - Autres pages système (Caractéristiques, Arène, Saison, Énergie & XP, Prestige, Économie) : gabarit commun + fiche + visuel principal.
 
 ### Navigation
-- Header : Classes · Stats · Arène · Saison · Énergie/XP · Prestige · **Plus ▾** (Économie, Guide Crâ, FAQ, Sources) ; recherche conservée ; menu mobile plein écran sous le header, entrées de 44 px.
+- Header : Classes · Stats · Arène · Saison · Énergie/XP · Prestige · **Plus ▾** (Économie, Guide Crâ, FAQ, Sources) ; bouton de recherche (palette) et bascule de thème ; menu mobile plein écran sous le header, entrées de 44 px.
 - Fil d'Ariane + précédent/suivant en pied de page.
+
+### Passe visuelle « premium » (après la refonte de lisibilité)
+- Contenu, routes et gabarit inchangés ; seule la présentation évolue.
+- Direction artistique « grimoire tactique » : encre bleu-nuit, or/cuivre, accent turquoise, ornements losanges,
+  trame géométrique discrète ; thème clair « parchemin » ; bascule mémorisée, sans flash.
+- Emoji remplacés par des pictogrammes SVG maison (classes, éléments, sections) : l’élément d’un sort est
+  toujours donné par icône **et** texte, jamais par la couleur seule.
+- Accueil : héros animé (halo, cercles runiques, étoiles), 6 cartes avec micro-animations, 5 astuces.
+- Navigation : palette de recherche (Ctrl/⌘ K, « / »), sommaire latéral collant sur desktop.
+- Tableaux à en-tête collant et défilement interne ; graphiques re-colorés par variables CSS (suivent le thème).
+- Mouvement léger, entièrement coupé par `prefers-reduced-motion`.
 
 ### Contraintes techniques
 - Routes inchangées, export statique, aucune nouvelle dépendance.

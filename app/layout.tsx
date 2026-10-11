@@ -2,45 +2,97 @@ import type { Metadata, Viewport } from 'next';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import Header from '@/components/Header';
-import { DATA_DATE_LABEL, GAME_URL, SITE_NAME } from '@/lib/site';
+import Toc from '@/components/Toc';
+import { Icon, Logo } from '@/components/icons';
+import { DATA_DATE_LABEL, GAME_URL, SITE_DESCRIPTION, SITE_NAME } from '@/lib/site';
 import './globals.css';
 
 export const metadata: Metadata = {
   title: { default: SITE_NAME, template: `%s · ${SITE_NAME}` },
-  description:
-    'Wiki de fans NON OFFICIEL pour RpgMasters : classes, Crâ, caractéristiques, arène, saison, énergie, XP, Prestige. Uniquement des faits relevés sur les pages publiques.',
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    siteName: SITE_NAME,
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+  },
+  twitter: { card: 'summary', title: SITE_NAME, description: SITE_DESCRIPTION },
+  formatDetection: { telephone: false },
 };
 
 export const viewport: Viewport = {
-  themeColor: '#121419',
+  themeColor: [
+    { media: '(prefers-color-scheme: dark)', color: '#0a0e1a' },
+    { media: '(prefers-color-scheme: light)', color: '#f6f1e7' },
+  ],
+  colorScheme: 'dark light',
   width: 'device-width',
   initialScale: 1,
 };
 
+/** Posé avant le premier rendu : thème mémorisé, sinon celui du système (aucun flash). */
+const THEME_SCRIPT = `(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}document.documentElement.dataset.theme=t}catch(e){}})();`;
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="fr">
+    <html lang="fr" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
+      </head>
       <body>
         <a href="#contenu" className="skip-link">
           Aller au contenu
         </a>
         <Header />
-        <main id="contenu" className="container">
-          {children}
-        </main>
-        <footer className="site-footer">
-          <div className="container">
-            <p>
-              <strong>Wiki de fans non officiel</strong>, non affilié à Ankama Games ni à l’équipe du jeu. Peut contenir des
-              erreurs. {DATA_DATE_LABEL}.
-            </p>
-            <p>
-              <a href={GAME_URL} rel="noopener noreferrer">
-                Jouer à RpgMasters
-              </a>{' '}
-              · <Link href="/sources/">Sources et limites</Link>
-            </p>
+        <div className="shell">
+          <main id="contenu" className="main" tabIndex={-1}>
+            {children}
+          </main>
+          <div className="toc-col">
+            <Toc />
           </div>
+        </div>
+        <footer className="site-footer">
+          <div className="footer-ornament" aria-hidden="true">
+            <span />
+            <Icon name="diamond" size={14} />
+            <span />
+          </div>
+          <div className="footer-inner">
+            <div className="footer-brand">
+              <Logo size={40} id="logo-footer" />
+              <div>
+                <p className="footer-title">Wiki RpgMasters</p>
+                <p className="footer-note">
+                  <strong>Wiki de fans non officiel</strong>, non affilié à Ankama Games ni à l’équipe du jeu. Peut contenir des
+                  erreurs : vérifiez en jeu.
+                </p>
+              </div>
+            </div>
+            <div className="footer-meta">
+              <p className="date-chip">
+                <Icon name="calendar" size={16} /> {DATA_DATE_LABEL}
+              </p>
+              <ul className="footer-links">
+                <li>
+                  <Link href="/sources/">Sources et limites</Link>
+                </li>
+                <li>
+                  <Link href="/faq/">FAQ</Link>
+                </li>
+                <li>
+                  <a href={GAME_URL} rel="noopener noreferrer">
+                    Jouer à RpgMasters <Icon name="external" size={14} />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p className="footer-legal">
+            Aucune image ni ressource du jeu n’est reproduite : pictogrammes et illustrations sont dessinés pour ce wiki.
+          </p>
         </footer>
       </body>
     </html>

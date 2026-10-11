@@ -5,15 +5,31 @@ Petit wiki statique en français pour [RpgMasters](https://rpgmasters.houk.fr), 
 > **Avertissement** : projet de fans **non officiel**, non affilié à l’équipe du jeu ni à Ankama Games.
 > Contenu tiré uniquement de pages publiques et du code client public (lecture seule, sans connexion),
 > relevé le 11 oct 2026 ; il peut contenir des erreurs. Aucune image ni ressource du jeu n’est reproduite
-> (emoji et SVG/CSS maison uniquement).
+> (pictogrammes SVG et CSS maison uniquement).
 
 ## Stack
 
 - Next.js (App Router) en export statique (`output: 'export'`, `trailingSlash: true`), TypeScript
-- CSS simple (thème sombre, mobile d’abord, texte ≥ 16 px, cibles ≥ 44 px), aucune autre dépendance
+- Aucune dépendance ajoutée : CSS maison (`app/globals.css`), polices système (serif d’affichage
+  « Iowan Old Style / Palatino / Georgia », aucune requête de police externe), SVG inline
 - Contenu en composants React et fichiers TS (`lib/`), sources brutes dans `sources/`
 - Recherche côté client : `scripts/build-search-index.mjs` génère `out/search-index.json` après le build
   (une entrée par page et par `<section id>` ; les `<nav>` — fil d’Ariane, « Voir aussi » — sont ignorés)
+
+## Design (« grimoire tactique »)
+
+- Thème sombre encre bleu-nuit + or/cuivre, accent turquoise ; thème clair « parchemin ». Jetons de couleur
+  en variables CSS en tête de `globals.css` (contraste AA visé dans les deux thèmes).
+- Bascule clair/sombre dans le header (`components/ThemeToggle.tsx`) : respecte `prefers-color-scheme`,
+  choix mémorisé dans `localStorage`, appliqué avant le rendu par un script inline dans `<head>` (pas de flash).
+- Pictogrammes SVG dessinés pour le wiki (`components/icons.tsx`) : 19 classes, 4 éléments, sections, interface.
+  Aucun asset du jeu. Favicon : `app/icon.svg`.
+- Recherche en palette de commandes (`components/Search.tsx`) : Ctrl/⌘ + K ou « / », navigation ↑ ↓ Entrée Échap,
+  index chargé à la première ouverture.
+- Sommaire « Sur cette page » (`components/Toc.tsx`) généré depuis les h2, collant, ≥ 1100 px.
+- Héros d’accueil animé en SVG/CSS (`components/HeroArt.tsx`) ; apparition au défilement en CSS
+  (`animation-timeline`, ignorée si non prise en charge). Toutes les animations sont coupées par
+  `prefers-reduced-motion`.
 
 ## Gabarit des pages
 

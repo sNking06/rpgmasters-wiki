@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import ClassGrid from '@/components/ClassGrid';
+import { ClassIcon, Icon } from '@/components/icons';
 import { Essentiel, M, More, PageEnd, PageHeader, Section, TableWrap, Tip } from '@/components/ui';
 import { CLASSES, IOP_CARDS } from '@/lib/classes';
 
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 export default function ClassesPage() {
   return (
     <>
-      <PageHeader title="Classes" intro="19 classes jouables, chacune avec un passif et 3 cartes exclusives." />
+      <PageHeader section="classes" title="Classes" intro="19 classes jouables, chacune avec un passif et 3 cartes exclusives." />
 
       <Essentiel>
         <li>
@@ -29,8 +30,14 @@ export default function ClassesPage() {
       </Essentiel>
 
       <Link href="/classes/cra/" className="feature">
-        <span className="hub-title">🏹 Crâ — fiche détaillée</span>
-        <span className="hub-desc">Build conseillé, cartes exclusives, vision spectrale et PO.</span>
+        <span className="medal" aria-hidden="true">
+          <ClassIcon name="Crâ" size={28} />
+        </span>
+        <span>
+          <span className="feature-title">Crâ — fiche détaillée</span>
+          <span className="feature-desc">Build conseillé, cartes exclusives, vision spectrale et PO.</span>
+        </span>
+        <Icon name="arrowRight" size={22} className="feature-arrow" />
       </Link>
 
       <Section id="liste" title="Les 19 classes et leur passif">

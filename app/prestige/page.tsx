@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { Icon, SectionIcon } from '@/components/icons';
 import { Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn } from '@/components/ui';
 
 export const metadata: Metadata = {
@@ -42,7 +43,7 @@ const MILESTONES: { head: string; tag?: string; key?: boolean; text: string }[] 
 export default function PrestigePage() {
   return (
     <>
-      <PageHeader title="Prestige" intro="Au niveau 200, repartir au niveau 1 avec un équipement plus fort." />
+      <PageHeader section="prestige" title="Prestige" intro="Au niveau 200, repartir au niveau 1 avec un équipement plus fort." />
 
       <Essentiel>
         <li>
@@ -63,7 +64,8 @@ export default function PrestigePage() {
       </Essentiel>
 
       <Fiche
-        title="⭐ Fiche Prestige"
+        title="Fiche Prestige"
+        icon={<SectionIcon section="prestige" size={20} />}
         rows={[
           ['Condition', 'niveau 200 (puis Ascension)'],
           ['Équipement', '+25 % par Prestige'],
@@ -145,7 +147,12 @@ export default function PrestigePage() {
       <Section id="pertes" title="Ce qu’on perd, ce qu’on garde">
         <div className="cards">
           <div className="card">
-            <h3>❌ Toujours perdu</h3>
+            <h3>
+              <span className="state-ico state-lost" aria-hidden="true">
+                <Icon name="close" size={18} strokeWidth={2.2} />
+              </span>
+              Toujours perdu
+            </h3>
             <ul>
               <li>Niveau</li>
               <li>Points de caractéristiques répartis</li>
@@ -153,7 +160,12 @@ export default function PrestigePage() {
             </ul>
           </div>
           <div className="card">
-            <h3>✅ Toujours gardé</h3>
+            <h3>
+              <span className="state-ico state-kept" aria-hidden="true">
+                <Icon name="check" size={18} strokeWidth={2.2} />
+              </span>
+              Toujours gardé
+            </h3>
             <ul>
               <li>Cartes et decks, album / collection</li>
               <li>Coffres non ouverts, énergie, Elo</li>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import { ClassIcon, ElementIcon, Icon } from '@/components/icons';
 import { Essentiel, M, PageEnd, PageHeader, Section, Warn, type Status } from '@/components/ui';
 
 export const metadata: Metadata = {
@@ -8,12 +9,12 @@ export const metadata: Metadata = {
   description: 'Guide Crâ pour RpgMasters : 10 conseils courts fondés sur des éléments vérifiés, et ce qu’il reste à vérifier en jeu.',
 };
 
-type Reco = { id: string; icon: string; title: string; short: ReactNode; s: Status[]; body: ReactNode };
+type Reco = { id: string; icon: ReactNode; title: string; short: ReactNode; s: Status[]; body: ReactNode };
 
 const RECOS: Reco[] = [
   {
     id: 'element',
-    icon: '💪',
+    icon: <ElementIcon element="terre" size={20} />,
     title: 'Force (Terre) ou Intelligence (Feu)',
     short: 'Force est le choix le plus cohérent : le gros sort mono-cible est Terre.',
     s: ['T', 'D'],
@@ -28,7 +29,7 @@ const RECOS: Reco[] = [
   },
   {
     id: 'po',
-    icon: '🎯',
+    icon: <Icon name="target" size={20} />,
     title: 'Maximiser la PO',
     short: 'Chaque PO augmente la chance de double dégâts, jusqu’à ≈ 85 PO.',
     s: ['T', 'C', 'D'],
@@ -42,7 +43,7 @@ const RECOS: Reco[] = [
   },
   {
     id: 'plafond',
-    icon: '📏',
+    icon: <Icon name="ruler" size={20} />,
     title: 'Respecter le plafond de 60 %',
     short: 'Au-delà de 60 % de vision spectrale, la PO en plus ne sert plus à ça.',
     s: ['T', 'D'],
@@ -50,7 +51,7 @@ const RECOS: Reco[] = [
   },
   {
     id: 'tirs-puissants',
-    icon: '⚡',
+    icon: <Icon name="bolt" size={20} />,
     title: 'Tirs Puissants en premier',
     short: '1 PA pour +100 Puissance et +10 % de critique jusqu’au prochain tour.',
     s: ['T', 'D'],
@@ -58,7 +59,7 @@ const RECOS: Reco[] = [
   },
   {
     id: 'deck',
-    icon: '🃏',
+    icon: <Icon name="cards" size={20} />,
     title: 'Deck',
     short: '10 cartes dont les 3 exclusives, complétées par des dégâts du même élément.',
     s: ['T'],
@@ -71,7 +72,7 @@ const RECOS: Reco[] = [
   },
   {
     id: 'objets',
-    icon: '🛡️',
+    icon: <Icon name="shield" size={20} />,
     title: 'Objets',
     short: 'Fusionner par 3 et viser le Rayonnant (+20 % → +45 %) sur les pièces fortes.',
     s: ['T', 'D'],
@@ -84,7 +85,7 @@ const RECOS: Reco[] = [
   },
   {
     id: 'multiplicateurs',
-    icon: '🎁',
+    icon: <Icon name="gift" size={20} />,
     title: 'Bonus permanents gratuits',
     short: 'Lier Discord, monter le Bouclier de forge et le Compagnon.',
     s: ['T'],
@@ -97,7 +98,7 @@ const RECOS: Reco[] = [
   },
   {
     id: 'arene',
-    icon: '⚔️',
+    icon: <Icon name="swords" size={20} />,
     title: 'Arène tous les jours',
     short: '10 tickets gratuits : chaque victoire donne +1 stat (jusqu’à 300 par stat).',
     s: ['T', 'D'],
@@ -110,7 +111,7 @@ const RECOS: Reco[] = [
   },
   {
     id: 'progression',
-    icon: '⭐',
+    icon: <Icon name="star" size={20} />,
     title: 'Progression',
     short: 'Pas de Prestige avant le niveau 200 ; le Prestige 4 supprime les pertes.',
     s: ['T'],
@@ -118,7 +119,7 @@ const RECOS: Reco[] = [
   },
   {
     id: 'saison',
-    icon: '🏆',
+    icon: <Icon name="trophy" size={20} />,
     title: 'Saison',
     short: 'Aucun Crâ dans le top 30 affiché : n’en rien conclure sur la classe.',
     s: ['T', 'D'],
@@ -135,6 +136,7 @@ export default function GuideCraPage() {
   return (
     <>
       <PageHeader
+        section="guide"
         title="Guide Crâ"
         crumbs={[{ href: '/classes/cra/', label: 'Crâ' }]}
         intro="10 conseils courts, fondés uniquement sur des éléments vérifiés."
@@ -161,7 +163,7 @@ export default function GuideCraPage() {
       </Warn>
 
       <p>
-        Fiche de la classe : <Link href="/classes/cra/">Crâ</Link>.
+        <ClassIcon name="Crâ" size={18} className="inline-ico" /> Fiche de la classe : <Link href="/classes/cra/">Crâ</Link>.
       </p>
 
       <Section id="recommandations" title="Les 10 conseils">
@@ -169,13 +171,21 @@ export default function GuideCraPage() {
           {RECOS.map((r, i) => (
             <li key={r.id} className="card" id={`reco-${i + 1}`}>
               <h3>
-                <span aria-hidden="true">{r.icon}</span> {i + 1}. {r.title}
+                <span className="medal" aria-hidden="true">
+                  {r.icon}
+                </span>
+                <span>
+                  <span className="card-num">{i + 1}.</span> {r.title}
+                </span>
               </h3>
               <p>
                 {r.short} <M s={r.s} />
               </p>
               <details className="more">
-                <summary>Détail</summary>
+                <summary>
+                  <span>Détail</span>
+                  <Icon name="chevron" size={18} className="sum-chev" />
+                </summary>
                 <div className="more-body">
                   <p>{r.body}</p>
                 </div>

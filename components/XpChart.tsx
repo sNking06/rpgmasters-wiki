@@ -28,6 +28,9 @@ const X_TICKS = [0, 50, 100, 150, 200];
 export default function XpChart({ points }: { points: Pt[] }) {
   const pts = [...points].filter((p) => p.xp > 0).sort((a, b) => a.level - b.level);
   const path = pts.map((p, i) => `${i ? 'L' : 'M'}${x(p.level).toFixed(1)},${y(p.xp).toFixed(1)}`).join(' ');
+  const area = pts.length
+    ? `${path} L${x(pts[pts.length - 1].level).toFixed(1)},${M.t + PH} L${x(pts[0].level).toFixed(1)},${M.t + PH} Z`
+    : '';
   const labelled: Record<number, 'start' | 'end'> = { 30: 'start', 100: 'end', 200: 'end' };
 
   return (
@@ -38,33 +41,38 @@ export default function XpChart({ points }: { points: Pt[] }) {
           Points connus reliés par des segments : niveaux 2 à 6 calculés, puis niveaux 10, 20, 30, 31, 50, 100 et 200 cités dans
           les sources. Les segments sont une interpolation visuelle.
         </desc>
+        <defs>
+          <linearGradient id="xp-area" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" className="chart-stop-1" stopOpacity="0.28" />
+            <stop offset="1" className="chart-stop-1" stopOpacity="0" />
+          </linearGradient>
+        </defs>
         {Y_TICKS.map(([v, lab]) => (
           <g key={v}>
-            <line x1={M.l} x2={W - M.r} y1={y(v)} y2={y(v)} stroke="#2a303b" strokeWidth={1} />
-            <text x={M.l - 6} y={y(v) + 5} textAnchor="end" fontSize={FS} fill="#b4bac6">
+            <line className="chart-grid" x1={M.l} x2={W - M.r} y1={y(v)} y2={y(v)} />
+            <text className="chart-text" x={M.l - 6} y={y(v) + 5} textAnchor="end" fontSize={FS}>
               {lab}
             </text>
           </g>
         ))}
         {X_TICKS.map((l) => (
-          <text key={l} x={x(l)} y={H - M.b + 20} textAnchor="middle" fontSize={FS} fill="#b4bac6">
+          <text key={l} className="chart-text" x={x(l)} y={H - M.b + 20} textAnchor="middle" fontSize={FS}>
             {l}
           </text>
         ))}
-        <line x1={M.l} x2={W - M.r} y1={M.t + PH} y2={M.t + PH} stroke="#4a5263" strokeWidth={1} />
-        <text x={M.l + PW / 2} y={H - 4} textAnchor="middle" fontSize={FS} fill="#b4bac6">
+        <line className="chart-axis" x1={M.l} x2={W - M.r} y1={M.t + PH} y2={M.t + PH} />
+        <text className="chart-text" x={M.l + PW / 2} y={H - 4} textAnchor="middle" fontSize={FS}>
           Niveau
         </text>
-        <path d={path} fill="none" stroke="#6aa8ff" strokeWidth={2.5} strokeDasharray="6 4" strokeLinejoin="round" />
+        <path d={area} fill="url(#xp-area)" stroke="none" />
+        <path className="chart-line chart-line-1 chart-dash" d={path} />
         {pts.map((p) => (
           <g key={p.level}>
             <circle
+              className={`chart-pt chart-pt-1 ${p.kind === 'source' ? 'chart-pt-fill' : 'chart-pt-hollow'}`}
               cx={x(p.level)}
               cy={y(p.xp)}
               r={4.5}
-              fill={p.kind === 'source' ? '#6aa8ff' : '#1a1d24'}
-              stroke="#6aa8ff"
-              strokeWidth={2}
             >
               <title>
                 {`Niveau ${p.level} : ${fmt(p.xp)} XP cumulée (${p.kind === 'source' ? 'cité dans les sources' : 'calculé à partir des 5 valeurs connues'})`}
@@ -72,11 +80,11 @@ export default function XpChart({ points }: { points: Pt[] }) {
             </circle>
             {labelled[p.level] ? (
               <text
+                className="chart-label"
                 x={x(p.level) + (labelled[p.level] === 'start' ? 8 : -8)}
                 y={y(p.xp) + (labelled[p.level] === 'start' ? 18 : -9)}
                 textAnchor={labelled[p.level]}
                 fontSize={FS}
-                fill="#eceef3"
               >
                 {fmt(p.xp)}
               </text>

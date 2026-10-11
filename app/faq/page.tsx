@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function FaqPage() {
   return (
     <>
-      <PageHeader title="FAQ" intro="Les questions fréquentes du jeu, résumées en quelques lignes." />
+      <PageHeader section="faq" title="FAQ" intro="Les questions fréquentes du jeu, résumées en quelques lignes." />
 
       <Essentiel>
         <li>

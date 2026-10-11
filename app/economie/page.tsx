@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { Icon, SectionIcon } from '@/components/icons';
 import { Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, fmt } from '@/components/ui';
 
 export const metadata: Metadata = {
@@ -31,7 +32,7 @@ const FUSION: [string, number][] = [
 export default function EconomiePage() {
   return (
     <>
-      <PageHeader title="Économie" intro="Coffres, fusion, bris d’objets, compagnon et kamas : où trouver du stuff et des bonus." />
+      <PageHeader section="economie" title="Économie" intro="Coffres, fusion, bris d’objets, compagnon et kamas : où trouver du stuff et des bonus." />
 
       <Essentiel>
         <li>
@@ -50,7 +51,8 @@ export default function EconomiePage() {
       </Essentiel>
 
       <Fiche
-        title="💰 Fiche économie"
+        title="Fiche économie"
+        icon={<SectionIcon section="economie" size={20} />}
         rows={[
           ['Coffre gratuit', '1 toutes les 20 min'],
           ['Réserve max', '6'],
@@ -66,7 +68,9 @@ export default function EconomiePage() {
       <Section id="coffres-gratuits" title="Coffres gratuits">
         <ul className="kpis">
           <li>
-            <span className="kpi-val">🎁 ×3 / h</span>
+            <span className="kpi-val">
+              <Icon name="gift" size={24} /> ×3 / h
+            </span>
             <span className="kpi-lab">1 toutes les 20 min</span>
           </li>
           <li>

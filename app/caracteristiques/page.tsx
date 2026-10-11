@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip } from '@/components/ui';
+import { SectionIcon } from '@/components/icons';
+import { El, Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Caractéristiques',
@@ -24,7 +25,7 @@ const COMBAT_STATS: [string, string, string][] = [
 export default function CaracteristiquesPage() {
   return (
     <>
-      <PageHeader title="Caractéristiques" intro="Où mettre vos points, les parchemins, le deck et ce qui compte sur les objets." />
+      <PageHeader section="stats" title="Caractéristiques" intro="Où mettre vos points, les parchemins, le deck et ce qui compte sur les objets." />
 
       <Essentiel>
         <li>
@@ -44,7 +45,8 @@ export default function CaracteristiquesPage() {
       </Essentiel>
 
       <Fiche
-        title="📊 Fiche caractéristiques"
+        title="Fiche caractéristiques"
+        icon={<SectionIcon section="stats" size={20} />}
         rows={[
           ['Points par niveau', '5'],
           ['Niveau max', '200'],
@@ -64,16 +66,16 @@ export default function CaracteristiquesPage() {
         <p>Les 4 stats de dégâts correspondent chacune à un élément :</p>
         <ul className="chips" aria-label="Correspondance caractéristique → élément">
           <li>
-            <span className="el el-terre">Force = Terre</span>
+            <El kind="terre">Force = Terre</El>
           </li>
           <li>
-            <span className="el el-feu">Intelligence = Feu</span>
+            <El kind="feu">Intelligence = Feu</El>
           </li>
           <li>
-            <span className="el el-eau">Chance = Eau</span>
+            <El kind="eau">Chance = Eau</El>
           </li>
           <li>
-            <span className="el el-air">Agilité = Air</span>
+            <El kind="air">Agilité = Air</El>
           </li>
         </ul>
         <p>

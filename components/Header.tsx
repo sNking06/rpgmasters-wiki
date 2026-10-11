@@ -4,7 +4,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { MAIN_NAV, MORE_NAV } from '@/lib/site';
+import { Icon, Logo, SectionIcon } from './icons';
 import Search from './Search';
+import ThemeToggle from './ThemeToggle';
 
 const isActive = (pathname: string, href: string) => pathname + '/' === href || pathname.startsWith(href);
 
@@ -40,32 +42,38 @@ export default function Header() {
   const moreActive = MORE_NAV.some((n) => isActive(pathname, n.href));
 
   return (
-    <header className="site-header">
-      <div className="header-inner">
+    <header className={`site-header${open ? ' menu-open' : ''}`}>
+      <div className="header-bar">
         <Link href="/" className="brand">
-          <span aria-hidden="true">📖</span> RpgMasters <span className="brand-sub">wiki non officiel</span>
+          <Logo size={34} className="brand-logo" />
+          <span className="brand-text">
+            <span className="brand-name">RpgMasters</span>
+            <span className="brand-sub">wiki non officiel</span>
+          </span>
         </Link>
-        <Search onNavigate={() => setOpen(false)} />
-        <button
-          type="button"
-          className="menu-toggle"
-          aria-expanded={open}
-          aria-controls="main-nav"
-          onClick={() => setOpen((o) => !o)}
-        >
-          <span aria-hidden="true">{open ? '✕' : '☰'}</span>
-          <span className="sr-only">Menu</span>
-        </button>
+        <div className="header-tools">
+          <Search onOpen={() => setOpen(false)} />
+          <ThemeToggle />
+          <button
+            type="button"
+            className="icon-btn menu-toggle"
+            aria-expanded={open}
+            aria-controls="main-nav"
+            onClick={() => setOpen((o) => !o)}
+          >
+            <Icon name={open ? 'close' : 'menu'} size={22} />
+            <span className="sr-only">Menu</span>
+          </button>
+        </div>
       </div>
       <nav id="main-nav" className={`main-nav${open ? ' is-open' : ''}`} aria-label="Navigation principale">
         <ul className="nav-list">
           {MAIN_NAV.map((n) => (
             <li key={n.href}>
               <Link href={n.href} aria-current={isActive(pathname, n.href) ? 'page' : undefined}>
-                <span className="nav-icon" aria-hidden="true">
-                  {n.icon}
-                </span>
-                {n.short ?? n.label}
+                <SectionIcon section={n.icon} size={19} className="nav-icon" />
+                <span className="nav-label-long">{n.label}</span>
+                <span className="nav-label-short">{n.short ?? n.label}</span>
               </Link>
             </li>
           ))}
@@ -77,16 +85,17 @@ export default function Header() {
               aria-controls="more-menu"
               onClick={() => setMore((m) => !m)}
             >
-              Plus <span aria-hidden="true">▾</span>
+              Plus <Icon name="chevron" size={16} className="more-chev" />
             </button>
             <ul id="more-menu" className="more-menu">
               {MORE_NAV.map((n) => (
                 <li key={n.href}>
                   <Link href={n.href} aria-current={isActive(pathname, n.href) ? 'page' : undefined}>
-                    <span className="nav-icon" aria-hidden="true">
-                      {n.icon}
+                    <SectionIcon section={n.icon} size={19} className="nav-icon" />
+                    <span>
+                      <span className="more-label">{n.label}</span>
+                      <span className="more-desc">{n.desc}</span>
                     </span>
-                    {n.label}
                   </Link>
                 </li>
               ))}

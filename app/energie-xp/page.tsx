@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import EnergyPriceChart from '@/components/EnergyPriceChart';
 import XpChart from '@/components/XpChart';
+import { Icon, SectionIcon } from '@/components/icons';
 import { Bars, Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn, fmt } from '@/components/ui';
 import { ENERGY, MONSTER_XP_REF_KNOWN, XP_SOURCE_POINTS, cumulativeXp, energyPointPrice, energyTotalCost } from '@/lib/xp';
 
@@ -17,7 +18,7 @@ const TOTAL_POINTS = [600, 1000];
 export default function EnergieXpPage() {
   return (
     <>
-      <PageHeader title="Énergie & XP" intro="Ce que coûte un combat, comment recharger, et combien d’XP demandent les niveaux." />
+      <PageHeader section="energie" title="Énergie & XP" intro="Ce que coûte un combat, comment recharger, et combien d’XP demandent les niveaux." />
 
       <Essentiel>
         <li>
@@ -62,7 +63,8 @@ export default function EnergieXpPage() {
           }
         />
         <Fiche
-          title="⚡ Coût en énergie"
+          title="Coût en énergie"
+          icon={<SectionIcon section="energie" size={20} />}
           rows={[
             ['Chasse / Aventure', '1'],
             ['Boss / étage d’Ascension', '2'],
@@ -210,7 +212,8 @@ export default function EnergieXpPage() {
 
       <Section id="courbe" title="Combien d’XP par niveau ?">
         <Fiche
-          title="📈 XP cumulée pour atteindre…"
+          title="XP cumulée pour atteindre…"
+          icon={<Icon name="chart" size={20} />}
           rows={[
             ['Niveau 10', `${fmt(18_674)} XP`],
             ['Niveau 30', `${fmt(661_088)} XP`],

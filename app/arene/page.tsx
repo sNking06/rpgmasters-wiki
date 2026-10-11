@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { Icon, SectionIcon } from '@/components/icons';
 import { Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn } from '@/components/ui';
 
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ const MODES = ['Niveau', 'Aventure', 'Ascension', 'Abysses', 'Arène', 'Collecti
 export default function ArenePage() {
   return (
     <>
-      <PageHeader title="Arène" intro="Défiez d’autres joueurs pour de l’Elo, des coffres et des stats définitives." />
+      <PageHeader section="arene" title="Arène" intro="Défiez d’autres joueurs pour de l’Elo, des coffres et des stats définitives." />
 
       <Essentiel>
         <li>
@@ -42,7 +43,8 @@ export default function ArenePage() {
       </Essentiel>
 
       <Fiche
-        title="⚔️ Fiche arène"
+        title="Fiche arène"
+        icon={<SectionIcon section="arene" size={20} />}
         rows={[
           ['Tickets gratuits', '10 par jour'],
           ['Coût d’un défi', '1 ticket'],
@@ -145,7 +147,9 @@ export default function ArenePage() {
       <Section id="recompenses" title="Récompenses de la semaine">
         <ul className="kpis">
           <li>
-            <span className="kpi-val">🥇 Podium</span>
+            <span className="kpi-val">
+              <Icon name="trophy" size={24} /> Podium
+            </span>
             <span className="kpi-lab">Coffre Rayonnant +5 au choix + couronne</span>
           </li>
           <li>

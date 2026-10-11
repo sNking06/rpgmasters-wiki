@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { SectionIcon } from '@/components/icons';
 import { Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, Tip, Warn } from '@/components/ui';
 import { DATA_DATE_LABEL, SEASON_END } from '@/lib/site';
 
@@ -19,6 +20,7 @@ export default function SaisonPage() {
   return (
     <>
       <PageHeader
+        section="saison"
         title="Saison Héroïque"
         intro="Un perso éphémère, XP ×4, sans énergie — mais les boss tuent pour de bon."
         dateBadge={`fin ${SEASON_END}`}
@@ -74,7 +76,8 @@ export default function SaisonPage() {
       </Section>
 
       <Fiche
-        title="🏆 Fiche saison"
+        title="Fiche saison"
+        icon={<SectionIcon section="saison" size={20} />}
         rows={[
           ['Dates', '9 → 12 oct 2026'],
           ['XP', '×4'],
