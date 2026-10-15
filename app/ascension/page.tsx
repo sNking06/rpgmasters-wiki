@@ -38,7 +38,7 @@ export default function AscensionPage() {
           <li>Passif « 1 ligne » : <strong>+20 % par tour</strong> jusqu’à +150 %, remis à zéro par les sorts multi-lignes comme Bluff. <M s="T" /></li>
         </ul>
         <Tip title="Ce qui a marché">
-          <p>Étage 30 franchi le 15 oct 2026 en 16 tours : 3 cartes maximum par tour, Vertu au tour 1, éléments alternés, Bluff retiré du deck.</p>
+          <p>Étage 30 franchi le 14 oct 2026 vers minuit en 16 tours : 3 cartes maximum par tour, Vertu au tour 1, éléments alternés, Bluff retiré du deck.</p>
         </Tip>
         <Warn>
           <p>Observations d’un seul joueur sur quelques combats : les valeurs exactes peuvent varier selon les stats.</p>

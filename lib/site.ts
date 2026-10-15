@@ -5,7 +5,7 @@ export const SITE_DESCRIPTION =
   'Wiki de fans NON OFFICIEL pour RpgMasters : classes, Crâ, caractéristiques, arène, saison, énergie, XP, Prestige. Uniquement des faits relevés sur les pages publiques.';
 export const GAME_URL = 'https://rpgmasters.houk.fr';
 export const DATA_DATE = '11 oct 2026';
-export const DATA_DATE_LABEL = 'Données du 11 oct 2026';
+export const DATA_DATE_LABEL = 'Données du 11 au 15 oct 2026';
 export const SEASON_NAME = 'Saison Héroïque';
 export const SEASON_END = 'lundi 12 oct 08:00 (Paris)';
 export const SEASON_DATES = 'du vendredi 9 octobre 2026 à 18:00 au lundi 12 octobre 2026 à 08:00 (heure de Paris)';
