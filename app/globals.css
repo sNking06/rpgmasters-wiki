@@ -3390,3 +3390,6 @@ figcaption {
   .shell .toc-col { display: none; }
   .wiki-tree { position: sticky; top: 1rem; }
 }
+/* L'arbre s'affiche sans animation de hauteur (évite un rendu tronqué). */
+details.wiki-tree[open]::details-content { height: auto; transition: none; overflow: visible; }
+.wiki-tree nav { position: relative; }
