@@ -1,11 +1,21 @@
 import type { Metadata, Viewport } from 'next';
 import Link from 'next/link';
+import localFont from 'next/font/local';
 import type { ReactNode } from 'react';
 import Header from '@/components/Header';
 import Toc from '@/components/Toc';
 import { Icon, Logo } from '@/components/icons';
 import { DATA_DATE_LABEL, GAME_URL, SITE_DESCRIPTION, SITE_NAME } from '@/lib/site';
 import './globals.css';
+
+const displayFont = localFont({ src: './fonts/Cinzel.ttf', variable: '--font-display', display: 'swap', fallback: ['Georgia', 'serif'] });
+const bodyFont = localFont({
+  src: [
+    { path: './fonts/SourceSans3.ttf', weight: '200 900', style: 'normal' },
+    { path: './fonts/SourceSans3-Italic.ttf', weight: '200 900', style: 'italic' },
+  ],
+  variable: '--font-body', display: 'swap', fallback: ['Segoe UI', 'Arial', 'sans-serif'],
+});
 
 export const metadata: Metadata = {
   title: { default: SITE_NAME, template: `%s · ${SITE_NAME}` },
@@ -24,8 +34,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: '(prefers-color-scheme: dark)', color: '#0a0e1a' },
-    { media: '(prefers-color-scheme: light)', color: '#f6f1e7' },
+    { media: '(prefers-color-scheme: dark)', color: '#21180f' },
+    { media: '(prefers-color-scheme: light)', color: '#f5eddc' },
   ],
   colorScheme: 'dark light',
   width: 'device-width',
@@ -37,7 +47,7 @@ const THEME_SCRIPT = `(function(){try{var t=localStorage.getItem('theme');if(t!=
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="fr" suppressHydrationWarning>
+    <html lang="fr" className={`${displayFont.variable} ${bodyFont.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
       </head>
