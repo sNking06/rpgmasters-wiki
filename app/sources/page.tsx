@@ -15,6 +15,8 @@ const FILES: [string, string][] = [
   ['txt_saison.txt', 'Texte brut de la page publique /saison (au moment du relevé).'],
   ['txt_classes.txt', 'Texte brut de la page publique /classes.'],
   ['txt_home.txt', 'Texte brut de la page d’accueil publique.'],
+  ['rpgmasters-items-endgame.csv', 'Table de 324 objets end-game relevée à la main sur la page Bestiaire du jeu (compte connecté), 15 oct 2026. Alimente la page Objets.'],
+  ['Observations en combat', 'Relevés en jeu du 13 au 15 oct 2026 : boss des étages 29-30 de l’Ascension, Armure Féca, Kralamoure. Alimentent les pages Ascension et Guide Féca.'],
   ['txt_mentions.txt', 'Texte brut de la page publique /mentions (mentions et règles).'],
 ];
 
@@ -35,7 +37,7 @@ export default function SourcesPage() {
           Wiki <strong>non officiel</strong>, fait par des fans : il peut contenir des erreurs.
         </li>
         <li>
-          Tiré uniquement des <strong>pages publiques</strong> du jeu et de son code client public, sans connexion.
+          Socle tiré des <strong>pages publiques</strong> du jeu (11 oct 2026) ; complété par des <strong>relevés en jeu</strong> (bestiaire, combats) du 13 au 15 oct 2026.
         </li>
         <li>
           Relevé le <strong>11 octobre 2026</strong> : rien n’est mis à jour automatiquement.

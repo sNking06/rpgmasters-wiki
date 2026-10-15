@@ -3303,3 +3303,13 @@ figcaption {
     grid-template-columns: minmax(6.5rem, 42%) 1fr;
   }
 }
+
+/* Table des objets */
+.item-filters { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1rem 0 .5rem; }
+.item-filters label { display: flex; flex-direction: column; gap: .25rem; font-size: .85rem; font-weight: 600; }
+.item-filters input, .item-filters select { font: inherit; font-weight: 400; padding: .4rem .55rem; border-radius: 8px; border: 1px solid var(--border, #8884); background: var(--surface, transparent); color: inherit; min-width: 9rem; }
+.item-count { font-size: .85rem; opacity: .8; }
+.item-table td, .item-table th { white-space: nowrap; }
+.item-table td.item-notes { white-space: normal; min-width: 22rem; font-size: .85rem; }
+.item-table td.sorted { font-weight: 700; }
+.item-table .muted { opacity: .7; }

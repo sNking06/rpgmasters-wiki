@@ -25,7 +25,10 @@ export const MAIN_NAV: NavItem[] = [
 /** Pages secondaires : menu « Plus ▾ ». */
 export const MORE_NAV: NavItem[] = [
   { href: '/economie/', label: 'Économie', icon: 'economie', desc: 'Coffres, kamas, fusion, bris, compagnon.' },
+  { href: '/objets/', label: 'Objets end-game', icon: 'economie', desc: '324 objets end-game avec filtres et tri par stat.' },
+  { href: '/ascension/', label: 'Ascension 29-30', icon: 'prestige', desc: 'Boss des étages 29 et 30 et méthode qui marche.' },
   { href: '/guide-cra/', label: 'Guide Crâ', icon: 'guide', desc: '10 conseils vérifiés pour jouer Crâ.' },
+  { href: '/guide-feca/', label: 'Guide Féca', icon: 'guide', desc: 'Armure Féca et deck Kralamoure (boss de guilde).' },
   { href: '/faq/', label: 'FAQ', icon: 'faq', desc: 'Questions fréquentes, en bref.' },
   { href: '/sources/', label: 'Sources & limites', icon: 'sources', desc: 'Méthode, légende des pastilles, lacunes.' },
 ];
@@ -48,7 +51,10 @@ export const PAGE_ORDER: { href: string; label: string }[] = [
   { href: '/energie-xp/', label: 'Énergie & XP' },
   { href: '/prestige/', label: 'Prestige' },
   { href: '/economie/', label: 'Économie' },
+  { href: '/objets/', label: 'Objets end-game' },
+  { href: '/ascension/', label: 'Ascension 29-30' },
   { href: '/guide-cra/', label: 'Guide Crâ' },
+  { href: '/guide-feca/', label: 'Guide Féca' },
   { href: '/faq/', label: 'FAQ' },
   { href: '/sources/', label: 'Sources & limites' },
 ];

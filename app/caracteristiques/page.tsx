@@ -275,7 +275,7 @@ export default function CaracteristiquesPage() {
       </Section>
 
       <Section id="lacunes" title="Ce qu’on ne sait pas">
-        <More title="Lacunes des sources (5)">
+        <More title="Lacunes des sources (4)">
           <ul>
             <li>
               Aucune formule Force / Intelligence / Chance / Agilité → dégâts, Vitalité → PV, ni effet de la Sagesse, de
@@ -288,10 +288,8 @@ export default function CaracteristiquesPage() {
               Plafond d’une caractéristique de base (hors parchemins). <M s="N" />
             </li>
             <li>
-              Valeurs des bonus de panoplies (page Personnage, connexion requise). <M s="N" />
-            </li>
-            <li>
-              Stats de la table d’objets. <M s="N" />
+              Stats des objets et bonus de panoplies : désormais relevés en jeu (15 oct 2026), voir{' '}
+              <a href="/objets/">Objets end-game</a>. <M s="T" />
             </li>
           </ul>
         </More>
