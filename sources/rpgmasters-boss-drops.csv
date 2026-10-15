@@ -1,0 +1,849 @@
+boss,etape_or_zone,level,item,rarity,drop_pct
+Kardorim,Boss n°1 · étape 5 · vaincu | Crypte de Kardorim,10,Alliance Du Champ Champ,,90 %
+Kardorim,Boss n°1 · étape 5 · vaincu | Crypte de Kardorim,10,Cape de Kardorim,,90 %
+Kardorim,Boss n°1 · étape 5 · vaincu | Crypte de Kardorim,10,Casque de Kardorim,,90 %
+Kardorim,Boss n°1 · étape 5 · vaincu | Crypte de Kardorim,10,Bracelet de Kardorim,,90 %
+Kardorim,Boss n°1 · étape 5 · vaincu | Crypte de Kardorim,10,Le Blanclier,,"82,86 %"
+Kardorim,Boss n°1 · étape 5 · vaincu | Crypte de Kardorim,10,Pelle de l'initié,,"80,19 %"
+Kardorim,Boss n°1 · étape 5 · vaincu | Crypte de Kardorim,10,Marteau de Hargnok,,"42,23 %"
+Kardorim,Boss n°1 · étape 5 · vaincu | Crypte de Kardorim,10,La Queue,,"42,23 %"
+Tournesol Affamé,Boss n°2 · étape 10 · vaincu | Grange du Tournesol Affamé,20,Amulette de l'Ours,,90 %
+Tournesol Affamé,Boss n°2 · étape 10 · vaincu | Grange du Tournesol Affamé,20,Ceinturemuda du Paysan,,"79,12 %"
+Tournesol Affamé,Boss n°2 · étape 10 · vaincu | Grange du Tournesol Affamé,20,Soubretture,,"70,57 %"
+Tournesol Affamé,Boss n°2 · étape 10 · vaincu | Grange du Tournesol Affamé,20,Dagues de Fouraille,,"49,18 %"
+Tournesol Affamé,Boss n°2 · étape 10 · vaincu | Grange du Tournesol Affamé,20,Bâton Spirituel,,"48,65 %"
+Tournesol Affamé,Boss n°2 · étape 10 · vaincu | Grange du Tournesol Affamé,20,Pioute bleu,,"21,38 %"
+Tournesol Affamé,Boss n°2 · étape 10 · vaincu | Grange du Tournesol Affamé,20,Vilain Petit Corbac,,"20,31 %"
+Tournesol Affamé,Boss n°2 · étape 10 · vaincu | Grange du Tournesol Affamé,20,Raknaille,,"8,02 %"
+Mob l'Éponge,Boss n°3 · étape 15 · vaincu | Château Ensablé,20,Le Oiram,,90 %
+Mob l'Éponge,Boss n°3 · étape 15 · vaincu | Château Ensablé,20,Coiffe de Fouduglen,,"88,21 %"
+Mob l'Éponge,Boss n°3 · étape 15 · vaincu | Château Ensablé,20,Ceinture de l'Homme Ours,,"70,03 %"
+Mob l'Éponge,Boss n°3 · étape 15 · vaincu | Château Ensablé,20,Bottes Karnaval,,"42,77 %"
+Mob l'Éponge,Boss n°3 · étape 15 · vaincu | Château Ensablé,20,Sac du Récolteur,,"36,35 %"
+Mob l'Éponge,Boss n°3 · étape 15 · vaincu | Château Ensablé,20,Microsmoglob,,"24,06 %"
+Mob l'Éponge,Boss n°3 · étape 15 · vaincu | Château Ensablé,20,Kokulte,,"20,31 %"
+Mob l'Éponge,Boss n°3 · étape 15 · vaincu | Château Ensablé,20,Kafarce,,"7,48 %"
+Bouftou Royal,Boss n°4 · étape 20 · vaincu | Cour du Bouftou Royal,30,Casque de Boufbowl,,90 %
+Bouftou Royal,Boss n°4 · étape 20 · vaincu | Cour du Bouftou Royal,30,Boufcoiffe Royale,,90 %
+Bouftou Royal,Boss n°4 · étape 20 · vaincu | Cour du Bouftou Royal,30,Chance d'Ecaflip,,90 %
+Bouftou Royal,Boss n°4 · étape 20 · vaincu | Cour du Bouftou Royal,30,Anneau Royal du Bouftou,,"80,19 %"
+Bouftou Royal,Boss n°4 · étape 20 · vaincu | Cour du Bouftou Royal,30,La Klebik,,"71,64 %"
+Bouftou Royal,Boss n°4 · étape 20 · vaincu | Cour du Bouftou Royal,30,Marteau Tau,,"42,23 %"
+Bouftou Royal,Boss n°4 · étape 20 · vaincu | Cour du Bouftou Royal,30,Boufbottes Royales,,"41,16 %"
+Bouftou Royal,Boss n°4 · étape 20 · vaincu | Cour du Bouftou Royal,30,Épée Royale du Bouftou,,"11,23 %"
+Batofu,Boss n°5 · étape 25 · vaincu | Donjon des Tofus,40,Anneau de Gobeuf,,90 %
+Batofu,Boss n°5 · étape 25 · vaincu | Donjon des Tofus,40,L'oxolature,,"88,21 %"
+Batofu,Boss n°5 · étape 25 · vaincu | Donjon des Tofus,40,Amulette de Gobeuf,,"78,59 %"
+Batofu,Boss n°5 · étape 25 · vaincu | Donjon des Tofus,40,Ceinture du Tot,,"45,98 %"
+Batofu,Boss n°5 · étape 25 · vaincu | Donjon des Tofus,40,Bottines de la Denrée,,"44,91 %"
+Batofu,Boss n°5 · étape 25 · vaincu | Donjon des Tofus,40,Ramoume l'Eternelle,,"21,92 %"
+Batofu,Boss n°5 · étape 25 · vaincu | Donjon des Tofus,40,Bâton de fausse magie,,"21,38 %"
+Batofu,Boss n°5 · étape 25 · vaincu | Donjon des Tofus,40,Épée Royale du Bouftou,,"8,02 %"
+Scarabosse Doré,Boss n°6 · étape 30 · vaincu | Donjon des Scarafeuilles,40,Kwape de Flammes,,90 %
+Scarabosse Doré,Boss n°6 · étape 30 · vaincu | Donjon des Scarafeuilles,40,Amulette de Shika,,90 %
+Scarabosse Doré,Boss n°6 · étape 30 · vaincu | Donjon des Scarafeuilles,40,Amulette du Scarabosse Doré,,"73,77 %"
+Scarabosse Doré,Boss n°6 · étape 30 · vaincu | Donjon des Scarafeuilles,40,Marteau Toh'Lo,,"44,91 %"
+Scarabosse Doré,Boss n°6 · étape 30 · vaincu | Donjon des Scarafeuilles,40,Scaracoiffe Dorée,,"36,89 %"
+Scarabosse Doré,Boss n°6 · étape 30 · vaincu | Donjon des Scarafeuilles,40,Scarature Dorée,,"34,75 %"
+Scarabosse Doré,Boss n°6 · étape 30 · vaincu | Donjon des Scarafeuilles,40,Scaracape Dorée,,"16,57 %"
+Scarabosse Doré,Boss n°6 · étape 30 · vaincu | Donjon des Scarafeuilles,40,Baguette du Scarabosse Doré,,"5,35 %"
+Chafer Rōnin,Boss n°7 · étape 35 · vaincu | Donjon des Squelettes,40,Bottes de Kubitus,,90 %
+Chafer Rōnin,Boss n°7 · étape 35 · vaincu | Donjon des Squelettes,40,Anneau de Kocksis,,90 %
+Chafer Rōnin,Boss n°7 · étape 35 · vaincu | Donjon des Squelettes,40,Anneau de Laikteur,,90 %
+Chafer Rōnin,Boss n°7 · étape 35 · vaincu | Donjon des Squelettes,40,Ceinture de Kocksis,,90 %
+Chafer Rōnin,Boss n°7 · étape 35 · vaincu | Donjon des Squelettes,40,Anneau de la mort,,90 %
+Chafer Rōnin,Boss n°7 · étape 35 · vaincu | Donjon des Squelettes,40,Kritter,,90 %
+Chafer Rōnin,Boss n°7 · étape 35 · vaincu | Donjon des Squelettes,40,Bottes de Kocksis,,"69,5 %"
+Chafer Rōnin,Boss n°7 · étape 35 · vaincu | Donjon des Squelettes,40,Boufbottes Royales,,"43,3 %"
+Boostache,Boss n°8 · étape 40 · vaincu | Maison Fantôme,40,Cape du Tofu Fou,,90 %
+Boostache,Boss n°8 · étape 40 · vaincu | Maison Fantôme,40,Anneau du Boostache,,90 %
+Boostache,Boss n°8 · étape 40 · vaincu | Maison Fantôme,40,Ceinture Banisation,,90 %
+Boostache,Boss n°8 · étape 40 · vaincu | Maison Fantôme,40,Araknamu,,90 %
+Boostache,Boss n°8 · étape 40 · vaincu | Maison Fantôme,40,Cape du Boostache,,"74,31 %"
+Boostache,Boss n°8 · étape 40 · vaincu | Maison Fantôme,40,Amulette du Boostache,,"72,71 %"
+Boostache,Boss n°8 · étape 40 · vaincu | Maison Fantôme,40,Ceinture du Boostache,,"72,17 %"
+Boostache,Boss n°8 · étape 40 · vaincu | Maison Fantôme,40,Casque Noix,,"45,44 %"
+Kankreblath,Boss n°9 · étape 45 · vaincu | Cache de Kankreblath,40,Anneau Pomdeupin,,90 %
+Kankreblath,Boss n°9 · étape 45 · vaincu | Cache de Kankreblath,40,Cape Maimpa,,90 %
+Kankreblath,Boss n°9 · étape 45 · vaincu | Cache de Kankreblath,40,Anneau Bille,,90 %
+Kankreblath,Boss n°9 · étape 45 · vaincu | Cache de Kankreblath,40,Amulette Perle,,90 %
+Kankreblath,Boss n°9 · étape 45 · vaincu | Cache de Kankreblath,40,Bottes de Rekto Topi,,"72,17 %"
+Kankreblath,Boss n°9 · étape 45 · vaincu | Cache de Kankreblath,40,Cape Lumette,,"45,98 %"
+Kankreblath,Boss n°9 · étape 45 · vaincu | Cache de Kankreblath,40,Casque Noix,,"45,44 %"
+Kankreblath,Boss n°9 · étape 45 · vaincu | Cache de Kankreblath,40,Larvabottes,,"43,84 %"
+Bworkette,Boss n°10 · étape 50 · vaincu | Donjon des Bworks,50,Carapace Terre mineur,,90 %
+Bworkette,Boss n°10 · étape 50 · vaincu | Donjon des Bworks,50,Ceinture de Grüt,,90 %
+Bworkette,Boss n°10 · étape 50 · vaincu | Donjon des Bworks,50,Bottes de Grüt,,"82,86 %"
+Bworkette,Boss n°10 · étape 50 · vaincu | Donjon des Bworks,50,Ceinture de Mounu,,"81,79 %"
+Bworkette,Boss n°10 · étape 50 · vaincu | Donjon des Bworks,50,Anneau de Slait,,"76,98 %"
+Bworkette,Boss n°10 · étape 50 · vaincu | Donjon des Bworks,50,Amulette de Grüt,,"74,84 %"
+Bworkette,Boss n°10 · étape 50 · vaincu | Donjon des Bworks,50,Marteau Réfacteur,,"42,77 %"
+Bworkette,Boss n°10 · étape 50 · vaincu | Donjon des Bworks,50,Bottes de Grilliane,,"42,77 %"
+Sapik,Boss n°11 · étape 55 · vaincu | Donjon de Nowel,50,Dévastateur Neutre mineur,,90 %
+Sapik,Boss n°11 · étape 55 · vaincu | Donjon de Nowel,50,Anneau du Scarabosse Doré,,"81,26 %"
+Sapik,Boss n°11 · étape 55 · vaincu | Donjon de Nowel,50,Alliance d'Hichète,,"80,72 %"
+Sapik,Boss n°11 · étape 55 · vaincu | Donjon de Nowel,50,Slip de Kalkanéus,,"50,79 %"
+Sapik,Boss n°11 · étape 55 · vaincu | Donjon de Nowel,50,Masque Kanniboul,,"39,03 %"
+Sapik,Boss n°11 · étape 55 · vaincu | Donjon de Nowel,50,Elagueuse d'Oliviolet,,"21,92 %"
+Sapik,Boss n°11 · étape 55 · vaincu | Donjon de Nowel,50,Hache du Mulou,,"19,78 %"
+Sapik,Boss n°11 · étape 55 · vaincu | Donjon de Nowel,50,Bâton Tont'Ata,,"9,62 %"
+Corailleur Magistral,Boss n°12 · étape 60 · vaincu | Grotte Hesque,50,Anneau du Roks Or,,90 %
+Corailleur Magistral,Boss n°12 · étape 60 · vaincu | Grotte Hesque,50,Yugolette,,"76,45 %"
+Corailleur Magistral,Boss n°12 · étape 60 · vaincu | Grotte Hesque,50,Ceinture de Gadjète,,"74,31 %"
+Corailleur Magistral,Boss n°12 · étape 60 · vaincu | Grotte Hesque,50,Élagueuse de Charme,,"41,16 %"
+Corailleur Magistral,Boss n°12 · étape 60 · vaincu | Grotte Hesque,50,Ceinture de Mirh,,"40,63 %"
+Corailleur Magistral,Boss n°12 · étape 60 · vaincu | Grotte Hesque,50,Kraignosse,,"21,92 %"
+Corailleur Magistral,Boss n°12 · étape 60 · vaincu | Grotte Hesque,50,Hache de Pierre,,"20,85 %"
+Corailleur Magistral,Boss n°12 · étape 60 · vaincu | Grotte Hesque,50,Chaussures du Tétounik,,"9,09 %"
+Shin Larve,Boss n°13 · étape 65 · vaincu | Donjon des Larves,50,Amulette de guerrier albueran,,90 %
+Shin Larve,Boss n°13 · étape 65 · vaincu | Donjon des Larves,50,Grosse Bagouze du Parrain,,90 %
+Shin Larve,Boss n°13 · étape 65 · vaincu | Donjon des Larves,50,Ceinture Nikoti,,"75,91 %"
+Shin Larve,Boss n°13 · étape 65 · vaincu | Donjon des Larves,50,Kwaklame de Flammes,,"43,3 %"
+Shin Larve,Boss n°13 · étape 65 · vaincu | Donjon des Larves,50,Bâton-Boule de Voyante,,"40,63 %"
+Shin Larve,Boss n°13 · étape 65 · vaincu | Donjon des Larves,50,Bottes d'Apprentissage,,"20,85 %"
+Shin Larve,Boss n°13 · étape 65 · vaincu | Donjon des Larves,50,Baguette Cetera,,"19,78 %"
+Shin Larve,Boss n°13 · étape 65 · vaincu | Donjon des Larves,50,Vampyrette,,"8,02 %"
+Coffre des Forgerons,Boss n°14 · étape 70 · vaincu | Donjon des Forgerons,50,Anneau de Laikteur,,90 %
+Coffre des Forgerons,Boss n°14 · étape 70 · vaincu | Donjon des Forgerons,50,Boffes Cottre,,"83,4 %"
+Coffre des Forgerons,Boss n°14 · étape 70 · vaincu | Donjon des Forgerons,50,Scarature Noire,,"83,4 %"
+Coffre des Forgerons,Boss n°14 · étape 70 · vaincu | Donjon des Forgerons,50,Pendentiffre,,"78,05 %"
+Coffre des Forgerons,Boss n°14 · étape 70 · vaincu | Donjon des Forgerons,50,Talisman du Faucheur d'Avoine,,"76,98 %"
+Coffre des Forgerons,Boss n°14 · étape 70 · vaincu | Donjon des Forgerons,50,Bottes de Stroud,,"43,84 %"
+Coffre des Forgerons,Boss n°14 · étape 70 · vaincu | Donjon des Forgerons,50,Ceinture de Coffreté,,"43,3 %"
+Coffre des Forgerons,Boss n°14 · étape 70 · vaincu | Donjon des Forgerons,50,Caskoffre,,"40,1 %"
+Kwakwa,Boss n°15 · étape 75 · vaincu | Nid du Kwakwa,50,Queue de Rakoopeur,,90 %
+Kwakwa,Boss n°15 · étape 75 · vaincu | Nid du Kwakwa,50,Arc des Rivages,,"81,79 %"
+Kwakwa,Boss n°15 · étape 75 · vaincu | Nid du Kwakwa,50,Kwakwanneau,,"78,59 %"
+Kwakwa,Boss n°15 · étape 75 · vaincu | Nid du Kwakwa,50,Kwakwalliance,,"78,59 %"
+Kwakwa,Boss n°15 · étape 75 · vaincu | Nid du Kwakwa,50,Collier de Féline,,"75,91 %"
+Kwakwa,Boss n°15 · étape 75 · vaincu | Nid du Kwakwa,50,Ceinture du Garde Royal,,"49,72 %"
+Kwakwa,Boss n°15 · étape 75 · vaincu | Nid du Kwakwa,50,Kwakwaffe,,"21,92 %"
+Kwakwa,Boss n°15 · étape 75 · vaincu | Nid du Kwakwa,50,Kwakwalame,,"7,48 %"
+Directeur Grunob,Boss n°16 · étape 80 · vaincu | Akadémie des Gobs,50,Gantelet du Real Boitar,,90 %
+Directeur Grunob,Boss n°16 · étape 80 · vaincu | Akadémie des Gobs,50,Ceinture de Gobeuf,,90 %
+Directeur Grunob,Boss n°16 · étape 80 · vaincu | Akadémie des Gobs,50,Anneau de Gobeuf,,90 %
+Directeur Grunob,Boss n°16 · étape 80 · vaincu | Akadémie des Gobs,50,Amulette de Gobeuf,,"83,4 %"
+Directeur Grunob,Boss n°16 · étape 80 · vaincu | Akadémie des Gobs,50,Amulette de Kloug,,"77,52 %"
+Directeur Grunob,Boss n°16 · étape 80 · vaincu | Akadémie des Gobs,50,Baguette d'Eglise,,"73,24 %"
+Directeur Grunob,Boss n°16 · étape 80 · vaincu | Akadémie des Gobs,50,Kwaklame de Vent,,"43,3 %"
+Directeur Grunob,Boss n°16 · étape 80 · vaincu | Akadémie des Gobs,50,Chapeau du Directeur Grunob,,"27,8 %"
+Rakoopeur,Boss n°17 · étape 85 · vaincu | Refuge sylvestre,50,Alliance des Rebelles,,90 %
+Rakoopeur,Boss n°17 · étape 85 · vaincu | Refuge sylvestre,50,Bottes des Rebelles,,90 %
+Rakoopeur,Boss n°17 · étape 85 · vaincu | Refuge sylvestre,50,La Feuille d'Eté,,90 %
+Rakoopeur,Boss n°17 · étape 85 · vaincu | Refuge sylvestre,50,Casquette de Rakoopeur,,90 %
+Rakoopeur,Boss n°17 · étape 85 · vaincu | Refuge sylvestre,50,Cape des Rebelles,,"83,4 %"
+Rakoopeur,Boss n°17 · étape 85 · vaincu | Refuge sylvestre,50,Scarature Noire,,"83,4 %"
+Rakoopeur,Boss n°17 · étape 85 · vaincu | Refuge sylvestre,50,Ceinture Kolante,,"74,84 %"
+Rakoopeur,Boss n°17 · étape 85 · vaincu | Refuge sylvestre,50,Blopture Griotte,,"39,03 %"
+Gelée Royale Bleuet,Boss n°18 · étape 90 · vaincu | Gelaxième dimension,60,Ravageur Terre mineur,,90 %
+Gelée Royale Bleuet,Boss n°18 · étape 90 · vaincu | Gelaxième dimension,60,Gelano,,90 %
+Gelée Royale Bleuet,Boss n°18 · étape 90 · vaincu | Gelaxième dimension,60,Pendentiffre,,"80,72 %"
+Gelée Royale Bleuet,Boss n°18 · étape 90 · vaincu | Gelaxième dimension,60,Souliers Vernis Bruns,,"77,52 %"
+Gelée Royale Bleuet,Boss n°18 · étape 90 · vaincu | Gelaxième dimension,60,"Amulette ""Dents de Wabbits",,"43,84 %"
+Gelée Royale Bleuet,Boss n°18 · étape 90 · vaincu | Gelaxième dimension,60,Dehluge,,"42,77 %"
+Gelée Royale Bleuet,Boss n°18 · étape 90 · vaincu | Gelaxième dimension,60,Ballerines Roses,,"22,99 %"
+Gelée Royale Bleuet,Boss n°18 · étape 90 · vaincu | Gelaxième dimension,60,Coiffe du Koalak,,"21,38 %"
+Blop Coco Royal,Boss n°19 · étape 95 · vaincu | Clos des Blops,60,Enragé mineur,,90 %
+Blop Coco Royal,Boss n°19 · étape 95 · vaincu | Clos des Blops,60,Glaglano,,"82,33 %"
+Blop Coco Royal,Boss n°19 · étape 95 · vaincu | Clos des Blops,60,Bloptes Coco Royales,,"80,19 %"
+Blop Coco Royal,Boss n°19 · étape 95 · vaincu | Clos des Blops,60,Collier de Féline,,"78,59 %"
+Blop Coco Royal,Boss n°19 · étape 95 · vaincu | Clos des Blops,60,Blopanneau Coco Royal,,"59,34 %"
+Blop Coco Royal,Boss n°19 · étape 95 · vaincu | Clos des Blops,60,Amublop Coco Royale,,"57,74 %"
+Blop Coco Royal,Boss n°19 · étape 95 · vaincu | Clos des Blops,60,Ceinture de Kloug,,"42,23 %"
+Blop Coco Royal,Boss n°19 · étape 95 · vaincu | Clos des Blops,60,Blopture Coco Royale,,"17,64 %"
+Wa Wabbit,Boss n°20 · étape 100 · vaincu | Château du Wa Wabbit,60,Geta de Logram,,"87,14 %"
+Wa Wabbit,Boss n°20 · étape 100 · vaincu | Château du Wa Wabbit,60,Couronne du Wa Wabbit,,"86,61 %"
+Wa Wabbit,Boss n°20 · étape 100 · vaincu | Château du Wa Wabbit,60,Dragocoiffe Argile,,"80,19 %"
+Wa Wabbit,Boss n°20 · étape 100 · vaincu | Château du Wa Wabbit,60,Pelle Woukuis,,"57,74 %"
+Wa Wabbit,Boss n°20 · étape 100 · vaincu | Château du Wa Wabbit,60,Cape du Wa Wabbit,,"44,37 %"
+Wa Wabbit,Boss n°20 · étape 100 · vaincu | Château du Wa Wabbit,60,Plumamulette,,"40,63 %"
+Wa Wabbit,Boss n°20 · étape 100 · vaincu | Château du Wa Wabbit,60,Bâton du Wa Wabbit,,"20,31 %"
+Wa Wabbit,Boss n°20 · étape 100 · vaincu | Château du Wa Wabbit,60,Taille-haie primitif du Wobot,,"8,55 %"
+Kanniboul Ebil,Boss n°21 · étape 105 · vaincu | Village Kanniboul,60,Obstructeur mineur,,90 %
+Kanniboul Ebil,Boss n°21 · étape 105 · vaincu | Village Kanniboul,60,Anneau de Laikteur,,90 %
+Kanniboul Ebil,Boss n°21 · étape 105 · vaincu | Village Kanniboul,60,Bottes de Laikteur,,90 %
+Kanniboul Ebil,Boss n°21 · étape 105 · vaincu | Village Kanniboul,60,Alliance du Kanniboul Ebil,,90 %
+Kanniboul Ebil,Boss n°21 · étape 105 · vaincu | Village Kanniboul,60,Amulette de Laikteur,,"83,93 %"
+Kanniboul Ebil,Boss n°21 · étape 105 · vaincu | Village Kanniboul,60,Ceinture Luthuthu,,"83,93 %"
+Kanniboul Ebil,Boss n°21 · étape 105 · vaincu | Village Kanniboul,60,Ceinture de Gadjète,,"76,98 %"
+Kanniboul Ebil,Boss n°21 · étape 105 · vaincu | Village Kanniboul,60,Monture du Vénérable,,"42,77 %"
+Mawabouaino,Boss n°22 · étape 110 · vaincu | Fonderie des Waddicts,60,Adamantin mineur,,90 %
+Mawabouaino,Boss n°22 · étape 110 · vaincu | Fonderie des Waddicts,60,Rondelle de Waddict,,90 %
+Mawabouaino,Boss n°22 · étape 110 · vaincu | Fonderie des Waddicts,60,Anneau de Piggy Paupe,,"84,47 %"
+Mawabouaino,Boss n°22 · étape 110 · vaincu | Fonderie des Waddicts,60,Mawabottes,,"80,72 %"
+Mawabouaino,Boss n°22 · étape 110 · vaincu | Fonderie des Waddicts,60,Ceinture Amincissante,,"79,66 %"
+Mawabouaino,Boss n°22 · étape 110 · vaincu | Fonderie des Waddicts,60,Amulette de Kloug,,"79,66 %"
+Mawabouaino,Boss n°22 · étape 110 · vaincu | Fonderie des Waddicts,60,Bouclier du Bawbawe,,"42,77 %"
+Mawabouaino,Boss n°22 · étape 110 · vaincu | Fonderie des Waddicts,60,Bottes de Kabroule,,"40,63 %"
+Craqueleur Légendaire,Boss n°23 · étape 115 · vaincu | Pitons Rocheux des Craqueleurs,70,Bottes du Craqueleur,,90 %
+Craqueleur Légendaire,Boss n°23 · étape 115 · vaincu | Pitons Rocheux des Craqueleurs,70,Casque du Craqueleur,,90 %
+Craqueleur Légendaire,Boss n°23 · étape 115 · vaincu | Pitons Rocheux des Craqueleurs,70,Craquelocape,,90 %
+Craqueleur Légendaire,Boss n°23 · étape 115 · vaincu | Pitons Rocheux des Craqueleurs,70,Cape du Kitsou,,90 %
+Craqueleur Légendaire,Boss n°23 · étape 115 · vaincu | Pitons Rocheux des Craqueleurs,70,Craquamulette,,90 %
+Craqueleur Légendaire,Boss n°23 · étape 115 · vaincu | Pitons Rocheux des Craqueleurs,70,Griffettes,,"76,98 %"
+Craqueleur Légendaire,Boss n°23 · étape 115 · vaincu | Pitons Rocheux des Craqueleurs,70,Ceinture Anesthésiante,,"73,77 %"
+Craqueleur Légendaire,Boss n°23 · étape 115 · vaincu | Pitons Rocheux des Craqueleurs,70,Bâton du Koulosse,,"35,82 %"
+Gourlo le Terrible,Boss n°24 · étape 120 · vaincu | Cale de l'arche d'Otomaï,70,Coiffe du Chef Crocodaille,,90 %
+Gourlo le Terrible,Boss n°24 · étape 120 · vaincu | Cale de l'arche d'Otomaï,70,Geloture,,90 %
+Gourlo le Terrible,Boss n°24 · étape 120 · vaincu | Cale de l'arche d'Otomaï,70,Bottes du Koalak,,90 %
+Gourlo le Terrible,Boss n°24 · étape 120 · vaincu | Cale de l'arche d'Otomaï,70,Anauffe-souris,,"43,84 %"
+Gourlo le Terrible,Boss n°24 · étape 120 · vaincu | Cale de l'arche d'Otomaï,70,Coupeuse de Sifflet,,"34,21 %"
+Gourlo le Terrible,Boss n°24 · étape 120 · vaincu | Cale de l'arche d'Otomaï,70,Bottinokio,,"22,99 %"
+Gourlo le Terrible,Boss n°24 · étape 120 · vaincu | Cale de l'arche d'Otomaï,70,Coiffe du Koalak,,"22,45 %"
+Gourlo le Terrible,Boss n°24 · étape 120 · vaincu | Cale de l'arche d'Otomaï,70,Tortikoli,,"8,02 %"
+Nelween,Boss n°25 · étape 125 · vaincu | Laboratoire de Brumen Tinctorias,70,Boracelet,,90 %
+Nelween,Boss n°25 · étape 125 · vaincu | Laboratoire de Brumen Tinctorias,70,Dagues Fourbesques,,"78,59 %"
+Nelween,Boss n°25 · étape 125 · vaincu | Laboratoire de Brumen Tinctorias,70,Cape de Nelween,,"78,05 %"
+Nelween,Boss n°25 · étape 125 · vaincu | Laboratoire de Brumen Tinctorias,70,Amulette de Nelween,,"76,45 %"
+Nelween,Boss n°25 · étape 125 · vaincu | Laboratoire de Brumen Tinctorias,70,Ceinture Anesthésiante,,"73,77 %"
+Nelween,Boss n°25 · étape 125 · vaincu | Laboratoire de Brumen Tinctorias,70,Bouclier du Bawbawe,,"44,37 %"
+Nelween,Boss n°25 · étape 125 · vaincu | Laboratoire de Brumen Tinctorias,70,Bottes de Nelween,,"35,82 %"
+Nelween,Boss n°25 · étape 125 · vaincu | Laboratoire de Brumen Tinctorias,70,Ceinture de Nelween,,"35,82 %"
+Draegnerys,Boss n°26 · étape 130 · vaincu | Épreuve de Draegnerys,70,Amulette Turquoise,,90 %
+Draegnerys,Boss n°26 · étape 130 · vaincu | Épreuve de Draegnerys,70,Justobottes,,90 %
+Draegnerys,Boss n°26 · étape 130 · vaincu | Épreuve de Draegnerys,70,Bottes du Koalak,,90 %
+Draegnerys,Boss n°26 · étape 130 · vaincu | Épreuve de Draegnerys,70,Cape du Wa Wabbit,,"46,51 %"
+Draegnerys,Boss n°26 · étape 130 · vaincu | Épreuve de Draegnerys,70,"Amulette ""Dents de Wabbits",,"45,98 %"
+Draegnerys,Boss n°26 · étape 130 · vaincu | Épreuve de Draegnerys,70,Caracape,,"21,92 %"
+Draegnerys,Boss n°26 · étape 130 · vaincu | Épreuve de Draegnerys,70,Baguette Hylique,,"18,18 %"
+Draegnerys,Boss n°26 · étape 130 · vaincu | Épreuve de Draegnerys,70,Pelle Gicque,,"6,42 %"
+Wa Wobot,Boss n°27 · étape 135 · vaincu | Terrier du Wa Wabbit,80,Bottes du Koulosse,,90 %
+Wa Wobot,Boss n°27 · étape 135 · vaincu | Terrier du Wa Wabbit,80,Chapeau Terrdala,,"84,47 %"
+Wa Wobot,Boss n°27 · étape 135 · vaincu | Terrier du Wa Wabbit,80,Chapeau de Barbroussa,,"82,86 %"
+Wa Wobot,Boss n°27 · étape 135 · vaincu | Terrier du Wa Wabbit,80,Cape du Wa Wobot,,"81,26 %"
+Wa Wobot,Boss n°27 · étape 135 · vaincu | Terrier du Wa Wabbit,80,Couronne du Wa Wobot,,"78,59 %"
+Wa Wobot,Boss n°27 · étape 135 · vaincu | Terrier du Wa Wabbit,80,Bottes d'Hogmeiser,,"43,84 %"
+Wa Wobot,Boss n°27 · étape 135 · vaincu | Terrier du Wa Wabbit,80,Ceinture du Wa Wobot,,"40,1 %"
+Wa Wobot,Boss n°27 · étape 135 · vaincu | Terrier du Wa Wabbit,80,Casque du Blanc Pa Wabbit,,"21,38 %"
+Mantiscore,Boss n°28 · étape 140 · vaincu | Cimetière des Mastodontes,80,Craquanneau Légendaire,,90 %
+Mantiscore,Boss n°28 · étape 140 · vaincu | Cimetière des Mastodontes,80,Anneau Ouroboulos,,90 %
+Mantiscore,Boss n°28 · étape 140 · vaincu | Cimetière des Mastodontes,80,Cape Ouroboulos,,"83,4 %"
+Mantiscore,Boss n°28 · étape 140 · vaincu | Cimetière des Mastodontes,80,Cape du Désert,,"82,33 %"
+Mantiscore,Boss n°28 · étape 140 · vaincu | Cimetière des Mastodontes,80,Bottes Ouroboulos,,"79,66 %"
+Mantiscore,Boss n°28 · étape 140 · vaincu | Cimetière des Mastodontes,80,Amublop Reinette Royale,,"78,59 %"
+Mantiscore,Boss n°28 · étape 140 · vaincu | Cimetière des Mastodontes,80,Capuche de Musha,,"74,31 %"
+Mantiscore,Boss n°28 · étape 140 · vaincu | Cimetière des Mastodontes,80,Casque du Craqueleur Légendaire,,"44,91 %"
+Abraknyde Ancestral,Boss n°29 · étape 145 · vaincu | Domaine Ancestral,90,Alliance des Forestiers,,90 %
+Abraknyde Ancestral,Boss n°29 · étape 145 · vaincu | Domaine Ancestral,90,Alliance d'Elya Wood,,90 %
+Abraknyde Ancestral,Boss n°29 · étape 145 · vaincu | Domaine Ancestral,90,Cape d'Elya Wood,,"82,33 %"
+Abraknyde Ancestral,Boss n°29 · étape 145 · vaincu | Domaine Ancestral,90,Licol de Redolphe,,"78,59 %"
+Abraknyde Ancestral,Boss n°29 · étape 145 · vaincu | Domaine Ancestral,90,Coiffe de la Néfileuse,,"75,91 %"
+Abraknyde Ancestral,Boss n°29 · étape 145 · vaincu | Domaine Ancestral,90,Talisman d'Elya Wood,,"55,06 %"
+Abraknyde Ancestral,Boss n°29 · étape 145 · vaincu | Domaine Ancestral,90,Ceinture de Nelween,,"47,58 %"
+Abraknyde Ancestral,Boss n°29 · étape 145 · vaincu | Domaine Ancestral,90,Baguette d'Elya Wood,,"17,11 %"
+Reine Nyée,Boss n°30 · étape 150 · vaincu | Antre de la Reine Nyée,90,Alliance des Forestiers,,90 %
+Reine Nyée,Boss n°30 · étape 150 · vaincu | Antre de la Reine Nyée,90,Anneau Tissé,,90 %
+Reine Nyée,Boss n°30 · étape 150 · vaincu | Antre de la Reine Nyée,90,Coiffennex,,"80,72 %"
+Reine Nyée,Boss n°30 · étape 150 · vaincu | Antre de la Reine Nyée,90,Amulette des Huit Yeux,,"80,19 %"
+Reine Nyée,Boss n°30 · étape 150 · vaincu | Antre de la Reine Nyée,90,Bottes Soyeuses,,"76,98 %"
+Reine Nyée,Boss n°30 · étape 150 · vaincu | Antre de la Reine Nyée,90,Baguette Irréelle,,"76,45 %"
+Reine Nyée,Boss n°30 · étape 150 · vaincu | Antre de la Reine Nyée,90,Coiffe de la Néfileuse,,"75,91 %"
+Reine Nyée,Boss n°30 · étape 150 · vaincu | Antre de la Reine Nyée,90,La Pelle Hélabète,,"42,77 %"
+Le Chouque,Boss n°31 · étape 155 · vaincu | Bateau du Chouque,90,Bloptes Coco Royales,,90 %
+Le Chouque,Boss n°31 · étape 155 · vaincu | Bateau du Chouque,90,Bouclier du Chouque,,"86,07 %"
+Le Chouque,Boss n°31 · étape 155 · vaincu | Bateau du Chouque,90,Alliance du Capitaine Pirate,,"83,93 %"
+Le Chouque,Boss n°31 · étape 155 · vaincu | Bateau du Chouque,90,Couronne du Wa Wobot,,"79,66 %"
+Le Chouque,Boss n°31 · étape 155 · vaincu | Bateau du Chouque,90,Tablier des Scalptaras,,"76,98 %"
+Le Chouque,Boss n°31 · étape 155 · vaincu | Bateau du Chouque,90,Baguette Velue,,"43,84 %"
+Le Chouque,Boss n°31 · étape 155 · vaincu | Bateau du Chouque,90,Chapeau du Capitaine Pirate,,"42,23 %"
+Le Chouque,Boss n°31 · étape 155 · vaincu | Bateau du Chouque,90,Cape du Capitaine Pirate,,"41,16 %"
+Choudini,Boss n°32 · étape 160 · vaincu | Chapiteau des Magik Riktus,90,Shikature,,90 %
+Choudini,Boss n°32 · étape 160 · vaincu | Chapiteau des Magik Riktus,90,Cape de Shika,,"81,26 %"
+Choudini,Boss n°32 · étape 160 · vaincu | Chapiteau des Magik Riktus,90,Amulette des Huit Yeux,,"80,19 %"
+Choudini,Boss n°32 · étape 160 · vaincu | Chapiteau des Magik Riktus,90,Masque de Choudini,,"78,05 %"
+Choudini,Boss n°32 · étape 160 · vaincu | Chapiteau des Magik Riktus,90,Bottes de Choudini,,"76,98 %"
+Choudini,Boss n°32 · étape 160 · vaincu | Chapiteau des Magik Riktus,90,Bouclier de Choudini,,"73,24 %"
+Choudini,Boss n°32 · étape 160 · vaincu | Chapiteau des Magik Riktus,90,Masque Riktus,,"42,77 %"
+Choudini,Boss n°32 · étape 160 · vaincu | Chapiteau des Magik Riktus,90,Bâton de Daïgoro,,"42,23 %"
+Dragon Cochon,Boss n°33 · étape 165 · vaincu | Antre du Dragon Cochon,100,Ralentisseur,,90 %
+Dragon Cochon,Boss n°33 · étape 165 · vaincu | Antre du Dragon Cochon,100,Bottes Animales,,"81,79 %"
+Dragon Cochon,Boss n°33 · étape 165 · vaincu | Antre du Dragon Cochon,100,Anneau du Dragon Cochon,,"80,19 %"
+Dragon Cochon,Boss n°33 · étape 165 · vaincu | Antre du Dragon Cochon,100,Ceinture Précieuse,,"67,89 %"
+Dragon Cochon,Boss n°33 · étape 165 · vaincu | Antre du Dragon Cochon,100,Ceinture Dracochoune,,"44,37 %"
+Dragon Cochon,Boss n°33 · étape 165 · vaincu | Antre du Dragon Cochon,100,Mules du Dragon Cochon,,"43,84 %"
+Dragon Cochon,Boss n°33 · étape 165 · vaincu | Antre du Dragon Cochon,100,Kaiser,,"35,82 %"
+Dragon Cochon,Boss n°33 · étape 165 · vaincu | Antre du Dragon Cochon,100,Collier du Dragon Cochon,,"21,38 %"
+Meulou,Boss n°34 · étape 170 · vaincu | Tanière du Meulou,100,Enragé,,90 %
+Meulou,Boss n°34 · étape 170 · vaincu | Tanière du Meulou,100,Alliance du Capitaine Pirate,,90 %
+Meulou,Boss n°34 · étape 170 · vaincu | Tanière du Meulou,100,Anneau du Meulou,,"80,19 %"
+Meulou,Boss n°34 · étape 170 · vaincu | Tanière du Meulou,100,Capitrouille,,"68,43 %"
+Meulou,Boss n°34 · étape 170 · vaincu | Tanière du Meulou,100,Ceinture du Berserkoffre,,"42,23 %"
+Meulou,Boss n°34 · étape 170 · vaincu | Tanière du Meulou,100,La Meulette,,"31,01 %"
+Meulou,Boss n°34 · étape 170 · vaincu | Tanière du Meulou,100,Cape du Meulou,,"16,57 %"
+Meulou,Boss n°34 · étape 170 · vaincu | Tanière du Meulou,100,Bottes du Meulou,,"6,95 %"
+Koulosse,Boss n°35 · étape 175 · vaincu | Caverne du Koulosse,100,Bottes Swana,,90 %
+Koulosse,Boss n°35 · étape 175 · vaincu | Caverne du Koulosse,100,Anneau du Boufcoul,,90 %
+Koulosse,Boss n°35 · étape 175 · vaincu | Caverne du Koulosse,100,Bottes du Boufcoul,,"83,93 %"
+Koulosse,Boss n°35 · étape 175 · vaincu | Caverne du Koulosse,100,Bottes Animales,,"81,79 %"
+Koulosse,Boss n°35 · étape 175 · vaincu | Caverne du Koulosse,100,Gaine Nyée,,"79,66 %"
+Koulosse,Boss n°35 · étape 175 · vaincu | Caverne du Koulosse,100,Amulette du Boufcoul,,"43,84 %"
+Koulosse,Boss n°35 · étape 175 · vaincu | Caverne du Koulosse,100,Marteau du Boufcoul,,"42,77 %"
+Koulosse,Boss n°35 · étape 175 · vaincu | Caverne du Koulosse,100,Marteau de la Terps,,"42,23 %"
+Halouine,Boss n°36 · étape 180 · vaincu | Potager d'Halouine,100,Carapace Neutre,,90 %
+Halouine,Boss n°36 · étape 180 · vaincu | Potager d'Halouine,100,Pelle Mairhe,,"78,59 %"
+Halouine,Boss n°36 · étape 180 · vaincu | Potager d'Halouine,100,Capitrouille,,"68,43 %"
+Halouine,Boss n°36 · étape 180 · vaincu | Potager d'Halouine,100,Kabuto,,"68,43 %"
+Halouine,Boss n°36 · étape 180 · vaincu | Potager d'Halouine,100,Chapitrouille,,"66,83 %"
+Halouine,Boss n°36 · étape 180 · vaincu | Potager d'Halouine,100,Ceintrouille,,"65,22 %"
+Halouine,Boss n°36 · étape 180 · vaincu | Potager d'Halouine,100,Ceinture Dracochoune,,"44,37 %"
+Halouine,Boss n°36 · étape 180 · vaincu | Potager d'Halouine,100,Râtrouille,,"36,35 %"
+Malléfisk,Boss n°37 · étape 185 · vaincu | Fabrique de Malléfisk,100,Bloqueur,,90 %
+Malléfisk,Boss n°37 · étape 185 · vaincu | Fabrique de Malléfisk,100,Patte d'Ecaflip,,85 %
+Malléfisk,Boss n°37 · étape 185 · vaincu | Fabrique de Malléfisk,100,Cape Précieuse,,"80,19 %"
+Malléfisk,Boss n°37 · étape 185 · vaincu | Fabrique de Malléfisk,100,Bottes Précieuses,,"80,19 %"
+Malléfisk,Boss n°37 · étape 185 · vaincu | Fabrique de Malléfisk,100,Bandeau de Carlita,,"68,96 %"
+Malléfisk,Boss n°37 · étape 185 · vaincu | Fabrique de Malléfisk,100,Ceinture Précieuse,,"67,89 %"
+Malléfisk,Boss n°37 · étape 185 · vaincu | Fabrique de Malléfisk,100,Casque du Berserkoffre,,"66,29 %"
+Malléfisk,Boss n°37 · étape 185 · vaincu | Fabrique de Malléfisk,100,Ceinture Chouqueuse,,"43,3 %"
+Moon,Boss n°38 · étape 190 · vaincu | Arbre de Moon,100,Carapace Terre,,90 %
+Moon,Boss n°38 · étape 190 · vaincu | Arbre de Moon,100,Patte d'Ecaflip,,"82,33 %"
+Moon,Boss n°38 · étape 190 · vaincu | Arbre de Moon,100,Fourballiance,,"80,19 %"
+Moon,Boss n°38 · étape 190 · vaincu | Arbre de Moon,100,Fourbabottes,,"80,19 %"
+Moon,Boss n°38 · étape 190 · vaincu | Arbre de Moon,100,Ceinture Fourbissante,,"68,43 %"
+Moon,Boss n°38 · étape 190 · vaincu | Arbre de Moon,100,Razoir du Soir,,"67,36 %"
+Moon,Boss n°38 · étape 190 · vaincu | Arbre de Moon,100,Fourbamulette,,"66,29 %"
+Moon,Boss n°38 · étape 190 · vaincu | Arbre de Moon,100,Ceinture du Berserkoffre,,"42,23 %"
+Kharnozor,Boss n°39 · étape 195 · vaincu | Repaire du Kharnozor,100,Érudit,,90 %
+Kharnozor,Boss n°39 · étape 195 · vaincu | Repaire du Kharnozor,100,Bottes Précieuses,,"80,19 %"
+Kharnozor,Boss n°39 · étape 195 · vaincu | Repaire du Kharnozor,100,Ceinture Fourbissante,,"68,43 %"
+Kharnozor,Boss n°39 · étape 195 · vaincu | Repaire du Kharnozor,100,Billréole,,"43,84 %"
+Kharnozor,Boss n°39 · étape 195 · vaincu | Repaire du Kharnozor,100,Épée Doncule,,"42,77 %"
+Kharnozor,Boss n°39 · étape 195 · vaincu | Repaire du Kharnozor,100,Fendeuse d'Abraknyde Ancestral,,"20,85 %"
+Kharnozor,Boss n°39 · étape 195 · vaincu | Repaire du Kharnozor,100,Bâton du Yondanwa,,"20,85 %"
+Kharnozor,Boss n°39 · étape 195 · vaincu | Repaire du Kharnozor,100,Martokipik,,"7,48 %"
+Maître Corbac,Boss n°40 · étape 200 · vaincu | Salle de lecture du Maître Corbac,110,Krosmaussures,,90 %
+Maître Corbac,Boss n°40 · étape 200 · vaincu | Salle de lecture du Maître Corbac,110,Patte d'Ecaflip,,90 %
+Maître Corbac,Boss n°40 · étape 200 · vaincu | Salle de lecture du Maître Corbac,110,Corbacoiffe,,"80,72 %"
+Maître Corbac,Boss n°40 · étape 200 · vaincu | Salle de lecture du Maître Corbac,110,Corbottes,,"80,19 %"
+Maître Corbac,Boss n°40 · étape 200 · vaincu | Salle de lecture du Maître Corbac,110,Corbacape,,"80,19 %"
+Maître Corbac,Boss n°40 · étape 200 · vaincu | Salle de lecture du Maître Corbac,110,Coiffe de la Dragueuse,,"80,19 %"
+Maître Corbac,Boss n°40 · étape 200 · vaincu | Salle de lecture du Maître Corbac,110,Bâton de Marie Aigue,,"42,77 %"
+Maître Corbac,Boss n°40 · étape 200 · vaincu | Salle de lecture du Maître Corbac,110,Corbalame,,"21,38 %"
+Silf le Rasboul Majeur,Boss n°41 · étape 205 · vaincu | Goulet du Rasboul,110,Anneau Poli,,90 %
+Silf le Rasboul Majeur,Boss n°41 · étape 205 · vaincu | Goulet du Rasboul,110,Amufafah,,90 %
+Silf le Rasboul Majeur,Boss n°41 · étape 205 · vaincu | Goulet du Rasboul,110,Anneau du Dragon Cochon,,"80,19 %"
+Silf le Rasboul Majeur,Boss n°41 · étape 205 · vaincu | Goulet du Rasboul,110,Ceinture du Mominotor,,"79,66 %"
+Silf le Rasboul Majeur,Boss n°41 · étape 205 · vaincu | Goulet du Rasboul,110,Coiffe du Muloubar,,"79,12 %"
+Silf le Rasboul Majeur,Boss n°41 · étape 205 · vaincu | Goulet du Rasboul,110,Dagues du Rat Noir,,"41,7 %"
+Silf le Rasboul Majeur,Boss n°41 · étape 205 · vaincu | Goulet du Rasboul,110,Torque Ancestral,,"41,7 %"
+Silf le Rasboul Majeur,Boss n°41 · étape 205 · vaincu | Goulet du Rasboul,110,Kidorteau,,"10,16 %"
+Papa Nowel,Boss n°42 · étape 210 · vaincu | Caverne de Nowel,110,Ravageur Eau,,90 %
+Papa Nowel,Boss n°42 · étape 210 · vaincu | Caverne de Nowel,110,Ceinture Abdominable,,"80,19 %"
+Papa Nowel,Boss n°42 · étape 210 · vaincu | Caverne de Nowel,110,Fourbamulette,,"78,59 %"
+Papa Nowel,Boss n°42 · étape 210 · vaincu | Caverne de Nowel,110,Patte d'Ecaflip Parfaite,,"50,25 %"
+Papa Nowel,Boss n°42 · étape 210 · vaincu | Caverne de Nowel,110,Amulette du Krokilleur,,"41,7 %"
+Papa Nowel,Boss n°42 · étape 210 · vaincu | Caverne de Nowel,110,Cape du Muloubar,,"24,59 %"
+Papa Nowel,Boss n°42 · étape 210 · vaincu | Caverne de Nowel,110,Ceinture du Minotoror,,"20,31 %"
+Papa Nowel,Boss n°42 · étape 210 · vaincu | Caverne de Nowel,110,Coupe de Dragokart,,"8,55 %"
+Pounicheur,Boss n°43 · étape 215 · vaincu | Miausolée du Pounicheur,110,Porteur,,90 %
+Pounicheur,Boss n°43 · étape 215 · vaincu | Miausolée du Pounicheur,110,Bandeau de Carlita,,"81,26 %"
+Pounicheur,Boss n°43 · étape 215 · vaincu | Miausolée du Pounicheur,110,Bague des Ecaflipuces,,"80,19 %"
+Pounicheur,Boss n°43 · étape 215 · vaincu | Miausolée du Pounicheur,110,Marteau Ronto,,"78,05 %"
+Pounicheur,Boss n°43 · étape 215 · vaincu | Miausolée du Pounicheur,110,Billréole,,"51,86 %"
+Pounicheur,Boss n°43 · étape 215 · vaincu | Miausolée du Pounicheur,110,Scalp du Pounicheur,,"20,85 %"
+Pounicheur,Boss n°43 · étape 215 · vaincu | Miausolée du Pounicheur,110,Bottes du Pounicheur,,"20,31 %"
+Pounicheur,Boss n°43 · étape 215 · vaincu | Miausolée du Pounicheur,110,Ceinture du Pounicheur,,"7,48 %"
+Damadrya,Boss n°44 · étape 220 · vaincu | Bambusaie de Damadrya,110,Patte d'Ecaflip,,90 %
+Damadrya,Boss n°44 · étape 220 · vaincu | Bambusaie de Damadrya,110,Coiffe du Gaddie,,"87,67 %"
+Damadrya,Boss n°44 · étape 220 · vaincu | Bambusaie de Damadrya,110,Bulbouclier,,"81,26 %"
+Damadrya,Boss n°44 · étape 220 · vaincu | Bambusaie de Damadrya,110,Capitrouille,,"80,72 %"
+Damadrya,Boss n°44 · étape 220 · vaincu | Bambusaie de Damadrya,110,Boutures,,"80,19 %"
+Damadrya,Boss n°44 · étape 220 · vaincu | Bambusaie de Damadrya,110,Plantamulette,,"80,19 %"
+Damadrya,Boss n°44 · étape 220 · vaincu | Bambusaie de Damadrya,110,Capistil,,"80,19 %"
+Damadrya,Boss n°44 · étape 220 · vaincu | Bambusaie de Damadrya,110,Fourbasse-Ton,,"42,77 %"
+Rat Noir,Boss n°45 · étape 225 · vaincu | Sousouricière du Rat Noir,110,Masque du Rat Noir,,"80,19 %"
+Rat Noir,Boss n°45 · étape 225 · vaincu | Sousouricière du Rat Noir,110,Cape du Rat Noir,,"80,19 %"
+Rat Noir,Boss n°45 · étape 225 · vaincu | Sousouricière du Rat Noir,110,Collier du Rat Noir,,"80,19 %"
+Rat Noir,Boss n°45 · étape 225 · vaincu | Sousouricière du Rat Noir,110,Gant du Rat Blanc,,"80,19 %"
+Rat Noir,Boss n°45 · étape 225 · vaincu | Sousouricière du Rat Noir,110,Coiffe du Mominotor,,"78,59 %"
+Rat Noir,Boss n°45 · étape 225 · vaincu | Sousouricière du Rat Noir,110,Casque du Berserkoffre,,"78,59 %"
+Rat Noir,Boss n°45 · étape 225 · vaincu | Sousouricière du Rat Noir,110,Dagues du Rat Noir,,"41,7 %"
+Rat Noir,Boss n°45 · étape 225 · vaincu | Sousouricière du Rat Noir,110,Cape de Flèche Mauve,,"41,16 %"
+Rat Blanc,Boss n°46 · étape 230 · vaincu | Garde-manger du Rat Blanc,110,Couvre-chef du Rat Blanc,,"80,19 %"
+Rat Blanc,Boss n°46 · étape 230 · vaincu | Garde-manger du Rat Blanc,110,Cape du Rat Blanc,,"80,19 %"
+Rat Blanc,Boss n°46 · étape 230 · vaincu | Garde-manger du Rat Blanc,110,Bague des Ecaflipuces,,"80,19 %"
+Rat Blanc,Boss n°46 · étape 230 · vaincu | Garde-manger du Rat Blanc,110,Collier du Rat Blanc,,"79,66 %"
+Rat Blanc,Boss n°46 · étape 230 · vaincu | Garde-manger du Rat Blanc,110,Bottes du Berserkoffre,,"79,66 %"
+Rat Blanc,Boss n°46 · étape 230 · vaincu | Garde-manger du Rat Blanc,110,Ceinture du Mominotor,,"79,66 %"
+Rat Blanc,Boss n°46 · étape 230 · vaincu | Garde-manger du Rat Blanc,110,Arc Assin,,"51,32 %"
+Rat Blanc,Boss n°46 · étape 230 · vaincu | Garde-manger du Rat Blanc,110,Rapière du Rat Blanc,,"20,85 %"
+Skeunk,Boss n°47 · étape 235 · vaincu | Repaire de Skeunk,120,Blémiche,,90 %
+Skeunk,Boss n°47 · étape 235 · vaincu | Repaire de Skeunk,120,Cape des Ecaflipuces,,"82,33 %"
+Skeunk,Boss n°47 · étape 235 · vaincu | Repaire de Skeunk,120,Pelle du Mineur Sombre,,"80,72 %"
+Skeunk,Boss n°47 · étape 235 · vaincu | Repaire de Skeunk,120,Naginata de Naganita,,"42,77 %"
+Skeunk,Boss n°47 · étape 235 · vaincu | Repaire de Skeunk,120,Bottes Animales Sombres,,"40,1 %"
+Skeunk,Boss n°47 · étape 235 · vaincu | Repaire de Skeunk,120,Minotokorno,,"20,85 %"
+Skeunk,Boss n°47 · étape 235 · vaincu | Repaire de Skeunk,120,Coiffe du Royalmouth,,"20,31 %"
+Skeunk,Boss n°47 · étape 235 · vaincu | Repaire de Skeunk,120,Bottes du Minotoror,,"8,02 %"
+Crocabulia,Boss n°48 · étape 240 · vaincu | Antre de Crocabulia,120,Anneau du Dragoeuf,,90 %
+Crocabulia,Boss n°48 · étape 240 · vaincu | Antre de Crocabulia,120,Dagues Rhumes,,90 %
+Crocabulia,Boss n°48 · étape 240 · vaincu | Antre de Crocabulia,120,Cape Dragoeuf,,90 %
+Crocabulia,Boss n°48 · étape 240 · vaincu | Antre de Crocabulia,120,Casque Dragoeuf,,90 %
+Crocabulia,Boss n°48 · étape 240 · vaincu | Antre de Crocabulia,120,Ceinture du Dragoeuf,,90 %
+Crocabulia,Boss n°48 · étape 240 · vaincu | Antre de Crocabulia,120,Phalène,,"83,4 %"
+Crocabulia,Boss n°48 · étape 240 · vaincu | Antre de Crocabulia,120,Coiffe du Bimd'Oule,,"80,19 %"
+Crocabulia,Boss n°48 · étape 240 · vaincu | Antre de Crocabulia,120,Bouclier en Slip,,"43,84 %"
+Royalmouth,Boss n°49 · étape 245 · vaincu | Serre du Royalmouth,120,Coiffe du Draguaindrop,,90 %
+Royalmouth,Boss n°49 · étape 245 · vaincu | Serre du Royalmouth,120,Ceinture du Mominotor,,"82,86 %"
+Royalmouth,Boss n°49 · étape 245 · vaincu | Serre du Royalmouth,120,Bottes du Wabbit Céphale,,"82,33 %"
+Royalmouth,Boss n°49 · étape 245 · vaincu | Serre du Royalmouth,120,Torque Ancestral,,"42,77 %"
+Royalmouth,Boss n°49 · étape 245 · vaincu | Serre du Royalmouth,120,Ceinture du Royalmouth,,"39,03 %"
+Royalmouth,Boss n°49 · étape 245 · vaincu | Serre du Royalmouth,120,Coiffe du Royalmouth,,"20,31 %"
+Royalmouth,Boss n°49 · étape 245 · vaincu | Serre du Royalmouth,120,Amulette du Royalmouth,,"20,31 %"
+Royalmouth,Boss n°49 · étape 245 · vaincu | Serre du Royalmouth,120,Bottes du Royalmouth,,"8,02 %"
+Tofu Royal,Boss n°50 · étape 250 · vaincu | Tofulailler Royal,120,Bulbouclier,,90 %
+Tofu Royal,Boss n°50 · étape 250 · vaincu | Tofulailler Royal,120,Cape du Wabbit Garou,,"81,26 %"
+Tofu Royal,Boss n°50 · étape 250 · vaincu | Tofulailler Royal,120,Bâton en bambou spirituel,,"80,19 %"
+Tofu Royal,Boss n°50 · étape 250 · vaincu | Tofulailler Royal,120,Pelle Hikule,,"40,1 %"
+Tofu Royal,Boss n°50 · étape 250 · vaincu | Tofulailler Royal,120,Bottes Animales Sombres,,"40,1 %"
+Tofu Royal,Boss n°50 · étape 250 · vaincu | Tofulailler Royal,120,Dague Régah,,"21,92 %"
+Tofu Royal,Boss n°50 · étape 250 · vaincu | Tofulailler Royal,120,Solomonk,,"21,92 %"
+Tofu Royal,Boss n°50 · étape 250 · vaincu | Tofulailler Royal,120,Amulette du Renouveau,,"8,02 %"
+Blop Multicolore Royal,Boss n°51 · étape 255 · vaincu | Antre du Blop Multicolore Royal,120,Bague Moutheuze,,90 %
+Blop Multicolore Royal,Boss n°51 · étape 255 · vaincu | Antre du Blop Multicolore Royal,120,Blopanneau Multicolore Royal,,90 %
+Blop Multicolore Royal,Boss n°51 · étape 255 · vaincu | Antre du Blop Multicolore Royal,120,Marteau Kahr,,"81,79 %"
+Blop Multicolore Royal,Boss n°51 · étape 255 · vaincu | Antre du Blop Multicolore Royal,120,Cape du Wabbit Garou,,"81,26 %"
+Blop Multicolore Royal,Boss n°51 · étape 255 · vaincu | Antre du Blop Multicolore Royal,120,Bloptes Multicolores Royales,,"52,39 %"
+Blop Multicolore Royal,Boss n°51 · étape 255 · vaincu | Antre du Blop Multicolore Royal,120,Abracaska Ancestral,,"42,23 %"
+Blop Multicolore Royal,Boss n°51 · étape 255 · vaincu | Antre du Blop Multicolore Royal,120,Amublop Multicolore Royale,,"26,73 %"
+Blop Multicolore Royal,Boss n°51 · étape 255 · vaincu | Antre du Blop Multicolore Royal,120,Blopture Multicolore Royale,,"9,62 %"
+Fraktale,Boss n°52 · étape 260 · vaincu | Mégalithe de Fraktale,120,Anneau de Fraktale,,90 %
+Fraktale,Boss n°52 · étape 260 · vaincu | Mégalithe de Fraktale,120,Anneau du Wabbit Céphale,,90 %
+Fraktale,Boss n°52 · étape 260 · vaincu | Mégalithe de Fraktale,120,Anneau Xélomorphe,,90 %
+Fraktale,Boss n°52 · étape 260 · vaincu | Mégalithe de Fraktale,120,Ceinture de Fraktale,,90 %
+Fraktale,Boss n°52 · étape 260 · vaincu | Mégalithe de Fraktale,120,Coiffe du Mominotor,,"81,26 %"
+Fraktale,Boss n°52 · étape 260 · vaincu | Mégalithe de Fraktale,120,Coiffe de Fraktale,,"76,45 %"
+Fraktale,Boss n°52 · étape 260 · vaincu | Mégalithe de Fraktale,120,Mourtheau,,"76,45 %"
+Fraktale,Boss n°52 · étape 260 · vaincu | Mégalithe de Fraktale,120,Pendentif du Mominotor,,"42,77 %"
+Haute Truche,Boss n°53 · étape 265 · vaincu | Volière de la Haute Truche,130,Ceinture Sula,,90 %
+Haute Truche,Boss n°53 · étape 265 · vaincu | Volière de la Haute Truche,130,Anneau Truche,,90 %
+Haute Truche,Boss n°53 · étape 265 · vaincu | Volière de la Haute Truche,130,Ceintruche,,90 %
+Haute Truche,Boss n°53 · étape 265 · vaincu | Volière de la Haute Truche,130,Gruchape,,90 %
+Haute Truche,Boss n°53 · étape 265 · vaincu | Volière de la Haute Truche,130,Chapeau Truche,,"82,33 %"
+Haute Truche,Boss n°53 · étape 265 · vaincu | Volière de la Haute Truche,130,Sandales Titude,,"81,79 %"
+Haute Truche,Boss n°53 · étape 265 · vaincu | Volière de la Haute Truche,130,Amulette de Bouflouth,,"80,19 %"
+Haute Truche,Boss n°53 · étape 265 · vaincu | Volière de la Haute Truche,130,Bottes de Will Killson,,"45,44 %"
+Capitaine Ekarlatte,Boss n°54 · étape 270 · vaincu | Ring du Capitaine Ekarlatte,130,Gant du Capitaine Ekarlatte,,90 %
+Capitaine Ekarlatte,Boss n°54 · étape 270 · vaincu | Ring du Capitaine Ekarlatte,130,Casque Dragoeuf,,90 %
+Capitaine Ekarlatte,Boss n°54 · étape 270 · vaincu | Ring du Capitaine Ekarlatte,130,Masse du Corailleur Magistral,,"81,79 %"
+Capitaine Ekarlatte,Boss n°54 · étape 270 · vaincu | Ring du Capitaine Ekarlatte,130,Baguette Gyver,,"80,19 %"
+Capitaine Ekarlatte,Boss n°54 · étape 270 · vaincu | Ring du Capitaine Ekarlatte,130,Ceinture du Capitaine Ekarlatte,,"78,05 %"
+Capitaine Ekarlatte,Boss n°54 · étape 270 · vaincu | Ring du Capitaine Ekarlatte,130,Bottes de Will Killson,,"45,44 %"
+Capitaine Ekarlatte,Boss n°54 · étape 270 · vaincu | Ring du Capitaine Ekarlatte,130,Bottes d'Inferno,,"45,44 %"
+Capitaine Ekarlatte,Boss n°54 · étape 270 · vaincu | Ring du Capitaine Ekarlatte,130,Bottes du Capitaine Ekarlatte,,"43,3 %"
+El Piko,Boss n°55 · étape 275 · vaincu | Caverne d'El Piko,130,Marteau Pinière,,90 %
+El Piko,Boss n°55 · étape 275 · vaincu | Caverne d'El Piko,130,Couteau de Mer,,"80,19 %"
+El Piko,Boss n°55 · étape 275 · vaincu | Caverne d'El Piko,130,Cascterre,,"78,59 %"
+El Piko,Boss n°55 · étape 275 · vaincu | Caverne d'El Piko,130,Cacture,,"77,52 %"
+El Piko,Boss n°55 · étape 275 · vaincu | Caverne d'El Piko,130,Talisman d'Elya Wood,,"77,52 %"
+El Piko,Boss n°55 · étape 275 · vaincu | Caverne d'El Piko,130,Capterre,,"42,77 %"
+El Piko,Boss n°55 · étape 275 · vaincu | Caverne d'El Piko,130,Sombrero d'El Piko,,"42,77 %"
+El Piko,Boss n°55 · étape 275 · vaincu | Caverne d'El Piko,130,Ceinture du Royalmouth,,"41,7 %"
+Croqueleur,Boss n°56 · étape 280 · vaincu | Croquanterie,130,Glaive Icération,,90 %
+Croqueleur,Boss n°56 · étape 280 · vaincu | Croquanterie,130,Bottes Croquantes,,90 %
+Croqueleur,Boss n°56 · étape 280 · vaincu | Croquanterie,130,Sac à Croquer,,90 %
+Croqueleur,Boss n°56 · étape 280 · vaincu | Croquanterie,130,Croquasque,,90 %
+Croqueleur,Boss n°56 · étape 280 · vaincu | Croquanterie,130,Cape Mouthante,,"81,79 %"
+Croqueleur,Boss n°56 · étape 280 · vaincu | Croquanterie,130,Gruchette,,"79,66 %"
+Croqueleur,Boss n°56 · étape 280 · vaincu | Croquanterie,130,Bottes de Will Killson,,"45,44 %"
+Croqueleur,Boss n°56 · étape 280 · vaincu | Croquanterie,130,Maracassabre,,"41,16 %"
+Nagate,Boss n°57 · étape 285 · vaincu | Vallée de la Dame des eaux,130,Cape d'Ali Grothor,,90 %
+Nagate,Boss n°57 · étape 285 · vaincu | Vallée de la Dame des eaux,130,Kwarapace,,90 %
+Nagate,Boss n°57 · étape 285 · vaincu | Vallée de la Dame des eaux,130,Kwaflaque,,90 %
+Nagate,Boss n°57 · étape 285 · vaincu | Vallée de la Dame des eaux,130,Ceinture sombre en Abrakleur,,"82,33 %"
+Nagate,Boss n°57 · étape 285 · vaincu | Vallée de la Dame des eaux,130,Amulette d'El Piko,,"79,12 %"
+Nagate,Boss n°57 · étape 285 · vaincu | Vallée de la Dame des eaux,130,Kwache,,"43,3 %"
+Nagate,Boss n°57 · étape 285 · vaincu | Vallée de la Dame des eaux,130,Kelinobranche,,"42,77 %"
+Nagate,Boss n°57 · étape 285 · vaincu | Vallée de la Dame des eaux,130,Arc Rainier,,"42,77 %"
+Tanukouï San,Boss n°58 · étape 290 · vaincu | Atelier du Tanukouï San,130,Les Casse-noisettes,,90 %
+Tanukouï San,Boss n°58 · étape 290 · vaincu | Atelier du Tanukouï San,130,Amulette du Dragoeuf,,90 %
+Tanukouï San,Boss n°58 · étape 290 · vaincu | Atelier du Tanukouï San,130,Chapeau Kassé,,90 %
+Tanukouï San,Boss n°58 · étape 290 · vaincu | Atelier du Tanukouï San,130,Ceinture Pitude,,90 %
+Tanukouï San,Boss n°58 · étape 290 · vaincu | Atelier du Tanukouï San,130,Coiffe du Disciple Zoth,,"81,79 %"
+Tanukouï San,Boss n°58 · étape 290 · vaincu | Atelier du Tanukouï San,130,Amulette d'El Piko,,"79,12 %"
+Tanukouï San,Boss n°58 · étape 290 · vaincu | Atelier du Tanukouï San,130,Capterre,,"42,77 %"
+Tanukouï San,Boss n°58 · étape 290 · vaincu | Atelier du Tanukouï San,130,Bottes Animales Sombres,,"42,23 %"
+Tynril Consterné,Boss n°59 · étape 295 · vaincu | Laboratoire du Tynril,140,Anneau Cérémonial du Seigneur des Rats,,90 %
+Tynril Consterné,Boss n°59 · étape 295 · vaincu | Laboratoire du Tynril,140,Coiffe du Tynril,,90 %
+Tynril Consterné,Boss n°59 · étape 295 · vaincu | Laboratoire du Tynril,140,Casque d'Ali Grothor,,"81,79 %"
+Tynril Consterné,Boss n°59 · étape 295 · vaincu | Laboratoire du Tynril,140,Talisman d'Elya Wood,,"77,52 %"
+Tynril Consterné,Boss n°59 · étape 295 · vaincu | Laboratoire du Tynril,140,Talisman Doline,,"42,77 %"
+Tynril Consterné,Boss n°59 · étape 295 · vaincu | Laboratoire du Tynril,140,Éventails de Shihan,,"41,16 %"
+Tynril Consterné,Boss n°59 · étape 295 · vaincu | Laboratoire du Tynril,140,Rhizome du Tynril,,"37,96 %"
+Tynril Consterné,Boss n°59 · étape 295 · vaincu | Laboratoire du Tynril,140,Pelle Shattkitou,,"21,38 %"
+Mansot Royal,Boss n°60 · étape 300 · vaincu | Excavation du Mansot Royal,140,Anneau d'El Piko,,90 %
+Mansot Royal,Boss n°60 · étape 300 · vaincu | Excavation du Mansot Royal,140,Anneau du Mansot Royal,,90 %
+Mansot Royal,Boss n°60 · étape 300 · vaincu | Excavation du Mansot Royal,140,Pelle Rhon,,"83,4 %"
+Mansot Royal,Boss n°60 · étape 300 · vaincu | Excavation du Mansot Royal,140,Coiffe Médusoïde,,"81,26 %"
+Mansot Royal,Boss n°60 · étape 300 · vaincu | Excavation du Mansot Royal,140,Cacture,,"78,05 %"
+Mansot Royal,Boss n°60 · étape 300 · vaincu | Excavation du Mansot Royal,140,Cape du Mansot Royal,,"75,91 %"
+Mansot Royal,Boss n°60 · étape 300 · vaincu | Excavation du Mansot Royal,140,Couronne du Mansot Royal,,"42,23 %"
+Mansot Royal,Boss n°60 · étape 300 · vaincu | Excavation du Mansot Royal,140,Maracassabre,,"41,7 %"
+Chêne Mou,Boss n°61 · étape 305 · vaincu | Clairière du Chêne Mou,140,Alliance d'Elya Wood,,90 %
+Chêne Mou,Boss n°61 · étape 305 · vaincu | Clairière du Chêne Mou,140,Branche de l'Abrakleur clair,,90 %
+Chêne Mou,Boss n°61 · étape 305 · vaincu | Clairière du Chêne Mou,140,Cape d'Elya Wood,,90 %
+Chêne Mou,Boss n°61 · étape 305 · vaincu | Clairière du Chêne Mou,140,Gruchette,,"80,19 %"
+Chêne Mou,Boss n°61 · étape 305 · vaincu | Clairière du Chêne Mou,140,Talisman d'Elya Wood,,"77,52 %"
+Chêne Mou,Boss n°61 · étape 305 · vaincu | Clairière du Chêne Mou,140,Chaîne de Monsieur Pingouin,,"76,45 %"
+Chêne Mou,Boss n°61 · étape 305 · vaincu | Clairière du Chêne Mou,140,Bottes Hoktone,,"41,7 %"
+Chêne Mou,Boss n°61 · étape 305 · vaincu | Clairière du Chêne Mou,140,Baguette d'Elya Wood,,"22,99 %"
+Founoroshi,Boss n°62 · étape 310 · vaincu | Fabrique de foux d'artifice,140,Alliance des Firefoux,,90 %
+Founoroshi,Boss n°62 · étape 310 · vaincu | Fabrique de foux d'artifice,140,Sac des Firefoux,,90 %
+Founoroshi,Boss n°62 · étape 310 · vaincu | Fabrique de foux d'artifice,140,Les Dagues du Bouwin,,90 %
+Founoroshi,Boss n°62 · étape 310 · vaincu | Fabrique de foux d'artifice,140,Pelle Rhon,,"83,4 %"
+Founoroshi,Boss n°62 · étape 310 · vaincu | Fabrique de foux d'artifice,140,Piruk,,"80,19 %"
+Founoroshi,Boss n°62 · étape 310 · vaincu | Fabrique de foux d'artifice,140,Kalypsoton,,"43,84 %"
+Founoroshi,Boss n°62 · étape 310 · vaincu | Fabrique de foux d'artifice,140,Dagues Cacterre,,"43,3 %"
+Founoroshi,Boss n°62 · étape 310 · vaincu | Fabrique de foux d'artifice,140,Ceinture d'artifices,,"21,38 %"
+Shihan,Boss n°63 · étape 315 · vaincu | Dojo du Vent,140,Anneau du Mansot Royal,,90 %
+Shihan,Boss n°63 · étape 315 · vaincu | Dojo du Vent,140,Mitaine de Katigrou,,90 %
+Shihan,Boss n°63 · étape 315 · vaincu | Dojo du Vent,140,Coiffe du Disciple Zoth,,"81,79 %"
+Shihan,Boss n°63 · étape 315 · vaincu | Dojo du Vent,140,Collier de perlouzes,,"80,19 %"
+Shihan,Boss n°63 · étape 315 · vaincu | Dojo du Vent,140,Caparavent,,"79,12 %"
+Shihan,Boss n°63 · étape 315 · vaincu | Dojo du Vent,140,Nun-Charang,,"43,84 %"
+Shihan,Boss n°63 · étape 315 · vaincu | Dojo du Vent,140,Talisman Doline,,"42,77 %"
+Shihan,Boss n°63 · étape 315 · vaincu | Dojo du Vent,140,Coiffe Cérémoniale du Seigneur des Rats,,"42,77 %"
+Sphincter Cell,Boss n°64 · étape 320 · vaincu | Repaire de Sphincter Cell,150,Soigneur majeur,,"84,47 %"
+Sphincter Cell,Boss n°64 · étape 320 · vaincu | Repaire de Sphincter Cell,150,Anneau Frage,,"81,26 %"
+Sphincter Cell,Boss n°64 · étape 320 · vaincu | Repaire de Sphincter Cell,150,Anneau Cérémonial du Seigneur des Rats,,"80,19 %"
+Sphincter Cell,Boss n°64 · étape 320 · vaincu | Repaire de Sphincter Cell,150,Masque du Nowel Cauchemardesque,,"75,91 %"
+Sphincter Cell,Boss n°64 · étape 320 · vaincu | Repaire de Sphincter Cell,150,Palmes de Monsieur Pingouin,,"44,91 %"
+Sphincter Cell,Boss n°64 · étape 320 · vaincu | Repaire de Sphincter Cell,150,Coiffe Cérémoniale du Seigneur des Rats,,"43,84 %"
+Sphincter Cell,Boss n°64 · étape 320 · vaincu | Repaire de Sphincter Cell,150,Cape Cérémoniale du Seigneur des Rats,,"43,84 %"
+Sphincter Cell,Boss n°64 · étape 320 · vaincu | Repaire de Sphincter Cell,150,Collier Cérémonial du Seigneur des Rats,,"21,92 %"
+Ben le Ripate,Boss n°65 · étape 325 · vaincu | Épave du Grolandais violent,150,Muraille Air majeure,,90 %
+Ben le Ripate,Boss n°65 · étape 325 · vaincu | Épave du Grolandais violent,150,Bouclier du Yokomaïnu,,"88,74 %"
+Ben le Ripate,Boss n°65 · étape 325 · vaincu | Épave du Grolandais violent,150,Crochet de Ben le Ripate,,"82,86 %"
+Ben le Ripate,Boss n°65 · étape 325 · vaincu | Épave du Grolandais violent,150,Ceinture de Frigostine,,"77,52 %"
+Ben le Ripate,Boss n°65 · étape 325 · vaincu | Épave du Grolandais violent,150,Ceinture de Ben le Ripate,,"74,84 %"
+Ben le Ripate,Boss n°65 · étape 325 · vaincu | Épave du Grolandais violent,150,Sabre de Ben le Ripate,,"74,31 %"
+Ben le Ripate,Boss n°65 · étape 325 · vaincu | Épave du Grolandais violent,150,Chapeau de Ben le Ripate,,"43,84 %"
+Ben le Ripate,Boss n°65 · étape 325 · vaincu | Épave du Grolandais violent,150,Bottes Hoktone,,"42,77 %"
+Phossile,Boss n°66 · étape 330 · vaincu | Galerie du Phossile,150,Miraculé majeur,,90 %
+Phossile,Boss n°66 · étape 330 · vaincu | Galerie du Phossile,150,Cape du Père Phorreur,,"77,52 %"
+Phossile,Boss n°66 · étape 330 · vaincu | Galerie du Phossile,150,Bracelet du Minotot,,"76,98 %"
+Phossile,Boss n°66 · étape 330 · vaincu | Galerie du Phossile,150,Ceinture Phossile,,"76,45 %"
+Phossile,Boss n°66 · étape 330 · vaincu | Galerie du Phossile,150,Cape Phossile,,"43,3 %"
+Phossile,Boss n°66 · étape 330 · vaincu | Galerie du Phossile,150,Ceinture du Père Phorreur,,"43,3 %"
+Phossile,Boss n°66 · étape 330 · vaincu | Galerie du Phossile,150,Bottes Phossiles,,"42,77 %"
+Phossile,Boss n°66 · étape 330 · vaincu | Galerie du Phossile,150,Pertuisane d'Hell Mina,,"42,23 %"
+Hell Mina,Boss n°67 · étape 335 · vaincu | Tertre du long sommeil,150,Alliance d'Hell Mina,,90 %
+Hell Mina,Boss n°67 · étape 335 · vaincu | Tertre du long sommeil,150,Bouclier du Mont Kipou,,90 %
+Hell Mina,Boss n°67 · étape 335 · vaincu | Tertre du long sommeil,150,Anneau poli de Malter,,"83,93 %"
+Hell Mina,Boss n°67 · étape 335 · vaincu | Tertre du long sommeil,150,Anneau du Mansot Royal,,"80,19 %"
+Hell Mina,Boss n°67 · étape 335 · vaincu | Tertre du long sommeil,150,Marteau Lahre,,"75,38 %"
+Hell Mina,Boss n°67 · étape 335 · vaincu | Tertre du long sommeil,150,Sandales Gorithme,,"43,84 %"
+Hell Mina,Boss n°67 · étape 335 · vaincu | Tertre du long sommeil,150,Bottes Crépitantes de Malter,,"42,77 %"
+Hell Mina,Boss n°67 · étape 335 · vaincu | Tertre du long sommeil,150,Faux Enracinée de Malter,,"8,02 %"
+Phossile,Boss n°68 · étape 340 · vaincu | Expédition de l'Audace - Galerie du Phossile,150,Miraculé majeur,,90 %
+Phossile,Boss n°68 · étape 340 · vaincu | Expédition de l'Audace - Galerie du Phossile,150,Cape du Père Phorreur,,"77,52 %"
+Phossile,Boss n°68 · étape 340 · vaincu | Expédition de l'Audace - Galerie du Phossile,150,Bracelet du Minotot,,"76,98 %"
+Phossile,Boss n°68 · étape 340 · vaincu | Expédition de l'Audace - Galerie du Phossile,150,Ceinture Phossile,,"76,45 %"
+Phossile,Boss n°68 · étape 340 · vaincu | Expédition de l'Audace - Galerie du Phossile,150,Cape Phossile,,"43,3 %"
+Phossile,Boss n°68 · étape 340 · vaincu | Expédition de l'Audace - Galerie du Phossile,150,Ceinture du Père Phorreur,,"43,3 %"
+Phossile,Boss n°68 · étape 340 · vaincu | Expédition de l'Audace - Galerie du Phossile,150,Bottes Phossiles,,"42,77 %"
+Phossile,Boss n°68 · étape 340 · vaincu | Expédition de l'Audace - Galerie du Phossile,150,Pertuisane d'Hell Mina,,"42,23 %"
+Phossile,Boss n°69 · étape 345 · vaincu | Expédition de la Bravoure - Galerie du Phossile,150,Miraculé majeur,,90 %
+Phossile,Boss n°69 · étape 345 · vaincu | Expédition de la Bravoure - Galerie du Phossile,150,Cape du Père Phorreur,,"77,52 %"
+Phossile,Boss n°69 · étape 345 · vaincu | Expédition de la Bravoure - Galerie du Phossile,150,Bracelet du Minotot,,"76,98 %"
+Phossile,Boss n°69 · étape 345 · vaincu | Expédition de la Bravoure - Galerie du Phossile,150,Ceinture Phossile,,"76,45 %"
+Phossile,Boss n°69 · étape 345 · vaincu | Expédition de la Bravoure - Galerie du Phossile,150,Cape Phossile,,"43,3 %"
+Phossile,Boss n°69 · étape 345 · vaincu | Expédition de la Bravoure - Galerie du Phossile,150,Ceinture du Père Phorreur,,"43,3 %"
+Phossile,Boss n°69 · étape 345 · vaincu | Expédition de la Bravoure - Galerie du Phossile,150,Bottes Phossiles,,"42,77 %"
+Phossile,Boss n°69 · étape 345 · vaincu | Expédition de la Bravoure - Galerie du Phossile,150,Pertuisane d'Hell Mina,,"42,23 %"
+Minotot,Boss n°70 · étape 350 · vaincu | Centre du labyrinthe du Minotoror,160,Sceptre du Minotot,,85 %
+Minotot,Boss n°70 · étape 350 · vaincu | Centre du labyrinthe du Minotoror,160,Bracelet du Minotot,,"81,26 %"
+Minotot,Boss n°70 · étape 350 · vaincu | Centre du labyrinthe du Minotoror,160,Cadran de Terre,,"80,19 %"
+Minotot,Boss n°70 · étape 350 · vaincu | Centre du labyrinthe du Minotoror,160,Ceinture du Frelon Noir,,"79,66 %"
+Minotot,Boss n°70 · étape 350 · vaincu | Centre du labyrinthe du Minotoror,160,Sac mortuaire de Jiangshi-Nobi,,"79,12 %"
+Minotot,Boss n°70 · étape 350 · vaincu | Centre du labyrinthe du Minotoror,160,Ceinture de Zatoïshwan,,"43,3 %"
+Minotot,Boss n°70 · étape 350 · vaincu | Centre du labyrinthe du Minotoror,160,Sandales du Minotot,,"41,16 %"
+Minotot,Boss n°70 · étape 350 · vaincu | Centre du labyrinthe du Minotoror,160,Collier du Minotot,,"8,55 %"
+Kimbo,Boss n°71 · étape 355 · vaincu | Canopée du Kimbo,160,Crochet de Ben le Ripate,,"87,14 %"
+Kimbo,Boss n°71 · étape 355 · vaincu | Canopée du Kimbo,160,Kask'Arc Go,,"81,26 %"
+Kimbo,Boss n°71 · étape 355 · vaincu | Canopée du Kimbo,160,Kaskargo,,"80,72 %"
+Kimbo,Boss n°71 · étape 355 · vaincu | Canopée du Kimbo,160,Anneau Skargo,,"80,19 %"
+Kimbo,Boss n°71 · étape 355 · vaincu | Canopée du Kimbo,160,Anneau de Koumiho,,"80,19 %"
+Kimbo,Boss n°71 · étape 355 · vaincu | Canopée du Kimbo,160,Cape des Matougarous,,"72,17 %"
+Kimbo,Boss n°71 · étape 355 · vaincu | Canopée du Kimbo,160,Kriss Toubal,,"41,7 %"
+Kimbo,Boss n°71 · étape 355 · vaincu | Canopée du Kimbo,160,Sandales Circulaires du Kimbo,,"36,35 %"
+Obsidiantre,Boss n°72 · étape 360 · vaincu | Hypogée de l'Obsidiantre,160,Willkillsano,,90 %
+Obsidiantre,Boss n°72 · étape 360 · vaincu | Hypogée de l'Obsidiantre,160,Pupille de Madura,,"81,26 %"
+Obsidiantre,Boss n°72 · étape 360 · vaincu | Hypogée de l'Obsidiantre,160,Bague de l'Obsidiantre,,"80,19 %"
+Obsidiantre,Boss n°72 · étape 360 · vaincu | Hypogée de l'Obsidiantre,160,Féroce majeur,,"80,19 %"
+Obsidiantre,Boss n°72 · étape 360 · vaincu | Hypogée de l'Obsidiantre,160,Ceinture de Zatoïshwan,,"43,3 %"
+Obsidiantre,Boss n°72 · étape 360 · vaincu | Hypogée de l'Obsidiantre,160,Casque de l'Obsidiantre,,"40,1 %"
+Obsidiantre,Boss n°72 · étape 360 · vaincu | Hypogée de l'Obsidiantre,160,Amulette de l'Obsidiantre,,"39,56 %"
+Obsidiantre,Boss n°72 · étape 360 · vaincu | Hypogée de l'Obsidiantre,160,Cape de l'Obsidiantre,,"39,03 %"
+Kanigroula,Boss n°73 · étape 365 · vaincu | Grotte de Kanigroula,160,Imprenable majeur,,90 %
+Kanigroula,Boss n°73 · étape 365 · vaincu | Grotte de Kanigroula,160,Ceinture du Kaniblou,,"81,79 %"
+Kanigroula,Boss n°73 · étape 365 · vaincu | Grotte de Kanigroula,160,Anneau du Kaniblou,,"80,19 %"
+Kanigroula,Boss n°73 · étape 365 · vaincu | Grotte de Kanigroula,160,Cape Itaineflam,,"80,19 %"
+Kanigroula,Boss n°73 · étape 365 · vaincu | Grotte de Kanigroula,160,Cape du Kaniblou,,"78,59 %"
+Kanigroula,Boss n°73 · étape 365 · vaincu | Grotte de Kanigroula,160,Coiffe de l'Orfélin,,"78,59 %"
+Kanigroula,Boss n°73 · étape 365 · vaincu | Grotte de Kanigroula,160,Les Maidartes,,"71,64 %"
+Kanigroula,Boss n°73 · étape 365 · vaincu | Grotte de Kanigroula,160,Barbe de Zatoïshwan,,"42,77 %"
+Ush Galesh,Boss n°74 · étape 370 · vaincu | Plateau de Ush,160,Muraille Terre majeure,,90 %
+Ush Galesh,Boss n°74 · étape 370 · vaincu | Plateau de Ush,160,Bouclier Taverne,,90 %
+Ush Galesh,Boss n°74 · étape 370 · vaincu | Plateau de Ush,160,Infernano,,90 %
+Ush Galesh,Boss n°74 · étape 370 · vaincu | Plateau de Ush,160,Bottes de Ush,,"73,77 %"
+Ush Galesh,Boss n°74 · étape 370 · vaincu | Plateau de Ush,160,Col de Ush,,"73,24 %"
+Ush Galesh,Boss n°74 · étape 370 · vaincu | Plateau de Ush,160,Cape des Matougarous,,"72,17 %"
+Ush Galesh,Boss n°74 · étape 370 · vaincu | Plateau de Ush,160,Coiffe du Minotot,,"43,3 %"
+Ush Galesh,Boss n°74 · étape 370 · vaincu | Plateau de Ush,160,Épée de Ush,,"20,85 %"
+Shogun Tofugawa,Boss n°75 · étape 375 · vaincu | Tombe du Shogun Tofugawa,160,Cuirassé Eau majeur,,90 %
+Shogun Tofugawa,Boss n°75 · étape 375 · vaincu | Tombe du Shogun Tofugawa,160,Bouclier du Yokomaïnu,,90 %
+Shogun Tofugawa,Boss n°75 · étape 375 · vaincu | Tombe du Shogun Tofugawa,160,Sceptre du Minotot,,85 %
+Shogun Tofugawa,Boss n°75 · étape 375 · vaincu | Tombe du Shogun Tofugawa,160,Sac mortuaire de Jiangshi-Nobi,,"79,12 %"
+Shogun Tofugawa,Boss n°75 · étape 375 · vaincu | Tombe du Shogun Tofugawa,160,Bottes de Brume,,"78,59 %"
+Shogun Tofugawa,Boss n°75 · étape 375 · vaincu | Tombe du Shogun Tofugawa,160,Sabre de Ben le Ripate,,"78,59 %"
+Shogun Tofugawa,Boss n°75 · étape 375 · vaincu | Tombe du Shogun Tofugawa,160,Ceinture de Tsukinochi,,"43,84 %"
+Shogun Tofugawa,Boss n°75 · étape 375 · vaincu | Tombe du Shogun Tofugawa,160,Dagues Ruik,,"43,84 %"
+Minotot,Boss n°76 · étape 380 · vaincu | Expédition de l'Audace - Salle du Minotot,160,Sceptre du Minotot,,85 %
+Minotot,Boss n°76 · étape 380 · vaincu | Expédition de l'Audace - Salle du Minotot,160,Bracelet du Minotot,,"81,26 %"
+Minotot,Boss n°76 · étape 380 · vaincu | Expédition de l'Audace - Salle du Minotot,160,Cadran de Terre,,"80,19 %"
+Minotot,Boss n°76 · étape 380 · vaincu | Expédition de l'Audace - Salle du Minotot,160,Ceinture du Frelon Noir,,"79,66 %"
+Minotot,Boss n°76 · étape 380 · vaincu | Expédition de l'Audace - Salle du Minotot,160,Sac mortuaire de Jiangshi-Nobi,,"79,12 %"
+Minotot,Boss n°76 · étape 380 · vaincu | Expédition de l'Audace - Salle du Minotot,160,Ceinture de Zatoïshwan,,"43,3 %"
+Minotot,Boss n°76 · étape 380 · vaincu | Expédition de l'Audace - Salle du Minotot,160,Sandales du Minotot,,"41,16 %"
+Minotot,Boss n°76 · étape 380 · vaincu | Expédition de l'Audace - Salle du Minotot,160,Collier du Minotot,,"8,55 %"
+Minotot,Boss n°77 · étape 385 · vaincu | Expédition de la Bravoure - Salle du Minotot,160,Sceptre du Minotot,,85 %
+Minotot,Boss n°77 · étape 385 · vaincu | Expédition de la Bravoure - Salle du Minotot,160,Bracelet du Minotot,,"81,26 %"
+Minotot,Boss n°77 · étape 385 · vaincu | Expédition de la Bravoure - Salle du Minotot,160,Cadran de Terre,,"80,19 %"
+Minotot,Boss n°77 · étape 385 · vaincu | Expédition de la Bravoure - Salle du Minotot,160,Ceinture du Frelon Noir,,"79,66 %"
+Minotot,Boss n°77 · étape 385 · vaincu | Expédition de la Bravoure - Salle du Minotot,160,Sac mortuaire de Jiangshi-Nobi,,"79,12 %"
+Minotot,Boss n°77 · étape 385 · vaincu | Expédition de la Bravoure - Salle du Minotot,160,Ceinture de Zatoïshwan,,"43,3 %"
+Minotot,Boss n°77 · étape 385 · vaincu | Expédition de la Bravoure - Salle du Minotot,160,Sandales du Minotot,,"41,16 %"
+Minotot,Boss n°77 · étape 385 · vaincu | Expédition de la Bravoure - Salle du Minotot,160,Collier du Minotot,,"8,55 %"
+Kanigroula,Boss n°78 · étape 390 · vaincu | Expédition de l'Audace - Grotte de Kanigroula,160,Imprenable majeur,,90 %
+Kanigroula,Boss n°78 · étape 390 · vaincu | Expédition de l'Audace - Grotte de Kanigroula,160,Ceinture du Kaniblou,,"81,79 %"
+Kanigroula,Boss n°78 · étape 390 · vaincu | Expédition de l'Audace - Grotte de Kanigroula,160,Anneau du Kaniblou,,"80,19 %"
+Kanigroula,Boss n°78 · étape 390 · vaincu | Expédition de l'Audace - Grotte de Kanigroula,160,Cape Itaineflam,,"80,19 %"
+Kanigroula,Boss n°78 · étape 390 · vaincu | Expédition de l'Audace - Grotte de Kanigroula,160,Cape du Kaniblou,,"78,59 %"
+Kanigroula,Boss n°78 · étape 390 · vaincu | Expédition de l'Audace - Grotte de Kanigroula,160,Coiffe de l'Orfélin,,"78,59 %"
+Kanigroula,Boss n°78 · étape 390 · vaincu | Expédition de l'Audace - Grotte de Kanigroula,160,Les Maidartes,,"71,64 %"
+Kanigroula,Boss n°78 · étape 390 · vaincu | Expédition de l'Audace - Grotte de Kanigroula,160,Barbe de Zatoïshwan,,"42,77 %"
+Kanigroula,Boss n°79 · étape 395 · vaincu | Expédition de la Bravoure - Grotte de Kanigroula,160,Imprenable majeur,,90 %
+Kanigroula,Boss n°79 · étape 395 · vaincu | Expédition de la Bravoure - Grotte de Kanigroula,160,Ceinture du Kaniblou,,"81,79 %"
+Kanigroula,Boss n°79 · étape 395 · vaincu | Expédition de la Bravoure - Grotte de Kanigroula,160,Anneau du Kaniblou,,"80,19 %"
+Kanigroula,Boss n°79 · étape 395 · vaincu | Expédition de la Bravoure - Grotte de Kanigroula,160,Cape Itaineflam,,"80,19 %"
+Kanigroula,Boss n°79 · étape 395 · vaincu | Expédition de la Bravoure - Grotte de Kanigroula,160,Cape du Kaniblou,,"78,59 %"
+Kanigroula,Boss n°79 · étape 395 · vaincu | Expédition de la Bravoure - Grotte de Kanigroula,160,Coiffe de l'Orfélin,,"78,59 %"
+Kanigroula,Boss n°79 · étape 395 · vaincu | Expédition de la Bravoure - Grotte de Kanigroula,160,Les Maidartes,,"71,64 %"
+Kanigroula,Boss n°79 · étape 395 · vaincu | Expédition de la Bravoure - Grotte de Kanigroula,160,Barbe de Zatoïshwan,,"42,77 %"
+XLII,Boss n°80 · étape 400 · vaincu | Horologium de XLII,170,Anneau de XLII,,90 %
+XLII,Boss n°80 · étape 400 · vaincu | Horologium de XLII,170,Ceinture de Soissanth,,90 %
+XLII,Boss n°80 · étape 400 · vaincu | Horologium de XLII,170,Masque de Kaonashi,,90 %
+XLII,Boss n°80 · étape 400 · vaincu | Horologium de XLII,170,Ceinture de XLII,,90 %
+XLII,Boss n°80 · étape 400 · vaincu | Horologium de XLII,170,Bottes de XLII,,"81,26 %"
+XLII,Boss n°80 · étape 400 · vaincu | Horologium de XLII,170,Arc Tangente,,"79,12 %"
+XLII,Boss n°80 · étape 400 · vaincu | Horologium de XLII,170,Les Maidartes,,"78,59 %"
+XLII,Boss n°80 · étape 400 · vaincu | Horologium de XLII,170,Katar Strophe,,"42,77 %"
+Père Ver,Boss n°81 · étape 405 · vaincu | Boyau du Père Ver,170,Chapeau Pourih,,90 %
+Père Ver,Boss n°81 · étape 405 · vaincu | Boyau du Père Ver,170,Casquoporth,,90 %
+Père Ver,Boss n°81 · étape 405 · vaincu | Boyau du Père Ver,170,Dagues de Kabombz,,"79,12 %"
+Père Ver,Boss n°81 · étape 405 · vaincu | Boyau du Père Ver,170,Ceintrémorse,,"78,59 %"
+Père Ver,Boss n°81 · étape 405 · vaincu | Boyau du Père Ver,170,Chaussquales,,"78,59 %"
+Père Ver,Boss n°81 · étape 405 · vaincu | Boyau du Père Ver,170,Pantoufles de Soissanth,,"78,59 %"
+Père Ver,Boss n°81 · étape 405 · vaincu | Boyau du Père Ver,170,Sandales du Minotot,,"44,37 %"
+Père Ver,Boss n°81 · étape 405 · vaincu | Boyau du Père Ver,170,Crolier,,"20,85 %"
+Koumiho,Boss n°82 · étape 410 | Demeure des Esprits,170,Anneau du Kaniblou,,90 %
+Koumiho,Boss n°82 · étape 410 | Demeure des Esprits,170,Bottes de Ush,,"80,72 %"
+Koumiho,Boss n°82 · étape 410 | Demeure des Esprits,170,Youyettes,,"80,19 %"
+Koumiho,Boss n°82 · étape 410 | Demeure des Esprits,170,Casque de Metag Robill,,"44,91 %"
+Koumiho,Boss n°82 · étape 410 | Demeure des Esprits,170,Arc de Guten Tak,,"42,77 %"
+Koumiho,Boss n°82 · étape 410 | Demeure des Esprits,170,Bottines Hertie,,"21,38 %"
+Koumiho,Boss n°82 · étape 410 | Demeure des Esprits,170,Bottines des sous-bois,,"20,85 %"
+Koumiho,Boss n°82 · étape 410 | Demeure des Esprits,170,Épée du Bretteur Céleste,,"8,55 %"
+Supervizœuf,Boss n°83 · étape 415 | Poste de contrôle du Supervizœuf,170,Cadran de Terre,,90 %
+Supervizœuf,Boss n°83 · étape 415 | Poste de contrôle du Supervizœuf,170,Blindage du Supervizœuf,,90 %
+Supervizœuf,Boss n°83 · étape 415 | Poste de contrôle du Supervizœuf,170,Fût d'Aspiratueur,,"88,74 %"
+Supervizœuf,Boss n°83 · étape 415 | Poste de contrôle du Supervizœuf,170,Ceinture de l'Orfélin,,"86,07 %"
+Supervizœuf,Boss n°83 · étape 415 | Poste de contrôle du Supervizœuf,170,Casque de Metag Robill,,"44,91 %"
+Supervizœuf,Boss n°83 · étape 415 | Poste de contrôle du Supervizœuf,170,Casque du Supervizœuf,,"42,77 %"
+Supervizœuf,Boss n°83 · étape 415 | Poste de contrôle du Supervizœuf,170,Carapace ailée du Supervizœuf,,"41,7 %"
+Supervizœuf,Boss n°83 · étape 415 | Poste de contrôle du Supervizœuf,170,Dard du Supervizœuf,,"39,03 %"
+XLII,Boss n°84 · étape 420 | Expédition de l'Audace - Horologium de XLII,170,Anneau de XLII,,90 %
+XLII,Boss n°84 · étape 420 | Expédition de l'Audace - Horologium de XLII,170,Ceinture de Soissanth,,90 %
+XLII,Boss n°84 · étape 420 | Expédition de l'Audace - Horologium de XLII,170,Masque de Kaonashi,,90 %
+XLII,Boss n°84 · étape 420 | Expédition de l'Audace - Horologium de XLII,170,Ceinture de XLII,,90 %
+XLII,Boss n°84 · étape 420 | Expédition de l'Audace - Horologium de XLII,170,Bottes de XLII,,"81,26 %"
+XLII,Boss n°84 · étape 420 | Expédition de l'Audace - Horologium de XLII,170,Arc Tangente,,"79,12 %"
+XLII,Boss n°84 · étape 420 | Expédition de l'Audace - Horologium de XLII,170,Les Maidartes,,"78,59 %"
+XLII,Boss n°84 · étape 420 | Expédition de l'Audace - Horologium de XLII,170,Katar Strophe,,"42,77 %"
+XLII,Boss n°85 · étape 425 | Expédition de la Bravoure - Horologium de XLII,170,Anneau de XLII,,90 %
+XLII,Boss n°85 · étape 425 | Expédition de la Bravoure - Horologium de XLII,170,Ceinture de Soissanth,,90 %
+XLII,Boss n°85 · étape 425 | Expédition de la Bravoure - Horologium de XLII,170,Masque de Kaonashi,,90 %
+XLII,Boss n°85 · étape 425 | Expédition de la Bravoure - Horologium de XLII,170,Ceinture de XLII,,90 %
+XLII,Boss n°85 · étape 425 | Expédition de la Bravoure - Horologium de XLII,170,Bottes de XLII,,"81,26 %"
+XLII,Boss n°85 · étape 425 | Expédition de la Bravoure - Horologium de XLII,170,Arc Tangente,,"79,12 %"
+XLII,Boss n°85 · étape 425 | Expédition de la Bravoure - Horologium de XLII,170,Les Maidartes,,"78,59 %"
+XLII,Boss n°85 · étape 425 | Expédition de la Bravoure - Horologium de XLII,170,Katar Strophe,,"42,77 %"
+Bworker,Boss n°86 · étape 430 | Grotte du Bworker,180,Lame Assacre,,90 %
+Bworker,Boss n°86 · étape 430 | Grotte du Bworker,180,Dagues Açantes,,90 %
+Bworker,Boss n°86 · étape 430 | Grotte du Bworker,180,Bracelet Ventré,,"81,79 %"
+Bworker,Boss n°86 · étape 430 | Grotte du Bworker,180,Anneau Bliteré,,"81,79 %"
+Bworker,Boss n°86 · étape 430 | Grotte du Bworker,180,Amulette Ripage,,"76,45 %"
+Bworker,Boss n°86 · étape 430 | Grotte du Bworker,180,Ougamulette,,"76,45 %"
+Bworker,Boss n°86 · étape 430 | Grotte du Bworker,180,Cape de Dremoan,,"73,24 %"
+Bworker,Boss n°86 · étape 430 | Grotte du Bworker,180,Épée Loponèze,,"38,49 %"
+Ougah,Boss n°87 · étape 435 | Temple du Grand Ougah,180,Arc à Lamelles,,90 %
+Ougah,Boss n°87 · étape 435 | Temple du Grand Ougah,180,Mitaine du YeCh'Ti,,"82,86 %"
+Ougah,Boss n°87 · étape 435 | Temple du Grand Ougah,180,Bottes de XLII,,"82,86 %"
+Ougah,Boss n°87 · étape 435 | Temple du Grand Ougah,180,Ougarteau,,"81,79 %"
+Ougah,Boss n°87 · étape 435 | Temple du Grand Ougah,180,Ougamulette,,"76,45 %"
+Ougah,Boss n°87 · étape 435 | Temple du Grand Ougah,180,Ougature,,"74,84 %"
+Ougah,Boss n°87 · étape 435 | Temple du Grand Ougah,180,Ougalurette,,"42,77 %"
+Ougah,Boss n°87 · étape 435 | Temple du Grand Ougah,180,Carapace ailée du Supervizœuf,,"42,23 %"
+Korriandre,Boss n°88 · étape 440 | Antre du Korriandre,180,Anneau du Korriandre,,90 %
+Korriandre,Boss n°88 · étape 440 | Antre du Korriandre,180,Hache du Korriandre,,90 %
+Korriandre,Boss n°88 · étape 440 | Antre du Korriandre,180,Amulette du Korriandre,,90 %
+Korriandre,Boss n°88 · étape 440 | Antre du Korriandre,180,Cape Nécrotique,,90 %
+Korriandre,Boss n°88 · étape 440 | Antre du Korriandre,180,Cape du Korriandre,,"80,19 %"
+Korriandre,Boss n°88 · étape 440 | Antre du Korriandre,180,Chaussquales,,"79,66 %"
+Korriandre,Boss n°88 · étape 440 | Antre du Korriandre,180,Hache Hélème,,"73,24 %"
+Korriandre,Boss n°88 · étape 440 | Antre du Korriandre,180,Collier du YeCh'Ti,,"43,3 %"
+Père Fwetar,Boss n°89 · étape 445 | Maison du Papa Nowel,180,Poing du Supervizœuf,,90 %
+Père Fwetar,Boss n°89 · étape 445 | Maison du Papa Nowel,180,Anneau du Père Fwetar,,90 %
+Père Fwetar,Boss n°89 · étape 445 | Maison du Papa Nowel,180,Ceintrémorse,,"79,66 %"
+Père Fwetar,Boss n°89 · étape 445 | Maison du Papa Nowel,180,Ceinture du Père Fwetar,,"73,77 %"
+Père Fwetar,Boss n°89 · étape 445 | Maison du Papa Nowel,180,Bottes du Père Fwetar,,"73,77 %"
+Père Fwetar,Boss n°89 · étape 445 | Maison du Papa Nowel,180,Cape de Dremoan,,"73,24 %"
+Père Fwetar,Boss n°89 · étape 445 | Maison du Papa Nowel,180,Ougalurette,,"42,77 %"
+Père Fwetar,Boss n°89 · étape 445 | Maison du Papa Nowel,180,Chapeau de Crocodaille Dandi,,"42,77 %"
+Toxoliath,Boss n°90 · étape 450 | Cave du Toxoliath,180,Dagues Adou,,90 %
+Toxoliath,Boss n°90 · étape 450 | Cave du Toxoliath,180,Cape Nécrotique,,90 %
+Toxoliath,Boss n°90 · étape 450 | Cave du Toxoliath,180,Bracelet Ventré,,"81,79 %"
+Toxoliath,Boss n°90 · étape 450 | Cave du Toxoliath,180,Chaussquales,,"79,66 %"
+Toxoliath,Boss n°90 · étape 450 | Cave du Toxoliath,180,Chapeau Lichinelle,,"42,77 %"
+Toxoliath,Boss n°90 · étape 450 | Cave du Toxoliath,180,Ougalurette,,"42,77 %"
+Toxoliath,Boss n°90 · étape 450 | Cave du Toxoliath,180,Amulette Nécrotique,,"21,38 %"
+Toxoliath,Boss n°90 · étape 450 | Cave du Toxoliath,180,Bottes Nécrotiques,,"21,38 %"
+Bworker,Boss n°91 · étape 455 | Expédition de l'Audace - Grotte du Bworker,180,Lame Assacre,,90 %
+Bworker,Boss n°91 · étape 455 | Expédition de l'Audace - Grotte du Bworker,180,Dagues Açantes,,90 %
+Bworker,Boss n°91 · étape 455 | Expédition de l'Audace - Grotte du Bworker,180,Bracelet Ventré,,"81,79 %"
+Bworker,Boss n°91 · étape 455 | Expédition de l'Audace - Grotte du Bworker,180,Anneau Bliteré,,"81,79 %"
+Bworker,Boss n°91 · étape 455 | Expédition de l'Audace - Grotte du Bworker,180,Amulette Ripage,,"76,45 %"
+Bworker,Boss n°91 · étape 455 | Expédition de l'Audace - Grotte du Bworker,180,Ougamulette,,"76,45 %"
+Bworker,Boss n°91 · étape 455 | Expédition de l'Audace - Grotte du Bworker,180,Cape de Dremoan,,"73,24 %"
+Bworker,Boss n°91 · étape 455 | Expédition de l'Audace - Grotte du Bworker,180,Épée Loponèze,,"38,49 %"
+Bworker,Boss n°92 · étape 460 | Expédition de la Bravoure - Grotte du Bworker,180,Lame Assacre,,90 %
+Bworker,Boss n°92 · étape 460 | Expédition de la Bravoure - Grotte du Bworker,180,Dagues Açantes,,90 %
+Bworker,Boss n°92 · étape 460 | Expédition de la Bravoure - Grotte du Bworker,180,Bracelet Ventré,,"81,79 %"
+Bworker,Boss n°92 · étape 460 | Expédition de la Bravoure - Grotte du Bworker,180,Anneau Bliteré,,"81,79 %"
+Bworker,Boss n°92 · étape 460 | Expédition de la Bravoure - Grotte du Bworker,180,Amulette Ripage,,"76,45 %"
+Bworker,Boss n°92 · étape 460 | Expédition de la Bravoure - Grotte du Bworker,180,Ougamulette,,"76,45 %"
+Bworker,Boss n°92 · étape 460 | Expédition de la Bravoure - Grotte du Bworker,180,Cape de Dremoan,,"73,24 %"
+Bworker,Boss n°92 · étape 460 | Expédition de la Bravoure - Grotte du Bworker,180,Épée Loponèze,,"38,49 %"
+Toxoliath,Boss n°93 · étape 465 | Expédition de l'Audace - Cave du Toxoliath,180,Dagues Adou,,90 %
+Toxoliath,Boss n°93 · étape 465 | Expédition de l'Audace - Cave du Toxoliath,180,Cape Nécrotique,,90 %
+Toxoliath,Boss n°93 · étape 465 | Expédition de l'Audace - Cave du Toxoliath,180,Bracelet Ventré,,"81,79 %"
+Toxoliath,Boss n°93 · étape 465 | Expédition de l'Audace - Cave du Toxoliath,180,Chaussquales,,"79,66 %"
+Toxoliath,Boss n°93 · étape 465 | Expédition de l'Audace - Cave du Toxoliath,180,Chapeau Lichinelle,,"42,77 %"
+Toxoliath,Boss n°93 · étape 465 | Expédition de l'Audace - Cave du Toxoliath,180,Ougalurette,,"42,77 %"
+Toxoliath,Boss n°93 · étape 465 | Expédition de l'Audace - Cave du Toxoliath,180,Amulette Nécrotique,,"21,38 %"
+Toxoliath,Boss n°93 · étape 465 | Expédition de l'Audace - Cave du Toxoliath,180,Bottes Nécrotiques,,"21,38 %"
+Toxoliath,Boss n°94 · étape 470 | Expédition de la Bravoure - Cave du Toxoliath,180,Dagues Adou,,90 %
+Toxoliath,Boss n°94 · étape 470 | Expédition de la Bravoure - Cave du Toxoliath,180,Cape Nécrotique,,90 %
+Toxoliath,Boss n°94 · étape 470 | Expédition de la Bravoure - Cave du Toxoliath,180,Bracelet Ventré,,"81,79 %"
+Toxoliath,Boss n°94 · étape 470 | Expédition de la Bravoure - Cave du Toxoliath,180,Chaussquales,,"79,66 %"
+Toxoliath,Boss n°94 · étape 470 | Expédition de la Bravoure - Cave du Toxoliath,180,Chapeau Lichinelle,,"42,77 %"
+Toxoliath,Boss n°94 · étape 470 | Expédition de la Bravoure - Cave du Toxoliath,180,Ougalurette,,"42,77 %"
+Toxoliath,Boss n°94 · étape 470 | Expédition de la Bravoure - Cave du Toxoliath,180,Amulette Nécrotique,,"21,38 %"
+Toxoliath,Boss n°94 · étape 470 | Expédition de la Bravoure - Cave du Toxoliath,180,Bottes Nécrotiques,,"21,38 %"
+Fuji Givrefoux Nourricière,Boss n°95 · étape 475 | Tanière Givrefoux,190,Alliance de Guten Tak,,90 %
+Fuji Givrefoux Nourricière,Boss n°95 · étape 475 | Tanière Givrefoux,190,Boucliéclair de Flasho,,90 %
+Fuji Givrefoux Nourricière,Boss n°95 · étape 475 | Tanière Givrefoux,190,Chapignon,,"81,26 %"
+Fuji Givrefoux Nourricière,Boss n°95 · étape 475 | Tanière Givrefoux,190,Bottes de la Fuji Givrefoux,,"80,19 %"
+Fuji Givrefoux Nourricière,Boss n°95 · étape 475 | Tanière Givrefoux,190,Arc de Guten Tak,,"47,04 %"
+Fuji Givrefoux Nourricière,Boss n°95 · étape 475 | Tanière Givrefoux,190,Amulette de Guten Tak,,"46,51 %"
+Fuji Givrefoux Nourricière,Boss n°95 · étape 475 | Tanière Givrefoux,190,Dard du Supervizœuf,,"42,77 %"
+Fuji Givrefoux Nourricière,Boss n°95 · étape 475 | Tanière Givrefoux,190,Anneau de Guten Tak,,"9,09 %"
+Kolosso,Boss n°96 · étape 480 | Cavernes du Kolosso,190,Anneau de Kolosso,,90 %
+Kolosso,Boss n°96 · étape 480 | Cavernes du Kolosso,190,Bague de Boréale,,90 %
+Kolosso,Boss n°96 · étape 480 | Cavernes du Kolosso,190,Ceinture de Kolosso,,90 %
+Kolosso,Boss n°96 · étape 480 | Cavernes du Kolosso,190,Coiffe de Kolosso,,90 %
+Kolosso,Boss n°96 · étape 480 | Cavernes du Kolosso,190,Anneau de la Fuji Givrefoux,,90 %
+Kolosso,Boss n°96 · étape 480 | Cavernes du Kolosso,190,Ougamulette,,"81,79 %"
+Kolosso,Boss n°96 · étape 480 | Cavernes du Kolosso,190,Amulette de Nevark,,"78,05 %"
+Kolosso,Boss n°96 · étape 480 | Cavernes du Kolosso,190,Grésilocape,,"42,23 %"
+Grolloum,Boss n°97 · étape 485 | Mine abandonnée de Sakaï,190,Grésilanneau,,90 %
+Grolloum,Boss n°97 · étape 485 | Mine abandonnée de Sakaï,190,Frimanneau,,90 %
+Grolloum,Boss n°97 · étape 485 | Mine abandonnée de Sakaï,190,Cape du Professeur Xa,,90 %
+Grolloum,Boss n°97 · étape 485 | Mine abandonnée de Sakaï,190,Ceinture de Brouce,,"81,26 %"
+Grolloum,Boss n°97 · étape 485 | Mine abandonnée de Sakaï,190,Grésilobottes,,"80,72 %"
+Grolloum,Boss n°97 · étape 485 | Mine abandonnée de Sakaï,190,Ougature,,"80,72 %"
+Grolloum,Boss n°97 · étape 485 | Mine abandonnée de Sakaï,190,Baguette Hernelle,,"41,7 %"
+Grolloum,Boss n°97 · étape 485 | Mine abandonnée de Sakaï,190,Frimamulette,,"21,38 %"
+Glourséleste,Boss n°98 · étape 490 | Antichambre des Gloursons,190,Frimanneau,,90 %
+Glourséleste,Boss n°98 · étape 490 | Antichambre des Gloursons,190,Bottes d'Otomaï,,"80,19 %"
+Glourséleste,Boss n°98 · étape 490 | Antichambre des Gloursons,190,Cape du Glourséleste,,"79,12 %"
+Glourséleste,Boss n°98 · étape 490 | Antichambre des Gloursons,190,Ceinture du Glourséleste,,"78,59 %"
+Glourséleste,Boss n°98 · étape 490 | Antichambre des Gloursons,190,Ceinture du Comte Razof,,"78,59 %"
+Glourséleste,Boss n°98 · étape 490 | Antichambre des Gloursons,190,Masque du Glourséleste,,"78,05 %"
+Glourséleste,Boss n°98 · étape 490 | Antichambre des Gloursons,190,Marteau Aigri,,"41,7 %"
+Glourséleste,Boss n°98 · étape 490 | Antichambre des Gloursons,190,Amulette du Glourséleste,,"21,38 %"
+Ombre,Boss n°99 · étape 495 | Pyramide d'Ombre,190,Anneau Kturne,,90 %
+Ombre,Boss n°99 · étape 495 | Pyramide d'Ombre,190,Bouclier Gris,,90 %
+Ombre,Boss n°99 · étape 495 | Pyramide d'Ombre,190,Chaussures Hau,,90 %
+Ombre,Boss n°99 · étape 495 | Pyramide d'Ombre,190,Bracelet Ventré,,"87,67 %"
+Ombre,Boss n°99 · étape 495 | Pyramide d'Ombre,190,Obscture,,"80,72 %"
+Ombre,Boss n°99 · étape 495 | Pyramide d'Ombre,190,Ougature,,"80,72 %"
+Ombre,Boss n°99 · étape 495 | Pyramide d'Ombre,190,Chapeau de Crocodaille Dandi,,"47,04 %"
+Ombre,Boss n°99 · étape 495 | Pyramide d'Ombre,190,Amulule,,"43,3 %"
+Comte Razof,Boss n°100 · étape 500 | Camp du Comte Razof,190,Quatre-feuilles,,90 %
+Comte Razof,Boss n°100 · étape 500 | Camp du Comte Razof,190,Cape Tif,,90 %
+Comte Razof,Boss n°100 · étape 500 | Camp du Comte Razof,190,Mitaine du YeCh'Ti,,"88,74 %"
+Comte Razof,Boss n°100 · étape 500 | Camp du Comte Razof,190,Chaussons du Comte Razof,,"80,72 %"
+Comte Razof,Boss n°100 · étape 500 | Camp du Comte Razof,190,Pelle du Professeur Xa,,"79,66 %"
+Comte Razof,Boss n°100 · étape 500 | Camp du Comte Razof,190,Ceinture du Comte Razof,,"78,59 %"
+Comte Razof,Boss n°100 · étape 500 | Camp du Comte Razof,190,Chapeau du Comte Razof,,"77,52 %"
+Comte Razof,Boss n°100 · étape 500 | Camp du Comte Razof,190,Bâton Brageut,,"42,77 %"
+Barbéryl Clochecuivre,Boss n°101 · étape 505 | Bastion des Marteaux-Aigris,190,Bague de Boréale,,90 %
+Barbéryl Clochecuivre,Boss n°101 · étape 505 | Bastion des Marteaux-Aigris,190,Grelots de Barbéryl,,90 %
+Barbéryl Clochecuivre,Boss n°101 · étape 505 | Bastion des Marteaux-Aigris,190,Anneau Clochecuivre,,90 %
+Barbéryl Clochecuivre,Boss n°101 · étape 505 | Bastion des Marteaux-Aigris,190,Chapignon,,"81,26 %"
+Barbéryl Clochecuivre,Boss n°101 · étape 505 | Bastion des Marteaux-Aigris,190,Pelle du Professeur Xa,,"79,66 %"
+Barbéryl Clochecuivre,Boss n°101 · étape 505 | Bastion des Marteaux-Aigris,190,Kukri Kura,,"47,04 %"
+Barbéryl Clochecuivre,Boss n°101 · étape 505 | Bastion des Marteaux-Aigris,190,Heaume Clochecuivre,,"42,77 %"
+Barbéryl Clochecuivre,Boss n°101 · étape 505 | Bastion des Marteaux-Aigris,190,Masse Clochecuivre,,"42,23 %"
+Grolloum,Boss n°102 · étape 510 | Expédition de l'Audace - Donjon de la mine de Sakaï,190,Grésilanneau,,90 %
+Grolloum,Boss n°102 · étape 510 | Expédition de l'Audace - Donjon de la mine de Sakaï,190,Frimanneau,,90 %
+Grolloum,Boss n°102 · étape 510 | Expédition de l'Audace - Donjon de la mine de Sakaï,190,Cape du Professeur Xa,,90 %
+Grolloum,Boss n°102 · étape 510 | Expédition de l'Audace - Donjon de la mine de Sakaï,190,Ceinture de Brouce,,"81,26 %"
+Grolloum,Boss n°102 · étape 510 | Expédition de l'Audace - Donjon de la mine de Sakaï,190,Grésilobottes,,"80,72 %"
+Grolloum,Boss n°102 · étape 510 | Expédition de l'Audace - Donjon de la mine de Sakaï,190,Ougature,,"80,72 %"
+Grolloum,Boss n°102 · étape 510 | Expédition de l'Audace - Donjon de la mine de Sakaï,190,Baguette Hernelle,,"41,7 %"
+Grolloum,Boss n°102 · étape 510 | Expédition de l'Audace - Donjon de la mine de Sakaï,190,Frimamulette,,"21,38 %"
+Grolloum,Boss n°103 · étape 515 | Expédition de la Bravoure - Donjon de la mine de Sakaï,190,Grésilanneau,,90 %
+Grolloum,Boss n°103 · étape 515 | Expédition de la Bravoure - Donjon de la mine de Sakaï,190,Frimanneau,,90 %
+Grolloum,Boss n°103 · étape 515 | Expédition de la Bravoure - Donjon de la mine de Sakaï,190,Cape du Professeur Xa,,90 %
+Grolloum,Boss n°103 · étape 515 | Expédition de la Bravoure - Donjon de la mine de Sakaï,190,Ceinture de Brouce,,"81,26 %"
+Grolloum,Boss n°103 · étape 515 | Expédition de la Bravoure - Donjon de la mine de Sakaï,190,Grésilobottes,,"80,72 %"
+Grolloum,Boss n°103 · étape 515 | Expédition de la Bravoure - Donjon de la mine de Sakaï,190,Ougature,,"80,72 %"
+Grolloum,Boss n°103 · étape 515 | Expédition de la Bravoure - Donjon de la mine de Sakaï,190,Baguette Hernelle,,"41,7 %"
+Grolloum,Boss n°103 · étape 515 | Expédition de la Bravoure - Donjon de la mine de Sakaï,190,Frimamulette,,"21,38 %"
+Ombre,Boss n°104 · étape 520 | Expédition de l'Audace - Pyramide d'Ombre,190,Anneau Kturne,,90 %
+Ombre,Boss n°104 · étape 520 | Expédition de l'Audace - Pyramide d'Ombre,190,Bouclier Gris,,90 %
+Ombre,Boss n°104 · étape 520 | Expédition de l'Audace - Pyramide d'Ombre,190,Chaussures Hau,,90 %
+Ombre,Boss n°104 · étape 520 | Expédition de l'Audace - Pyramide d'Ombre,190,Bracelet Ventré,,"87,67 %"
+Ombre,Boss n°104 · étape 520 | Expédition de l'Audace - Pyramide d'Ombre,190,Obscture,,"80,72 %"
+Ombre,Boss n°104 · étape 520 | Expédition de l'Audace - Pyramide d'Ombre,190,Ougature,,"80,72 %"
+Ombre,Boss n°104 · étape 520 | Expédition de l'Audace - Pyramide d'Ombre,190,Chapeau de Crocodaille Dandi,,"47,04 %"
+Ombre,Boss n°104 · étape 520 | Expédition de l'Audace - Pyramide d'Ombre,190,Amulule,,"43,3 %"
+Ombre,Boss n°105 · étape 525 | Expédition de la Bravoure - Pyramide d'Ombre,190,Anneau Kturne,,90 %
+Ombre,Boss n°105 · étape 525 | Expédition de la Bravoure - Pyramide d'Ombre,190,Bouclier Gris,,90 %
+Ombre,Boss n°105 · étape 525 | Expédition de la Bravoure - Pyramide d'Ombre,190,Chaussures Hau,,90 %
+Ombre,Boss n°105 · étape 525 | Expédition de la Bravoure - Pyramide d'Ombre,190,Bracelet Ventré,,"87,67 %"
+Ombre,Boss n°105 · étape 525 | Expédition de la Bravoure - Pyramide d'Ombre,190,Obscture,,"80,72 %"
+Ombre,Boss n°105 · étape 525 | Expédition de la Bravoure - Pyramide d'Ombre,190,Ougature,,"80,72 %"
+Ombre,Boss n°105 · étape 525 | Expédition de la Bravoure - Pyramide d'Ombre,190,Chapeau de Crocodaille Dandi,,"47,04 %"
+Ombre,Boss n°105 · étape 525 | Expédition de la Bravoure - Pyramide d'Ombre,190,Amulule,,"43,3 %"
+Gorgouille Gloutonne,Boss n°106 · étape 530 | Expédition - Antre du Dragon Cochon,200,Amertume de Belladone,,90 %
+Gorgouille Gloutonne,Boss n°106 · étape 530 | Expédition - Antre du Dragon Cochon,200,Amulette de Danathor,,"80,72 %"
+Gorgouille Gloutonne,Boss n°106 · étape 530 | Expédition - Antre du Dragon Cochon,200,Épée du Granduk,,"78,05 %"
+Gorgouille Gloutonne,Boss n°106 · étape 530 | Expédition - Antre du Dragon Cochon,200,Hachoirs de Viandargh,,"42,77 %"
+Gorgouille Gloutonne,Boss n°106 · étape 530 | Expédition - Antre du Dragon Cochon,200,Ceinture Séculaire,,"42,23 %"
+Gorgouille Gloutonne,Boss n°106 · étape 530 | Expédition - Antre du Dragon Cochon,200,Bottes du Chalœil,,"21,38 %"
+Gorgouille Gloutonne,Boss n°106 · étape 530 | Expédition - Antre du Dragon Cochon,200,Zarbottes,,"20,85 %"
+Gorgouille Gloutonne,Boss n°106 · étape 530 | Expédition - Antre du Dragon Cochon,200,Bâthon,,"8,02 %"

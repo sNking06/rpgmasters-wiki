@@ -8,6 +8,11 @@ export const metadata: Metadata = {
 };
 
 const FILES: [string, string][] = [
+  ['README-rpgmasters.md', 'Réserves du relevé connecté du 15/10/2026 vers 07:00 : prospection 486, Discord +10 % butin, événement Butin ×2 potentiellement inclus ; Dofus et Rayonnant à 1 % non listés, raretés et PV absents du bestiaire.'],
+  ['rpgmasters-boss-drops.csv', '106 entrées de boss, étapes, lieux et taux affichés ; page Boss et butin.'],
+  ['rpgmasters-boss-mechanics.csv', '27 boss de niveaux 150–200, difficultés et textes ; Kralamoure Géant en complément hors liste du bestiaire. Boss <150 non collectés ; Bworker verrouillé.'],
+  ['rpgmasters-zones-monsters.csv', 'Liens monstre × zone, niveaux, familles et bonus de victoire ; page Zones et monstres.'],
+  ['rpgmasters-cards.csv', '241 cartes possédées, effets et tags ; page Cartes. 11 cartes non découvertes manquent.'],
   ['mecaniques.md', 'Mécaniques tirées des pages et du code client publics (stats, classes, cartes, objets, Prestige, arène, saison, coffres, énergie, lacunes, recommandations Crâ).'],
   ['rea_classement.md', 'Compléments : courbe d’XP, énergie, Elo, dégâts (résultats négatifs), Prestige, classement de saison.'],
   ['passifs_classes.txt', 'Textes des passifs des 19 classes (page /classes).'],

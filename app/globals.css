@@ -3365,3 +3365,11 @@ figcaption {
 .item-table td.item-notes { width: 34rem; }
 .item-table td.item-res { white-space: normal; min-width: 14rem; max-width: 18rem; }
 .item-table td.item-notes { font-size: .95rem; }
+
+/* Catalogues : cadres de parchemin et contrôles accessibles. */
+.catalogue .item-filters input, .catalogue .item-filters select { border-color: var(--line); max-width: 100%; }
+.catalogue .item-filters label { max-width: 100%; }
+.catalogue .item-filters input[type="checkbox"] { min-width: auto; width: 1.2rem; height: 1.2rem; accent-color: var(--focus); }
+.catalogue .more-body article + article { border-top: 1px solid var(--line); margin-top: 1rem; padding-top: 1rem; }
+.catalogue .table-wrap { max-height: 70vh; }
+.catalogue .muted { color: var(--muted); }

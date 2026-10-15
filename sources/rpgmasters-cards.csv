@@ -1,0 +1,242 @@
+name,class_or_general,rarity,pa_cost,element,effect,lines,notes
+Bouclier Féca,Classe,,2,,Bouclier de 33% des PV max (2 tours),1,✓ Dans le deck
+Bulle,Classe,,2,Eau,20 à 23 dommages Eau,1,Toujours possédée
+Rempart,Classe,,2,Terre,+33 % Résistance (tous éléments) (1 tour) / 10 à 13 dommages Terre,2,Toujours possédée
+Épée de Iop,Incarné,,3,Terre,26 à 31 dommages Terre,1,Toujours possédée
+Secourisme,Incarné,,2,,Soigne 23% des PV max,1,Toujours possédée
+Vertu,Incarné,,2,,Bouclier de 26% des PV max (2 tours),1,✓ Dans le deck
+Acuité Absolue,,Légendaire,2,,+15 % Dommages critiques (1 tour),1,
+Bluff,,Légendaire,3,Air;Eau;Feu;Terre,5 à 67 dommages Air / 5 à 67 dommages Eau / 5 à 67 dommages Feu / 5 à 67 dommages Terre,4,✓ Dans le deck
+Brise l'Âme,,Légendaire,3,,Soigne 25% des PV max,1,
+Carnavalo,,Légendaire,3,,Bouclier de 100% du niveau (2 tours) / 29 à 34 dommages du meilleur élément,2,
+Entraide,,Légendaire,2,,+1 PA / Soigne 3% des PV max,2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e479]': +3 %"
+Fureur,,Légendaire,3,Terre,34 à 38 dommages Terre,1,
+Ancrage,,Mythique,4,Terre,41 à 44 dommages Terre — en zone,1,Zone
+Bain de Sang,,Mythique,4,Terre,31 à 36 vol de vie Terre — en zone,1,Zone
+Chevalerie,,Mythique,2,,Soigne 7% des PV max,1,
+Mot Fleuri,,Mythique,4,Air,39 à 44 dommages Air — en zone / Soigne 34 à 38 (Air),2,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e563]': +3 %"
+Mousquet,,Mythique,2,Terre,22 à 24 dommages Terre — en zone,1,Zone
+Odorat,,Mythique,3,,-3 PA à la cible (monstre : sa prochaine attaque affaiblie de 45 %) / +3 PA,2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e599]': +3 %"
+Pelle des Anciens,,Mythique,4,Eau,46 à 51 dommages Eau,1,✓ Dans le deck
+Pétrification,,Mythique,4,Eau,32 à 36 dommages Eau / -2 PA à la cible (monstre : sa prochaine attaque affaiblie de 30 %),2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e634]': +3 %"
+Silbo,,Mythique,2,Air,20 à 22 dommages Air — en zone,1,Zone
+Concentration de Chakra,,Mythique,3,,14 vol de vie du meilleur élément,1,
+Coussinets,,Mythique,4,Air,41 à 44 dommages Air,1,
+Distorsion,,Mythique,4,Air,34 à 37 dommages Air — en zone,1,Zone
+Jormun,,Mythique,3,Eau,35 à 39 dommages Eau — en zone,1,Zone
+Nausée,,Mythique,2,Air,17 à 20 dommages Air,1,
+Péremption,,Mythique,4,Feu,48 à 51 dommages Feu,1,
+Précipitation,,Mythique,2,,+5 PA / -3 PA à la cible (monstre : sa prochaine attaque affaiblie de 45 %),2,✓ Dans le deck
+Tremblement,,Mythique,3,Terre,34 à 38 dommages Terre — en zone,1,Zone
+Corruption,,Mythique,5,,Soigne 40% des PV max,1,
+Libation,,Mythique,2,,Soigne 18% des PV max,1,
+Limier,,Mythique,3,Air,32 à 36 dommages Air,1,
+Pinceau Tribal,,Mythique,3,Terre,Soigne 19 à 22 (Terre) / 22 à 26 dommages Terre — en zone / Soigne 19 à 22 (Terre) / 22 à 26 dommages Terre,4,Zone
+Resquille,,Mythique,4,Eau,38 à 43 dommages Eau — en zone / -2 PA à la cible (monstre : sa prochaine attaque affaiblie de 30 %),2,Zone
+Surcharge Runique,,Mythique,3,Air;Eau;Feu;Terre,12 dommages Eau / 12 dommages Feu / 12 dommages Air / 12 dommages Terre / Soigne 4% des PV max,5,
+Vague à Lame,,Mythique,4,Eau,42 à 46 dommages Eau — en zone,1,Zone
+Assistance,,Mythique,2,,Soigne 25% des PV max,1,
+Berserk,,Mythique,2,,+10 % Dommages aux sorts,1,
+Cryothérapie,,Mythique,3,Eau,16 à 19 dommages Eau / Bouclier de 100% du niveau (1 tour) / Soigne 14 à 16 (Eau) / 16 à 19 dommages Eau — en zone,4,Zone
+Don Naturel,,Mythique,2,,Soigne 30 à 35 (du meilleur élément),1,
+Flèche Dévorante,,Mythique,3,Feu,13 à 15 vol de vie Feu / 13 à 15 vol de vie Feu / 39 à 44 dommages Feu,3,
+Fourvoiement,,Mythique,4,Air,37 à 42 dommages Air — en zone,1,Zone
+Momification,,Mythique,2,,+60 Retrait PA (1 tour),1,
+Propagation,,Mythique,1,,-15 % Critique à la cible (1 tour),1,
+Charge Bestiale,,Épique,3,Terre,30 à 33 dommages Terre,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1060]': +3 %"
+Chasse,,Épique,4,Feu,44 à 49 dommages Feu,1,
+Cri de Guerre,,Épique,4,Terre,45 à 50 dommages Terre — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +9 % d’effet"" [ref=f8e1093]': +9 %"
+Dagues Boomerang,,Épique,4,Air,18 à 20 dommages Air — en zone / 18 à 20 dommages Air — en zone,2,Zone
+Endurance,,Épique,3,Eau,Bouclier de 75% du niveau (2 tours) / 34 à 38 dommages Eau,2,
+Kyrja,,Épique,3,,31 à 36 vol de vie du meilleur élément — en zone,1,Zone
+Œil de Taupe,,Épique,3,Eau,22 à 26 vol de vie Eau — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1163]': +3 %"
+Pillage,,Épique,3,Eau,Vole 106 Chance (3 tours) / 31 à 34 vol de vie Eau,2,"doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e1181]': +6 %"
+Ressac,,Épique,3,Terre,27 à 31 dommages Terre,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1199]': +3 %"
+Souillure,,Épique,2,,-155 Puissance à la cible (1 tour),1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1216]': +3 %"
+Trait Ardent,,Épique,4,Feu,37 à 41 dommages Feu — en zone,1,Zone
+Transfusion,,Épique,2,Neutre,Dommages Neutre : 10% des PV du lanceur,1,
+Tromperie,,Épique,3,Air;Eau;Feu;Terre,21 à 22 vol de vie Air / 21 à 22 vol de vie Eau / 21 à 22 vol de vie Feu / 21 à 22 vol de vie Terre / Soigne 19 à 20 (Air) / Soigne 19 à 20 (Eau) / Soigne 19 à 20 (Feu) / Soigne 19 à 20 (Terre),8,
+Aéropique,,Épique,3,Air,27 à 30 dommages Air,1,
+Dissolution,,Épique,4,Eau,28 à 32 vol de vie Eau — en zone,1,Zone
+Fermentation,,Épique,3,,Bouclier de 240% du niveau (1 tour) / Bouclier de 240% du niveau (1 tour),2,
+Fourberie,,Épique,4,Feu,Vole 103 Intelligence (3 tours) / 31 à 36 vol de vie Feu — en zone,2,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1339]': +3 %"
+Glacier,,Épique,4,Eau,36 à 40 vol de vie Eau — en zone,1,Zone
+Herbes Folles,,Épique,3,Feu,36 à 40 dommages Feu — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1375]': +3 %"
+Inferno,,Épique,4,Feu,46 à 50 dommages Feu / +200 Puissance (2 tours),2,
+Muspel,,Épique,4,Feu,31 à 36 dommages Feu — en zone,1,Zone
+Œil pour Œil,,Épique,3,Terre,31 à 35 vol de vie Terre — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1427]': +3 %"
+Pelle Fantomatique,,Épique,3,Feu,29 à 31 dommages Feu,1,
+Pelotage,,Épique,3,Feu,32 à 36 dommages Feu — en zone,1,Zone
+Réfraction,,Épique,2,Feu,18 à 20 dommages Feu — en zone / 18 à 20 dommages Feu,2,Zone
+Sonar,,Épique,3,,12 à 15 dommages du meilleur élément,1,
+Thérapie,,Épique,3,Terre,26 à 28 vol de vie Terre / Soigne 23 à 25 (Terre),2,
+Tibia,,Épique,4,Eau,45 à 50 dommages Eau — en zone,1,Zone | ✓ Dans le deck
+Apaisement,,Épique,3,,Soigne 15% des PV max,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1547]': +3 %"
+Balise de Survie,,Épique,2,,Soigne 7% des PV max,1,
+Banqueroute,,Épique,4,,-20 Esquive PA à la cible (2 tours),1,
+Courant,,Épique,3,Eau,34 à 38 dommages Eau,1,
+Désolation,,Épique,4,Air,30 à 35 vol de vie Air — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1612]': +3 %"
+Discipline,,Épique,2,,21 à 25 dommages du meilleur élément,1,
+Éviction,,Épique,2,Terre,17 à 19 dommages Terre,1,
+Extraction,,Épique,3,Feu,31 à 34 vol de vie Feu / 16 à 17 vol de vie Feu,2,
+Prélude au Fer,,Épique,2,,+206 Puissance (2 tours),1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1679]': +3 %"
+Rafale,,Épique,4,Air,32 à 37 vol de vie Air — en zone,1,Zone
+Sacrifice Vaudou,,Épique,3,Eau,Soigne 31 à 35 (Eau),1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1713]': +3 %"
+Affliction,,Épique,4,Eau,27 à 30 vol de vie Eau / Soigne 24 à 27 (Eau),2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1730]': +3 %"
+Apathie,,Épique,4,Terre,35 à 39 dommages Terre,1,
+Chapardage,,Épique,3,Feu,22 à 25 vol de vie Feu,1,
+Dogue,,Épique,2,Terre,19 à 21 vol de vie Terre,1,
+Esprit Félin,,Épique,3,Terre,35 à 38 dommages Terre / +30 Résistance Critiques (1 tour),2,
+Flasque Explosive,,Épique,2,Feu,20 à 22 dommages Feu — en zone,1,Zone
+Orage,,Épique,4,Terre,37 à 41 dommages Terre — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1830]': +3 %"
+Souterrain,,Épique,3,Terre,30 à 33 dommages Terre,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1848]': +3 %"
+Terre du Milieu,,Épique,3,Terre,+50 Puissance (2 tours) / 34 à 38 dommages Terre — en zone,2,Zone
+Abattement,,Rare,3,Air,26 à 28 dommages Air / -2 PA à la cible (monstre : sa prochaine attaque affaiblie de 30 %),2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1883]': +3 %"
+Arcanin,,Rare,1,,+103 Puissance (3 tours),1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1901]': +3 %"
+Bombarde,,Rare,3,Terre,30 à 32 dommages Terre — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e1918]': +6 %"
+Château de Cartes,,Rare,3,,Bouclier de 109% du niveau (2 tours) / Bouclier de 55% du niveau (2 tours),2,"doublons - 'generic ""Sort renforcé par ses doublons : +9 % d’effet"" [ref=f8e1936]': +9 %"
+Ébriété,,Rare,2,,10 à 12 dommages du meilleur élément — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e1954]': +6 %"
+Flèche d'Immobilisation,,Rare,2,Eau,12 à 14 dommages Eau,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1972]': +3 %"
+Frisson,,Rare,3,Air,29 à 32 dommages Air — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e1989]': +3 %"
+Lance à Incendie,,Rare,3,Feu,20 à 24 dommages Feu — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2007]': +6 %"
+Lance Solaire,,Rare,3,Feu,32 à 36 dommages Feu,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2025]': +3 %"
+Rayon Obscur,,Rare,4,Feu,36 à 40 dommages Feu — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +9 % d’effet"" [ref=f8e2042]': +9 %"
+Souffle,,Rare,2,Air,15 à 17 dommages Air — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2060]': +6 %"
+Turbine,,Rare,3,Feu,31 à 35 dommages Feu — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2078]': +6 %"
+Blakjak,,Rare,3,Feu,30 à 34 dommages Feu,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2096]': +3 %"
+Condensation,,Rare,3,Eau,24 à 29 dommages Eau — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2113]': +6 %"
+Déluge,,Rare,3,Eau,30 à 33 dommages Eau,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2131]': +3 %"
+Épée Destructrice,,Rare,4,Feu,36 à 40 dommages Feu — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2148]': +3 %"
+Javeline de Myr,,Rare,3,Air,29 à 33 dommages Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2166]': +3 %"
+Mot Farceur,,Rare,3,Air,25 à 27 dommages Air / Soigne 23 à 25 (Air),2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2183]': +3 %"
+Rabattage,,Rare,3,Feu,31 à 33 vol de vie Feu,1,
+Ronces Agressives,,Rare,4,Terre,42 à 46 dommages Terre,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2217]': +3 %"
+Avarice,,Rare,3,,-52 Puissance à la cible (1 tour) / +52 Puissance (2 tours),2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2234]': +3 %"
+Balestra,,Rare,3,Eau,32 à 35 dommages Eau — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2252]': +6 %"
+Carcasse,,Rare,2,Air,11 à 13 dommages Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2270]': +6 %"
+Extorsion,,Rare,3,Terre,Vole 103 Force (3 tours) / 30 à 33 vol de vie Terre,2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2287]': +3 %"
+Fléau,,Rare,3,Eau,29 à 32 vol de vie Eau / 29 à 32 vol de vie Eau,2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2305]': +3 %"
+Flèche de Dispersion,,Rare,3,Air,25 à 28 dommages Air — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +9 % d’effet"" [ref=f8e2323]': +9 %"
+Flou Temporel,,Rare,2,,-2 PA à la cible (monstre : sa prochaine attaque affaiblie de 30 %) / +2 PA,2,"doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2341]': +6 %"
+Hostilité,,Rare,2,Feu,16 à 20 dommages Feu,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2359]': +3 %"
+Peinture de Guerre,,Rare,2,Terre,Soigne 9 à 11 (Terre) / 10 à 12 dommages Terre / Soigne 9 à 11 (Terre),3,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2376]': +3 %"
+Propulsion,,Rare,2,Air,Soigne 35 à 39 (Air) / 38 à 42 dommages Air — en zone,2,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2395]': +6 %"
+Saute-granouille,,Rare,3,Eau,30 à 34 dommages Eau,1,"doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2414]': +6 %"
+Traversée,,Rare,3,Air;Eau;Feu;Terre,35 à 39 dommages Terre — en zone / 35 à 39 dommages Feu — en zone / 35 à 39 dommages Eau — en zone / 35 à 39 dommages Air — en zone,4,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +9 % d’effet"" [ref=f8e2431]': +9 % | ✓ Dans le deck"
+Arnaque,,Rare,3,Air,Vole 100 Agilité (3 tours) / 27 à 30 vol de vie Air,2,
+Belote,,Rare,3,Terre,31 à 34 dommages Terre / -11 à 42 Dommages Critiques à la cible (2 tours),2,"doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2470]': +6 %"
+Brimade,,Rare,3,Air,27 à 29 dommages Air — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2488]': +6 %"
+Cabriole,,Rare,3,Air,35 à 40 dommages Air — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2506]': +6 %"
+Contribution,,Rare,2,,Bouclier de 200% du niveau (2 tours) / +150 Puissance (2 tours) / +1 PA,3,
+Couronne d'Épines,,Rare,2,,Bouclier de 10% des PV max (1 tour) / Bouclier de 5% des PV max (1 tour),2,
+Eau-de-vie,,Rare,2,Eau,Soigne 26 à 29 (Eau) / 28 à 31 dommages Eau — en zone,2,Zone
+Foène,,Rare,3,Air,32 à 37 dommages Air — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2577]': +6 %"
+Mot de Jouvence,,Rare,2,,Soigne 10% des PV max,1,
+Pelage Protecteur,,Rare,3,,Bouclier de 247% du niveau (2 tours) / Bouclier de 247% du niveau (2 tours),2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2611]': +3 %"
+Pelle Aurifère,,Rare,4,Eau,37 à 41 dommages Eau,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2629]': +3 %"
+Souffle Draconique,,Rare,3,Feu,26 à 29 dommages Feu — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2646]': +3 %"
+Talon d'Argile,,Rare,2,Terre,15 à 18 dommages Terre,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2664]': +3 %"
+Tempête de Puissance,,Rare,3,Feu,32 à 35 dommages Feu / 32 à 35 dommages Feu — en zone,2,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +9 % d’effet"" [ref=f8e2681]': +9 %"
+Appui,,Peu commun,3,Air;Eau;Feu;Terre,9 à 10 dommages Feu / 9 à 10 dommages Terre / 9 à 10 dommages Eau / 9 à 10 dommages Air,4,"doublons - 'generic ""Sort renforcé par ses doublons : +9 % d’effet"" [ref=f8e2700]': +9 %"
+Épouvante,,Peu commun,2,,-15 % Critique à la cible (2 tours),1,
+Espingole,,Peu commun,3,Air,28 à 31 dommages Air — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +9 % d’effet"" [ref=f8e2736]': +9 %"
+Flèche Détonante,,Peu commun,2,Feu,16 à 19 dommages Feu / 16 à 19 dommages Feu — en zone,2,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2754]': +6 %"
+Flétrissement,,Peu commun,3,Air,28 à 31 dommages Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2773]': +6 %"
+Jass,,Peu commun,3,Air,28 à 31 dommages Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2790]': +3 %"
+Lance du Lac,,Peu commun,3,Eau,24 à 27 dommages Eau — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2807]': +3 %"
+Persiflage,,Peu commun,3,Terre,28 à 32 dommages Terre,1,"doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2825]': +6 %"
+Sève Paralysante,,Peu commun,3,Feu,17 à 20 dommages Feu,1,"doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2842]': +6 %"
+Somnolence,,Peu commun,3,Terre,30 à 33 dommages Terre — en zone / -2 PA à la cible (monstre : sa prochaine attaque affaiblie de 30 %),2,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2859]': +6 %"
+Amarok,,Peu commun,3,Terre,30 à 33 dommages Terre — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2878]': +3 %"
+Brancard,,Peu commun,2,Terre,Soigne 29 à 33 (Terre) / 30 à 34 dommages Terre — en zone,2,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2896]': +3 %"
+Contagion,,Peu commun,4,Air,38 à 43 dommages Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e2915]': +6 %"
+Déferlement,,Peu commun,4,Eau,41 à 45 dommages Eau,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2932]': +3 %"
+Engrenage,,Peu commun,3,Terre,23 à 25 dommages Terre — en zone,1,Zone
+Lame Astrale,,Peu commun,3,Air,30 à 33 dommages Air,1,
+Lamentations,,Peu commun,4,Eau,31 à 34 vol de vie Eau — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e2982]': +3 %"
+Lance-pierre,,Peu commun,3,Terre,27 à 30 dommages Terre — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3000]': +3 %"
+Léthargie,,Peu commun,3,Feu,30 à 33 dommages Feu,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3018]': +3 %"
+Ravage,,Peu commun,3,Terre,31 à 35 dommages Terre,1,"doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e3035]': +6 %"
+Assaut,,Peu commun,2,Air,15 à 19 dommages Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3052]': +3 %"
+Baraka,,Peu commun,3,Eau,28 à 31 dommages Eau / -4 à 10 % Critique à la cible (3 tours),2,
+Bastion,,Peu commun,2,,+206 Puissance (1 tour),1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3086]': +3 %"
+Cubitus,,Peu commun,2,Eau,18 à 20 vol de vie Eau,1,"doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e3103]': +6 %"
+Flèche Cinglante,,Peu commun,2,Air,16 à 20 dommages Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3120]': +3 %"
+Marée,,Peu commun,3,Eau,36 à 41 dommages Eau,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3137]': +3 %"
+Mot Turbulent,,Peu commun,4,Feu,Soigne 36 à 41 (Feu) / 37 à 43 dommages Feu — en zone,2,Zone
+Outrage,,Peu commun,3,Feu,26 à 30 dommages Feu,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3172]': +3 %"
+Pandikulation,,Peu commun,2,Feu,Soigne 30 à 33 (Feu) / 31 à 34 dommages Feu — en zone,2,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e3189]': +6 %"
+Ponteira,,Peu commun,3,Eau,25 à 28 dommages Eau / -52 Dommages à la cible (1 tour),2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3208]': +3 %"
+Recel,,Peu commun,3,Eau,30 à 32 dommages Eau,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3226]': +3 %"
+Ronce Apaisante,,Peu commun,2,,Soigne 47 à 56 (du meilleur élément),1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3243]': +3 %"
+Affront,,Commun,3,Air,26 à 28 dommages Air — en zone,1,Zone
+Amarrage,,Commun,2,Terre,16 à 18 dommages Terre,1,
+Arsenic,,Commun,3,Air,16 à 19 dommages Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3293]': +3 %"
+Bombe à Eau,,Commun,2,Eau,Bombe : 33 à 38 dommages Eau au prochain tour,1,
+Brincadeira,,Commun,2,Feu,13 à 15 dommages Feu,1,
+Buisson Ardent,,Commun,3,Feu,25 à 28 dommages Feu / 25 à 28 dommages Feu,2,
+Catalepsie,,Commun,3,Terre,23 à 25 vol de vie Terre — en zone,1,Zone
+Cavalcade,,Commun,4,Air,39 à 43 dommages Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3376]': +3 %"
+Charogne,,Commun,3,Air,29 à 32 dommages Air,1,
+Cigüe,,Commun,3,Air,26 à 29 dommages Air / 26 à 29 dommages Air,2,
+Commotion,,Commun,3,Terre,24 à 27 dommages Terre — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3426]': +3 %"
+Couperet,,Commun,3,Feu,28 à 32 dommages Feu — en zone,1,Zone
+Cri du Corbac,,Commun,2,Air,13 à 16 vol de vie Air / Soigne 13 à 16 (Air),2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3461]': +3 %"
+Cruauté,,Commun,3,Eau,22 à 25 dommages Eau,1,
+Dents du Piranya,,Commun,3,Eau,Soigne 20 à 23 (Eau) / 20 à 23 vol de vie Eau — en zone / +21 Dommages (2 tours),3,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3495]': +3 %"
+Effondrement,,Commun,3,Terre,20 à 22 dommages Terre — en zone,1,Zone
+Épée Divine,,Commun,3,Air,25 à 29 dommages Air — en zone / +31 Dommages (4 tours),2,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3532]': +3 %"
+Estoc Brûlant,,Commun,3,Feu,30 à 34 dommages Feu — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e3551]': +6 %"
+Éther,,Commun,3,Air,26 à 29 dommages Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3569]': +3 %"
+Ethylo,,Commun,3,Eau,26 à 29 dommages Eau,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3586]': +3 %"
+Ferveur,,Commun,2,Eau,Bouclier de 50% du niveau (2 tours) / 16 à 19 dommages Eau — en zone,2,Zone
+Flèche de Barrage,,Commun,3,Feu,25 à 28 dommages Feu — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3621]': +3 %"
+Flèche de Recul,,Commun,3,Air,26 à 29 dommages Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3639]': +3 %"
+Flèche Glacée,,Commun,3,Eau,-2 PA à la cible (monstre : sa prochaine attaque affaiblie de 30 %) / 21 à 24 dommages Eau,2,
+Flèche Vagabonde,,Commun,3,Terre,27 à 30 dommages Terre,1,
+Frappe de Xélor,,Commun,3,Terre,23 à 26 dommages Terre,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3689]': +3 %"
+Gelure,,Commun,2,Eau,10 à 12 dommages Eau,1,
+Hémorragie,,Commun,3,Air,23 à 27 vol de vie Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3722]': +3 %"
+Juron,,Commun,3,Terre,22 à 25 dommages Terre,1,
+Lance-flamme,,Commun,3,Feu,27 à 30 dommages Feu / -2 PA à la cible (monstre : sa prochaine attaque affaiblie de 30 %),2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3755]': +3 %"
+Langueur,,Commun,3,Feu,-100 Intelligence à la cible (3 tours) / -10 % Critique à la cible (3 tours) / 27 à 29 dommages Feu,3,
+Larme de Sadida,,Commun,3,Eau,26 à 29 dommages Eau / Soigne 26 à 29 (Eau),2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3791]': +3 %"
+Longue-vue,,Commun,3,Eau,27 à 31 dommages Eau,1,"doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e3809]': +6 %"
+Mot Espiègle,,Commun,3,Air,22 à 25 dommages Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3826]': +3 %"
+Mot Tapageur,,Commun,3,Feu,Soigne 22 à 25 (Feu) / 22 à 25 dommages Feu — en zone,2,Zone
+Mot Vampirique,,Commun,3,Eau,28 à 31 vol de vie Eau,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3861]': +3 %"
+Nimbus,,Commun,3,Eau,-106 Chance à la cible (3 tours) / 24 à 27 dommages Eau — en zone,2,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e3878]': +6 %"
+Onde Sismique,,Commun,3,Terre,26 à 29 dommages Terre,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3897]': +3 %"
+Opportunité,,Commun,2,Air,14 à 16 dommages Air / +80 Puissance (2 tours),2,
+Os à Moelle,,Commun,3,Eau,22 à 25 dommages Eau,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3931]': +3 %"
+Parafuso,,Commun,3,Eau,22 à 25 vol de vie Eau — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3948]': +3 %"
+Paume Explosive,,Commun,2,Feu,21 à 23 dommages Feu,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3966]': +3 %"
+Perturbation,,Commun,3,Feu,24 à 27 vol de vie Feu,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e3983]': +3 %"
+Pics du Prespic,,Commun,2,Feu,14 à 17 vol de vie Feu / Soigne 14 à 17 (Feu) / +10 % Critique (2 tours),3,
+Pression,,Commun,3,Terre,27 à 31 dommages Terre,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4018]': +3 %"
+Réflexes,,Commun,2,Air,14 à 18 dommages Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4035]': +3 %"
+Retour du Bâton,,Commun,3,Terre,-103 Force à la cible (3 tours) / 30 à 34 dommages Terre,2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4052]': +3 %"
+Roulage de Pelle,,Commun,3,Feu,20 à 24 dommages Feu,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4070]': +3 %"
+Sabotage,,Commun,3,Feu,22 à 25 dommages Feu — en zone / -30 Dommages à la cible (1 tour),2,Zone
+Schnaps,,Commun,3,Air,22 à 25 dommages Air — en zone / -31 Retrait PA à la cible (2 tours),2,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4105]': +3 %"
+Sismobombe,,Commun,2,Terre,Bombe : 34 à 39 dommages Terre au prochain tour,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4124]': +3 %"
+Sournoiserie,,Commun,3,Feu,28 à 31 dommages Feu,1,
+Souvenir,,Commun,2,Air,10 à 12 vol de vie Air,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4157]': +3 %"
+Stalagmite,,Commun,3,Eau,29 à 32 dommages Eau,1,
+Stase,,Commun,3,Eau,20 à 24 vol de vie Eau / -20 % Critique à la cible (1 tour),2,
+Supplice,,Commun,3,Terre,22 à 26 vol de vie Terre,1,
+Topkaj,,Commun,2,Feu,"Au hasard (1 chance sur 6) : / 16, 19 ou 22 dommages Feu / ou soigne 16, 19 ou 22 (Feu)",3,
+Tornabombe,,Commun,2,Air,Bombe : 36 à 41 dommages Air au prochain tour,1,"doublons - 'generic ""Sort renforcé par ses doublons : +9 % d’effet"" [ref=f8e4241]': +9 %"
+Traque,,Commun,3,Feu,32 à 36 dommages Feu,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4258]': +3 %"
+Trident de la Mer,,Commun,3,Eau,22 à 25 dommages Eau — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e4275]': +6 %"
+Truanderie,,Commun,3,Terre,-82 Puissance à la cible (3 tours) / +82 Puissance (3 tours) / 27 à 30 dommages Terre,3,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4293]': +3 %"
+Typhon,,Commun,3,Air,-103 Agilité à la cible (3 tours) / -21 Dommages à la cible (3 tours) / 26 à 28 dommages Air — en zone,3,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4312]': +3 %"
+Volée d'Airain,,Commun,3,Air,23 à 26 dommages Air — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4332]': +3 %"
+Yams,,Commun,2,Eau,3 à 19 dommages Eau / +3 à 19 % Critique (3 tours),2,"doublons - 'generic ""Sort renforcé par ses doublons : +6 % d’effet"" [ref=f8e4350]': +6 %"
+Intimidation,,Commun,2,,8 à 10 dommages du meilleur élément,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4368]': +3 %"
+Masque de l'Intrépide,,Commun,1,,+1 PA,1,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4385]': +3 %"
+Runification,,Commun,2,Air;Eau;Feu;Terre,15 vol de vie Terre / 15 vol de vie Feu / 15 vol de vie Eau / 15 vol de vie Air / Soigne 6% des PV max / +50 Force (3 tours) / +50 Intelligence (3 tours) / +50 Chance (3 tours) / +50 Agilité (3 tours),9,
+Drain Élémentaire,,Commun,2,Air;Eau;Feu;Terre,Vole 206 Force (3 tours) / 24 à 27 vol de vie Terre / Vole 206 Intelligence (3 tours) / 24 à 27 vol de vie Feu / Vole 206 Chance (3 tours) / 24 à 27 vol de vie Eau / Vole 206 Agilité (3 tours) / 24 à 27 vol de vie Air,8,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4426]': +3 %"
+Évolution,,Commun,1,,Soigne 52% des PV max / +103 Puissance (2 tours),2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4450]': +3 %"
+Pulsar,,Commun,3,Feu,28 à 30 dommages Feu — en zone,1,"Zone | doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4468]': +3 %"
+Ruée vers l'Or,,Commun,2,,+155 Puissance (1 tour) / Soigne 10% des PV max,2,"doublons - 'generic ""Sort renforcé par ses doublons : +3 % d’effet"" [ref=f8e4486]': +3 %"
