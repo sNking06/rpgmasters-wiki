@@ -56,9 +56,9 @@ export default function ClassGrid({ classes }: { classes: ClassPassive[] }) {
               </summary>
               <div className="class-body">
                 <p>{c.text}</p>
-                {c.slug ? (
+                {c.slug && ['cra','feca'].includes(c.slug) ? (
                   <p>
-                    <Link href={`/classes/${c.slug}/`}>Voir la fiche {c.name} →</Link>
+                    <Link href={`/personnage/classes/${c.slug}/`}>Voir la fiche {c.name} →</Link>
                   </p>
                 ) : null}
               </div>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { CSSProperties, ReactNode } from 'react';
-import { DATA_DATE_LABEL, PAGE_ORDER } from '@/lib/site';
+import { DATA_DATE_LABEL } from '@/lib/site';
 import { ElementIcon, Icon, SectionIcon, type ElementKey, type SectionKey } from './icons';
 
 /** Statut d'une information : T = [TROUVÉ], D = [DÉDUIT], C = calcul sur valeurs trouvées, N = non trouvé (lacune). */
@@ -67,19 +67,6 @@ export function PageHeader({
 }) {
   return (
     <header className="page-header">
-      <nav className="crumbs" aria-label="Fil d’Ariane">
-        <ol>
-          <li>
-            <Link href="/">Accueil</Link>
-          </li>
-          {crumbs.map((c) => (
-            <li key={c.href}>
-              <Link href={c.href}>{c.label}</Link>
-            </li>
-          ))}
-          <li aria-current="page">{title}</li>
-        </ol>
-      </nav>
       <div className="title-row">
         {icon || section ? (
           <span className="medal medal-lg" aria-hidden="true">
@@ -95,10 +82,10 @@ export function PageHeader({
 }
 
 /** Encadré « L'essentiel » : 3 à 5 puces. */
-export function Essentiel({ children, title = 'L’essentiel', list = 'ul' }: { children: ReactNode; title?: string; list?: 'ul' | 'build' }) {
+export function Essentiel({ children, title = 'L’essentiel', list = 'ul', id = 'essentiel-h' }: { children: ReactNode; title?: string; list?: 'ul' | 'build'; id?: string }) {
   return (
-    <aside className="essentiel" aria-labelledby="essentiel-h">
-      <h2 id="essentiel-h">
+    <aside className="essentiel" aria-labelledby={id}>
+      <h2 id={id}>
         <Icon name="sparkle" size={18} /> {title}
       </h2>
       {list === 'build' ? <ol className="build">{children}</ol> : <ul>{children}</ul>}
@@ -289,9 +276,6 @@ export function Meter({
 
 /** Pied de page : « Voir aussi », sources de la page, précédent / suivant. */
 export function PageEnd({ current, see, sources }: { current: string; see: Crumb[]; sources?: string }) {
-  const i = PAGE_ORDER.findIndex((p) => p.href === current);
-  const prev = i > 0 ? PAGE_ORDER[i - 1] : null;
-  const next = i >= 0 && i < PAGE_ORDER.length - 1 ? PAGE_ORDER[i + 1] : null;
   return (
     <nav className="page-end" aria-label="Voir aussi et pages voisines">
       {see.length ? (
@@ -311,29 +295,9 @@ export function PageEnd({ current, see, sources }: { current: string; see: Crumb
       ) : null}
       {sources ? (
         <p className="page-sources">
-          Sources : {sources} · <Link href="/sources/#legende">légende ✓ ~ = ?</Link>
+          Sources : {sources} · <Link href="/a-propos/sources/#legende">légende ✓ ~ = ?</Link>
         </p>
       ) : null}
-      <div className="prev-next">
-        {prev ? (
-          <Link href={prev.href} className="pn pn-prev">
-            <span className="pn-dir">
-              <Icon name="arrowLeft" size={16} /> Précédent
-            </span>
-            {prev.label}
-          </Link>
-        ) : (
-          <span />
-        )}
-        {next ? (
-          <Link href={next.href} className="pn pn-next">
-            <span className="pn-dir">
-              Suivant <Icon name="arrowRight" size={16} />
-            </span>
-            {next.label}
-          </Link>
-        ) : null}
-      </div>
     </nav>
   );
 }

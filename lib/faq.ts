@@ -16,7 +16,7 @@ export const FAQ: FaqGroup[] = [
           'Lier son Discord donne +10 % d’XP à vie. Le mode « Auto » joue le combat à ta place.',
           'Compare l’XP de fin de combat entre Aventure et Chasse pour voir ce qui marche à ton niveau.',
         ],
-        see: { href: '/energie-xp/', label: 'Énergie et XP' },
+        see: { href: '/debuter/energie-xp/', label: 'Énergie et XP' },
       },
       {
         id: 'aventure-chasse',
@@ -34,7 +34,7 @@ export const FAQ: FaqGroup[] = [
           'Oui, page Personnage : le 1er changement est gratuit, puis 300 000 kamas.',
           'Le jeu ne désigne pas de « meilleure » classe : chacune a son style.',
         ],
-        see: { href: '/classes/', label: 'Classes' },
+        see: { href: '/personnage/classes/', label: 'Classes' },
       },
       {
         id: 'niveau-200',
@@ -53,7 +53,7 @@ export const FAQ: FaqGroup[] = [
           'Choisis la caractéristique de l’élément de tes sorts de dégâts.',
           'Au Prestige, les points sont remis à zéro ; les parchemins restent.',
         ],
-        see: { href: '/caracteristiques/', label: 'Caractéristiques' },
+        see: { href: '/personnage/caracteristiques/', label: 'Caractéristiques' },
       },
     ],
   },
@@ -71,7 +71,7 @@ export const FAQ: FaqGroup[] = [
           'Perdu avant le Prestige 4 seulement : équipement, inventaire, ventes HDV, kamas (sauf l’objet gardé et les objets éternels).',
           'Toujours gardés : cartes et decks, album, coffres, énergie, Elo, records, Ascension.',
         ],
-        see: { href: '/prestige/', label: 'Prestige' },
+        see: { href: '/personnage/prestige/', label: 'Prestige' },
       },
       {
         id: 'conditions',
@@ -81,7 +81,7 @@ export const FAQ: FaqGroup[] = [
           'P5 et P6 demandent aussi des dégâts sur le Kralamoure de la Faille.',
           'Maximum actuel : P15 ; P10 en saison.',
         ],
-        see: { href: '/prestige/#conditions', label: 'Étapes P1 → P15' },
+        see: { href: '/personnage/prestige/#conditions', label: 'Étapes P1 → P15' },
       },
       {
         id: 'objet-eternel',
@@ -134,7 +134,7 @@ export const FAQ: FaqGroup[] = [
           'Achat : 300 kamas le point, 1 000 points/jour max, prix en hausse au-delà de 600.',
           'Le perso de saison n’utilise pas d’énergie.',
         ],
-        see: { href: '/energie-xp/#energie', label: 'Énergie' },
+        see: { href: '/debuter/energie-xp/#energie', label: 'Énergie' },
       },
       {
         id: 'elan',
@@ -237,7 +237,7 @@ export const FAQ: FaqGroup[] = [
           'Reset le vendredi 23 h 59 (Paris), Elo à 1 000, 10 combats minimum pour être classé.',
           'Top 100 : Légendaires ; top 10 : Ultimes ; podium : Rayonnant +5 au choix et couronne.',
         ],
-        see: { href: '/arene/', label: 'Arène' },
+        see: { href: '/contenus/arene/', label: 'Arène' },
       },
       {
         id: 'guilde',
@@ -267,7 +267,7 @@ export const FAQ: FaqGroup[] = [
           'Pas d’énergie, beaucoup plus d’XP, mais mort définitive face aux boss.',
           'Récompenses sur le perso principal ; le contenu de la Banque (8 emplacements, +3 par Prestige) y est transféré à la fin.',
         ],
-        see: { href: '/saison/', label: 'Saison' },
+        see: { href: '/contenus/saison/', label: 'Saison' },
       },
     ],
   },

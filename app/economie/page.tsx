@@ -287,7 +287,7 @@ export default function EconomiePage() {
             </li>
             <li>
               Énergie : 300 kamas le point (plus cher au-delà de 600 points/jour) —{' '}
-              <Link href="/energie-xp/#achat-energie">Énergie & XP</Link>. <M s="T" />
+              <Link href="/debuter/energie-xp/#achat-energie">Énergie & XP</Link>. <M s="T" />
             </li>
             <li>
               Doublon de carte avant le Prestige 1 : converti en 3 000 kamas. <M s="T" />
@@ -306,9 +306,9 @@ export default function EconomiePage() {
       <PageEnd
         current="/economie/"
         see={[
-          { href: '/prestige/', label: 'Prestige' },
-          { href: '/caracteristiques/#objets', label: 'Stats des objets' },
-          { href: '/energie-xp/#achat-energie', label: 'Acheter de l’énergie' },
+          { href: '/personnage/prestige/', label: 'Prestige' },
+          { href: '/personnage/caracteristiques/#objets', label: 'Stats des objets' },
+          { href: '/debuter/energie-xp/#achat-energie', label: 'Acheter de l’énergie' },
         ]}
         sources="txt_faq.txt, mecaniques.md §3, §4, §8"
       />

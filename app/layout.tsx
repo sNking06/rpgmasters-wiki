@@ -3,6 +3,7 @@ import Link from 'next/link';
 import localFont from 'next/font/local';
 import type { ReactNode } from 'react';
 import Header from '@/components/Header';
+import { Sidebar, Breadcrumbs, SectionNeighbors } from '@/components/WikiNavigation';
 import Toc from '@/components/Toc';
 import { Icon, Logo } from '@/components/icons';
 import { DATA_DATE_LABEL, GAME_URL, SITE_DESCRIPTION, SITE_NAME } from '@/lib/site';
@@ -57,8 +58,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </a>
         <Header />
         <div className="shell">
+          <Sidebar />
           <main id="contenu" className="main" tabIndex={-1}>
+            <Breadcrumbs />
             {children}
+            <SectionNeighbors />
           </main>
           <div className="toc-col">
             <Toc />
@@ -87,10 +91,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               </p>
               <ul className="footer-links">
                 <li>
-                  <Link href="/sources/">Sources et limites</Link>
+                  <Link href="/a-propos/sources/">Sources et limites</Link>
                 </li>
                 <li>
-                  <Link href="/faq/">FAQ</Link>
+                  <Link href="/debuter/faq/">FAQ</Link>
                 </li>
                 <li>
                   <a href={GAME_URL} rel="noopener noreferrer">

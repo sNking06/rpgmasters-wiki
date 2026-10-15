@@ -3,5 +3,87 @@
   "framework": null,
   "buildCommand": "npm run build",
   "outputDirectory": "out",
-  "cleanUrls": false
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/caracteristiques/",
+      "destination": "/personnage/caracteristiques/",
+      "permanent": true
+    },
+    {
+      "source": "/classes/",
+      "destination": "/personnage/classes/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-cra/",
+      "destination": "/personnage/classes/cra/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-feca/",
+      "destination": "/personnage/classes/feca/",
+      "permanent": true
+    },
+    {
+      "source": "/energie-xp/",
+      "destination": "/debuter/energie-xp/",
+      "permanent": true
+    },
+    {
+      "source": "/arene/",
+      "destination": "/contenus/arene/",
+      "permanent": true
+    },
+    {
+      "source": "/prestige/",
+      "destination": "/personnage/prestige/",
+      "permanent": true
+    },
+    {
+      "source": "/saison/",
+      "destination": "/contenus/saison/",
+      "permanent": true
+    },
+    {
+      "source": "/ascension/",
+      "destination": "/contenus/ascension/",
+      "permanent": true
+    },
+    {
+      "source": "/objets/",
+      "destination": "/equipement/objets/",
+      "permanent": true
+    },
+    {
+      "source": "/boss/",
+      "destination": "/monde/boss/",
+      "permanent": true
+    },
+    {
+      "source": "/zones/",
+      "destination": "/monde/zones/",
+      "permanent": true
+    },
+    {
+      "source": "/cartes/",
+      "destination": "/equipement/cartes/",
+      "permanent": true
+    },
+    {
+      "source": "/faq/",
+      "destination": "/debuter/faq/",
+      "permanent": true
+    },
+    {
+      "source": "/sources/",
+      "destination": "/a-propos/sources/",
+      "permanent": true
+    },
+    {
+      "source": "/classes/cra/",
+      "destination": "/personnage/classes/cra/",
+      "permanent": true
+    }
+  ]
 }

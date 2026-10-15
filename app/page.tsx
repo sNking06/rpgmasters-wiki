@@ -3,8 +3,7 @@ import type { Metadata } from 'next';
 import HeroArt from '@/components/HeroArt';
 import { OpenSearchButton } from '@/components/Search';
 import { Icon, SectionIcon } from '@/components/icons';
-import { M } from '@/components/ui';
-import { DATA_DATE_LABEL, GAME_URL, MAIN_NAV, MORE_NAV, SEASON_END } from '@/lib/site';
+import { DATA_DATE_LABEL, GAME_URL, MAIN_NAV, SEASON_END } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Accueil',
@@ -25,7 +24,7 @@ export default function Home() {
             Les mécaniques du jeu <a href={GAME_URL} rel="noopener noreferrer">RpgMasters</a>, en clair et en bref.
           </p>
           <div className="hero-cta">
-            <Link href="/classes/" className="btn btn-primary">
+            <Link href="/personnage/classes/" className="btn btn-primary">
               Découvrir les classes <Icon name="arrowRight" size={18} />
             </Link>
             <OpenSearchButton className="btn btn-ghost">
@@ -63,7 +62,7 @@ export default function Home() {
                 </span>
                 <span className="hub-title">{n.label}</span>
                 <span className="hub-desc">{n.desc}</span>
-                {n.href === '/saison/' ? (
+                {n.href === '/contenus/' ? (
                   <span className="date-badge">
                     <Icon name="calendar" size={15} /> {DATA_DATE_LABEL} · fin {SEASON_END}
                   </span>
@@ -77,60 +76,6 @@ export default function Home() {
         </ul>
       </nav>
 
-      <section id="astuces" className="section home-section">
-        <div className="tips-layout">
-          <div className="tips-aside">
-            <p className="section-kicker">Quoi faire en premier</p>
-            <h2>Les 5 astuces pour grimper vite</h2>
-            <p className="section-lead">Tirées de la FAQ publique du jeu.</p>
-          </div>
-          <ol className="tips">
-            <li>
-              <div>
-                <strong>Lie ton Discord <M s="T" /></strong>
-                <p>+10 % XP, +10 % butin, +5 % stats. À vie, partout, arène comprise.</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <strong>Ne laisse pas l’énergie pleine <M s="T" /></strong>
-                <p>+1 toutes les 6 min, même hors ligne, 100 au maximum. Dépense-la avant qu’elle soit pleine.</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <strong>Compare l’XP Aventure vs Chasse <M s="T" /></strong>
-                <p>Regarde l’XP de fin de combat : c’est le conseil de la FAQ pour savoir ce qui paie à ton niveau.</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <strong>Ouvre tes coffres gratuits avant 6 <M s="T" /></strong>
-                <p>1 coffre toutes les 20 min, réserve de 6 : pleine, la recharge s’arrête.</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <strong>Joue tes 10 tickets d’arène chaque jour <M s="T" /></strong>
-                <p>Non cumulables. Chaque victoire : +1 à une stat au hasard (jusqu’à +300 par stat), gardé au Prestige.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section id="plus" className="section home-section">
-        <h2>Aller plus loin</h2>
-        <ul className="links-secondary">
-          {MORE_NAV.map((n) => (
-            <li key={n.href}>
-              <Link href={n.href}>
-                <SectionIcon section={n.icon} size={18} /> {n.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
     </div>
   );
 }

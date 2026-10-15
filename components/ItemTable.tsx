@@ -18,8 +18,9 @@ const RAR = ['Mythique', 'Légendaire', 'Épique', 'Rare', 'Commun'];
 const num = (v?: string) => { const m = v?.match(/-?\d+(?:[.,]\d+)?/); return m ? parseFloat(m[0].replace(',', '.')) : NaN; };
 const norm = (s: string) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
-export function ItemTable() {
-  const slots = useMemo(() => [...new Set(items.map((i) => i.slot))].sort(), []);
+export function ItemTable({ onlyDofus = false }: { onlyDofus?: boolean }) {
+  const items = useMemo(() => onlyDofus ? (ITEMS as unknown as Item[]).filter(i => /^Dofus\b/i.test(i.name)) : ITEMS as unknown as Item[], [onlyDofus]);
+  const slots = useMemo(() => [...new Set(items.map((i) => i.slot))].sort(), [items]);
   const [q, setQ] = useState('');
   const [slot, setSlot] = useState('');
   const [rar, setRar] = useState('');
@@ -33,7 +34,7 @@ export function ItemTable() {
       const d = (num(b[sort]) || 0) - (num(a[sort]) || 0);
       return d || RAR.indexOf(a.rarity) - RAR.indexOf(b.rarity) || a.name.localeCompare(b.name);
     });
-  }, [q, slot, rar, lvl, sort]);
+  }, [q, slot, rar, lvl, sort, items]);
 
   return (
     <div className="item-table">

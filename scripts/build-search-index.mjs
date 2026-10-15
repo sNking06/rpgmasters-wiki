@@ -43,6 +43,9 @@ const toText = (html) =>
 const index = [];
 for (const file of await walk(OUT)) {
   const html = await readFile(file, 'utf8');
+  if (/<meta[^>]+http-equiv="refresh"/i.test(html)) continue;
+  const breadcrumb = html.match(/<nav[^>]+class="crumbs"[^>]*>([\s\S]*?)<\/nav>/i)?.[1] ?? '';
+  const sectionPath = [...breadcrumb.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/gi)].map(m => toText(m[1])).filter(s => s !== 'Accueil').join(' › ');
   const rel = relative(OUT, file).split(sep).join('/');
   const url = '/' + rel.replace(/index\.html$/, '');
   // Les <nav> (fil d'Ariane, « Voir aussi », précédent/suivant, sommaires) ne sont pas du contenu : on les retire.
@@ -51,13 +54,13 @@ for (const file of await walk(OUT)) {
 
   const parts = main.split(/<section id="/i);
   const intro = toText(parts[0].replace(/<h1[^>]*>[\s\S]*?<\/h1>/i, ''));
-  index.push({ title: page, page, url, text: intro });
+  index.push({ title: page, page: sectionPath || page, sectionPath, url, text: intro });
 
   for (const part of parts.slice(1)) {
     const id = part.slice(0, part.indexOf('"'));
     const title = toText(part.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i)?.[1] ?? id);
     const body = toText(part.replace(/^[^>]*>/, '').replace(/<h2[^>]*>[\s\S]*?<\/h2>/i, ''));
-    index.push({ title, page, url: `${url}#${id}`, text: body });
+    index.push({ title, page: sectionPath || page, sectionPath, url: `${url}#${id}`, text: body });
   }
 }
 
