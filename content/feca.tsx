@@ -17,7 +17,7 @@ const CARDS: [string, string, string][] = [
 export default function GuideFecaPage() {
   return (
     <>
-      <PageHeader icon={<ClassIcon name="Féca" size={28} />} crumbs={[{ href: '/personnage/classes/', label: 'Classes' }]} title="Guide Féca" intro="Le Féca en pratique. Observé en jeu du 13 au 15 oct 2026." />
+      <PageHeader icon={<ClassIcon name="Féca" size={28} />} crumbs={[{ href: '/personnage/classes/', label: 'Classes' }]} title="Guide Féca" intro="Le Féca en pratique. Observé en jeu du 13 au 17 oct 2026." />
       <Essentiel>
         <li>Chaque sort de bouclier, soin ou résistance donne 1 charge d’<strong>Armure Féca</strong> (5 max). <M s="T" /></li>
       </Essentiel>
@@ -32,8 +32,12 @@ export default function GuideFecaPage() {
           <tbody>{CARDS.map(([n, p, e]) => <tr key={n}><td>{n}</td><td>{p}</td><td>{e}</td></tr>)}</tbody>
         </TableWrap>
       </Section>
+      <Section id="ascension" title="Ascension : build défensif">
+        <p>Les essais des 16-17 oct 2026 avec un deck de 11 cartes, Dofus Émeraude, Argenté Scintillant, du Cauchemar et Jadis Rayonnant +3 ont porté la survie de 11 429 PV / mort au tour 2 à 13 568 PV / mort au tour 17, avec 14 PA conservés. Rempart a été observé à +38 % de résistances tous éléments pendant 1 tour dans ce build. <M s="T" /></p>
+        <p><Link href="/contenus/ascension/#build-defensif">Deck, équipement et résistances du build défensif Ascension →</Link></p>
+      </Section>
       <p><Link href="/contenus/kralamoure/">Kralamoure : accès, deck et résultat observé →</Link></p>
-      <PageEnd current="/personnage/classes/feca/" see={[{ href: '/personnage/classes/', label: 'Classes' }, { href: '/equipement/objets/', label: 'Objets' }, { href: '/contenus/ascension/', label: 'Ascension' }]} sources="Observations en combat, 13-15 oct 2026" />
+      <PageEnd current="/personnage/classes/feca/" see={[{ href: '/personnage/classes/', label: 'Classes' }, { href: '/equipement/objets/', label: 'Objets' }, { href: '/contenus/ascension/', label: 'Ascension' }]} sources="Observations en combat, 13-17 oct 2026" />
     </>
   );
 }
