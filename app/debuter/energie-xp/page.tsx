@@ -182,7 +182,7 @@ export default function EnergieXpPage() {
           label="Multiplicateurs d’XP connus"
           max={4}
           items={[
-            { name: 'Saison Héroïque', value: 4, display: '×4' },
+            { name: 'Saison (×4)', value: 4, display: '×4' },
             { name: 'Discord lié', value: 1.1, display: '+10 %', hl: true },
             { name: 'Normal / Auto', value: 1, display: '×1' },
             { name: 'Auto AFK', value: 0.5, display: '×0,5' },

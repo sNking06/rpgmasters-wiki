@@ -6,9 +6,9 @@ export const SITE_DESCRIPTION =
 export const GAME_URL = 'https://rpgmasters.houk.fr';
 export const DATA_DATE = '20 oct 2026';
 export const DATA_DATE_LABEL = 'Données du 11 au 20 oct 2026';
-export const SEASON_NAME = 'Saison Héroïque';
-export const SEASON_END = 'lundi 12 oct 08:00 (Paris)';
-export const SEASON_DATES = 'du vendredi 9 octobre 2026 à 18:00 au lundi 12 octobre 2026 à 08:00 (heure de Paris)';
+export const SEASON_NAME = 'La saison des Cartes';
+export const SEASON_END = 'dimanche 25 oct 18:00 (Paris)';
+export const SEASON_DATES = 'du dimanche 18 octobre 2026 à 17:14 au dimanche 25 octobre 2026 à 18:00 (heure de Paris)';
 
 export { NAV } from './nav';
 import { NAV } from './nav';

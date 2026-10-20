@@ -2,40 +2,45 @@ import GameCapture from '@/components/GameCapture';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { SectionIcon } from '@/components/icons';
-import { Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, Tip, Warn } from '@/components/ui';
-import { DATA_DATE_LABEL, SEASON_END } from '@/lib/site';
+import { Bars, Essentiel, Fiche, M, PageEnd, PageHeader, Section, Warn } from '@/components/ui';
+import { SEASON_END } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Saison Héroïque',
-  description: 'Saison Héroïque de RpgMasters (9–12 oct 2026) : XP ×4, pas d’énergie, mort définitive face aux boss, banque, classement 6 modes, récompenses.',
+  title: 'Saison des Cartes',
+  description: 'La saison des Cartes de RpgMasters (18–25 oct 2026) : XP ×4, énergie illimitée, packs de cartes, pas de mort définitive, banque, classement 6 modes et récompenses. Relevé du 20 oct 2026.',
 };
 
 const ULTIMES = [10, 8, 6, 5, 4, 3, 2, 1, 1, 1];
 
-// Chronologie : du ven. 9 oct 18:00 au lun. 12 oct 08:00 = 62 h ; relevé le 11 oct vers 17 h (fin « dans 14 h 50 »).
-const SEASON_HOURS = 62;
-const ELAPSED_AT_DATA = SEASON_HOURS - (14 + 50 / 60);
+// Du dim. 18 oct 17:14 au dim. 25 oct 18:00 (heure de Paris) ; relevé le mar. 20 oct vers 16:50 (fin « dans 5 j 2 h »).
+const START = Date.UTC(2026, 9, 18, 15, 14);
+const END = Date.UTC(2026, 9, 25, 16, 0);
+const READ_AT = Date.UTC(2026, 9, 20, 14, 50);
+const SEASON_HOURS = (END - START) / 3.6e6;
 
 export default function SaisonPage() {
-  const pct = (ELAPSED_AT_DATA / SEASON_HOURS) * 100;
+  const pct = ((READ_AT - START) / (END - START)) * 100;
   return (
     <>
       <PageHeader href="/contenus/saison/"
         section="saison"
-        title="Saison Héroïque"
-        intro="Un perso éphémère, XP ×4, sans énergie — mais les boss tuent pour de bon."
+        title="La saison des Cartes"
+        intro="Un perso de saison en plus du principal : XP ×4, combats gratuits, packs de cartes, et pas de mort définitive cette fois."
         dateBadge={`fin ${SEASON_END}`}
       />
 
       <Essentiel>
         <li>
-          Un <strong>perso créé de zéro</strong>, en plus du principal, qui reste intact. <M s="T" />
+          Un <strong>perso créé de zéro</strong> (classe au choix), en plus du principal, qui reste intact. <M s="T" />
         </li>
         <li>
           <strong>Pas d’énergie</strong> (combats gratuits) et <strong>XP ×4</strong>. <M s="T" />
         </li>
         <li>
-          <strong>Mort définitive contre les boss</strong> : une défaite face à un boss arrête le perso. <M s="T" />
+          <strong>Pas de mort définitive</strong> cette saison. <M s="T" />
+        </li>
+        <li>
+          Chaque victoire peut donner un <strong>pack de 4 cartes de monstres</strong>. <M s="T" />
         </li>
         <li>
           Récompenses et <strong>contenu de la Banque</strong> versés sur le perso principal à la fin. <M s="T" />
@@ -44,10 +49,10 @@ export default function SaisonPage() {
 
       <GameCapture id="site-saison" caption="Page publique Saison au 20 oct 2026 (saison des Cartes)" />
 
-      <Warn title={`${DATA_DATE_LABEL} — fin ${SEASON_END}`}>
+      <Warn title="Relevé du 20 oct 2026 vers 16 h 50 (Paris)">
         <p>
-          Ce wiki n’est pas mis à jour en direct : après cette date, cette page décrit une saison passée. Vérifiez la page
-          Saison du jeu.
+          Texte repris de la page publique Saison du jeu ce jour-là. Ce wiki n’est pas mis à jour en direct : après le{' '}
+          {SEASON_END}, cette page décrit une saison passée. Vérifiez la page Saison du jeu.
         </p>
       </Warn>
 
@@ -56,24 +61,24 @@ export default function SaisonPage() {
           <div
             className="season-bar"
             role="img"
-            aria-label={`Saison de 62 heures, environ ${Math.round(pct)} % écoulés au moment du relevé.`}
+            aria-label={`Saison d’environ ${Math.round(SEASON_HOURS)} heures, environ ${Math.round(pct)} % écoulés au moment du relevé.`}
           >
             <span className="season-elapsed" style={{ width: `${pct}%` }} />
             <span className="season-now" style={{ left: `calc(${pct}% - 2px)` }} />
           </div>
           <ul className="season-legend">
             <li>
-              <strong>Début</strong> ven. 9 oct, 18:00
+              <strong>Début</strong> dim. 18 oct, 17:14
             </li>
             <li>
-              <strong>Relevé</strong> 11 oct vers 17 h
+              <strong>Relevé</strong> mar. 20 oct vers 16 h 50
             </li>
             <li>
-              <strong>Fin</strong> lun. 12 oct, 08:00
+              <strong>Fin</strong> dim. 25 oct, 18:00
             </li>
           </ul>
           <figcaption>
-            Heure de Paris. Au relevé, la page indiquait une fin « dans 14 h 50 ». <M s="T" />
+            Heure de Paris. Au relevé, la page indiquait une fin « dans 5 j 2 h ». <M s="T" />
           </figcaption>
         </figure>
       </Section>
@@ -82,13 +87,12 @@ export default function SaisonPage() {
         title="Fiche saison"
         icon={<SectionIcon section="saison" size={20} />}
         rows={[
-          ['Dates', '9 → 12 oct 2026'],
+          ['Nom', 'La saison des Cartes'],
+          ['Dates', '18 → 25 oct 2026'],
           ['XP', '×4'],
           ['Énergie', 'illimitée'],
-          ['Face aux boss', 'mort définitive'],
-          ['Prestige max', '10'],
+          ['Mort définitive', 'non (cette saison)'],
           ['Banque', '8 places, +3 par Prestige'],
-          ['Persos classés', '1 289 (au relevé)'],
           ['Récompenses', 'sur le perso principal'],
         ]}
       />
@@ -96,89 +100,67 @@ export default function SaisonPage() {
       <Section id="regles" title="Règles Héroïques">
         <ul>
           <li>
-            Classe au choix. On passe d’un perso à l’autre avec le sélecteur Principal / Saison. <M s="T" />
+            Un <strong>perso créé de zéro</strong> (classe au choix), en plus du perso principal, qui reste intact. <M s="T" />
           </li>
           <li>
-            Le perso mort reste au classement avec son niveau. <M s="T" />
+            <strong>Pas d’énergie</strong> : combats gratuits. <strong>XP ×4</strong>. <M s="T" />
           </li>
           <li>
-            HDV de saison séparé ; pas de guilde, de Faille ni de succès. <M s="T" />
+            <strong>Packs de cartes</strong> : chaque victoire, dans tous les modes, peut donner un pack de 4 cartes de monstres
+            (3 Communes + 1 Rare ou mieux). Les gros boss sont <strong>Arc-en-ciel</strong>, et toute carte a 0,1 % de chance
+            d’être <strong>Alternative</strong>. <M s="T" />
           </li>
           <li>
-            Prestiges limités à <strong>10</strong> ; les suivants (jusqu’au 15) seulement sur le perso principal. <M s="T" />
+            <strong>Classement sur la collection</strong> : le top 10 gagne un coffre avec un objet au hasard de la pano Mehdi.
+            Une famille de monstres complète donne un bonus de stats. <M s="T" />
+          </li>
+          <li>
+            <strong>Pas de mort définitive</strong> cette saison. <M s="T" />
+          </li>
+          <li>
+            <strong>Le Prestige ne fait rien perdre</strong> : cartes, packs, poussières d’étoiles et présentoir restent
+            intacts. <M s="T" />
+          </li>
+          <li>
+            HDV de saison séparé ; pas de guilde, de Faille ni de succès pour le perso de saison. <M s="T" />
           </li>
         </ul>
-        <Tip title="Astuces de saison">
-          <ul>
-            <li>
-              Le <strong>bonus Discord</strong> est partagé avec le perso de saison : liez-le depuis le perso principal.{' '}
-              <M s="T" />
-            </li>
-            <li>
-              <strong>Après une mort</strong>, un nouveau perso gagne <strong>XP ×2 en plus</strong> tant qu’il est sous le
-              niveau du perso tombé. <M s="T" />
-            </li>
-          </ul>
-        </Tip>
-        <More title="Première défaite adoucie">
-          <p>
-            La première fois que le compte meurt, la moitié du stuff équipé et des équipements en inventaire attend sur le
-            prochain perso de saison (une seule fois). Les morts suivantes ne rendent rien. <M s="T" />
-          </p>
-        </More>
       </Section>
 
       <Section id="banque" title="Banque de saison">
         <ul>
           <li>
-            <strong>8 emplacements, +3 par Prestige</strong> (selon le record de la saison), depuis l’inventaire de saison.{' '}
-            <M s="T" />
+            <strong>8 emplacements, +3 par Prestige</strong> (selon le record de la saison). On peut y ranger des objets pour
+            les retrouver sur le perso principal. <M s="T" />
           </li>
           <li>
-            Son contenu <strong>survit à la mort</strong> ; les objets éternels y sont mis à l’abri si le perso meurt. <M s="T" />
+            Fin de saison : son contenu est transféré <strong>définitivement</strong> dans l’inventaire du perso principal
+            (dimanche 25 octobre à 18 h). <M s="T" />
           </li>
           <li>
-            Fin de saison : <strong>tout</strong> son contenu passe définitivement dans l’inventaire du perso principal (lundi
-            8 h). <M s="T" />
+            <strong>Objet éternel</strong> de Prestige : donné seulement si le Prestige dépasse le record déjà récompensé sur le
+            compte. <M s="T" />
           </li>
         </ul>
-        <More title="Objet éternel en saison">
-          <p>
-            L’objet éternel de Prestige n’est donné que si le Prestige dépasse le record déjà récompensé sur le compte.{' '}
-            <M s="T" />
-          </p>
-        </More>
       </Section>
 
       <Section id="classement" title="Classement">
         <ul>
           <li>
-            <strong>Moyenne des places</strong> dans 6 modes (Niveau, Aventure, Ascension, Abysses, Arène, Collection).{' '}
-            <Link href="/contenus/arene/#classement-saison">Détail</Link> <M s="T" />
-          </li>
-          <li>
-            Au relevé : <strong>1 289 persos classés</strong>, morts compris (score au moment de la mort). <M s="T" />
+            <strong>Moyenne des places</strong> dans les 6 modes (Niveau, Aventure, Ascension, Abysses, Arène, Collection),
+            parmi les persos de la saison. <Link href="/contenus/arene/#classement-saison">Détail</Link> <M s="T" />
           </li>
           <li>
             Fin de saison : classement figé. <M s="T" />
           </li>
         </ul>
-        <More title="Quelles classes en haut du classement ?">
-          <p>
-            Top 30 affiché : surtout Zobal, puis Iop, Ouginak, Féca, Roublard (extrait observé, non exhaustif). Aucun Crâ dans ce
-            top 30 ; un Crâ à la 69e place du top 100. <M s="T" />
-          </p>
-          <p>
-            On ne peut rien en conclure de fiable sur la force des classes. <M s="D" />
-          </p>
-        </More>
         <GameCapture id="site-saison-classement" caption="Haut du classement de la saison, pseudos floutés" />
       </Section>
 
       <Section id="recompenses" title="Récompenses">
         <ul>
           <li>
-            Sur le <strong>perso principal</strong>, une fois par compte, pour son meilleur perso. <M s="T" />
+            Versées sur le <strong>perso principal</strong> (coffres). <M s="T" />
           </li>
           <li>
             <strong>Top 100</strong> : de <strong>100 Coffres Légendaires</strong> (1er) à <strong>10</strong> (100e).{' '}
@@ -211,7 +193,7 @@ export default function SaisonPage() {
           { href: '/personnage/prestige/', label: 'Prestige' },
           { href: '/debuter/energie-xp/', label: 'Énergie & XP' },
         ]}
-        sources="txt_saison.txt, txt_faq.txt, mecaniques.md §7"
+        sources="Page publique /saison relevée le 20 oct 2026"
       />
     </>
   );
