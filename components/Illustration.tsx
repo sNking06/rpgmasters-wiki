@@ -13,6 +13,6 @@ export default function Illustration({ name, alt, priority = false, className, s
   return <img className={className} src={`${base}${webp ? '.webp' : '.svg'}`} alt={alt}
     width={1600} height={600} loading={priority ? 'eager' : 'lazy'}
     decoding={priority ? undefined : 'async'} fetchPriority={priority ? 'high' : undefined}
-    srcSet={responsive ? `${base}-800.webp 800w, ${base}.webp 1600w` : undefined}
+    srcSet={responsive ? `${base}-800.webp 800w, ${base}.webp 1280w` : undefined}
     sizes={responsive ? sizes : undefined} />;
 }
