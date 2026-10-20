@@ -59,7 +59,7 @@ export default function EconomiePage() {
           ['Coffre par combat', '≈ 5 %'],
           ['Élan', '25 combats = 1 Épique'],
           ['Orbes', '8 000 max par jour'],
-          ['Taxe HDV', '8 %'],
+          ['Taxe HDV', '8 / 12 / 15 %'],
           ['Vente PNJ', '10 k × niveau (max 2 000)'],
           ['Changer de classe', '300 000 k (1er gratuit)'],
         ]}
@@ -252,7 +252,7 @@ export default function EconomiePage() {
             Prestige et du Bouclier. Deux fois plus long à monter que le Bouclier. <M s="T" />
           </li>
           <li>
-            <strong>Croquette</strong> : 5 % par combat gagné, tous modes ; aucune en Auto AFK (l’Auto normal en donne). 100
+            <strong>Croquette</strong> : 10 % par combat gagné, tous modes, Auto compris (FAQ du 20 oct 2026). 100
             données par jour max, le reste en stock. <M s="T" />
           </li>
         </ul>
@@ -271,7 +271,7 @@ export default function EconomiePage() {
             <strong>Vente aux PNJ</strong> : 10 kamas × niveau de l’objet, max <strong>2 000</strong>. <M s="T" />
           </li>
           <li>
-            <strong>HDV</strong> : taxe de <strong>8 %</strong>, <strong>20 ventes</strong> à la fois, objet acheté lié{' '}
+            <strong>HDV</strong> : taxe de <strong>8 %</strong> jusqu’à 100 000 kamas, <strong>12 %</strong> jusqu’à 1 000 000, <strong>15 %</strong> au-delà (FAQ du 20 oct 2026), <strong>20 ventes</strong> à la fois, objet acheté lié{' '}
             <strong>24 h</strong>. <M s="T" />
           </li>
           <li>

@@ -58,7 +58,7 @@ export default function CaracteristiquesPage() {
           ['Esquive max', '50 %'],
           ['PA max', '12 → 15 (Prestige)'],
           ['Deck', '10 cartes (+1 par Prestige)'],
-          ['Decks préparables', '6'],
+          ['Decks préparables', '8'],
         ]}
       />
 
@@ -199,7 +199,7 @@ export default function CaracteristiquesPage() {
         <ul>
           <li>
             <strong>10 sorts</strong> au départ, <strong>+1 par Prestige</strong>, <strong>7 minimum</strong> pour combattre,{' '}
-            <strong>6 decks</strong> préparables. <M s="T" />
+            <strong>8 decks</strong> préparables (FAQ du 20 oct 2026). <M s="T" />
           </li>
           <li>
             <strong>Doublons</strong> : avant le Prestige 1, convertis en <strong>3 000 kamas</strong> ; ensuite, ils
@@ -216,7 +216,7 @@ export default function CaracteristiquesPage() {
           <ul>
             <li>
               <code>DECK_SIZE 10</code>, <code>DECK_PER_PRESTIGE 1</code> ; <code>GEAR_PRESETS count 6</code> pour les
-              équipements (6 decks d’après la FAQ). <M s="T" />
+              équipements ; la FAQ du 20 oct 2026 annonce 8 decks. <M s="T" />
             </li>
             <li>
               Pioches supplémentaires : 4 au maximum (<code>EXTRA_DRAW_MAX</code>). <M s="T" />

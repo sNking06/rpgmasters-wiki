@@ -1,4 +1,4 @@
-/** FAQ synthétique — reformulation de txt_faq.txt (page publique /faq). Tout est [TROUVÉ]. Une entrée de `a` = une puce courte. */
+/** FAQ synthétique — reformulation de la page publique /faq (relevée le 11 oct 2026, revérifiée le 20 oct 2026). Tout est [TROUVÉ]. Une entrée de `a` = une puce courte. */
 export type FaqItem = { id: string; q: string; a: string[]; see?: { href: string; label: string } };
 export type FaqGroup = { id: string; title: string; items: FaqItem[] };
 
@@ -77,11 +77,12 @@ export const FAQ: FaqGroup[] = [
         id: 'conditions',
         q: 'Quelles conditions pour chaque Prestige ?',
         a: [
-          'Niveau 200 jusqu’au P3, puis des étages d’Ascension : 20 pour P4 … 260 pour P15.',
-          'P5 et P6 demandent aussi des dégâts sur le Kralamoure de la Faille.',
-          'Maximum actuel : P15 ; P10 en saison.',
+          'Niveau 200 jusqu’au P3, puis des étages d’Ascension : 20 pour P4, 30 pour P5, 40 pour P6 et P7 … 260 pour P15.',
+          'P15 demande aussi un record de 130 étages dans les Abysses ; P16 à P20 : records de 260, 390, 520, 650 et 780 étages dans les Abysses.',
+          'Les dégâts cumulés sur le Kralamoure de la Faille comptent aussi pour certains Prestiges.',
+          'Maximum actuel : P20, y compris en saison (mêmes conditions) — relevé du 20 oct 2026.',
         ],
-        see: { href: '/personnage/prestige/#conditions', label: 'Étapes P1 → P15' },
+        see: { href: '/personnage/prestige/#conditions', label: 'Étapes P1 → P20' },
       },
       {
         id: 'objet-eternel',
@@ -132,6 +133,7 @@ export const FAQ: FaqGroup[] = [
           '100 points max, +1 toutes les 6 minutes, même hors ligne.',
           'Coût : Chasse/Aventure 1, boss/Ascension 2, arène 1 ticket, Abysses 20.',
           'Achat : 300 kamas le point, 1 000 points/jour max, prix en hausse au-delà de 600.',
+          'Énergie illimitée les 7 premiers jours de jeu ; ensuite, achetable : 1 000 000 kamas pour 24 h (cumulable).',
           'Le perso de saison n’utilise pas d’énergie.',
         ],
         see: { href: '/debuter/energie-xp/#energie', label: 'Énergie' },
@@ -190,18 +192,18 @@ export const FAQ: FaqGroup[] = [
         id: 'deck',
         q: 'Comment marche le deck ?',
         a: [
-          'Jusqu’à 10 sorts au départ (+1 par Prestige), 7 minimum pour combattre, 6 decks préparables.',
+          'Jusqu’à 10 sorts au départ (+1 par Prestige), 7 minimum pour combattre, 8 decks préparables (FAQ du 20 oct 2026).',
           'PA total plafonné : 12, 13 dès P2, 14 dès P5, 15 dès P8 (hors Abysses).',
           'Dès P1, un doublon renforce le sort.',
         ],
       },
       {
         id: 'auto',
-        q: '« Auto » ou « Auto AFK » : quelle différence ?',
+        q: '« Auto » ou « Auto (enchaîne) » : quelle différence ?',
         a: [
-          '« Auto » joue le combat en cours, récompenses normales (vérification de présence tous les 20 combats).',
-          '« Auto AFK » enchaîne seul jusqu’à une défaite, l’énergie vide ou l’arrêt, avec moitié moins d’XP, de kamas et de butin.',
-          'Auto AFK indisponible en arène, Abysses, Faille, Ascension, boss de zone et capture ; vérification toutes les 60 minutes.',
+          '« Auto » joue le combat en cours, récompenses normales ; tu lances chaque combat (vérification de présence tous les 20 combats).',
+          '« Auto (enchaîne) » enchaîne seul jusqu’à une défaite, l’énergie vide ou l’arrêt. D’après la FAQ du 20 oct 2026 : mêmes récompenses qu’un combat normal, limité à 1 300 combats par heure et 19 000 par jour.',
+          'Indisponible en arène, Abysses, Faille, Ascension, boss de zone et capture ; vérification de présence toutes les 60 minutes.',
         ],
       },
       {
@@ -222,10 +224,11 @@ export const FAQ: FaqGroup[] = [
         id: 'abysses',
         q: 'Comment fonctionnent les Abysses ?',
         a: [
-          'Descente de 1 000 étages, 20 énergie.',
+          'Descente d’étages de boss sans limite, ouverte à tous, 20 énergie.',
           'Équipement et stats ignorés : tout le monde part de 6 PA, 3 PM, 100 partout, avec un sort au choix parmi 3.',
           'Après chaque victoire, un bonus parmi 3 cartes ; tous les 5 étages, un nouveau sort.',
-          'Après une défaite, reprise possible 25 étages sous son record (gardé après Prestige).',
+          'Après une défaite, reprise possible 20 étages sous son record (gardé après Prestige).',
+          'Relances : 1 tous les 25 étages, 3 en réserve ; elles retirent les 3 cartes proposées. L’Auto ne relance jamais.',
         ],
       },
       {
@@ -244,6 +247,7 @@ export const FAQ: FaqGroup[] = [
         q: 'À quoi servent les guildes ?',
         a: [
           'Jusqu’à 40 joueurs, pour affronter le Kralamoure de la Faille.',
+          'Boules de capture seulement sur les 10 premiers combats du jour.',
           'Faille en accès libre : combats illimités ; seuls les 3 meilleurs scores du jour comptent ; dégâts additionnés ; coffres selon le classement du jour (constaté le 18 oct 2026).',
           'Les dégâts cumulés conditionnent certains Prestiges.',
         ],
@@ -264,7 +268,7 @@ export const FAQ: FaqGroup[] = [
         q: 'C’est quoi la saison Héroïque ?',
         a: [
           'Événement limité : un perso de saison créé de zéro, en plus du principal (intact).',
-          'Pas d’énergie, beaucoup plus d’XP, mais mort définitive face aux boss.',
+          'Pas d’énergie et beaucoup plus d’XP. Selon la saison, mort définitive possible face aux boss : pas pendant la saison des Cartes (18–25 oct 2026), d’après les pages FAQ et Saison relevées le 20 oct 2026.',
           'Récompenses sur le perso principal ; le contenu de la Banque (8 emplacements, +3 par Prestige) y est transféré à la fin.',
         ],
         see: { href: '/contenus/saison/', label: 'Saison' },
@@ -279,7 +283,8 @@ export const FAQ: FaqGroup[] = [
         id: 'hdv',
         q: 'Comment vendre et acheter à l’HDV ?',
         a: [
-          'Prix libre, 20 ventes à la fois max, taxe de 8 % sur le prix de vente.',
+          'Prix libre, 20 ventes à la fois max.',
+          'Taxe sur le prix de vente : 8 % jusqu’à 100 000 kamas, 12 % jusqu’à 1 000 000, 15 % au-delà (FAQ du 20 oct 2026).',
           'Un objet acheté est lié 24 h. Objets éternels et verrouillés invendables.',
         ],
       },
@@ -310,8 +315,8 @@ export const FAQ: FaqGroup[] = [
         q: 'Qu’est-ce que le compagnon ?',
         a: [
           'Un allié qui grandit avec des croquettes : +0,2 % à tout l’équipement par niveau, jusqu’à +79,8 % au niveau 400.',
-          'Croquette : 5 % par combat gagné (aucune en Auto AFK), 100 données par jour max.',
-          'N’agit pas aux Abysses ni sur PA/PM/PO/invocations.',
+          'Croquette : 10 % par combat gagné, tous modes, Auto compris (FAQ du 20 oct 2026) ; 100 données par jour max.',
+          'N’agit pas aux Abysses ni sur PA/PM/PO/invocations. Niveau et croquettes gardés au Prestige.',
         ],
         see: { href: '/economie/#compagnon', label: 'Compagnon' },
       },
@@ -350,7 +355,7 @@ export const FAQ: FaqGroup[] = [
         q: 'Le jeu est-il payant ?',
         a: [
           'Non : projet de fans gratuit, sans publicité ni achat, non affilié à Ankama.',
-          'Prestiges au-delà du 15 annoncés « bientôt disponibles », sans date.',
+          'Prestiges au-delà du 20 annoncés « bientôt disponibles », sans date (20 oct 2026).',
         ],
       },
     ],

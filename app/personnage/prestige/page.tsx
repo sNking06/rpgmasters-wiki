@@ -5,7 +5,7 @@ import { Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip
 
 export const metadata: Metadata = {
   title: 'Prestige',
-  description: 'Prestige dans RpgMasters : +25 % de stats par Prestige, conditions P1 à P15, ce qu’on perd et garde, objet éternel, plafond de PA.',
+  description: 'Prestige dans RpgMasters : +25 % de stats par Prestige, conditions P1 à P20, ce qu’on perd et garde, objet éternel, plafond de PA.',
 };
 
 type Row = { p: number; cond: string; bonus: string; pa: number };
@@ -27,7 +27,12 @@ const ROWS: Row[] = [
   { p: 12, cond: 'Étage 170 de l’Ascension terminé', bonus: '—' },
   { p: 13, cond: 'Étage 200 de l’Ascension terminé', bonus: '—' },
   { p: 14, cond: 'Étage 230 de l’Ascension terminé', bonus: '—' },
-  { p: 15, cond: 'Étage 260 de l’Ascension terminé', bonus: '—' },
+  { p: 15, cond: 'Étage 260 de l’Ascension terminé + record de 130 étages dans les Abysses', bonus: '—' },
+  { p: 16, cond: 'Record de 260 étages dans les Abysses', bonus: '—' },
+  { p: 17, cond: 'Record de 390 étages dans les Abysses', bonus: '—' },
+  { p: 18, cond: 'Record de 520 étages dans les Abysses', bonus: '—' },
+  { p: 19, cond: 'Record de 650 étages dans les Abysses', bonus: '—' },
+  { p: 20, cond: 'Record de 780 étages dans les Abysses', bonus: '—' },
 ].map((r) => ({ ...r, pa: paCap(r.p) }));
 
 const MILESTONES: { head: string; tag?: string; key?: boolean; text: string }[] = [
@@ -36,8 +41,9 @@ const MILESTONES: { head: string; tag?: string; key?: boolean; text: string }[] 
   { head: 'P5', text: 'Étage 30 + 500 000 dégâts sur le Kralamoure. +3 PO. PA max 14.' },
   { head: 'P6 → P7', text: 'Étage 40 (+ 1 000 000 dégâts pour P6). +3 PM, +1 PA.' },
   { head: 'P8', text: 'Étage 60. PA max 15.' },
-  { head: 'P10', tag: 'max en saison', text: 'Étage 110.' },
-  { head: 'P15', tag: 'maximum actuel', key: true, text: 'Étage 260. Les suivants : « bientôt disponibles ».' },
+  { head: 'P10', text: 'Étage 110.' },
+  { head: 'P15', text: 'Étage 260 + record de 130 étages dans les Abysses.' },
+  { head: 'P16 → P20', tag: 'maximum actuel', key: true, text: 'Records Abysses : 260, 390, 520, 650 puis 780 étages. Les suivants : « bientôt disponibles ».' },
 ];
 
 export default function PrestigePage() {
@@ -59,7 +65,7 @@ export default function PrestigePage() {
           <strong>Dès le Prestige 4</strong> : plus aucune perte. <M s="T" />
         </li>
         <li>
-          Maximum : <strong>Prestige 15</strong> (10 en saison). <M s="T" />
+          Maximum : <strong>Prestige 20</strong>, aussi en saison (FAQ du 20 oct 2026). <M s="T" />
         </li>
       </Essentiel>
 
@@ -72,7 +78,7 @@ export default function PrestigePage() {
           ['Deck', '+1 carte par Prestige'],
           ['Plus de pertes', 'dès P4'],
           ['PA max', '12 → 13 (P2) → 14 (P5) → 15 (P8)'],
-          ['Maximum', 'P15 (saison : P10)'],
+          ['Maximum', 'P20 (saison comprise)'],
         ]}
       />
 
@@ -91,7 +97,7 @@ export default function PrestigePage() {
         </ul>
       </Section>
 
-      <Section id="conditions" title="Les étapes P1 → P15">
+      <Section id="conditions" title="Les étapes P1 → P20">
         <ol className="timeline">
           {MILESTONES.map((m) => (
             <li key={m.head} className={m.key ? 'is-key' : undefined}>
@@ -111,7 +117,7 @@ export default function PrestigePage() {
             <M s="T" />
           </p>
         </Tip>
-        <More title="Tableau complet P1 → P15">
+        <More title="Tableau complet P1 → P20">
           <TableWrap caption="Conditions, bonus de combat et plafond de PA par Prestige">
             <thead>
               <tr>
