@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ItemTable } from '@/components/ItemTable';
+import GameCapture from '@/components/GameCapture';
 import { Essentiel, PageEnd, PageHeader, Section, Warn } from '@/components/ui';
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function ObjetsPage() {
       <Warn title="À savoir">
         <p>Les chiffres sont ceux affichés au moment du relevé. On ne sait pas s’ils incluent un multiplicateur (Prestige du lecteur, fusion) : compare les objets entre eux plutôt qu’en valeur absolue. Une case vide = valeur non affichée ou nulle.</p>
       </Warn>
+      <GameCapture id="inventaire-objets" caption="Inventaire en jeu et fiche d’un objet : Hachoir de la Déchireuse (Mythique, Rayonnant +5)" />
       <Section id="table" title="Table des objets">
         <ItemTable />
       </Section>

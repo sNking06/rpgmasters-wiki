@@ -188,6 +188,226 @@
    ],
    "alt": "Page publique Mentions et règles : fan-site non officiel, règles de la communauté et données personnelles",
    "date": "20 oct 2026"
+  },
+  {
+   "id": "tableau-de-bord",
+   "src": "tableau-de-bord.png",
+   "box": [
+    295,
+    206,
+    1610,
+    1200
+   ],
+   "alt": "Tableau de bord de SNking : bandeau de saison, série de connexion, parrainage, guide de départ, progression (Chemin étape 630, Abysses étage 5) et quêtes du jour",
+   "date": "20 oct 2026",
+   "mask": [
+    [
+     1590,
+     1110,
+     1620,
+     1200
+    ]
+   ]
+  },
+  {
+   "id": "ascension-etage-42",
+   "src": "ascension-etage-42.png",
+   "box": [
+    295,
+    216,
+    1610,
+    1200
+   ],
+   "alt": "Ascension avant combat : étage actuel 42 (record étage 41, Prestige 7), 3 boss ensemble Barbéryl Clochecuivre, Toxoliath et Minotot en difficulté Cauchemar, coût 2 énergie, règles des paliers à droite",
+   "date": "20 oct 2026",
+   "mask": [
+    [
+     1590,
+     1110,
+     1620,
+     1200
+    ]
+   ]
+  },
+  {
+   "id": "jardins-d-hiver",
+   "src": "jardins-d-hiver.png",
+   "box": [
+    295,
+    225,
+    1610,
+    1200
+   ],
+   "alt": "Zone Jardins d'Hiver (Île de Frigost, monstres niveau 200) : sélection du deck et du stuff, chasse ciblée et trois groupes de monstres (Dodox, Nessil, Droséräe, Krokal, Glourdorak)",
+   "date": "20 oct 2026",
+   "mask": [
+    [
+     1590,
+     1110,
+     1620,
+     1200
+    ]
+   ]
+  },
+  {
+   "id": "monde-zones",
+   "src": "monde-zones.png",
+   "box": [
+    295,
+    216,
+    1610,
+    1200
+   ],
+   "alt": "Page Chasse : prochain boss de zone (Fuji Givrefoux Nourricière), onglets Zones de mon niveau / Toutes les zones (222) et cartes des zones niveau 180–200",
+   "date": "20 oct 2026",
+   "mask": [
+    [
+     1590,
+     1110,
+     1620,
+     1200
+    ]
+   ]
+  },
+  {
+   "id": "inventaire-objets",
+   "src": "inventaire-objets.png",
+   "box": [
+    295,
+    178,
+    1610,
+    1200
+   ],
+   "alt": "Inventaire de SNking avec la fiche ouverte de l'arme Hachoir de la Déchireuse (Mythique, Rayonnant +5) : équipement porté, filtres, grille d'objets et stats détaillées",
+   "date": "20 oct 2026",
+   "mask": [
+    [
+     1590,
+     1110,
+     1620,
+     1200
+    ]
+   ]
+  },
+  {
+   "id": "inventaire-dofus",
+   "src": "inventaire-dofus.png",
+   "box": [
+    295,
+    178,
+    1610,
+    1200
+   ],
+   "alt": "Inventaire filtré sur Dofus / Trophée (136 objets) avec le panneau de filtres ouvert : type, rareté, niveau de fusion, niveau et caractéristiques",
+   "date": "20 oct 2026",
+   "mask": [
+    [
+     1590,
+     1110,
+     1620,
+     1200
+    ]
+   ]
+  },
+  {
+   "id": "inventaire-coffres",
+   "src": "inventaire-coffres.png",
+   "box": [
+    295,
+    216,
+    1610,
+    1200
+   ],
+   "alt": "Page Coffres : 108 coffres disponibles, ouverture par 1, 10 ou 50, tranche de niveau, et coffres cadeaux en réserve (Bonus, Royal, Légendaire)",
+   "date": "20 oct 2026",
+   "mask": [
+    [
+     1590,
+     1110,
+     1620,
+     1200
+    ]
+   ]
+  },
+  {
+   "id": "prestige",
+   "src": "prestige.png",
+   "box": [
+    295,
+    384,
+    1610,
+    957
+   ],
+   "alt": "Bloc Prestige de la fiche personnage : bonus de combat cumulés des Prestiges 1 à 7, objets éternels gardés à chaque Prestige et conditions pour passer Prestige 8",
+   "date": "20 oct 2026",
+   "mask": [
+    [
+     1590,
+     1110,
+     1620,
+     1200
+    ]
+   ]
+  },
+  {
+   "id": "saison-banque",
+   "src": "saison-banque.png",
+   "box": [
+    295,
+    222,
+    1610,
+    765
+   ],
+   "alt": "Page Saison : la saison des Cartes (18–25 oct 2026, XP ×4, énergie illimitée) et ses règles héroïques, dont la Banque de saison (8 emplacements, +3 par Prestige)",
+   "date": "20 oct 2026",
+   "mask": [
+    [
+     1590,
+     1110,
+     1620,
+     1200
+    ]
+   ]
+  },
+  {
+   "id": "economie-forge",
+   "src": "economie-forge.png",
+   "box": [
+    295,
+    216,
+    1610,
+    1003
+   ],
+   "alt": "Forgemagie : briser les objets inutiles pour gagner des orbes et les verser dans le Bouclier de forge (niveau 1, 394 orbes en stock, achat d'orbes en kamas)",
+   "date": "20 oct 2026",
+   "mask": [
+    [
+     1590,
+     1110,
+     1620,
+     1200
+    ]
+   ]
+  },
+  {
+   "id": "economie-compagnon",
+   "src": "economie-compagnon.png",
+   "box": [
+    305,
+    216,
+    1615,
+    947
+   ],
+   "alt": "Compagnon : Piou Violet niveau 1, 451 croquettes à donner (100 par jour), achat de croquettes et choix du compagnon",
+   "date": "20 oct 2026",
+   "mask": [
+    [
+     1590,
+     1110,
+     1620,
+     1200
+    ]
+   ]
   }
  ]
 }

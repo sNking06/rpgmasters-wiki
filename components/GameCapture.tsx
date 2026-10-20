@@ -32,10 +32,10 @@ export function GameCapture({ id, caption }: { id: string; caption?: string }) {
   );
 }
 
-export function CaptureGallery({ ids }: { ids: string[] }) {
+export function CaptureGallery({ ids, captions }: { ids: string[]; captions?: Record<string, string> }) {
   const available = ids.filter(id => byId.has(id));
   if (!available.length) return null;
-  return <div className="capture-gallery">{available.map(id => <GameCapture key={id} id={id} />)}</div>;
+  return <div className="capture-gallery">{available.map(id => <GameCapture key={id} id={id} caption={captions?.[id]} />)}</div>;
 }
 
 export default GameCapture;

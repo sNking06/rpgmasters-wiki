@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Icon, SectionIcon } from '@/components/icons';
+import GameCapture from '@/components/GameCapture';
 import { Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn } from '@/components/ui';
 
 export const metadata: Metadata = {
@@ -95,6 +96,7 @@ export default function PrestigePage() {
             <M s="T" />
           </li>
         </ul>
+        <GameCapture id="prestige" caption="Bloc Prestige de la fiche perso (P7) : bonus cumulés, objets éternels et conditions du P8" />
       </Section>
 
       <Section id="conditions" title="Les étapes P1 → P20">

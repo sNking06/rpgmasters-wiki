@@ -15,13 +15,13 @@ export function SectionCards({ nodes = NAV }: { nodes?: NavNode[] }) {
   </li>)}</ul>;
 }
 
-export default function SectionLanding({ href, captureId, captureIds, captureCaption }: { href: string; captureId?: string; captureIds?: string[]; captureCaption?: string }) {
+export default function SectionLanding({ href, captureId, captureIds, captureCaption, captureCaptions }: { href: string; captureId?: string; captureIds?: string[]; captureCaption?: string; captureCaptions?: Record<string, string> }) {
   const trail = trailFor(href);
   const n = trail[trail.length - 1];
   return <>
     <PageHeader href={href} title={n.title} intro={n.description} />
     {captureId ? <GameCapture id={captureId} caption={captureCaption} /> : null}
-    {captureIds?.length ? <CaptureGallery ids={captureIds} /> : null}
+    {captureIds?.length ? <CaptureGallery ids={captureIds} captions={captureCaptions} /> : null}
     <SectionCards nodes={n.children} />
   </>;
 }

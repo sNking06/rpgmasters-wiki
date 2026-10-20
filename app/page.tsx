@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Illustration from '@/components/Illustration';
+import GameCapture from '@/components/GameCapture';
 import { illustrationFor } from '@/lib/illustrations';
 import { OpenSearchButton } from '@/components/Search';
 import { Icon, SectionIcon } from '@/components/icons';
@@ -78,6 +79,15 @@ export default function Home() {
         </ul>
       </nav>
 
+      <section aria-labelledby="en-jeu-h" className="home-section">
+        <div className="section-head">
+          <div>
+            <p className="section-kicker">En jeu</p>
+            <h2 id="en-jeu-h">À quoi ressemble le jeu ?</h2>
+          </div>
+        </div>
+        <GameCapture id="tableau-de-bord" caption="Le tableau de bord : saison en cours, progression et quêtes du jour" />
+      </section>
     </div>
   );
 }

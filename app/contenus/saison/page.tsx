@@ -142,6 +142,7 @@ export default function SaisonPage() {
             compte. <M s="T" />
           </li>
         </ul>
+        <GameCapture id="saison-banque" caption="Règles de la saison des Cartes en jeu, dont la Banque de saison" />
       </Section>
 
       <Section id="classement" title="Classement">

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import EnergyPriceChart from '@/components/EnergyPriceChart';
 import XpChart from '@/components/XpChart';
+import GameCapture from '@/components/GameCapture';
 import { Icon, SectionIcon } from '@/components/icons';
 import { KeyFigures, Bars, Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn, fmt } from '@/components/ui';
 import { ENERGY, MONSTER_XP_REF_KNOWN, XP_SOURCE_POINTS, cumulativeXp, energyPointPrice, energyTotalCost } from '@/lib/xp';
@@ -171,6 +172,7 @@ export default function EnergieXpPage() {
             niveau et avec votre build (FAQ). <M s="T" />
           </p>
         </Tip>
+        <GameCapture id="tableau-de-bord" caption="Progression (Chemin, Abysses) et quêtes du jour sur le tableau de bord" />
         <p>
           XP réellement donnée par combat : <strong>inconnue</strong> (calcul côté serveur), donc pas de nombre exact de combats
           par niveau. <M s="N" />

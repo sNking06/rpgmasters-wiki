@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import GameCapture from '@/components/GameCapture';
 import { Essentiel, M, PageEnd, PageHeader, Section } from '@/components/ui';
 import { FAQ } from '@/lib/faq';
 
@@ -28,6 +29,8 @@ export default function FaqPage() {
       <p>
         Synthèse reformulée de la FAQ publique du jeu (38 questions à l’origine). Tout y est trouvé tel quel <M s="T" />.
       </p>
+
+      <GameCapture id="tableau-de-bord" caption="Tableau de bord : série de connexion, guide de départ et quêtes du jour" />
 
       <nav aria-label="Thèmes de la FAQ">
         <ul className="chips">

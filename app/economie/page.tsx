@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Icon, SectionIcon } from '@/components/icons';
+import GameCapture from '@/components/GameCapture';
 import { Stat, Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, fmt } from '@/components/ui';
 
 export const metadata: Metadata = {
@@ -93,6 +94,7 @@ export default function EconomiePage() {
             après un Prestige. <M s="T" />
           </li>
         </ul>
+        <GameCapture id="inventaire-coffres" caption="Page Coffres : ouverture par 1, 10 ou 50 et coffres cadeaux en réserve" />
       </Section>
 
       <Section id="boutique" title="Boutique de coffres">
@@ -243,6 +245,7 @@ export default function EconomiePage() {
             Un objet <strong>verrouillé</strong> (cadenas) est protégé contre la vente et le bris. <M s="T" />
           </li>
         </ul>
+        <GameCapture id="economie-forge" caption="Page Forgemagie : briser des objets et verser les orbes dans le Bouclier de forge" />
       </Section>
 
       <Section id="compagnon" title="Compagnon">
@@ -262,6 +265,7 @@ export default function EconomiePage() {
             perso principal ; niveau et croquettes gardés au Prestige. <M s="T" />
           </p>
         </More>
+        <GameCapture id="economie-compagnon" caption="Page Compagnon : croquettes à donner (100 par jour) et choix du compagnon" />
       </Section>
 
       <Section id="kamas" title="Kamas et HDV">
