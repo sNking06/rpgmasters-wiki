@@ -1,3 +1,4 @@
+import GameCapture from '@/components/GameCapture';
 import CraAdvice from '@/components/CraAdvice';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -66,6 +67,8 @@ export default function CraPage() {
           </span>
         </li>
       </Essentiel>
+
+      <GameCapture id="site-classes-grille" caption="Le Crâ dans la grille des classes (page publique)" />
 
       <Fiche
         title="Fiche Crâ"

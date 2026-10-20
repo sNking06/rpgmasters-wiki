@@ -3,6 +3,7 @@ import { NAV, trailFor, type NavNode } from '@/lib/nav';
 import { illustrationFor } from '@/lib/illustrations';
 import Illustration from './Illustration';
 import { PageHeader } from './ui';
+import GameCapture, { CaptureGallery } from './GameCapture';
 
 export function SectionCards({ nodes = NAV }: { nodes?: NavNode[] }) {
   return <ul className="hub">{nodes.map(n => <li key={n.href}>
@@ -14,8 +15,13 @@ export function SectionCards({ nodes = NAV }: { nodes?: NavNode[] }) {
   </li>)}</ul>;
 }
 
-export default function SectionLanding({ href }: { href: string }) {
+export default function SectionLanding({ href, captureId, captureIds, captureCaption }: { href: string; captureId?: string; captureIds?: string[]; captureCaption?: string }) {
   const trail = trailFor(href);
   const n = trail[trail.length - 1];
-  return <><PageHeader href={href} title={n.title} intro={n.description} /><SectionCards nodes={n.children} /></>;
+  return <>
+    <PageHeader href={href} title={n.title} intro={n.description} />
+    {captureId ? <GameCapture id={captureId} caption={captureCaption} /> : null}
+    {captureIds?.length ? <CaptureGallery ids={captureIds} /> : null}
+    <SectionCards nodes={n.children} />
+  </>;
 }

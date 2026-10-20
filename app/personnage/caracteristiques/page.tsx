@@ -1,3 +1,4 @@
+import GameCapture from '@/components/GameCapture';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { SectionIcon } from '@/components/icons';
@@ -43,6 +44,8 @@ export default function CaracteristiquesPage() {
           <M s="T" />
         </li>
       </Essentiel>
+
+      <GameCapture id="feca-caracteristiques" caption="Caractéristiques d’un Féca niveau 200" />
 
       <Fiche
         title="Fiche caractéristiques"

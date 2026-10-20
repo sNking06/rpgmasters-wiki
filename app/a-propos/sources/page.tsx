@@ -1,3 +1,4 @@
+import GameCapture from '@/components/GameCapture';
 import type { Metadata } from 'next';
 import { Essentiel, M, More, PageEnd, PageHeader, Section, STATUS_INFO, TableWrap, Warn, type Status } from '@/components/ui';
 import { GAME_URL } from '@/lib/site';
@@ -49,6 +50,8 @@ export default function SourcesPage() {
         </li>
       </Essentiel>
 
+      <GameCapture id="site-mentions" caption="Page publique Mentions et règles" />
+
       <Section id="statut" title="Un wiki non officiel">
         <Warn>
           <p>
@@ -65,7 +68,7 @@ export default function SourcesPage() {
           </li>
           <li>
             Les classes, objets, noms, illustrations… de l’univers DOFUS appartiennent à Ankama Games. Ce wiki ne reproduit{' '}
-            <strong>aucune image ni ressource</strong> du jeu. <M s="T" />
+            <strong>aucune ressource</strong> du jeu, hormis des captures d’écran datées pour illustrer. <M s="T" />
           </li>
         </ul>
       </Section>

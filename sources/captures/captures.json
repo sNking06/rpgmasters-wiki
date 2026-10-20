@@ -1,13 +1,193 @@
 {
-  "_doc": "Recadrages des captures en jeu. box = [gauche, haut, droite, bas] en pixels de la PNG source ; mask = zones à flouter (chat, pseudos hors classement) ; strips = plusieurs bandes empilées verticalement. Lancer : python3 scripts/build-captures.py",
-  "captures": [
-    {"id": "guilde-faille-top10", "src": "guilde-kralamoure.png", "box": [37, 553, 674, 1166], "alt": "Carte Faille du Kralamoure dans la page Guilde : accès libre, choix du deck, dégâts du jour 320 085 et top 10 des plus gros dégâts du jour", "date": "20 oct 2026"},
-    {"id": "guilde-classement-guildes", "src": "guilde-kralamoure.png", "box": [37, 1160, 674, 1564], "alt": "Classement du jour des guildes sur le Kralamoure et coffres donnés chaque soir à minuit", "date": "20 oct 2026"},
-    {"id": "guilde-degats-snking", "src": "guilde-kralamoure.png", "strips": [[37, 1612, 1330, 1642], [37, 1880, 1330, 1915]], "alt": "Ligne SNking du tableau des membres : dégâts Kralamoure dimanche 385 314, lundi 126 229, mardi 320 085", "date": "20 oct 2026"},
-    {"id": "feca-fiche", "src": "feca-caracteristiques.png", "box": [32, 205, 1330, 432], "alt": "Fiche du personnage : Féca Prestige 7, niveau 200, Opti 19 883, équipement 16/16", "date": "20 oct 2026"},
-    {"id": "feca-caracteristiques", "src": "feca-caracteristiques.png", "box": [37, 907, 1333, 1765], "mask": [[1060, 1044, 1350, 1100]], "alt": "Caractéristiques du Féca avec la panoplie Malédiction de Cire Momore 6/6 : 14 335 PV, 14 PA, 6 PM, résistances 50 %, réduction de dégâts 89 % (50 max)", "date": "20 oct 2026"},
-    {"id": "deck-7-kralamoure", "src": "deck-7-kralamoure.png", "box": [27, 367, 1323, 860], "alt": "Deck 7 du Kralamoure : Bouclier Féca, Vertu, Pelle des Anciens, Précipitation, Tibia, Traversée, Bluff", "date": "20 oct 2026"},
-    {"id": "momore-equipement-porte", "src": "equipement-momore.png", "box": [25, 292, 342, 725], "alt": "Équipement porté par le Féca SNking niveau 200", "date": "20 oct 2026"},
-    {"id": "momore-chagrin-de-cire", "src": "equipement-momore.png", "box": [1020, 283, 1325, 1017], "alt": "Fiche de l'objet Chagrin de Cire (chapeau rare niveau 200, panoplie Malédiction de Cire Momore) avec bonus de panoplie et statistiques", "date": "20 oct 2026"}
-  ]
+ "_doc": "Recadrages des captures en jeu. box = [gauche, haut, droite, bas] en pixels de la PNG source ; mask = zones à flouter (chat, pseudos hors classement) ; strips = plusieurs bandes empilées verticalement. Lancer : python3 scripts/build-captures.py",
+ "captures": [
+  {
+   "id": "guilde-faille-top10",
+   "src": "guilde-kralamoure.png",
+   "box": [
+    37,
+    553,
+    674,
+    1166
+   ],
+   "alt": "Carte Faille du Kralamoure dans la page Guilde : accès libre, choix du deck, dégâts du jour 320 085 et top 10 des plus gros dégâts du jour (pseudos des autres joueurs floutés)",
+   "date": "20 oct 2026",
+   "mask": [
+    [
+     80,
+     845,
+     300,
+     1132
+    ]
+   ]
+  },
+  {
+   "id": "guilde-classement-guildes",
+   "src": "guilde-kralamoure.png",
+   "box": [
+    37,
+    1160,
+    674,
+    1564
+   ],
+   "alt": "Classement du jour des guildes sur le Kralamoure et coffres donnés chaque soir à minuit",
+   "date": "20 oct 2026"
+  },
+  {
+   "id": "guilde-degats-snking",
+   "src": "guilde-kralamoure.png",
+   "strips": [
+    [
+     37,
+     1612,
+     1330,
+     1642
+    ],
+    [
+     37,
+     1880,
+     1330,
+     1915
+    ]
+   ],
+   "alt": "Ligne SNking du tableau des membres : dégâts Kralamoure dimanche 385 314, lundi 126 229, mardi 320 085",
+   "date": "20 oct 2026"
+  },
+  {
+   "id": "feca-fiche",
+   "src": "feca-caracteristiques.png",
+   "box": [
+    32,
+    205,
+    1330,
+    432
+   ],
+   "alt": "Fiche du personnage : Féca Prestige 7, niveau 200, Opti 19 883, équipement 16/16",
+   "date": "20 oct 2026"
+  },
+  {
+   "id": "feca-caracteristiques",
+   "src": "feca-caracteristiques.png",
+   "box": [
+    37,
+    907,
+    1333,
+    1765
+   ],
+   "mask": [
+    [
+     1060,
+     1044,
+     1350,
+     1100
+    ]
+   ],
+   "alt": "Caractéristiques du Féca avec la panoplie Malédiction de Cire Momore 6/6 : 14 335 PV, 14 PA, 6 PM, résistances 50 %, réduction de dégâts 89 % (50 max)",
+   "date": "20 oct 2026"
+  },
+  {
+   "id": "deck-7-kralamoure",
+   "src": "deck-7-kralamoure.png",
+   "box": [
+    27,
+    367,
+    1323,
+    860
+   ],
+   "alt": "Deck 7 du Kralamoure : Bouclier Féca, Vertu, Pelle des Anciens, Précipitation, Tibia, Traversée, Bluff",
+   "date": "20 oct 2026"
+  },
+  {
+   "id": "momore-equipement-porte",
+   "src": "equipement-momore.png",
+   "box": [
+    25,
+    292,
+    342,
+    725
+   ],
+   "alt": "Équipement porté par le Féca SNking niveau 200",
+   "date": "20 oct 2026"
+  },
+  {
+   "id": "momore-chagrin-de-cire",
+   "src": "equipement-momore.png",
+   "box": [
+    1020,
+    283,
+    1325,
+    1017
+   ],
+   "alt": "Fiche de l'objet Chagrin de Cire (chapeau rare niveau 200, panoplie Malédiction de Cire Momore) avec bonus de panoplie et statistiques",
+   "date": "20 oct 2026"
+  },
+  {
+   "id": "site-classes",
+   "src": "public-classes.png",
+   "box": [
+    10,
+    100,
+    1350,
+    1145
+   ],
+   "alt": "Page publique Classes du site RpgMasters : grille des 19 classes et fiche du Iop avec passif et 3 cartes exclusives",
+   "date": "20 oct 2026"
+  },
+  {
+   "id": "site-classes-grille",
+   "src": "public-classes.png",
+   "box": [
+    10,
+    255,
+    890,
+    740
+   ],
+   "alt": "Grille des 19 classes jouables sur la page publique Classes, dont le Crâ",
+   "date": "20 oct 2026"
+  },
+  {
+   "id": "site-saison",
+   "src": "public-saison.png",
+   "box": [
+    10,
+    105,
+    1350,
+    720
+   ],
+   "alt": "Page publique Saison : saison des Cartes du 18 au 25 octobre 2026, XP ×4, énergie illimitée et règles Héroïques",
+   "date": "20 oct 2026"
+  },
+  {
+   "id": "site-saison-classement",
+   "src": "public-saison.png",
+   "box": [
+    10,
+    830,
+    1350,
+    1350
+   ],
+   "mask": [
+    [
+     105,
+     915,
+     480,
+     1350
+    ]
+   ],
+   "alt": "Haut du classement de la saison et coffres attribués (pseudos des joueurs floutés)",
+   "date": "20 oct 2026"
+  },
+  {
+   "id": "site-mentions",
+   "src": "public-mentions.png",
+   "box": [
+    10,
+    110,
+    790,
+    890
+   ],
+   "alt": "Page publique Mentions et règles : fan-site non officiel, règles de la communauté et données personnelles",
+   "date": "20 oct 2026"
+  }
+ ]
 }

@@ -1,3 +1,4 @@
+import GameCapture from '@/components/GameCapture';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import ClassGrid from '@/components/ClassGrid';
@@ -28,6 +29,8 @@ export default function ClassesPage() {
           Le jeu ne désigne <strong>aucune « meilleure » classe</strong> : chacune a son style. <M s="T" />
         </li>
       </Essentiel>
+
+      <GameCapture id="site-classes" caption="Page publique Classes du site" />
 
       <Link href="/personnage/classes/cra/" className="feature">
         <span className="medal" aria-hidden="true">

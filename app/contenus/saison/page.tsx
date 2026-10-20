@@ -1,3 +1,4 @@
+import GameCapture from '@/components/GameCapture';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { SectionIcon } from '@/components/icons';
@@ -40,6 +41,8 @@ export default function SaisonPage() {
           Récompenses et <strong>contenu de la Banque</strong> versés sur le perso principal à la fin. <M s="T" />
         </li>
       </Essentiel>
+
+      <GameCapture id="site-saison" caption="Page publique Saison au 20 oct 2026 (saison des Cartes)" />
 
       <Warn title={`${DATA_DATE_LABEL} — fin ${SEASON_END}`}>
         <p>
@@ -169,6 +172,7 @@ export default function SaisonPage() {
             On ne peut rien en conclure de fiable sur la force des classes. <M s="D" />
           </p>
         </More>
+        <GameCapture id="site-saison-classement" caption="Haut du classement de la saison, pseudos floutés" />
       </Section>
 
       <Section id="recompenses" title="Récompenses">

@@ -1,7 +1,7 @@
 [
  {
   "id": "guilde-faille-top10",
-  "alt": "Carte Faille du Kralamoure dans la page Guilde : accès libre, choix du deck, dégâts du jour 320 085 et top 10 des plus gros dégâts du jour",
+  "alt": "Carte Faille du Kralamoure dans la page Guilde : accès libre, choix du deck, dégâts du jour 320 085 et top 10 des plus gros dégâts du jour (pseudos des autres joueurs floutés)",
   "date": "20 oct 2026",
   "width": 637,
   "height": 613,
@@ -62,5 +62,45 @@
   "width": 305,
   "height": 734,
   "smallWidth": 305
+ },
+ {
+  "id": "site-classes",
+  "alt": "Page publique Classes du site RpgMasters : grille des 19 classes et fiche du Iop avec passif et 3 cartes exclusives",
+  "date": "20 oct 2026",
+  "width": 1340,
+  "height": 1045,
+  "smallWidth": 640
+ },
+ {
+  "id": "site-classes-grille",
+  "alt": "Grille des 19 classes jouables sur la page publique Classes, dont le Crâ",
+  "date": "20 oct 2026",
+  "width": 880,
+  "height": 485,
+  "smallWidth": 640
+ },
+ {
+  "id": "site-saison",
+  "alt": "Page publique Saison : saison des Cartes du 18 au 25 octobre 2026, XP ×4, énergie illimitée et règles Héroïques",
+  "date": "20 oct 2026",
+  "width": 1340,
+  "height": 615,
+  "smallWidth": 640
+ },
+ {
+  "id": "site-saison-classement",
+  "alt": "Haut du classement de la saison et coffres attribués (pseudos des joueurs floutés)",
+  "date": "20 oct 2026",
+  "width": 1340,
+  "height": 520,
+  "smallWidth": 640
+ },
+ {
+  "id": "site-mentions",
+  "alt": "Page publique Mentions et règles : fan-site non officiel, règles de la communauté et données personnelles",
+  "date": "20 oct 2026",
+  "width": 780,
+  "height": 780,
+  "smallWidth": 640
  }
 ]
