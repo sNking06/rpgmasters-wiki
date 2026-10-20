@@ -107,7 +107,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             </div>
           </div>
           <p className="footer-legal">
-            Aucune image ni ressource du jeu n’est reproduite : pictogrammes et illustrations sont dessinés pour ce wiki.
+            Pictogrammes et illustrations sont dessinés pour ce wiki ; les seules images du jeu sont des captures d’écran datées, à titre d’illustration.
           </p>
         </footer>
         <Lightbox />
