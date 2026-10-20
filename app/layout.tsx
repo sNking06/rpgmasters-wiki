@@ -9,12 +9,16 @@ import { Icon, Logo } from '@/components/icons';
 import { DATA_DATE_LABEL, GAME_URL, SITE_DESCRIPTION, SITE_NAME } from '@/lib/site';
 import './globals.css';
 
-const displayFont = localFont({ src: './fonts/Cinzel.ttf', variable: '--font-display', display: 'swap', fallback: ['Georgia', 'serif'] });
-const bodyFont = localFont({
+const displayFont = localFont({
   src: [
-    { path: './fonts/SourceSans3.ttf', weight: '200 900', style: 'normal' },
-    { path: './fonts/SourceSans3-Italic.ttf', weight: '200 900', style: 'italic' },
+    { path: './fonts/Rowdies-Light.ttf', weight: '300', style: 'normal' },
+    { path: './fonts/Rowdies-Regular.ttf', weight: '400', style: 'normal' },
+    { path: './fonts/Rowdies-Bold.ttf', weight: '700', style: 'normal' },
   ],
+  variable: '--font-display', display: 'swap', fallback: ['Arial', 'sans-serif'],
+});
+const bodyFont = localFont({
+  src: './fonts/Lexend.ttf', weight: '100 900',
   variable: '--font-body', display: 'swap', fallback: ['Segoe UI', 'Arial', 'sans-serif'],
 });
 
@@ -34,17 +38,14 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: dark)', color: '#21180f' },
-    { media: '(prefers-color-scheme: light)', color: '#f5eddc' },
-  ],
+  themeColor: '#171005',
   colorScheme: 'dark light',
   width: 'device-width',
   initialScale: 1,
 };
 
 /** Posé avant le premier rendu : thème mémorisé, sinon celui du système (aucun flash). */
-const THEME_SCRIPT = `(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}document.documentElement.dataset.theme=t}catch(e){}})();`;
+const THEME_SCRIPT = `(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t='dark'}document.documentElement.dataset.theme=t}catch(e){}})();`;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

@@ -1,6 +1,5 @@
 'use client';
 
-import { useEffect } from 'react';
 import { Icon } from './icons';
 
 type Theme = 'light' | 'dark';
@@ -20,19 +19,7 @@ function apply(t: Theme) {
  * en CSS : le rendu serveur et le rendu client restent identiques.
  */
 export default function ThemeToggle() {
-  // Suit le réglage du système tant que l'utilisateur n'a rien choisi.
-  useEffect(() => {
-    const mq = window.matchMedia('(prefers-color-scheme: light)');
-    const onChange = () => {
-      try {
-        if (localStorage.getItem('theme')) return;
-      } catch {}
-      apply(mq.matches ? 'light' : 'dark');
-    };
-    mq.addEventListener('change', onChange);
-    return () => mq.removeEventListener('change', onChange);
-  }, []);
-
+  // Thème sombre « Dofus » par défaut ; le clair n'est appliqué que sur choix explicite (mémorisé).
   const toggle = () => {
     const next: Theme = current() === 'light' ? 'dark' : 'light';
     apply(next);
