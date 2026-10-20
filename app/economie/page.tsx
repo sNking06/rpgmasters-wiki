@@ -290,6 +290,13 @@ export default function EconomiePage() {
               <Link href="/debuter/energie-xp/#achat-energie">Énergie & XP</Link>. <M s="T" />
             </li>
             <li>
+              <strong>Chasse ciblée</strong> : 1 000 kamas par combat (relevé le 19 oct 2026). <M s="T" />
+            </li>
+            <li>
+              Aucun historique des kamas ni des transactions n’a été trouvé en jeu (HDV, Guilde, banque vérifiés le 19 oct 2026).{' '}
+              <M s="T" />
+            </li>
+            <li>
               Doublon de carte avant le Prestige 1 : converti en 3 000 kamas. <M s="T" />
             </li>
           </ul>

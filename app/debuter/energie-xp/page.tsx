@@ -110,6 +110,10 @@ export default function EnergieXpPage() {
             <M s="T" />
           </li>
         </ul>
+        <p>
+          Le menu Énergie propose aussi une option <strong>« ILLIMITÉE 24 H » à 1 000 000 kamas</strong> (vue le 20 oct 2026, non
+          achetée). <M s="T" />
+        </p>
         <EnergyPriceChart />
         <Warn>
           <p>
@@ -208,6 +212,32 @@ export default function EnergieXpPage() {
             </li>
           </ul>
         </More>
+      </Section>
+
+      <Section id="auto-inactivite" title="Farm en Auto et inactivité">
+        <ul>
+          <li>
+            Après environ <strong>10 min</strong> sans action, le compte est renvoyé vers <code>/file-attente?afk=1</code> ; le bouton{' '}
+            <strong>« Je suis là, je reviens »</strong> rétablit la session. Une vérification « Es-tu toujours là ? » à pavé de chiffres
+            peut aussi apparaître. <M s="T" />
+          </li>
+          <li>
+            L’Auto s’arrête sur <strong>« Le serveur ne répond pas »</strong>, sur <strong>« Aucun groupe à refaire »</strong> (les
+            groupes de monstres sont renouvelés <strong>toutes les 3 min</strong>) et sur une défaite. <M s="T" />
+          </li>
+          <li>
+            En Auto normal (récompenses pleines), le bouton de lancement s’appelle quand même « Attaquer en AFK » ; seule
+            l’option « Enchaîner en AFK » applique le −50 %. <M s="T" />
+          </li>
+        </ul>
+        <Tip title="Exemple de farm — 19 oct 2026">
+          <p>
+            Jardins d’Hiver en Auto normal, Féca niveau 200, sans aucune défaite sur la journée : au moins{' '}
+            <strong>~840 combats</strong>. La dernière série (212/212) affichait <strong>≈5 Md d’XP</strong>, 63 873 kamas,{' '}
+            <strong>273 objets</strong>, <strong>82 sorts</strong> et <strong>23 coffres</strong>, avec l’événement XP ×2 / Butin ×2
+            actif. <M s="T" />
+          </p>
+        </Tip>
       </Section>
 
       <Section id="courbe" title="Combien d’XP par niveau ?">
