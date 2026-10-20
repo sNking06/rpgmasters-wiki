@@ -1,4 +1,8 @@
+export { More, TableWrap, fmt } from './TablePrimitives';
 import Link from 'next/link';
+import Illustration from './Illustration';
+import { illustrationFor, type IllustrationName } from '@/lib/illustrations';
+import { StatIcon, type StatIconName } from './icons';
 import type { CSSProperties, ReactNode } from 'react';
 import { DATA_DATE_LABEL } from '@/lib/site';
 import { ElementIcon, Icon, SectionIcon, type ElementKey, type SectionKey } from './icons';
@@ -54,7 +58,11 @@ export function PageHeader({
   dateBadge = false,
   section,
   icon,
+  art,
+  href,
 }: {
+  art?: IllustrationName;
+  href?: string;
   title: string;
   intro: ReactNode;
   crumbs?: Crumb[];
@@ -65,18 +73,27 @@ export function PageHeader({
   /** Pictogramme personnalisé (ex. classe), prioritaire sur `section`. */
   icon?: ReactNode;
 }) {
+  const fallback: Partial<Record<SectionKey, IllustrationName>> = {
+    home: 'home', classes: 'personnage', stats: 'personnage', arene: 'contenus',
+    saison: 'contenus', energie: 'debuter', prestige: 'personnage', economie: 'economie',
+    guide: 'personnage', faq: 'debuter', sources: 'home',
+  };
+  const scene = art ?? (href ? illustrationFor(href) : (section && fallback[section]) || 'home');
   return (
-    <header className="page-header">
-      <div className="title-row">
-        {icon || section ? (
-          <span className="medal medal-lg" aria-hidden="true">
-            {icon ?? (section ? <SectionIcon section={section} size={28} /> : null)}
-          </span>
-        ) : null}
-        <h1>{title}</h1>
+    <header className="page-header illustrated-header">
+      <Illustration name={scene} alt="" className="banner-art" />
+      <div className="banner-copy">
+        <div className="title-row">
+          {icon || section ? (
+            <span className="medal medal-lg" aria-hidden="true">
+              {icon ?? (section ? <SectionIcon section={section} size={28} /> : null)}
+            </span>
+          ) : null}
+          <h1>{title}</h1>
+        </div>
+        <p className="intro">{intro}</p>
+        <DateChip strong={!!dateBadge} extra={typeof dateBadge === 'string' ? dateBadge : undefined} />
       </div>
-      <p className="intro">{intro}</p>
-      <DateChip strong={!!dateBadge} extra={typeof dateBadge === 'string' ? dateBadge : undefined} />
     </header>
   );
 }
@@ -130,19 +147,6 @@ export function Section({ id, title, children }: { id: string; title: string; ch
   );
 }
 
-/** Détails secondaires repliables. */
-export function More({ title, children, id }: { title: ReactNode; children: ReactNode; id?: string }) {
-  return (
-    <details className="more" id={id}>
-      <summary>
-        <span>{title}</span>
-        <Icon name="chevron" size={18} className="sum-chev" />
-      </summary>
-      <div className="more-body">{children}</div>
-    </details>
-  );
-}
-
 export function Tip({ title = 'Astuce', children }: { title?: string; children: ReactNode }) {
   return (
     <div className="callout callout-tip">
@@ -185,18 +189,6 @@ export function El({ kind, children }: { kind: 'terre' | 'feu' | 'eau' | 'air' |
       <ElementIcon element={EL_KEY[kind]} size={16} strokeWidth={2} />
       {children}
     </span>
-  );
-}
-
-/** Tableau scrollable dans son conteneur sur mobile. */
-export function TableWrap({ children, caption }: { children: ReactNode; caption?: string }) {
-  return (
-    <div className="table-wrap" role="region" aria-label={caption} tabIndex={0}>
-      <table>
-        {caption ? <caption>{caption}</caption> : null}
-        {children}
-      </table>
-    </div>
   );
 }
 
@@ -302,5 +294,18 @@ export function PageEnd({ current, see, sources }: { current: string; see: Crumb
   );
 }
 
-/** Nombre au format français, espaces insécables (pas de retour à la ligne au milieu d'un nombre). */
-export const fmt = (n: number) => n.toLocaleString('fr-FR').replace(/[   ]/g, ' ');
+export type KeyFigure = { icon: StatIconName; value: string; label: string; note?: string };
+
+export function Stat({ icon, value, label }: Omit<KeyFigure, 'note'>) {
+  return <div className="stat"><StatIcon name={icon} size={24} /><strong className="stat-value">{value}</strong><span className="stat-label">{label}</span></div>;
+}
+
+export function KeyFigures({ items }: { items: KeyFigure[] }) {
+  return <ul className="key-figures" aria-label="Chiffres clés">{items.map((item, i) =>
+    <li key={i}><Stat {...item} />{item.note ? <span className="stat-note">{item.note}</span> : null}</li>
+  )}</ul>;
+}
+
+export function TlDr({ children }: { children: ReactNode }) {
+  return <Essentiel title="À retenir" id="a-retenir-h">{children}</Essentiel>;
+}

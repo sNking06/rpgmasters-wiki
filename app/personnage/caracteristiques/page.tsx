@@ -25,7 +25,7 @@ const COMBAT_STATS: [string, string, string][] = [
 export default function CaracteristiquesPage() {
   return (
     <>
-      <PageHeader section="stats" title="Caractéristiques" intro="Où mettre vos points, les parchemins, le deck et ce qui compte sur les objets." />
+      <PageHeader href="/personnage/caracteristiques/" section="stats" title="Caractéristiques" intro="Où mettre vos points, les parchemins, le deck et ce qui compte sur les objets." />
 
       <Essentiel>
         <li>

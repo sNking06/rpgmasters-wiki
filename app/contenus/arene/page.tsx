@@ -25,7 +25,7 @@ const MODES = ['Niveau', 'Aventure', 'Ascension', 'Abysses', 'Arène', 'Collecti
 export default function ArenePage() {
   return (
     <>
-      <PageHeader section="arene" title="Arène" intro="Défiez d’autres joueurs pour de l’Elo, des coffres et des stats définitives." />
+      <PageHeader href="/contenus/arene/" section="arene" title="Arène" intro="Défiez d’autres joueurs pour de l’Elo, des coffres et des stats définitives." />
 
       <Essentiel>
         <li>

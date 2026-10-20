@@ -1,5 +1,5 @@
 import { ENERGY, energyPointPrice } from '@/lib/xp';
-import { fmt } from './ui';
+import { fmt } from './TablePrimitives';
 
 const W = 360;
 const H = 220;

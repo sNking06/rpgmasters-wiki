@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { bossEntries } from '@/lib/nav';
 import { useMemo, useState } from 'react';
 const bosses = bossEntries;
-import { More, TableWrap } from './ui';
+import { More, TableWrap } from './TablePrimitives';
 import { normalize, SearchFilter, ResultCount } from './CatalogFilters';
 export function BossList() {
   const [q, setQ] = useState('');

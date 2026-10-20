@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { zoneEntries } from '@/lib/nav';
 import { useMemo, useState } from 'react';
 const zones = zoneEntries;
-import { More } from './ui';
+import { More } from './TablePrimitives';
 import { normalize, SearchFilter, ResultCount } from './CatalogFilters';
 export function ZoneList() {
   const [q, setQ] = useState('');

@@ -8,6 +8,10 @@
 
 /* ---------- 1. Jetons (thème sombre par défaut) ---------- */
 :root {
+  --banner-text: #d6ccbd;
+  --banner-title: #ffffff;
+  --banner-accent: #f4c260;
+  --banner-veil: rgba(23, 16, 5, 0.76);
   --bg: #171005;
   --bg-2: #21180f;
   --surface: #1e231c;
@@ -3515,4 +3519,130 @@ tbody tr:hover td, .item-table tbody tr:hover td { background: var(--surface-3);
   .brand { gap: .35rem; }
   .brand-logo { width: 28px; height: 28px; }
   .brand-name { font-size: 1rem; }
+}
+
+/* ---------- Atlas illustré : scènes originales, lecture sur voile sombre ---------- */
+.illustrated-header, .hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid var(--gold-line);
+  border-radius: 20px;
+  background: #171005;
+  box-shadow: 0 18px 45px -28px #000000;
+  --text: var(--banner-text);
+  --text-strong: var(--banner-title);
+  --muted: var(--banner-text);
+  --gold: var(--banner-accent);
+  --link: var(--banner-accent);
+  --link-hover: #ffe4ad;
+  --chip-bg: rgba(0, 0, 0, 0.85);
+}
+.banner-art {
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% center;
+  pointer-events: none;
+}
+.illustrated-header::before, .hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(23,16,5,.96), rgba(23,16,5,.86) 72%, rgba(23,16,5,.25)),
+    linear-gradient(0deg, rgba(23,16,5,.65), transparent 60%);
+  pointer-events: none;
+}
+.banner-copy, .hero-content { position: relative; z-index: 2; }
+.illustrated-header { min-height: 330px; display: flex; align-items: flex-end; padding: clamp(1.5rem, 4vw, 3rem); }
+.banner-copy { width: min(70%, 44rem); }
+.illustrated-header .intro { margin-top: 1rem; color: var(--banner-text); }
+.illustrated-header h1, .hero h1, :root[data-theme='light'] .hero h1 { color: var(--banner-title); background: none; }
+.illustrated-header .date-chip, .illustrated-header .date-badge, .hero .date-chip { color: #f4c260; }
+.illustrated-header .medal { background: #13433f; color: #f4c260; }
+.hero { min-height: 520px; padding: clamp(1.5rem, 4vw, 3rem); }
+.hero-content { width: min(70%, 38rem); }
+.hero .hero-sub, .hero .hero-note { color: var(--banner-text); }
+.hero .hero-note strong { color: #ffffff; }
+.hero .eyebrow { color: #f4c260; }
+.hero .btn-ghost { background: #21180f; color: #ffffff; border-color: #78664c; }
+.hero::after { z-index: 3; }
+.hub-card { padding: 0 0 1.25rem; gap: .8rem; text-align: left; align-items: stretch; }
+.hub-card > :not(.card-thumbnail) { margin-inline: 1.25rem; }
+.card-thumbnail {
+  display: block;
+  flex: none;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 3;
+  object-fit: cover;
+  border-bottom: 1px solid var(--gold-line);
+  background: #13433f;
+}
+.hub-card .hub-title { color: var(--gold); font-size: 1.15rem; }
+.hub-card .hub-desc { flex: 1; }
+.hub-card .medal { width: 3rem; height: 3rem; margin-top: -2.3rem; margin-bottom: 0; position: relative; }
+.hub-card .hub-arrow { margin-top: .25rem; }
+.hub .date-badge { align-self: flex-start; }
+.key-figures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem;
+}
+.key-figures > li, .economy-figure {
+  position: relative;
+  min-width: 0;
+  padding: 1.4rem 1.1rem;
+  border: 1px solid var(--gold-line);
+  border-top: 3px solid var(--gold);
+  border-radius: 14px;
+  background: radial-gradient(ellipse at top right, var(--gold-tint-2), transparent 75%), var(--surface);
+}
+.stat { display: grid; grid-template-columns: 1.5rem minmax(0, 1fr); align-items: center; gap: .6rem; }
+.stat > .ico { grid-column: 1; color: var(--gold); }
+.stat-value { grid-column: 2; color: var(--gold); font: 400 clamp(1.5rem, 2.2vw, 2rem)/1.25 var(--font-display); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.stat-label { grid-column: 1 / -1; color: var(--text-strong); font-weight: 600; }
+.stat-note { display: block; margin-top: .65rem; color: var(--muted); font-size: 1rem; line-height: 1.5; }
+.economy-figure { max-width: 24rem; margin-block: 1.5rem; }
+.essentiel:has(#a-retenir-h) { border-left: 4px solid var(--gold); margin-top: 1.5rem; }
+.essentiel #a-retenir-h { font-size: 1.25rem; }
+.set-comparison { margin-block: 2rem; }
+.set-comparison .viz { margin-top: .75rem; }
+.set-comparison .bars li { grid-template-columns: minmax(13rem, 45%) minmax(0,1fr) 4.5rem; gap: 1rem; padding-block: .65rem; }
+.variant-name { display: flex; gap: .4rem; align-items: center; flex-wrap: wrap; }
+.set-badge { display: inline-block; border: 1px solid var(--gold-line); border-radius: 6px; padding: .1rem .35rem; font-size: 1rem; color: var(--gold); background: var(--bg-2); white-space: nowrap; }
+.set-badge.kept { color: var(--green); border-color: currentColor; }
+.set-comparison .bar-track { height: 1rem; }
+@media (max-width: 640px) {
+  .illustrated-header { min-height: 260px; padding: 1.25rem; border-radius: 14px; }
+  .illustrated-header h1 { font-size: clamp(1.75rem, 7vw, 2.3rem); }
+  .hero { min-height: 0; padding: 1.5rem 1.25rem; border-radius: 14px; }
+  .hero .hero-sub, .illustrated-header .intro { font-size: 1rem; }
+  .banner-art { object-position: 67% center; }
+  .banner-copy, .hero-content { width: 100%; }
+  .illustrated-header::before, .hero::before { background: var(--banner-veil); }
+  .key-figures { grid-template-columns: repeat(2, minmax(0,1fr)); gap: .65rem; }
+  .key-figures > li { padding: 1rem .75rem; }
+  .stat { grid-template-columns: 1fr; gap: .4rem; }
+  .stat-value, .stat-label { grid-column: 1; }
+  .stat-value { font-size: clamp(1.35rem, 5.5vw, 1.8rem); }
+  .set-comparison .bars li { grid-template-columns: minmax(0,1fr) 4.5rem; gap: .6rem; }
+  .set-comparison .bar-label { grid-column: 1 / -1; }
+  .set-comparison .bar-track { grid-column: 1; }
+  .set-comparison .bar-val { grid-column: 2; }
+}
+@media (forced-colors: active) {
+  .banner-art { display: none; }
+  .illustrated-header::before, .hero::before { background: Canvas; }
+  .illustrated-header h1, .hero h1, :root[data-theme='light'] .hero h1,
+  .illustrated-header .intro, .hero .hero-sub, .hero .hero-note { color: CanvasText; }
 }

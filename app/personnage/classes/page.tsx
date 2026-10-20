@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function ClassesPage() {
   return (
     <>
-      <PageHeader section="classes" title="Classes" intro="19 classes jouables, chacune avec un passif et 3 cartes exclusives." />
+      <PageHeader href="/personnage/classes/" section="classes" title="Classes" intro="19 classes jouables, chacune avec un passif et 3 cartes exclusives." />
 
       <Essentiel>
         <li>

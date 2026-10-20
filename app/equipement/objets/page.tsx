@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function ObjetsPage() {
   return (
     <>
-      <PageHeader section="economie" title="Objets end-game" intro="324 objets relevés à la main dans le bestiaire du jeu : filtre, trie par stat et compare les bonus de panoplie." />
+      <PageHeader href="/equipement/objets/" section="economie" title="Objets end-game" intro="324 objets relevés à la main dans le bestiaire du jeu : filtre, trie par stat et compare les bonus de panoplie." />
       <Essentiel>
         <li>Contenu : tous les <strong>Légendaires et Dofus</strong>, les <strong>Mythiques niv. 150+</strong>, les <strong>Épiques et Rares niv. 185+</strong>.</li>
         <li>Valeurs lues en jeu le <strong>15 oct 2026</strong> sur la page Bestiaire (compte connecté).</li>

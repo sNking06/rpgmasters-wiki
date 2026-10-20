@@ -1,5 +1,17 @@
-import { PageHeader, Section, M, Tip } from '@/components/ui';
-export default function Page(){return <><PageHeader title="Kralamoure" intro="Boss de guilde : observations du 13 au 20 octobre 2026."/>      <Section id="kralamoure" title="Kralamoure (boss de guilde)">
+import { KeyFigures, TlDr, PageHeader, Section, M, Tip } from '@/components/ui';
+export default function Page(){return <><PageHeader href="/contenus/kralamoure/" title="Kralamoure" intro="Boss de guilde : observations du 13 au 20 octobre 2026."/>      <TlDr>
+  <li>Faille en accès libre, uniquement en guilde ; combats illimités, sans énergie.</li>
+  <li>Seuls les 3 meilleurs scores du jour comptent ; remise à zéro vers 01:30.</li>
+  <li>Le combat dure 10 tours.</li>
+  <li>Le bouclier est plafonné à 40 % des PV max.</li>
+</TlDr>
+<KeyFigures items={[
+  {icon:'record', value:'159 632', label:'Record personnel', note:'Un combat · 17/10/2026'},
+  {icon:'damage', value:'385 314', label:'Score du jour', note:'18/10/2026'},
+  {icon:'damage', value:'320 085', label:'Score du jour', note:'20/10/2026 · 11 h'},
+  {icon:'tours', value:'10', label:'Tours par combat'},
+]} />
+<Section id="kralamoure" title="Kralamoure (boss de guilde)">
         <ul>
           <li>Accessible <strong>uniquement en guilde</strong> : Guilde → Faille du Kralamoure. <M s="T" /></li>
           <li>Faille en <strong>accès libre</strong> : combats <strong>illimités</strong>, <strong>10 tours</strong>, sans énergie. Seuls les <strong>3 meilleurs scores du jour</strong> comptent pour le classement (constaté le 18 oct 2026). Remise à zéro quotidienne vers <strong>01:30</strong>. <M s="T" /></li>

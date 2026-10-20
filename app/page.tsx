@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import HeroArt from '@/components/HeroArt';
+import Illustration from '@/components/Illustration';
+import { illustrationFor } from '@/lib/illustrations';
 import { OpenSearchButton } from '@/components/Search';
 import { Icon, SectionIcon } from '@/components/icons';
 import { DATA_DATE_LABEL, GAME_URL, MAIN_NAV, SEASON_END } from '@/lib/site';
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <div className="home">
       <header className="hero">
-        <HeroArt />
+        <Illustration name="home" alt="" priority className="banner-art" />
         <div className="hero-content">
           <p className="eyebrow">
             <Icon name="sparkle" size={14} /> Wiki de fans
@@ -57,6 +58,7 @@ export default function Home() {
           {MAIN_NAV.map((n) => (
             <li key={n.href}>
               <Link href={n.href} className="hub-card">
+                <Illustration name={illustrationFor(n.href)} alt="" className="card-thumbnail" sizes="(max-width: 640px) 100vw, 450px" />
                 <span className="medal" aria-hidden="true">
                   <SectionIcon section={n.icon} size={26} />
                 </span>

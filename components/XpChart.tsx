@@ -1,4 +1,4 @@
-import { fmt } from './ui';
+import { fmt } from './TablePrimitives';
 
 type Pt = { level: number; xp: number; kind: 'source' | 'calc' };
 

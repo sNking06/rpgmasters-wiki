@@ -449,3 +449,27 @@ export function Logo({ size = 32, className, id = 'logo-g' }: { size?: number; c
     </svg>
   );
 }
+
+/* ---------- Statistiques : tracés maison à 2 px ---------- */
+const STAT_ICONS = {
+  pv: <path d="M12 21 3.8 13A5.7 5.7 0 0 1 12 5.2 5.7 5.7 0 0 1 20.2 13Z" />,
+  pa: UI.bolt,
+  pm: <><path d="m13 3-3 7 4 3-3 8M10 10 6 13H3M14 13l4-4h3" /><circle cx="16" cy="4" r="2" /></>,
+  kamas: <><circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="6" /><path d="M10 8v8M15 8l-5 4 5 4" /></>,
+  xp: <><path d="m9 8 1.8 3.8 4.2.6-3 3 .7 4.2L9 17.7l-3.7 1.9.7-4.2-3-3 4.2-.6Z" /><path d="M15 8l5-5M15 3h5v5" /></>,
+  resistance: UI.shield,
+  terre: ELEMENTS.terre,
+  feu: ELEMENTS.feu,
+  eau: ELEMENTS.eau,
+  air: ELEMENTS.air,
+  record: UI.trophy,
+  damage: <><path d="m14 4 6-1-1 6-9 9-5-5Z" /><path d="m4 12 8 8M8 16l-5 5M12 12l5-5" /></>,
+  tours: UI.arrows,
+  objets: UI.bag,
+  sorts: UI.sparkle,
+  coffres: UI.gift,
+};
+export type StatIconName = keyof typeof STAT_ICONS;
+export function StatIcon({ name, ...props }: SvgProps & { name: StatIconName }) {
+  return <Svg {...props} strokeWidth={2}>{STAT_ICONS[name]}</Svg>;
+}

@@ -35,7 +35,7 @@ const LEGEND: [Status, string][] = [
 export default function SourcesPage() {
   return (
     <>
-      <PageHeader section="sources" title="Sources et limites" intro="D’où viennent les infos, comment lire les pastilles, et ce qu’on ne sait pas." />
+      <PageHeader href="/a-propos/sources/" section="sources" title="Sources et limites" intro="D’où viennent les infos, comment lire les pastilles, et ce qu’on ne sait pas." />
 
       <Essentiel>
         <li>

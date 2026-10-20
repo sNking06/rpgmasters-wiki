@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import EnergyPriceChart from '@/components/EnergyPriceChart';
 import XpChart from '@/components/XpChart';
 import { Icon, SectionIcon } from '@/components/icons';
-import { Bars, Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn, fmt } from '@/components/ui';
+import { KeyFigures, Bars, Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn, fmt } from '@/components/ui';
 import { ENERGY, MONSTER_XP_REF_KNOWN, XP_SOURCE_POINTS, cumulativeXp, energyPointPrice, energyTotalCost } from '@/lib/xp';
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ const TOTAL_POINTS = [600, 1000];
 export default function EnergieXpPage() {
   return (
     <>
-      <PageHeader section="energie" title="Énergie & XP" intro="Ce que coûte un combat, comment recharger, et combien d’XP demandent les niveaux." />
+      <PageHeader href="/debuter/energie-xp/" section="energie" title="Énergie & XP" intro="Ce que coûte un combat, comment recharger, et combien d’XP demandent les niveaux." />
 
       <Essentiel>
         <li>
@@ -215,6 +215,13 @@ export default function EnergieXpPage() {
       </Section>
 
       <Section id="auto-inactivite" title="Farm en Auto et inactivité">
+        <KeyFigures items={[
+          {icon:'damage', value:'~840', label:'Combats', note:'19 oct 2026 · séries cumulées'},
+          {icon:'xp', value:'≈5 Md', label:'XP', note:'Dernière série · 19 oct 2026'},
+          {icon:'objets', value:'273', label:'Objets', note:'Dernière série'},
+          {icon:'sorts', value:'82', label:'Sorts', note:'Dernière série'},
+          {icon:'coffres', value:'23', label:'Coffres', note:'Dernière série'},
+        ]} />
         <ul>
           <li>
             Après environ <strong>10 min</strong> sans action, le compte est renvoyé vers <code>/file-attente?afk=1</code> ; le bouton{' '}

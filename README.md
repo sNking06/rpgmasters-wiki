@@ -56,3 +56,6 @@ Le dossier `out/` se sert avec n’importe quel serveur statique.
 
 Pastilles discrètes en fin de ligne (infobulle au survol, légende sur la page « Sources et limites ») :
 **✓** [TROUVÉ] écrit tel quel · **~** [DÉDUIT] interprétation · **=** [calcul sur TROUVÉ] · **?** NON TROUVÉ (lacune).
+
+Illustrations originales : `public/illustrations/*.svg` ; déposer vos JPG/PNG dans `sources/illustrations/`, puis exécuter `python3 scripts/optimize-illustrations.py` (Pillow).
+Au prochain build, `<Illustration>` choisit automatiquement les WebP (largeur max. 1600, qualité 80) et leur variante `-800.webp` via `srcSet`, sinon le SVG.

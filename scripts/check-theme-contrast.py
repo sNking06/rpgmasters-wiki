@@ -57,6 +57,11 @@ for theme, tokens in [('dark', base), ('light', base | light)]:
     for fg in foregrounds:
         for bg in backgrounds:
             pairs.append((f'{fg}/{bg}', rgb(tokens[fg]), rgb(tokens[bg])))
+    # Même un pixel blanc de l'illustration reste lisible sous le voile mobile,
+    # moins opaque que le voile de bureau dans la zone du texte.
+    banner_background = over(tokens['banner-veil'], rgb('#ffffff'))
+    for text in ['banner-text', 'banner-title', 'banner-accent']:
+        pairs.append((f'illustrated hero: {text}', rgb(tokens[text]), banner_background))
     pairs.append(('table header', rgb(tokens['on-header']), rgb(tokens['th-bg'])))
     pairs.append(('navigation active', rgb(tokens['nav-active']), rgb(tokens['nav-active-bg'])))
     pairs.append(('date chip', rgb(tokens['gold']), over(tokens['chip-bg'], rgb(tokens['bg']))))

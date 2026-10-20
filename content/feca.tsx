@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { ClassIcon } from '@/components/icons';
-import { Essentiel, M, PageEnd, PageHeader, Section, TableWrap, Tip, Warn } from '@/components/ui';
+import { KeyFigures, TlDr, Essentiel, M, PageEnd, PageHeader, Section, TableWrap, Tip, Warn } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Guide Féca',
@@ -17,7 +17,18 @@ const CARDS: [string, string, string][] = [
 export default function GuideFecaPage() {
   return (
     <>
-      <PageHeader icon={<ClassIcon name="Féca" size={28} />} crumbs={[{ href: '/personnage/classes/', label: 'Classes' }]} title="Guide Féca" intro="Le Féca en pratique. Observé en jeu du 13 au 20 oct 2026." />
+      <PageHeader art="feca" icon={<ClassIcon name="Féca" size={28} />} crumbs={[{ href: '/personnage/classes/', label: 'Classes' }]} title="Guide Féca" intro="Le Féca en pratique. Observé en jeu du 13 au 20 oct 2026." />
+      <TlDr>
+        <li>Chaque sort de bouclier, soin ou résistance donne 1 charge d’Armure Féca.</li>
+        <li>Armure Féca : 5 charges au maximum.</li>
+        <li>Chaque charge donne −4 % de dégâts subis et +4,8 % de dégâts infligés.</li>
+      </TlDr>
+      <KeyFigures items={[
+        {icon:'pv', value:'14 335', label:'PV'},
+        {icon:'pa', value:'14', label:'PA'},
+        {icon:'resistance', value:'50 %', label:'Résistances', note:'Tous les éléments'},
+        {icon:'record', value:'19 883', label:'Opti', note:'Momore 6/6 · 20 oct 2026'},
+      ]} />
       <Essentiel>
         <li>Chaque sort de bouclier, soin ou résistance donne 1 charge d’<strong>Armure Féca</strong> (5 max). <M s="T" /></li>
       </Essentiel>

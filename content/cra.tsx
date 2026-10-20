@@ -16,7 +16,7 @@ const EL_ICON: Record<string, ElementKey> = { Terre: 'terre', Feu: 'feu', '—':
 export default function CraPage() {
   return (
     <>
-      <PageHeader
+      <PageHeader href="/personnage/classes/cra/"
         icon={<ClassIcon name="Crâ" size={30} />}
         title="Crâ"
         crumbs={[{ href: '/personnage/classes/', label: 'Classes' }]}

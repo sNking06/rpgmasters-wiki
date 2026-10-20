@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {PageHeader, M} from '@/components/ui';
-export default function Page(){return <><PageHeader title="Les bases" intro="Les mécaniques de RpgMasters, en clair et en bref."/><p>Pour commencer, consultez les <Link href="/personnage/classes/">classes et leurs passifs</Link>, les <Link href="/personnage/caracteristiques/">caractéristiques</Link> et le fonctionnement de <Link href="/debuter/energie-xp/">l’énergie et de l’XP</Link>.</p><p>La <Link href="/debuter/faq/">FAQ</Link> répond aux questions fréquentes. Les <Link href="/a-propos/sources/">sources et limites</Link> précisent la provenance des informations.</p>
+export default function Page(){return <><PageHeader href="/debuter/bases/" title="Les bases" intro="Les mécaniques de RpgMasters, en clair et en bref."/><p>Pour commencer, consultez les <Link href="/personnage/classes/">classes et leurs passifs</Link>, les <Link href="/personnage/caracteristiques/">caractéristiques</Link> et le fonctionnement de <Link href="/debuter/energie-xp/">l’énergie et de l’XP</Link>.</p><p>La <Link href="/debuter/faq/">FAQ</Link> répond aux questions fréquentes. Les <Link href="/a-propos/sources/">sources et limites</Link> précisent la provenance des informations.</p>
       <section id="astuces" className="section home-section">
         <div className="tips-layout">
           <div className="tips-aside">

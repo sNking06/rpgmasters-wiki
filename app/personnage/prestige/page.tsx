@@ -43,7 +43,7 @@ const MILESTONES: { head: string; tag?: string; key?: boolean; text: string }[] 
 export default function PrestigePage() {
   return (
     <>
-      <PageHeader section="prestige" title="Prestige" intro="Au niveau 200, repartir au niveau 1 avec un équipement plus fort." />
+      <PageHeader href="/personnage/prestige/" section="prestige" title="Prestige" intro="Au niveau 200, repartir au niveau 1 avec un équipement plus fort." />
 
       <Essentiel>
         <li>

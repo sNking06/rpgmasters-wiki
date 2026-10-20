@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Essentiel, M, PageEnd, PageHeader, Section, Tip, Warn } from '@/components/ui';
+import { KeyFigures, TlDr, Essentiel, M, PageEnd, PageHeader, Section, Tip, Warn } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Ascension étages 29-30 et 38-42 · record 41',
@@ -9,7 +9,19 @@ export const metadata: Metadata = {
 export default function AscensionPage() {
   return (
     <>
-      <PageHeader section="prestige" title="Ascension : étages 29-30 et 38-42" intro="Record actuel : étage 41 validé ; étage 42 encore en essai. L’étage 30 est requis pour le Prestige 5. Observations du 13 au 15 oct 2026 pour les étages 29-30, et du 16 au 17 oct 2026 pour les étages 38-42." />
+      <PageHeader href="/contenus/ascension/" section="prestige" title="Ascension : étages 29-30 et 38-42" intro="Record actuel : étage 41 validé ; étage 42 encore en essai. L’étage 30 est requis pour le Prestige 5. Observations du 13 au 15 oct 2026 pour les étages 29-30, et du 16 au 17 oct 2026 pour les étages 38-42." />
+      <TlDr>
+        <li>Record actuel : étage 41 validé ; étage 42 encore en essai.</li>
+        <li>Étages 29-30 : 3 cartes maximum par tour ; l’arme ne compte pas.</li>
+        <li>Ne pas enchaîner 2 sorts de dégâts du même élément ; garder un bouclier pour les Gros coups.</li>
+        <li>À l’étage 42, le meilleur essai documenté commence par Toxoliath ; aucun soin ni vol de vie.</li>
+      </TlDr>
+      <KeyFigures items={[
+        {icon:'record', value:'41', label:'Étage validé', note:'Record actuel'},
+        {icon:'tours', value:'42', label:'Étage en essai', note:'Encore non franchi'},
+        {icon:'sorts', value:'3', label:'Cartes max. par tour', note:'Étages 29-30 · hors arme'},
+        {icon:'tours', value:'16', label:'Tours', note:'Étage 30 franchi · 14 oct 2026'},
+      ]} />
       <Essentiel>
         <li>Étages 29-30 : jouer <strong>3 cartes maximum par tour</strong> (l’arme ne compte pas) pour ne pas déclencher la Fureur d’Ougah. <M s="T" /></li>
         <li>Ne jamais enchaîner <strong>2 sorts de dégâts du même élément</strong> (Onde de choc de Ben le Ripate). <M s="T" /></li>

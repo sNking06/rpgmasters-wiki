@@ -19,7 +19,7 @@ export default function SaisonPage() {
   const pct = (ELAPSED_AT_DATA / SEASON_HOURS) * 100;
   return (
     <>
-      <PageHeader
+      <PageHeader href="/contenus/saison/"
         section="saison"
         title="Saison Héroïque"
         intro="Un perso éphémère, XP ×4, sans énergie — mais les boss tuent pour de bon."

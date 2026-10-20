@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Icon, SectionIcon } from '@/components/icons';
-import { Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, fmt } from '@/components/ui';
+import { Stat, Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, fmt } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Économie',
@@ -32,7 +32,7 @@ const FUSION: [string, number][] = [
 export default function EconomiePage() {
   return (
     <>
-      <PageHeader section="economie" title="Économie" intro="Coffres, fusion, bris d’objets, compagnon et kamas : où trouver du stuff et des bonus." />
+      <PageHeader href="/economie/" section="economie" title="Économie" intro="Coffres, fusion, bris d’objets, compagnon et kamas : où trouver du stuff et des bonus." />
 
       <Essentiel>
         <li>
@@ -265,6 +265,7 @@ export default function EconomiePage() {
       </Section>
 
       <Section id="kamas" title="Kamas et HDV">
+        <div className="economy-figure"><Stat icon="kamas" value="1 000" label="kamas · Chasse ciblée" /><span className="stat-note">Par combat · 19 oct 2026</span></div>
         <ul>
           <li>
             <strong>Vente aux PNJ</strong> : 10 kamas × niveau de l’objet, max <strong>2 000</strong>. <M s="T" />
