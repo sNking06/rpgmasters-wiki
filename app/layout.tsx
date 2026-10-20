@@ -3,6 +3,7 @@ import Link from 'next/link';
 import localFont from 'next/font/local';
 import type { ReactNode } from 'react';
 import Header from '@/components/Header';
+import Lightbox from '@/components/Lightbox';
 import { Sidebar, Breadcrumbs, SectionNeighbors } from '@/components/WikiNavigation';
 import Toc from '@/components/Toc';
 import { Icon, Logo } from '@/components/icons';
@@ -109,6 +110,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             Aucune image ni ressource du jeu n’est reproduite : pictogrammes et illustrations sont dessinés pour ce wiki.
           </p>
         </footer>
+        <Lightbox />
       </body>
     </html>
   );

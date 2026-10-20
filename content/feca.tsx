@@ -1,3 +1,4 @@
+import GameCapture from '@/components/GameCapture';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { ClassIcon } from '@/components/icons';
@@ -49,8 +50,11 @@ export default function GuideFecaPage() {
       </Section>
       <Section id="panoplie" title="Panoplie défensive : Malédiction de Cire Momore 6/6">
         <p>Testée le 20 oct 2026 contre Gouffre 3/3 et Gouffre + Sanctuaire 2/3 : avec Momore 6/6, le Féca niveau 200 (Prestige 7) affiche <strong>14 335 PV</strong>, <strong>14 PA</strong>, <strong>50 % de résistance dans tous les éléments</strong>, une Réduction affichée de 89 % (plafonnée à 50 %), <strong>Opti 19 883</strong> et Puissance 1584. Dommages Eau 365, Terre/Feu/Air 333. <M s="T" /></p>
+        <GameCapture id="feca-fiche" />
+        <GameCapture id="feca-caracteristiques" />
         <p><Link href="/equipement/panoplies/#tests-feca">Comparatif complet des panoplies testées →</Link></p>
       </Section>
+      <GameCapture id="deck-7-kralamoure" caption="Deck 7 utilisé au Kralamoure" />
       <p><Link href="/contenus/kralamoure/">Kralamoure : accès, deck et résultat observé →</Link></p>
       <PageEnd current="/personnage/classes/feca/" see={[{ href: '/personnage/classes/', label: 'Classes' }, { href: '/equipement/objets/', label: 'Objets' }, { href: '/equipement/panoplies/', label: 'Panoplies' }, { href: '/contenus/ascension/', label: 'Ascension' }]} sources="Observations en combat, 13-20 oct 2026" />
     </>

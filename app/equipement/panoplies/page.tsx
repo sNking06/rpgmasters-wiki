@@ -1,3 +1,4 @@
+import { CaptureGallery } from '@/components/GameCapture';
 import items from '@/data/items.json';
 import Link from 'next/link';
 import {KeyFigures, Bars, M, PageHeader, Section, TableWrap, Tip} from '@/components/ui';
@@ -34,5 +35,6 @@ function Tests(){return <Section id="tests-feca" title="Panoplies défensives te
   <Tip title="Variante gardée : Momore 6/6">
     <p>Meilleure survie des trois : <strong>+350 PV</strong> par rapport au stuff de départ et résistance Terre de <strong>15 % à 50 %</strong>. Contrepartie : dommages Eau 365 contre 442 avec Gouffre + Sanctuaire ; l’effet sur Pelle des Anciens reste à vérifier. <M s="T" /> Voir aussi le <Link href="/personnage/classes/feca/#panoplie">Guide Féca</Link>.</p>
   </Tip>
+  <CaptureGallery ids={['momore-equipement-porte', 'momore-chagrin-de-cire']} />
 </Section>;}
 export default function Page(){const sets=new Map<string,Set<string>>();for(const item of items){if('set' in item && item.set && 'set_bonus' in item && item.set_bonus){if(!sets.has(item.set))sets.set(item.set,new Set());sets.get(item.set)!.add(item.set_bonus);}}return <><PageHeader href="/equipement/panoplies/" title="Panoplies" intro="Bonus de panoplie présents dans le relevé des objets, et comparatif testé en jeu sur Féca."/><Tests/>{[...sets].map(([name,bonuses])=><section className="section" key={name}><h2>{name}</h2><ul>{[...bonuses].map(b=><li key={b}>{b}</li>)}</ul><h3>Objets relevés</h3><ul>{items.filter(i=>'set' in i && i.set===name).map(i=><li key={i.name}>{i.name}</li>)}</ul></section>)}</>;}

@@ -53,6 +53,12 @@ const dot = (cx: number, cy: number, r = 1.25) => <circle cx={cx} cy={cy} r={r} 
 
 /* ---------- Icônes d'interface ---------- */
 const UI = {
+  camera: (
+    <>
+      <path d="M14.5 4h-5L7.5 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3.5z" />
+      <circle cx="12" cy="13.5" r="3.5" />
+    </>
+  ),
   search: (
     <>
       <circle cx="11" cy="11" r="6.5" />

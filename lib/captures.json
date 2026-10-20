@@ -1,0 +1,66 @@
+[
+ {
+  "id": "guilde-faille-top10",
+  "alt": "Carte Faille du Kralamoure dans la page Guilde : accès libre, choix du deck, dégâts du jour 320 085 et top 10 des plus gros dégâts du jour",
+  "date": "20 oct 2026",
+  "width": 637,
+  "height": 613,
+  "smallWidth": 637
+ },
+ {
+  "id": "guilde-classement-guildes",
+  "alt": "Classement du jour des guildes sur le Kralamoure et coffres donnés chaque soir à minuit",
+  "date": "20 oct 2026",
+  "width": 637,
+  "height": 404,
+  "smallWidth": 637
+ },
+ {
+  "id": "guilde-degats-snking",
+  "alt": "Ligne SNking du tableau des membres : dégâts Kralamoure dimanche 385 314, lundi 126 229, mardi 320 085",
+  "date": "20 oct 2026",
+  "width": 1293,
+  "height": 69,
+  "smallWidth": 640
+ },
+ {
+  "id": "feca-fiche",
+  "alt": "Fiche du personnage : Féca Prestige 7, niveau 200, Opti 19 883, équipement 16/16",
+  "date": "20 oct 2026",
+  "width": 1298,
+  "height": 227,
+  "smallWidth": 640
+ },
+ {
+  "id": "feca-caracteristiques",
+  "alt": "Caractéristiques du Féca avec la panoplie Malédiction de Cire Momore 6/6 : 14 335 PV, 14 PA, 6 PM, résistances 50 %, réduction de dégâts 89 % (50 max)",
+  "date": "20 oct 2026",
+  "width": 1296,
+  "height": 858,
+  "smallWidth": 640
+ },
+ {
+  "id": "deck-7-kralamoure",
+  "alt": "Deck 7 du Kralamoure : Bouclier Féca, Vertu, Pelle des Anciens, Précipitation, Tibia, Traversée, Bluff",
+  "date": "20 oct 2026",
+  "width": 1296,
+  "height": 493,
+  "smallWidth": 640
+ },
+ {
+  "id": "momore-equipement-porte",
+  "alt": "Équipement porté par le Féca SNking niveau 200",
+  "date": "20 oct 2026",
+  "width": 317,
+  "height": 433,
+  "smallWidth": 317
+ },
+ {
+  "id": "momore-chagrin-de-cire",
+  "alt": "Fiche de l'objet Chagrin de Cire (chapeau rare niveau 200, panoplie Malédiction de Cire Momore) avec bonus de panoplie et statistiques",
+  "date": "20 oct 2026",
+  "width": 305,
+  "height": 734,
+  "smallWidth": 305
+ }
+]

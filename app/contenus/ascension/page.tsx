@@ -1,3 +1,4 @@
+import GameCapture from '@/components/GameCapture';
 import type { Metadata } from 'next';
 import { KeyFigures, TlDr, Essentiel, M, PageEnd, PageHeader, Section, Tip, Warn } from '@/components/ui';
 
@@ -78,6 +79,7 @@ export default function AscensionPage() {
           <li>Total effectif avec les relèves : environ <strong>213 000 PV</strong>. <M s="T" /></li>
         </ul>
         <p>Meilleur essai manuel documenté : mort au <strong>tour 17</strong>, Toxoliath tué au tour 12, Minotot à 9 782 PV et Barbéryl presque intact. Le focus Barbéryl en premier a donné de moins bons résultats : morts aux tours 6 à 8. <M s="T" /></p>
+        <GameCapture id="ascension-etage-42" />
         <Tip title="Meilleure stratégie observée à l’étage 42">
           <p>Focus Toxoliath d’abord, bouclier ou Rempart avant d’attaquer, éléments alternés, aucun soin ni vol de vie. Le plafond de bouclier observé est de 40 % des PV max ; Rempart donne +38 % de résistances dans tous les éléments pendant 1 tour dans ce relevé. <M s="T" /></p>
         </Tip>

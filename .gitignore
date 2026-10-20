@@ -6,3 +6,6 @@ next-env.d.ts
 *.tsbuildinfo
 npm-debug.log*
 .DS_Store
+
+# Captures brutes (chat, pseudos non floutés) : seules les versions recadrées de public/captures sont publiées
+sources/captures/*.png

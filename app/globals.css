@@ -3669,3 +3669,74 @@ tbody tr:hover td, .item-table tbody tr:hover td { background: var(--surface-3);
 @media (max-width: 640px) {
   .illustrated-header .banner-copy { padding: .85rem 1rem; }
 }
+
+/* Captures en jeu : les dimensions intrinsèques réservent la place des images. */
+.game-capture {
+  min-width: 0;
+  max-width: 760px;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  border: 1px solid var(--gold-line);
+  border-radius: 14px;
+  background: var(--surface);
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+.game-capture:hover, .game-capture:focus-within {
+  border-color: var(--gold);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .15);
+}
+.game-capture > a { display: block; cursor: zoom-in; }
+.game-capture > a:focus-visible { outline: 3px solid var(--gold); outline-offset: -3px; }
+.game-capture img { display: block; width: 100%; height: auto; max-height: 560px; object-fit: contain; }
+.game-capture figcaption {
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
+  padding: .75rem 1rem;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.6;
+}
+.game-capture figcaption .ico { flex: none; margin-top: .2rem; }
+.capture-gallery { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; margin-block: 1.5rem; align-items: start; }
+.capture-gallery .game-capture { margin: 0; }
+@media (min-width: 760px) {
+  .capture-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.capture-lightbox {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 1rem;
+  border: 0;
+  background: rgba(0, 0, 0, .9);
+  color: #ffffff;
+  overscroll-behavior: contain;
+}
+.capture-lightbox::backdrop { background: transparent; }
+.capture-lightbox[open] { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.capture-lightbox-toolbar { display: flex; justify-content: flex-end; width: 100%; pointer-events: none; }
+.capture-lightbox button {
+  display: inline-flex; align-items: center; justify-content: center; gap: .4rem;
+  min-height: 44px; padding: .5rem .75rem; border: 1px solid #bba475; border-radius: 8px;
+  background: #21180f; color: #ffffff; cursor: pointer; font: inherit; pointer-events: auto;
+}
+.capture-lightbox button:hover { background: #45351d; }
+.capture-lightbox button:focus-visible { outline: 3px solid #f4c260; outline-offset: 3px; }
+.capture-lightbox figure { flex: 1; min-height: 0; max-width: 100%; margin: 0; display: flex; flex-direction: column; align-items: center; gap: .75rem; pointer-events: none; }
+.capture-lightbox figure img { display: block; min-height: 0; max-height: 100%; max-width: 100%; width: auto; height: auto; object-fit: contain; flex: 1; pointer-events: auto; }
+.capture-lightbox figcaption { flex: none; max-width: 760px; max-height: 25dvh; overflow-y: auto; text-align: center; font-size: .875rem; line-height: 1.6; pointer-events: auto; }
+.capture-lightbox-navigation { display: flex; align-items: center; justify-content: center; gap: .75rem; max-width: 100%; pointer-events: none; }
+@media (max-width: 420px) {
+  .capture-lightbox { padding: .75rem; }
+  .capture-lightbox-navigation { gap: .5rem; font-size: .875rem; }
+  .capture-lightbox-navigation button { padding: .5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .game-capture { transition: none; }
+}

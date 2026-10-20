@@ -1,3 +1,4 @@
+import GameCapture, { CaptureGallery } from '@/components/GameCapture';
 import { KeyFigures, TlDr, PageHeader, Section, M, Tip } from '@/components/ui';
 export default function Page(){return <><PageHeader href="/contenus/kralamoure/" title="Kralamoure" intro="Boss de guilde : observations du 13 au 20 octobre 2026."/>      <TlDr>
   <li>Faille en accès libre, uniquement en guilde ; combats illimités, sans énergie.</li>
@@ -19,8 +20,10 @@ export default function Page(){return <><PageHeader href="/contenus/kralamoure/"
           <li>Odorat divise par deux son prochain Gros coup. <M s="T" /></li>
           <li>Le Prestige 5 demande 500 000 dégâts cumulés sur le Kralamoure. <M s="T" /></li>
         </ul>
+        <CaptureGallery ids={['guilde-faille-top10', 'guilde-classement-guildes']} />
         <h3>Deck de 7 cartes</h3>
         <p>Bouclier Féca, Vertu, Précipitation, Traversée, Bluff, Pelle des Anciens, Tibia. Précipitation en premier pour les PA, puis un bouclier presque chaque tour ; toutes les cartes de dégâts au tour 10 lors du record du 17 oct 2026. <M s="T" /></p>
+        <GameCapture id="deck-7-kralamoure" />
         <ul>
           <li>Le bouclier est <strong>plafonné à 40 % des PV max</strong>. <M s="T" /></li>
           <li>Cliquer « Fin du tour » <strong>une seule fois</strong> par tour. <M s="T" /></li>
@@ -35,6 +38,7 @@ export default function Page(){return <><PageHeader href="/contenus/kralamoure/"
           <li><strong>20 oct 2026, 11 h</strong> : 3 combats, meilleur <strong>116 717</strong>, score du jour <strong>320 085</strong>. <M s="T" /></li>
           <li>Record personnel en un combat toujours <strong>159 632</strong> (17 oct 2026). <M s="T" /></li>
         </ul>
+        <GameCapture id="guilde-degats-snking" caption="Dégâts de SNking par jour dans le tableau des membres" />
         <Tip title="Historique — 15 oct 2026">
           <p><strong>109 506 dégâts</strong> en un combat avec ce deck, contre <strong>74 420</strong> avec un deck de 14 cartes (15 oct 2026). Monter vite les 5 charges d’Armure, puis tout envoyer. <M s="T" /></p>
         </Tip>

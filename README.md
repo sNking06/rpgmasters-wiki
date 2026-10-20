@@ -59,3 +59,20 @@ Pastilles discrètes en fin de ligne (infobulle au survol, légende sur la page 
 
 Illustrations originales : `public/illustrations/*.svg` ; déposer vos JPG/PNG dans `sources/illustrations/`, puis exécuter `python3 scripts/optimize-illustrations.py` (Pillow).
 Au prochain build, `<Illustration>` choisit automatiquement les WebP (largeur max. 1600, qualité 80) et leur variante `-800.webp` via `srcSet`, sinon le SVG.
+
+## Captures en jeu
+
+Déposer la PNG dans `sources/captures/`, puis ajouter une entrée dans
+`sources/captures/captures.json` avec les champs `id`, `src`, `box`, `mask`, `alt` et `date`
+(en suivant le format des entrées existantes). Générer les images et le catalogue, puis construire le site :
+
+```bash
+python3 scripts/build-captures.py
+npm run build
+```
+
+Insérer `<GameCapture id="mon-id" />` (avec une prop `caption` facultative) ou
+`<CaptureGallery ids={['premier-id', 'second-id']} />` depuis `components/GameCapture.tsx`.
+Un identifiant absent du catalogue ne rend rien : les emplacements Ascension étage 42,
+Jardins d’Hiver et Tableau de bord sont déjà prêts. Les vignettes ouvrent la capture
+pleine taille ; la lightbox permet de parcourir les captures de la page avec ←/→.
