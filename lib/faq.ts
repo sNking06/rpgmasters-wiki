@@ -244,7 +244,7 @@ export const FAQ: FaqGroup[] = [
         q: 'À quoi servent les guildes ?',
         a: [
           'Jusqu’à 40 joueurs, pour affronter le Kralamoure de la Faille.',
-          'Un combat toutes les 20 minutes par membre ; dégâts additionnés ; coffres selon le classement du jour.',
+          'Faille en accès libre : combats illimités ; seuls les 3 meilleurs scores du jour comptent ; dégâts additionnés ; coffres selon le classement du jour (constaté le 18 oct 2026).',
           'Les dégâts cumulés conditionnent certains Prestiges.',
         ],
       },

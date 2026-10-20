@@ -1,8 +1,8 @@
 import { PageHeader, Section, M, Tip } from '@/components/ui';
-export default function Page(){return <><PageHeader title="Kralamoure" intro="Boss de guilde : observations du 13 au 17 octobre 2026."/>      <Section id="kralamoure" title="Kralamoure (boss de guilde)">
+export default function Page(){return <><PageHeader title="Kralamoure" intro="Boss de guilde : observations du 13 au 18 octobre 2026."/>      <Section id="kralamoure" title="Kralamoure (boss de guilde)">
         <ul>
           <li>Accessible <strong>uniquement en guilde</strong> : Guilde → Faille du Kralamoure. <M s="T" /></li>
-          <li>1 combat toutes les <strong>20 minutes</strong>, <strong>10 tours</strong>, sans énergie. <M s="T" /></li>
+          <li>Faille en <strong>accès libre</strong> : combats <strong>illimités</strong>, <strong>10 tours</strong>, sans énergie. Seuls les <strong>3 meilleurs scores du jour</strong> comptent pour le classement (constaté le 18 oct 2026). <M s="T" /></li>
           <li>Environ <strong>100 M de PV</strong> partagés par la guilde. <M s="T" /></li>
           <li>Odorat divise par deux son prochain Gros coup. <M s="T" /></li>
           <li>Le Prestige 5 demande 500 000 dégâts cumulés sur le Kralamoure. <M s="T" /></li>
