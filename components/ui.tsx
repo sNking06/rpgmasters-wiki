@@ -309,3 +309,36 @@ export function KeyFigures({ items }: { items: KeyFigure[] }) {
 export function TlDr({ children }: { children: ReactNode }) {
   return <Essentiel title="À retenir" id="a-retenir-h">{children}</Essentiel>;
 }
+
+/** Pastille de source : annonce officielle du développeur sur le Discord (#annonces ou #faq). */
+export function Disc({ d, salon = 'annonces' }: { d: string; salon?: 'annonces' | 'faq' }) {
+  return (
+    <span className="src-disc" title={`Discord officiel, ${salon === 'faq' ? 'salon #faq' : 'annonce'} du ${d} (signée du développeur)`}>
+      Discord officiel, {salon === 'faq' ? '#faq' : 'annonce'} du {d}
+    </span>
+  );
+}
+
+/** Encadré « Contradiction » : deux sources qui ne disent pas la même chose. Rien n’est supprimé. */
+export function Contra({ title = 'Contradiction entre sources', children }: { title?: string; children: ReactNode }) {
+  return (
+    <div className="callout callout-warn callout-contra">
+      <p className="callout-title">
+        <Icon name="warning" size={18} /> {title}
+      </p>
+      {children}
+    </div>
+  );
+}
+
+/** Encadré « Annonce officielle » (Discord du jeu). */
+export function Officiel({ title, d, children }: { title: ReactNode; d: string; children: ReactNode }) {
+  return (
+    <div className="callout callout-info callout-officiel">
+      <p className="callout-title">
+        <Icon name="scroll" size={18} /> {title} <Disc d={d} />
+      </p>
+      {children}
+    </div>
+  );
+}

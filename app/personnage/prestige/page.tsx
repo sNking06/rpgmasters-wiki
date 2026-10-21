@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Icon, SectionIcon } from '@/components/icons';
 import GameCapture from '@/components/GameCapture';
-import { Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn } from '@/components/ui';
+import { Contra, Disc, Essentiel, Fiche, M, More, Officiel, PageEnd, PageHeader, Section, TableWrap, Tip, Warn } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Prestige',
@@ -18,8 +18,8 @@ const ROWS: Row[] = [
   { p: 2, cond: 'Niveau 200', bonus: '+2 PO' },
   { p: 3, cond: 'Niveau 200', bonus: '+2 PM' },
   { p: 4, cond: 'Étage 20 de l’Ascension terminé', bonus: '+1 PA' },
-  { p: 5, cond: 'Étage 30 + 500 000 dégâts cumulés sur le Kralamoure de la Faille', bonus: '+3 PO' },
-  { p: 6, cond: 'Étage 40 + 1 000 000 dégâts cumulés sur le Kralamoure de la Faille', bonus: '+3 PM' },
+  { p: 5, cond: 'Étage 30 de l’Ascension · plus de condition Kralamoure depuis le 18/10 (avant : 500 000 dégâts cumulés)', bonus: '+3 PO' },
+  { p: 6, cond: 'Étage 40 de l’Ascension · plus de condition Kralamoure depuis le 18/10 (avant : 1 000 000 dégâts cumulés)', bonus: '+3 PM' },
   { p: 7, cond: 'Étage 40 de l’Ascension terminé', bonus: '+1 PA' },
   { p: 8, cond: 'Niveau 200 + étage 60 de l’Ascension terminé (relevé du 21 oct 2026)', bonus: '—' },
   { p: 9, cond: 'Étage 80 de l’Ascension terminé', bonus: '—' },
@@ -39,10 +39,10 @@ const ROWS: Row[] = [
 const MILESTONES: { head: string; tag?: string; key?: boolean; text: string }[] = [
   { head: 'P1 → P3', text: 'Niveau 200. Bonus : +1 PA, +2 PO, +2 PM. PA max 13 dès P2.' },
   { head: 'P4', tag: 'plus aucune perte', key: true, text: 'Étage 20 de l’Ascension. +1 PA.' },
-  { head: 'P5', text: 'Étage 30 + 500 000 dégâts sur le Kralamoure. +3 PO. PA max 14.' },
-  { head: 'P6 → P7', text: 'Étage 40 (+ 1 000 000 dégâts pour P6). +3 PM, +1 PA.' },
+  { head: 'P5', text: 'Étage 30. Plus de condition de dégâts sur le Kralamoure depuis le 18/10 (Discord officiel). +3 PO. PA max 14.' },
+  { head: 'P6 → P7', text: 'Étage 40 (plus de condition Kralamoure pour P6 depuis le 18/10). +3 PM, +1 PA.' },
   { head: 'P8', text: 'Niveau 200 + étage 60 de l’Ascension terminé (relevé du 21 oct 2026). PA max 15.' },
-  { head: 'P10', text: 'Étage 110.' },
+  { head: 'P9 → P10', text: 'Étage 80, puis étage 110 (badge aux ailes rouges).' },
   { head: 'P15', text: 'Étage 260 + record de 130 étages dans les Abysses.' },
   { head: 'P16 → P20', tag: 'maximum actuel', key: true, text: 'Records Abysses : 260, 390, 520, 650 puis 780 étages. Les suivants : « bientôt disponibles ».' },
 ];
@@ -124,13 +124,13 @@ export default function PrestigePage() {
             Prestige 3) ». <M s="T" />
           </p>
         </Tip>
-        <Warn title="Seuils Kralamoure P5 / P6 à reconfirmer">
+        <Contra title="Seuils Kralamoure P5 / P6 : supprimés le 18/10">
           <p>
-            Les seuils de 500 000 (P5) et 1 000 000 (P6) dégâts cumulés sur le Kralamoure viennent de relevés antérieurs ; ils
-            ne sont pas confirmés dans l’affichage récent du jeu (relevé du 21 oct 2026). Ils sont conservés en attendant une
-            nouvelle vérification.
+            Ce wiki indiquait 500 000 (P5) et 1 000 000 (P6) dégâts cumulés sur le Kralamoure, d’après des relevés antérieurs. Le patch du
+            18/10 dit : « Les Prestiges 5 et 6 n’ont plus de condition de dégâts à la Faille ». <Disc d="18/10" /> Le relevé en jeu du
+            21/10 n’affiche d’ailleurs aucune condition Kralamoure pour le P8.
           </p>
-        </Warn>
+        </Contra>
         <Tip>
           <p>
             Les étages d’Ascension atteints sont <strong>conservés</strong> après un Prestige. Chaque étage coûte 2 d’énergie.{' '}
@@ -167,6 +167,32 @@ export default function PrestigePage() {
               multipliés. Plafond de PA hors Abysses. <M s="T" />
             </li>
           </ul>
+        </More>
+      </Section>
+
+      <Section id="officiel" title="Ce qu’a annoncé le développeur">
+        <Officiel title="Le Prestige ne dépend plus que de l’Ascension" d="08/10">
+          <p>
+            « Plus aucune condition d’Abysses pour passer Prestige : seule l’Ascension compte (Prestige 7 : étage 40, 8 : 60, 9 : 80). »
+            Le Prestige 10 demande l’étage 110 et donne un badge aux ailes rouges. Le Prestige garde l’objet choisi en Rayonnant.
+          </p>
+        </Officiel>
+        <ul>
+          <li><strong>P7 : étage 40 · P8 : étage 60 · P9 : étage 80 · P10 : étage 110</strong>. <Disc d="08/10" /></li>
+          <li><strong>P15 et plus</strong> : conditions liées aux Abysses (records d’étages), comme dans la FAQ du jeu. <M s="T" /></li>
+          <li><strong>P5 et P6</strong> : plus de condition de dégâts à la Faille du Kralamoure. <Disc d="18/10" /></li>
+          <li>Plafond de <strong>PA : 12, puis 13 (P2), 14 (P5), 15 (P8)</strong>, comme le tableau ci-dessus.</li>
+          <li>Le Colisée est retiré des prérequis du Prestige tant qu’il est en travaux. <Disc d="14/10" /></li>
+          <li>Un objet runé peut être gardé au Prestige : il devient éternel avec ses runes. Les autres objets runés disparaissent, mais leurs runes reviennent dans le stock. <Disc d="14/10" /> <Disc d="12/10" /></li>
+          <li>Les 9 objets légendaires (1 sur 1 000 000) sont conservés au Prestige. <Disc d="14/10 → 16/10" /></li>
+          <li>Badges : pour les Prestiges 11 et plus, le chiffre est au centre de l’ornement. Les succès couvrent les Prestiges 11 à 15. <Disc d="12/10" /> <Disc d="10/10" /></li>
+          <li><strong>Prestige de classe</strong> : il existe d’après le relevé du Discord du 21/10, mais ses règles n’ont pas été recopiées ici. <M s="N" /></li>
+        </ul>
+        <More title="En saison (Saison Héroïque, 09/10)">
+          <p>
+            Chaque palier de Prestige donne un objet Rayonnant au tier max, <strong>une seule fois par compte et par palier</strong> : on est
+            récompensé quand on dépasse son record, pas quand on le refait. <Disc d="09/10" />
+          </p>
         </More>
       </Section>
 
@@ -261,7 +287,7 @@ export default function PrestigePage() {
           { href: '/economie/#fusion', label: 'Fusion et Rayonnant' },
           { href: '/personnage/classes/cra/', label: 'Guide Crâ' },
         ]}
-        sources="txt_faq.txt, txt_saison.txt, mecaniques.md §5, rea_classement.md §5"
+        sources="txt_faq.txt, txt_saison.txt, mecaniques.md §5, rea_classement.md §5 ; Discord officiel, annonces des 08/10, 09/10, 12/10, 14/10 et 18/10"
       />
     </>
   );

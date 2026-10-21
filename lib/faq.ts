@@ -308,6 +308,7 @@ export const FAQ: FaqGroup[] = [
         a: [
           '+10 % XP, +10 % butin, +5 % stats, à vie tant que le compte reste lié, partout (arène comprise).',
           'Liaison depuis le Tableau de bord, partagée avec le perso de saison.',
+          'Depuis le 20/10 (Discord officiel, annonce du 20/10) : il faut lier un compte Discord de plus de 3 jours pour tout débloquer ; sans lien, un invité n’a accès qu’à l’Aventure et à la Chasse.',
         ],
       },
       {

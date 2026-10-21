@@ -2,7 +2,7 @@ import GameCapture from '@/components/GameCapture';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { ClassIcon } from '@/components/icons';
-import { KeyFigures, TlDr, Essentiel, M, PageEnd, PageHeader, Section, TableWrap, Tip, Warn } from '@/components/ui';
+import { KeyFigures, TlDr, Essentiel, M, PageEnd, PageHeader, Section, TableWrap, Tip, Warn, Contra, Disc } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Guide Féca',
@@ -36,6 +36,14 @@ export default function GuideFecaPage() {
       <Section id="armure" title="Armure Féca">
         <p>Observé en combat : chaque charge donne <strong>−4 % de dégâts subis</strong> et <strong>+4,8 % de dégâts infligés</strong>, 5 charges au maximum. <M s="T" /></p>
         <Warn><p>Le texte public de la page Classes annonçait −6 % / +6 % par charge (relevé du 11 oct) : les valeurs ont pu changer, celles ci-dessus sont celles vues en combat le 15 oct.</p></Warn>
+        <Contra title="Armure Féca : 30 % ou 20 % ?">
+          <ul>
+            <li>10/10 : « 5 charges, chacune −6 % de dégâts subis et +6 % de dégâts (jusqu’à −30 % / +30 %) ». <Disc d="10/10" /></li>
+            <li>13/10 : <strong>Armure plafonnée à 20 %</strong> (relevé du Discord du 21/10). <Disc d="13/10" /></li>
+            <li>14/10 : « Les boucliers du Féca ne montent plus sans limite » ; soins et boucliers limités à 2 sorts par tour. <Disc d="14/10" /></li>
+            <li>En combat le 15/10 : 5 × −4 % = <strong>−20 %</strong> de dégâts subis (et 5 × +4,8 % = +24 % de dégâts), ce qui colle avec le plafond de 20 % du 13/10. <M s="C" /></li>
+          </ul>
+        </Contra>
         <p>Le Prestige 4 donne <strong>+40 %</strong> aux sorts de dégâts de classe. <M s="T" /></p>
       </Section>
       <Section id="cartes" title="Cartes exclusives">
@@ -56,7 +64,7 @@ export default function GuideFecaPage() {
       </Section>
       <GameCapture id="deck-7-kralamoure" caption="Deck 7 utilisé au Kralamoure" />
       <p><Link href="/contenus/kralamoure/">Kralamoure : accès, deck et résultat observé →</Link></p>
-      <PageEnd current="/personnage/classes/feca/" see={[{ href: '/personnage/classes/', label: 'Classes' }, { href: '/equipement/objets/', label: 'Objets' }, { href: '/equipement/panoplies/', label: 'Panoplies' }, { href: '/contenus/ascension/', label: 'Ascension' }]} sources="Observations en combat, 13-20 oct 2026" />
+      <PageEnd current="/personnage/classes/feca/" see={[{ href: '/personnage/classes/', label: 'Classes' }, { href: '/equipement/objets/', label: 'Objets' }, { href: '/equipement/panoplies/', label: 'Panoplies' }, { href: '/contenus/ascension/', label: 'Ascension' }]} sources="Observations en combat, 13-20 oct 2026 ; Discord officiel, annonces des 10/10, 13/10 et 14/10" />
     </>
   );
 }

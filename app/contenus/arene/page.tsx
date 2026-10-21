@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Icon, SectionIcon } from '@/components/icons';
-import { Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn } from '@/components/ui';
+import { Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn, Disc, Officiel } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Arène et classements',
@@ -142,6 +142,23 @@ export default function ArenePage() {
             </li>
           </ul>
         </More>
+      </Section>
+
+      <Section id="officiel" title="Annonces officielles">
+        <ul>
+          <li>Arène hebdomadaire : Elo remis à zéro chaque vendredi à 23:59, 10 combats minimum ; Top 3 : couronne et Coffre Rayonnant au choix, Top 10 : Coffres Ultimes, Top 100 : Coffres Légendaires dégressifs. <Disc d="08/10" /></li>
+          <li>Adversaires proposés les plus proches de ton Elo ; deck et stuff de défense au choix. <Disc d="08/10" /></li>
+          <li>10 tickets gratuits par jour ; chaque quête du jour réclamée donne <strong>2 tickets</strong> en plus, dans le stock permanent. <Disc d="09/10" /> 3 tickets d’arène possibles à la Roue Bouftou (18 %). <Disc d="17/10" /></li>
+          <li>3 rafraîchissements d’adversaires par jour ; perdre contre un adversaire déjà affronté dans les 24 h ne coûte que la moitié de l’Elo. <Disc d="12/10" /></li>
+          <li>Initiative : en arène, le plus rapide joue en premier ; à égalité, l’attaquant. <Disc d="12/10" /></li>
+        </ul>
+        <Officiel title="Arène Ultime : duels 1v1 en direct" d="12/10">
+          <ul>
+            <li>Défi amical (sans énergie, Elo ni récompense) ou duel classé ; Elo séparé, départ à 1 000 ; <strong>10 duels classés par jour</strong>, gratuits.</li>
+            <li>30 s de préparation (deck et équipement), 30 s par tour, 15 tours au maximum avec mort subite, 3 tours ratés d’affilée = défaite ; dégâts réduits de 60 %.</li>
+            <li>Anti-farm : contre le même adversaire sur 24 h, gains et pertes divisés par 2, puis par 4, puis à 0. Ranked choisi aussi selon l’opti (±30 %).</li>
+          </ul>
+        </Officiel>
       </Section>
 
       <Section id="recompenses" title="Récompenses de la semaine">

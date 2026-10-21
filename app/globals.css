@@ -3740,3 +3740,24 @@ tbody tr:hover td, .item-table tbody tr:hover td { background: var(--surface-3);
 @media (prefers-reduced-motion: reduce) {
   .game-capture { transition: none; }
 }
+
+/* Source : Discord officiel */
+.src-disc {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.35rem;
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--info-line);
+  background: var(--info-bg);
+  color: var(--teal);
+  font-size: 0.78em;
+  font-weight: 600;
+  white-space: nowrap;
+  vertical-align: 0.08em;
+}
+.callout-title .src-disc { margin-left: auto; }
+.callout-contra { border-style: dashed; }
+.patch-list { list-style: none; padding: 0; margin: 1rem 0; }
+.patch-list > li { margin: 0 0 1.4rem; padding: 0.9rem 1.1rem; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); }
+.patch-list h3 { margin-top: 0; }

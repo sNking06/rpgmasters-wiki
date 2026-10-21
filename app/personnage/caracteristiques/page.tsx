@@ -2,7 +2,7 @@ import GameCapture from '@/components/GameCapture';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { SectionIcon } from '@/components/icons';
-import { El, Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip } from '@/components/ui';
+import { El, Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip, Contra, Disc, Officiel } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Caractéristiques',
@@ -147,6 +147,24 @@ export default function CaracteristiquesPage() {
             <M s="D" />
           </li>
         </ul>
+        <Officiel title="Soins et boucliers : 40 % des PV max, 2 sorts par tour" d="16/10">
+          <ul>
+            <li>14/10 : mêmes limites partout (25 % des PV max, 2 sorts par tour), Ascension, Dimension Écarlate et Colisée compris. <Disc d="14/10" /></li>
+            <li>14 → 16/10 : plafond des <strong>boucliers</strong> 25 % → <strong>40 %</strong> des PV max ; soins restés à 25 %. <Disc d="14/10 → 16/10" /></li>
+            <li>16/10 : plafond des <strong>soins</strong> 25 % → <strong>40 %</strong>. Toujours <strong>2 sorts de soin ou de bouclier par tour</strong> ; l’Eniripsa et le Sacrieur en gardent 3. <Disc d="16/10" /></li>
+          </ul>
+        </Officiel>
+        <Contra title="Code client : 25 %">
+          <p>La constante <code>SUSTAIN</code> du code client relevé plus tôt vaut <code>maxPctHp: 25, perTurn: 2</code>, avec 1 sort de plus pour deux classes : c’était la règle du 14/10. Le plafond de 40 % du bouclier a été constaté en jeu au Kralamoure.</p>
+        </Contra>
+        <Officiel title="Bonus de combat du 12/10 (hors Abysses)" d="12/10">
+          <ul>
+            <li><strong>Initiative</strong> : seule la ligne « Initiative » de l’équipement compte (Prestige, forge et compagnon compris). En arène, le plus rapide joue en premier ; ailleurs, jusqu’à 25 % de chances que les ennemis passent leur premier tour.</li>
+            <li><strong>Sorts à une ligne</strong> : tant qu’aucun sort à plusieurs lignes de dégâts n’est lancé, +50 % de dégâts, puis +20 % par tour, jusqu’à +150 %. Les lignes de boost (Précipitation…) ne cassent pas le bonus (précision du 12/10, 10:44).</li>
+            <li><strong>Grands decks</strong> : chaque carte au-delà de 7 donne +5 % de dégâts aux sorts, jusqu’à +25 %.</li>
+            <li><strong>Esquive PA/PM</strong> : 0,02 % de chances par point de gagner +1 PM ; <strong>Retrait PA/PM</strong> : 0,02 % par point de gagner +1 PA (au-delà du plafond) ou +1 pioche.</li>
+          </ul>
+        </Officiel>
         <More title="Constantes de combat du code (11)">
           <p>
             Constantes <code>COMBAT_STATS</code> du code client. Leur sens exact n’est pas documenté ; « Lecture » ne fait que

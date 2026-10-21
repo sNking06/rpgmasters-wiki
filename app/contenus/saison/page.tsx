@@ -2,7 +2,7 @@ import GameCapture from '@/components/GameCapture';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { SectionIcon } from '@/components/icons';
-import { Bars, Essentiel, Fiche, M, PageEnd, PageHeader, Section, Warn } from '@/components/ui';
+import { Bars, Essentiel, Fiche, M, PageEnd, PageHeader, Section, Warn, Contra, Disc, Officiel } from '@/components/ui';
 import { SEASON_END } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -124,6 +124,24 @@ export default function SaisonPage() {
           <li>
             HDV de saison séparé ; pas de guilde, de Faille ni de succès pour le perso de saison. <M s="T" />
           </li>
+        </ul>
+      </Section>
+
+      <Section id="officiel" title="Annonces officielles des saisons">
+        <Officiel title="La saison des Cartes" d="18/10">
+          <p>Dimanche 18 oct. 18 h → dimanche 25 oct. 18 h (Paris) : XP ×4 toute la semaine, énergie illimitée, top 10 = coffre de la pano Mehdi ; chaque victoire peut lâcher un pack de 4 cartes ; gros boss Arc-en-ciel, 0,1 % de cartes Alternatives ; famille complète = bonus de stats ; la Banque part sur le perso principal à la fin. Le patch du 20/10 confirme la fin affichée au dimanche 25/10 à 18 h. <Disc d="20/10" /></p>
+        </Officiel>
+        <GameCapture id="patch-saison-cartes-annonce" />
+        <Contra title="Dates de la saison des Cartes">
+          <p>Un autre visuel officiel de la saison des Cartes indique « Du vendredi 23 octobre 18h au lundi 26 octobre 8h » (date de publication non relevée). L’annonce du 18/10, le patch du 20/10 et la page Saison du jeu (relevée le 20/10) disent du 18 au 25 oct à 18 h : ce sont ces dates qui sont gardées.</p>
+        </Contra>
+        <h3>Première saison : la Saison Héroïque (9 → 12 oct)</h3>
+        <ul>
+          <li>Annoncée le 08/10 : une saison toutes les deux semaines, du vendredi 18 h au lundi 8 h. Héros de saison de zéro, aucune énergie, XP ×4, <strong>mort définitive contre les boss</strong> (Chemin, boss de zone, Ascension), rejoueur avec XP bonus, HDV séparé, pas de guilde, de Krala, de quêtes du jour ni de succès. <Disc d="08/10" /></li>
+          <li>Récompenses sur le perso principal : Top 100 de 100 Coffres Légendaires (1er) à 10 (100e) ; Top 10 en plus 10 / 8 / 6 / 5 / 4 / 3 / 2 / 1 / 1 / 1 Coffres Ultimes ; couronne pour le 1er. <Disc d="08/10" /></li>
+          <li>Première mort adoucie (moitié du stuff gardée, une fois par compte) ; la Banque (8 places, +3 par Prestige) ; récompense de Prestige une seule fois par compte et par palier. <Disc d="09/10" /></li>
+          <li>Fin : <strong>seule la Banque</strong> est transférée sur le perso principal ; les objets éternels peuvent y être rangés et restent éternels. <Disc d="11/10" /> <Disc d="12/10" /></li>
+          <li>Les Abysses joués avec le perso de saison comptent pour le perso principal. <Disc d="12/10" /></li>
         </ul>
       </Section>
 

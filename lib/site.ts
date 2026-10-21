@@ -4,8 +4,8 @@ export const SITE_NAME = 'Wiki RpgMasters (non officiel)';
 export const SITE_DESCRIPTION =
   'Wiki de fans NON OFFICIEL pour RpgMasters : classes, Crâ, caractéristiques, arène, saison, énergie, XP, Prestige. Uniquement des faits relevés sur les pages publiques.';
 export const GAME_URL = 'https://rpgmasters.houk.fr';
-export const DATA_DATE = '20 oct 2026';
-export const DATA_DATE_LABEL = 'Données du 11 au 20 oct 2026';
+export const DATA_DATE = '21 oct 2026';
+export const DATA_DATE_LABEL = 'Données du 8 au 21 oct 2026';
 export const SEASON_NAME = 'La saison des Cartes';
 export const SEASON_END = 'dimanche 25 oct 18:00 (Paris)';
 export const SEASON_DATES = 'du dimanche 18 octobre 2026 à 17:14 au dimanche 25 octobre 2026 à 18:00 (heure de Paris)';

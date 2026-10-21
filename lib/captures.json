@@ -190,5 +190,101 @@
   "width": 1310,
   "height": 731,
   "smallWidth": 640
+ },
+ {
+  "id": "patch-2026-10-14",
+  "alt": "Patch note officiel « Mise à jour du 14 octobre » : soins et boucliers 25 % / 2 sorts par tour partout, boucliers du Féca limités, runes, Abysses, Personnage & Inventaire",
+  "date": "14 oct 2026",
+  "width": 1400,
+  "height": 1962,
+  "smallWidth": 640
+ },
+ {
+  "id": "patch-2026-10-14-correctif",
+  "alt": "Correctif officiel du 14 octobre : Abysses (coffres de trophée tous les 5 et 50 étages), Colisée en travaux et retiré des prérequis du Prestige",
+  "date": "14 oct 2026",
+  "width": 1400,
+  "height": 881,
+  "smallWidth": 640
+ },
+ {
+  "id": "patch-2026-10-14-16",
+  "alt": "Patch note officiel du 14 au 16 octobre : boucliers 25 % → 40 % des PV max, sort Maîtrise des Popokémons (Faille, 5 %), 9 objets légendaires",
+  "date": "14–16 oct 2026",
+  "width": 1080,
+  "height": 1726,
+  "smallWidth": 640
+ },
+ {
+  "id": "patch-2026-10-16",
+  "alt": "Patch note officiel du 16 octobre : fusion des Dofus et trophées jusqu'à Rayonnant +5 (+100 %), soins 25 % → 40 % des PV max",
+  "date": "16 oct 2026",
+  "width": 1080,
+  "height": 1362,
+  "smallWidth": 640
+ },
+ {
+  "id": "patch-guildes-gestion-banque",
+  "alt": "Patch note officiel Guildes : onglet Gestion (combats Kralamoure par jour) et Banque de guilde",
+  "date": "date non relevée",
+  "width": 1035,
+  "height": 2048,
+  "smallWidth": 640
+ },
+ {
+  "id": "patch-2026-10-16-chasse-ciblee",
+  "alt": "Patch note officiel du 16 octobre : la Chasse ciblée (1 000 kamas par combat, 5 % de drop, 3 objets max)",
+  "date": "16 oct 2026",
+  "width": 895,
+  "height": 2048,
+  "smallWidth": 640
+ },
+ {
+  "id": "patch-chasse-ciblee-pity",
+  "alt": "Correctif officiel de la Chasse ciblée : pity tous les 100 combats (200 en Auto AFK)",
+  "date": "date non relevée",
+  "width": 1080,
+  "height": 845,
+  "smallWidth": 640
+ },
+ {
+  "id": "patch-2026-10-17",
+  "alt": "Patch note officiel du 17/10 : Roue Bouftou et ses lots, Pano Mehdi, Roublard, Osamodas, Transfusion",
+  "date": "17 oct 2026",
+  "width": 1046,
+  "height": 2048,
+  "smallWidth": 640
+ },
+ {
+  "id": "patch-saison-cartes-23-26",
+  "alt": "Visuel officiel « Saison des Cartes » indiquant du vendredi 23 octobre 18 h au lundi 26 octobre 8 h",
+  "date": "date non relevée",
+  "width": 1040,
+  "height": 1768,
+  "smallWidth": 640
+ },
+ {
+  "id": "patch-2026-10-18",
+  "alt": "Patch note officiel du 18/10 : Auto AFK sans malus, limite de combats, Faille du Kralamoure sans chrono, Prestige 5 et 6 sans condition de Faille, Roue Bouftou, sécurité",
+  "date": "18 oct 2026",
+  "width": 1002,
+  "height": 2048,
+  "smallWidth": 640
+ },
+ {
+  "id": "patch-saison-cartes-annonce",
+  "alt": "Annonce officielle de la Saison des Cartes : dimanche 18 oct. 18 h → dimanche 25 oct. 18 h, XP ×4, énergie illimitée",
+  "date": "18 oct 2026",
+  "width": 1400,
+  "height": 788,
+  "smallWidth": 640
+ },
+ {
+  "id": "patch-2026-10-20",
+  "alt": "Patch note officiel du 20 octobre 2026 : sécurité et comptes (Discord de plus de 3 jours), combats, coffres, inventaire, Abysses sans limite, HDV, chasse",
+  "date": "20 oct 2026",
+  "width": 1379,
+  "height": 4000,
+  "smallWidth": 640
  }
 ]

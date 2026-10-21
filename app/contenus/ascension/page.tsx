@@ -1,6 +1,7 @@
 import GameCapture from '@/components/GameCapture';
 import type { Metadata } from 'next';
-import { KeyFigures, TlDr, Essentiel, M, PageEnd, PageHeader, Section, Tip, Warn } from '@/components/ui';
+import Link from 'next/link';
+import { KeyFigures, TlDr, Essentiel, M, PageEnd, PageHeader, Section, Tip, Warn, Disc, Officiel } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Ascension étages 29-30 et 38-42 · record 41',
@@ -116,7 +117,21 @@ export default function AscensionPage() {
         </ul>
         <p>Résistances obtenues : <strong>Neutre 47 %, Terre 15 %, Feu/Eau/Air 50 %</strong> ; Réduction 46 %, avec <strong>14 PA conservés</strong>. <M s="T" /></p>
       </Section>
-      <PageEnd current="/contenus/ascension/" see={[{ href: '/personnage/prestige/', label: 'Prestige' }, { href: '/personnage/classes/feca/', label: 'Guide Féca' }]} sources="Observations en combat : étages 29-30, 13-15 oct 2026 ; étages 38-42 et build défensif, 16-17 oct 2026 ; étage 42 et objectif P8, relevé du 21 oct 2026" />
+      <Section id="officiel" title="Ce que dit le développeur">
+        <Officiel title="Ascension et Prestige" d="08/10">
+          <ul>
+            <li>Plus aucune condition d’Abysses pour le Prestige : seule l’Ascension compte — <strong>P7 : étage 40, P8 : 60, P9 : 80, P10 : 110</strong>.</li>
+            <li>Étages 101 et plus : boss <strong>Transmutés</strong> aux mécaniques inédites (voir <Link href="/contenus/strategies-ascension/">Stratégies de l’Ascension</Link>).</li>
+          </ul>
+        </Officiel>
+        <ul>
+          <li>Soins et boucliers : 25 % des PV max et 2 sorts par tour partout, Ascension comprise <Disc d="14/10" /> ; boucliers relevés à 40 % <Disc d="14/10 → 16/10" />, soins à 40 % <Disc d="16/10" />.</li>
+          <li>Mécaniques des boss affichées sur leur carte, alerte rouge ⚠ le tour où elles tombent. <Disc d="12/10" /></li>
+          <li>Fureur des boss : l’arme ne compte plus dans les cartes jouées du tour. <Disc d="20/10" /> Cohérent avec l’observation des étages 29-30.</li>
+          <li>Le Colisée est retiré des prérequis du Prestige (en travaux). <Disc d="14/10" /></li>
+        </ul>
+      </Section>
+      <PageEnd current="/contenus/ascension/" see={[{ href: '/personnage/prestige/', label: 'Prestige' }, { href: '/personnage/classes/feca/', label: 'Guide Féca' }, { href: '/contenus/strategies-ascension/', label: 'Stratégies 105–260' }]} sources="Observations en combat : étages 29-30, 13-15 oct 2026 ; étages 38-42 et build défensif, 16-17 oct 2026 ; étage 42 et objectif P8, relevé du 21 oct 2026" />
     </>
   );
 }

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Icon, SectionIcon } from '@/components/icons';
 import GameCapture from '@/components/GameCapture';
-import { Stat, Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, fmt } from '@/components/ui';
+import { Stat, Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, fmt, Contra, Disc, Officiel } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Économie',
@@ -125,8 +125,9 @@ export default function EconomiePage() {
           </tbody>
         </TableWrap>
         <p>
-          Jusqu’à <strong>100 par jour et par type</strong> ; les 20 premiers au prix normal, puis plus cher. <M s="T" /> Barème
-          de la hausse : non trouvé. <M s="N" />
+          Jusqu’à <strong>100 par jour et par type</strong> (classique, chanceux, épique), remise à zéro à minuit (Paris) : du 1er au
+          20e coffre du jour, prix normal ; du 21e au 50e, <strong>×1,5</strong> ; du 51e au 100e, <strong>×2</strong>. <Disc d="08/10" /> Depuis le 20/10,
+          le prix affiché est le prix facturé, et si le butin n’est pas livré, les coffres sont rendus. <Disc d="20/10" />
         </p>
       </Section>
 
@@ -175,6 +176,15 @@ export default function EconomiePage() {
             </li>
           </ul>
         </More>
+      </Section>
+
+      <Section id="coffres-choix" title="Coffres de choix et objets légendaires">
+        <ul>
+          <li>Les coffres de choix ne tombent que des coffres gratuits du jour et des coffres cadeaux Légendaire, Royal et Bonus, plus jamais des coffres achetés : <strong>10 %</strong> de coffre d’équipement au choix et <strong>10 %</strong> de coffre de sort au choix par coffre ouvert. <Disc d="08/10" /></li>
+          <li>La rareté du coffre de choix suit celle de l’objet remplacé ; 0,5 % sont des Coffres Rayonnant au choix (+0 à +5 au hasard). <Disc d="08/10" /></li>
+          <li>Coffres de sort en plus du contenu normal : 0,5 % Rare, 0,2 % Épique, 0,05 % Légendaire. <Disc d="08/10" /></li>
+          <li><strong>9 objets légendaires</strong> (un par catégorie) : 1 chance sur 1 000 000 par victoire sur le perso principal, 10 au plus par jour et par objet sur tout le serveur ; ni brisables, ni fusionnables, ni vendables au marchand, mais vendables à l’HDV et conservés au Prestige. <Disc d="14/10 → 16/10" /></li>
+        </ul>
       </Section>
 
       <Section id="raretes" title="Raretés">
@@ -229,6 +239,15 @@ export default function EconomiePage() {
             </li>
           </ul>
         </More>
+        <Officiel title="Fusion repensée, puis Dofus jusqu’à Rayonnant +5" d="08/10">
+          <ul>
+            <li>Rayonnant dès le T3 (9 objets au lieu de 81), puis +1 à +5 jusqu’à +45 % de stats (81 objets pour un +5). Les Rayonnants de boss et de coffres tombent entre +0 et +5.</li>
+            <li>Depuis le 16/10, les Dofus et trophées montent jusqu’à <strong>Rayonnant +5</strong> (au lieu de +2) et deviennent des Dofus Rayonnants : <strong>+100 %</strong> sur leurs stats ; PA et PM au plus doublés. <Disc d="16/10" /></li>
+          </ul>
+        </Officiel>
+        <Contra title="Fusion des Dofus">
+          <p>Le code client relevé plus tôt donnait une fusion max de 4 pour les Dofus ; l’annonce du 16/10 parle de Rayonnant +5. Les deux sont gardés, la règle du 16/10 étant la plus récente.</p>
+        </Contra>
       </Section>
 
       <Section id="bris" title="Bris d’objets et Bouclier de forge">
@@ -245,6 +264,16 @@ export default function EconomiePage() {
             Un objet <strong>verrouillé</strong> (cadenas) est protégé contre la vente et le bris. <M s="T" />
           </li>
         </ul>
+        <Officiel title="Forgemagie : l’XP de l’Infini" d="08/10">
+          <ul>
+            <li>Fini les échecs : <strong>chaque orbe versée donne 1 XP</strong> de l’Infini au Bouclier de forge (verser 1, 10 ou tout).</li>
+            <li><strong>Niveau 200 en 14 jours</strong> au maximum d’orbes par jour, soit <strong>35 000 XP</strong> au total ; bonus de <strong>+150 % au niveau 200</strong>.</li>
+            <li>Les succès de Forgemagie vont jusqu’au niveau 400. <Disc d="10/10" /> Le bonus de forge s’applique aussi aux runes. <Disc d="12/10" /></li>
+          </ul>
+        </Officiel>
+        <Contra title="Orbes par jour">
+          <p>Le jeu affiche un maximum de 8 000 orbes par jour ; or 35 000 XP en 14 jours font 2 500 orbes par jour. Le plafond a pu changer depuis le 08/10 : à vérifier en jeu.</p>
+        </Contra>
         <GameCapture id="economie-forge" caption="Page Forgemagie : briser des objets et verser les orbes dans le Bouclier de forge" />
       </Section>
 
@@ -264,6 +293,14 @@ export default function EconomiePage() {
             La Prospection ne change pas la chance de croquette. N’agit pas aux Abysses ni sur PA, PM, PO, invocations. Lié au
             perso principal ; niveau et croquettes gardés au Prestige. <M s="T" />
           </p>
+        </More>
+        <More title="Historique officiel du Compagnon">
+          <ul>
+            <li>10/10, 22:39 : 5 % de croquette par victoire, pas en Auto ni en AFK ; jusqu’à +100 % au niveau 400. <Disc d="10/10" /></li>
+            <li>10/10, 23:24 : <strong>+0,2 % par niveau</strong> (jusqu’à +79,8 % au niveau 400) ; croquettes aussi en Auto, pas en AFK. <Disc d="10/10" /></li>
+            <li>12/10 : croquettes à <strong>10 %</strong> par victoire (au lieu de 5 %). <Disc d="12/10" /></li>
+            <li>18/10 : les croquettes tombent aussi en Auto (enchaîne). <Disc d="18/10" /></li>
+          </ul>
         </More>
         <GameCapture id="economie-compagnon" caption="Page Compagnon : croquettes à donner (100 par jour) et choix du compagnon" />
       </Section>
@@ -308,11 +345,60 @@ export default function EconomiePage() {
         </More>
       </Section>
 
+      <Section id="hdv-officiel" title="HDV : ce qui a changé">
+        <ul>
+          <li>08/10 : taxe de l’HDV à <strong>8 %</strong> (au lieu de 2 %), revente PNJ divisée par deux. <Disc d="08/10" /></li>
+          <li>20/10 : filtre par niveau de fusion (T1, T2, Rayonnant, R+1 à R+5), Dofus / Trophées / Prysmaradites séparés, onglet Historique des ventes (25 par page). <Disc d="20/10" /></li>
+        </ul>
+        <Contra title="Taxe de l’HDV">
+          <p>L’annonce du 08/10 donne une taxe unique de 8 % ; la FAQ du jeu relevée le 20/10 donne 8 / 12 / 15 % par paliers. La FAQ, plus récente, est gardée dans la fiche.</p>
+        </Contra>
+      </Section>
+
+      <Section id="chasse-ciblee" title="Chasse ciblée">
+        <ul>
+          <li>Chasse → zone → bloc « Chasse ciblée » : on coche <strong>jusqu’à 3 objets</strong>. Chaque combat coûte <strong>1 000 kamas</strong>, remboursés si le combat ne démarre pas. <Disc d="16/10" /></li>
+          <li><strong>5 % de drop par victoire</strong>, réparti au hasard entre les objets choisis ; un Dofus n’est gardé qu’une fois sur cinq (1 %). Objets : drops de la zone et Dofus jusqu’au niveau de la zone +20, aucun légendaire. <Disc d="16/10" /></li>
+          <li>On garde l’XP ; on renonce aux kamas, coffres, cartes, butin bonus et drops légendaires. Prospection et événements de drop ne changent pas les 5 %. Indisponible en saison. <Disc d="16/10" /></li>
+          <li><strong>Pity</strong> : l’objet ciblé tombe automatiquement tous les <strong>100 combats</strong> en chasse ciblée, tous les <strong>200</strong> en Auto AFK. <Disc d="date non relevée" /></li>
+        </ul>
+        <GameCapture id="patch-2026-10-16-chasse-ciblee" caption="Patch note de la Chasse ciblée (16/10)" />
+      </Section>
+
+      <Section id="roue-bouftou" title="Roue Bouftou">
+        <p>Menu « Plus » → Roue Bouftou : <strong>un tour toutes les 3 heures</strong> par compte, perso principal uniquement. <Disc d="17/10" /> Depuis le 20/10, la roue ne tourne qu’après <strong>10 victoires</strong>. <Disc d="20/10" /></p>
+        <TableWrap caption="Lots de la Roue Bouftou (17/10)">
+          <thead><tr><th>Lot</th><th className="num">Chance</th></tr></thead>
+          <tbody>
+            {[['2 000 kamas','30 %'],['5 Boules de capture','20 %'],['3 tickets d’arène','18 %'],['10 000 kamas','12 %'],['Coffre bonus','10 %'],['50 000 kamas','5 %'],['Coffre épique','3,5 %'],['Coffre royal','1 %'],['Jackpot : un objet de la pano Mehdi','0,01 %']].map(([l,c])=><tr key={l}><td>{l}</td><td className="num">{c}</td></tr>)}
+          </tbody>
+        </TableWrap>
+        <p>Pano Mehdi (11 objets) : +20 % de stats par objet porté (hors PA, PM, PO) et +2 % de dégâts de sorts chacun. <Disc d="17/10" /></p>
+      </Section>
+
+      <Section id="runes" title="Runes">
+        <ul>
+          <li>Après chaque victoire, Auto compris : rune classique <strong>1 %</strong>, épique <strong>0,5 %</strong>, légendaire <strong>0,1 %</strong>. Boss des Abysses : ×5. <Disc d="12/10" /></li>
+          <li>2 runes au plus par objet ; pour en graver une 3e, on choisit laquelle détruire. <Disc d="12/10" /></li>
+          <li>Classiques : Vitalité, caractéristiques, Sagesse, Prospection, Initiative, résistances, Tacle, Fuite. Épiques : Puissance, Dommages, Critique, Soins, % de dommages aux sorts, Rune d’Éclat (+5 % de toutes les stats de l’objet). <Disc d="12/10" /></li>
+          <li>Légendaires : +1 PO, +1 PM, +1 Invocation, +1 PA (une seule par personnage), % de dommages critiques, <strong>Rune d’Éveil (+15 % de toutes les stats de l’objet)</strong>, Rune Élémentaire (double les dommages élémentaires de l’objet). <Disc d="12/10" /></li>
+          <li>Les bonus de Prestige, de Forgemagie et de Compagnon s’appliquent aux runes, jusqu’à +100 %. Un objet runé se porte ou se revend à l’HDV avec ses runes. Réservées au perso principal. <Disc d="12/10" /></li>
+          <li>Rune de Fureur : +8 % → <strong>+2 %</strong> de dégâts critiques. Un objet runé peut monter en fusion. <Disc d="14/10" /></li>
+        </ul>
+      </Section>
+
       <Section id="discord" title="Bonus Discord">
         <p>
           Liez votre Discord (Tableau de bord, compte sauvegardé) : <strong>+10 % XP, +10 % butin, +5 % stats</strong>, à vie
           tant que le compte reste lié, partout, arène comprise. Partagé avec le perso de saison. <M s="T" />
         </p>
+        <Officiel title="Bonus Discord et règle anti-bot" d="20/10">
+          <ul>
+            <li>Bonus du compte lié : +10 % d’XP et de butin, +5 % aux caractéristiques, aussi pour le perso de saison. <Disc d="08/10" /></li>
+            <li>Depuis le 20/10 : <strong>pour tout débloquer, il faut lier un compte Discord de plus de 3 jours</strong>. Sans lien, les invités n’ont accès qu’à l’Aventure et à la Chasse. Les comptes déjà inscrits restent débloqués. Un seul compte par adresse e-mail.</li>
+            <li>Le support peut délier un Discord si le compte invité est perdu.</li>
+          </ul>
+        </Officiel>
       </Section>
 
       <PageEnd
@@ -322,7 +408,7 @@ export default function EconomiePage() {
           { href: '/personnage/caracteristiques/#objets', label: 'Stats des objets' },
           { href: '/debuter/energie-xp/#achat-energie', label: 'Acheter de l’énergie' },
         ]}
-        sources="txt_faq.txt, mecaniques.md §3, §4, §8"
+        sources="txt_faq.txt, mecaniques.md §3, §4, §8 ; Discord officiel, annonces du 08/10 au 20/10"
       />
     </>
   );

@@ -1,6 +1,7 @@
 import GameCapture from '@/components/GameCapture';
 import type { Metadata } from 'next';
-import { Essentiel, M, More, PageEnd, PageHeader, Section, STATUS_INFO, TableWrap, Warn, type Status } from '@/components/ui';
+import Link from 'next/link';
+import { Disc, Essentiel, M, More, PageEnd, PageHeader, Section, STATUS_INFO, TableWrap, Warn, type Status } from '@/components/ui';
 import { GAME_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -113,6 +114,11 @@ export default function SourcesPage() {
           </li>
           <li>
             Les combats sont calculés côté serveur : beaucoup de formules restent invisibles. <M s="T" />
+          </li>
+          <li>
+            <strong>Discord officiel RpgMasters</strong> (relevé le 21/10/2026 vers 11 h, lecture seule) : seules les annonces signées du
+            développeur (#annonces, #faq) sont reprises comme officielles, avec la pastille <Disc d="JJ/MM" />. Les conseils de joueurs
+            sont marqués « non officiels » et aucun pseudo de joueur n’est repris. Voir le <Link href="/a-propos/journal/">journal des mises à jour</Link>.
           </li>
         </ul>
         <More title="La page Mentions autorise-t-elle cette lecture ?">

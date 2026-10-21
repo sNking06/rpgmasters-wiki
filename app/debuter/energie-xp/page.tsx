@@ -3,7 +3,7 @@ import EnergyPriceChart from '@/components/EnergyPriceChart';
 import XpChart from '@/components/XpChart';
 import GameCapture from '@/components/GameCapture';
 import { Icon, SectionIcon } from '@/components/icons';
-import { KeyFigures, Bars, Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip, Warn, fmt } from '@/components/ui';
+import { KeyFigures, Bars, Contra, Disc, Essentiel, Fiche, M, Meter, More, Officiel, PageEnd, PageHeader, Section, TableWrap, Tip, Warn, fmt } from '@/components/ui';
 import { ENERGY, MONSTER_XP_REF_KNOWN, XP_SOURCE_POINTS, cumulativeXp, energyPointPrice, energyTotalCost } from '@/lib/xp';
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function EnergieXpPage() {
           L’XP vient des <strong>combats gagnés</strong> ; comparez l’XP Aventure vs Chasse en fin de combat. <M s="T" />
         </li>
         <li>
-          Bonus : <strong>Discord +10 % XP</strong> ; <strong>Auto AFK ×0,5</strong> ; saison <strong>×4</strong>. <M s="T" />
+          Bonus : <strong>Discord lié +10 % XP et butin</strong> ; saison <strong>×4</strong>. <strong>Auto (enchaîne) sans malus depuis le 18/10</strong> <Disc d="18/10" /> (×0,5 avant).
         </li>
       </Essentiel>
 
@@ -77,7 +77,7 @@ export default function EnergieXpPage() {
         />
         <Tip>
           <p>
-            Ne laissez pas l’énergie pleine trop longtemps (conseil de la FAQ). On ne peut pas dépasser le maximum. <M s="T" />
+            Ne laissez pas l’énergie pleine trop longtemps (conseil de la FAQ). On ne peut pas dépasser le maximum. <M s="T" /> Exception : l’énergie gagnée avec les succès (+10, +20 ou +30) s’ajoute même au-delà de 100. <Disc d="10/10" /> L’énergie est illimitée pendant les 7 premiers jours après la création. <Disc d="11/10" />
           </p>
         </Tip>
         <More title="Arène : ticket ou énergie ? · Constantes ENERGY">
@@ -187,11 +187,12 @@ export default function EnergieXpPage() {
             { name: 'Saison (×4)', value: 4, display: '×4' },
             { name: 'Discord lié', value: 1.1, display: '+10 %', hl: true },
             { name: 'Normal / Auto', value: 1, display: '×1' },
-            { name: 'Auto AFK', value: 0.5, display: '×0,5' },
+            { name: 'Auto (enchaîne) depuis le 18/10', value: 1, display: '×1' },
+            { name: 'Auto AFK avant le 18/10', value: 0.5, display: '×0,5' },
           ]}
           caption={
             <>
-              Tous trouvés dans la FAQ, la page Saison ou le code. <M s="T" />
+              FAQ, page Saison, code client et patch du 18/10 (Discord officiel). <M s="T" />
             </>
           }
         />
@@ -207,8 +208,8 @@ export default function EnergieXpPage() {
               <strong>Discord</strong> : +10 % XP à vie tant que le compte reste lié ; aussi +10 % butin, +5 % stats. <M s="T" />
             </li>
             <li>
-              <strong>Auto AFK</strong> : moitié moins d’XP, de kamas et de butin (<code>AUTO.rewardMult 0.5</code>). L’« Auto »
-              simple garde les récompenses normales. <M s="T" />
+              <strong>Auto AFK, jusqu’au 18/10</strong> : moitié moins d’XP, de kamas et de butin (<code>AUTO.rewardMult 0.5</code> dans le code client). <M s="T" />{' '}
+              <strong>Depuis le 18/10</strong> : plus de malus, le bouton s’appelle « Auto (enchaîne) ». <Disc d="18/10" /> Le 20/10, les textes sont harmonisés : il ne reste que le « mode Auto ». <Disc d="20/10" />
             </li>
             <li>
               <strong>Saison</strong> : ×4 ; ×2 en plus pour un perso recréé après une mort, tant qu’il est sous le niveau du perso
@@ -241,10 +242,25 @@ export default function EnergieXpPage() {
             groupes de monstres sont renouvelés <strong>toutes les 3 min</strong>) et sur une défaite. <M s="T" />
           </li>
           <li>
-            En Auto normal (récompenses pleines), le bouton de lancement s’appelle quand même « Attaquer en AFK » ; seule
-            l’option « Enchaîner en AFK » applique le −50 %. <M s="T" />
+            Observé en jeu avant le 18/10 : en Auto normal (récompenses pleines), le bouton de lancement s’appelait quand même « Attaquer en AFK » ; seule
+            l’option « Enchaîner en AFK » appliquait le −50 %. <M s="T" />
           </li>
         </ul>
+        <Officiel title="Mode Auto AFK : plus de malus" d="18/10">
+          <ul>
+            <li>XP, kamas, coffres et butin sont entiers, les croquettes tombent, et la pity des objets ciblés est la même qu’en combat normal.</li>
+            <li>Le bouton s’appelle maintenant « Auto (enchaîne) ».</li>
+            <li>Le nombre de combats est limité par heure et par jour, tous modes confondus ; une fois la limite atteinte, le jeu affiche le temps d’attente.</li>
+          </ul>
+        </Officiel>
+        <Contra title="Auto AFK : −50 % ou pas ?">
+          <ul>
+            <li>Le code client (<code>AUTO.rewardMult 0.5</code>) et le bouton vu en jeu (« Enchaîner en AFK −50 % ») indiquaient −50 % : c’était la règle avant le 18/10.</li>
+            <li>Le patch du 18/10 supprime le malus <Disc d="18/10" /> ; la FAQ du jeu du 20/10 dit aussi « mêmes récompenses qu’un combat normal » (limite de 1 300 combats par heure et 19 000 par jour).</li>
+            <li>La chasse ciblée (16/10) parlait encore du « nerf habituel » en AFK <Disc d="16/10" />, et sa pity reste de 200 combats en Auto AFK contre 100 en manuel.</li>
+            <li>Le libellé du bouton n’a pas été revérifié en jeu depuis le 18/10.</li>
+          </ul>
+        </Contra>
         <Tip title="Exemple de farm — 19 oct 2026">
           <p>
             Jardins d’Hiver en Auto normal, Féca niveau 200, sans aucune défaite sur la journée : au moins{' '}
@@ -332,7 +348,7 @@ Niveau = plus grand L tel que XP ≥ n[L]`}</code>
           { href: '/personnage/prestige/', label: 'Prestige' },
           { href: '/debuter/faq/#progresser', label: 'FAQ : progresser' },
         ]}
-        sources="txt_faq.txt, txt_saison.txt, rea_classement.md §1–2, mecaniques.md §8"
+        sources="txt_faq.txt, txt_saison.txt, rea_classement.md §1–2, mecaniques.md §8 ; Discord officiel, annonces des 10/10, 11/10, 16/10, 18/10 et 20/10"
       />
     </>
   );
