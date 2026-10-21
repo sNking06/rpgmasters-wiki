@@ -3761,3 +3761,5 @@ tbody tr:hover td, .item-table tbody tr:hover td { background: var(--surface-3);
 .patch-list { list-style: none; padding: 0; margin: 1rem 0; }
 .patch-list > li { margin: 0 0 1.4rem; padding: 0.9rem 1.1rem; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); }
 .patch-list h3 { margin-top: 0; }
+.src-joueur { margin-left: auto; padding: 0.05rem 0.5rem; border-radius: 999px; border: 1px dashed var(--tip-line); color: var(--green); font-size: 0.78em; font-weight: 600; white-space: nowrap; }
+.callout-joueurs { border-style: dashed; }

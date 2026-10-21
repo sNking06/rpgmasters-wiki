@@ -1,5 +1,5 @@
 import GameCapture, { CaptureGallery } from '@/components/GameCapture';
-import { KeyFigures, TlDr, PageHeader, Section, M, Tip, Contra, Disc, Officiel } from '@/components/ui';
+import { KeyFigures, TlDr, PageHeader, Section, M, Tip, Contra, Disc, Officiel, Joueurs } from '@/components/ui';
 export default function Page(){return <><PageHeader href="/contenus/kralamoure/" title="Kralamoure" intro="Boss de guilde : observations du 13 au 20 octobre 2026."/>      <TlDr>
   <li>Faille en accès libre, uniquement en guilde ; combats illimités, sans énergie.</li>
   <li>Seuls les 3 meilleurs scores du jour comptent ; remise à zéro vers 01:30.</li>
@@ -56,5 +56,16 @@ export default function Page(){return <><PageHeader href="/contenus/kralamoure/"
   <Contra title="Remise à zéro : minuit ou 01:30 ?">
     <p>Le patch du 18/10 dit que les compteurs du jour ont été remis à zéro à minuit <Disc d="18/10" /> ; en jeu, la remise à zéro quotidienne a été constatée vers 01:30. Les deux valeurs sont gardées en attendant un nouveau relevé.</p>
   </Contra>
+</Section>
+<Section id="conseils-joueurs" title="Sorts clés et stats : conseils de joueurs">
+  <Joueurs src="#aide, #boss-et-stratégies, 06–17/10">
+    <ul>
+      <li><strong>Sorts clés</strong> : Traversée (ses lignes critiques ressortent dans les journaux de combat Krala), Bluff / Tromperie, Masque du Psychopathe (Zobal), sorts de boost ; l’Écaflip (32 % de dégâts doublés) serait intéressant sur le Krala.</li>
+      <li><strong>Équipement</strong> : un familier et le Dofus d’Invocation (2 pioches en réserve par tour au lieu de 1) seraient conseillés.</li>
+      <li><strong>Ordre de stats conseillé</strong> : Puissance d’abord, puis PA jusqu’à un niveau convenable (51 à 66 cités), puis Critique jusqu’à 100 ; équilibrer (pas 70 PA sans Puissance). Les dommages aux sorts en % seraient plus forts que les dommages fixes.</li>
+      <li>Ordres de grandeur cités le 15/10 : 800 000 par combat pour un P8 sans Rayonnant +5, 6 à 7 M pour d’autres ; top du jour vers 73 M.</li>
+      <li>Signalé le 08/10 : un combat lancé avec un deck insuffisant consommait la chance du jour (corrigé officiellement le 20/10). <Disc d="20/10" /></li>
+    </ul>
+  </Joueurs>
 </Section>
 </>;}

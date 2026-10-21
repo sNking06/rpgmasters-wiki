@@ -342,3 +342,16 @@ export function Officiel({ title, d, children }: { title: ReactNode; d: string; 
     </div>
   );
 }
+
+/** Encadré « Conseils de joueurs, non officiels » (Discord, au conditionnel, sans pseudos). */
+export function Joueurs({ title = 'Conseils de joueurs — non officiels', src, children }: { title?: ReactNode; src?: string; children: ReactNode }) {
+  return (
+    <div className="callout callout-tip callout-joueurs">
+      <p className="callout-title">
+        <Icon name="bulb" size={18} /> {title}
+        {src ? <span className="src-joueur">Discord, {src} · non officiel</span> : null}
+      </p>
+      {children}
+    </div>
+  );
+}

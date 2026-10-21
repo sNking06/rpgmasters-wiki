@@ -2,7 +2,7 @@ import GameCapture from '@/components/GameCapture';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { SectionIcon } from '@/components/icons';
-import { El, Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip, Contra, Disc, Officiel } from '@/components/ui';
+import { El, Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip, Contra, Disc, Officiel, Joueurs } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Caractéristiques',
@@ -293,6 +293,34 @@ export default function CaracteristiquesPage() {
             </li>
           </ul>
         </More>
+      </Section>
+
+      <Section id="conseils-joueurs" title="Conseils de joueurs : stats, Rayonnants, decks">
+        <Joueurs title="Ordre de stats et plafonds" src="#aide, 15–19/10">
+          <ul>
+            <li>Priorité citée : Puissance, Critique jusqu’à 100, PA (45, ou entre 51 et 66 selon les joueurs), Vitalité, tous les éléments, PO, PM, Dommages, Dommages critiques.</li>
+            <li>Au-delà de 50 PM, 250 PO, 50 % de résistance et 100 % de critique, la stat ne servirait plus ; les soins seraient inutiles comme stat.</li>
+            <li>Les dommages aux sorts en % seraient des dégâts finaux, plus forts que les dommages fixes ; la Rune d’Éveil ne serait pas multipliée par les % (Prestige, Bouclier de forge, compagnon).</li>
+            <li>Signalé comme bug, non confirmé : dommages fixes et dommages critiques ne s’appliqueraient qu’à la 1re ligne des sorts multi-lignes ; plafond de perforation du Dofus Ébène bloqué à 25 %.</li>
+          </ul>
+        </Joueurs>
+        <Joueurs title="Rayonnants et équipement" src="#aide, #équilibrage, 10–18/10">
+          <ul>
+            <li>Rayonnant +5 : par fusion ou par drop ; il vaudrait mieux viser le drop de l’objet (un R5 demande 81 objets). En Ascension, monter ses Rayonnants, le Bouclier de forge et le compagnon.</li>
+            <li><strong>Ceinture Dame Jhessica</strong> : à garder ; son bouclier en % serait multiplié par le Prestige et le compagnon, et cumulable avec le bonus Discord.</li>
+            <li>Anneau Servitude : donnerait de la pioche ; Cire Momore + chapeau, arme et anneau Servitude pour tanker ; anneau et bouclier Cicloid faciles à farmer en chasse.</li>
+            <li>Objets éternels de Prestige conseillés : Arcaniste, Tempétueux, Cougnard, Chacha (Angora), Jahash, Merianna. Stuff de départ (P0) : double Stri, triple Proto, double Serpe Aigrie.</li>
+            <li>Un objet acheté à l’HDV (ou sorti d’un coffre lié 24 h) depuis moins de 24 h ne pourrait pas être runé.</li>
+          </ul>
+        </Joueurs>
+        <Joueurs title="Codes de deck DM-S et vitrines" src="#suggestions, #boss-et-stratégies, 06–16/10">
+          <ul>
+            <li>Chaque sort aurait un identifiant de 4 caractères ; un deck se partage sous la forme d’un code <code>DM-S-…</code> à copier-coller dans la page Deck pour l’importer.</li>
+            <li>Codes partagés par des joueurs (non testés) : deck « Ascension free » <code>DM-S-0870FEK6V7M03MB4TSKBCS7KDBAPG-5P7R</code> ; étages 28-30 <code>DM-S-044GXPF807SPNNK6GNNYYT6VJ40S7JG1JDJCRTXTQ40VCSNTCVK69JVB-C90C</code> ; étage 145 <code>DM-S-0840NT3AQ9KD2S6PCTV69GB6GSN9YT5QQ40V2S8-ZXE2</code>.</li>
+            <li><strong>Vitrines</strong> : l’onglet Vitrines permettrait de copier le stuff et le deck présentés par un joueur (ex. « Face tank ascension 140 (auto) », « Setup auto ascension 110 »). Le 20/10, l’éditeur reprend ton deck et ton équipement présentés (officiel). <Disc d="20/10" /> L’import par code d’équipement a renvoyé « Erreur serveur » les 13 et 17/10 ; corrigé pour les objets runés le 20/10. <Disc d="20/10" /></li>
+            <li>Taille du deck : au-delà de 7 cartes, plus de variance en Ascension ; plus de 7 surtout en mono-cible (le bonus « grands decks » de +5 % par carte au-delà de 7 est officiel). <Disc d="12/10" /></li>
+          </ul>
+        </Joueurs>
       </Section>
 
       <Section id="lacunes" title="Ce qu’on ne sait pas">

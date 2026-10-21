@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Icon, SectionIcon } from '@/components/icons';
 import GameCapture from '@/components/GameCapture';
-import { Stat, Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, fmt, Contra, Disc, Officiel } from '@/components/ui';
+import { Stat, Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, fmt, Contra, Disc, Officiel, Joueurs } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Économie',
@@ -362,6 +362,15 @@ export default function EconomiePage() {
           <li>On garde l’XP ; on renonce aux kamas, coffres, cartes, butin bonus et drops légendaires. Prospection et événements de drop ne changent pas les 5 %. Indisponible en saison. <Disc d="16/10" /></li>
           <li><strong>Pity</strong> : l’objet ciblé tombe automatiquement tous les <strong>100 combats</strong> en chasse ciblée, tous les <strong>200</strong> en Auto AFK. <Disc d="date non relevée" /></li>
         </ul>
+        <Joueurs src="#aide, #captures, 16–17/10">
+          <ul>
+            <li>« Pas opé, mais ça permet de viser ce qu’on cherche » : la chasse ciblée servirait surtout pour un objet précis.</li>
+            <li>Pour le farm de butin classique, des joueurs prendraient plutôt un stuff Prospection (avec double rune de Prospection) et le Dofus Dokille, en Auto.</li>
+            <li>Archimonstres et Recherchés : plus d’XP mais pas de table de butin (corrigé officiellement le 20/10 : ils reprennent les drops de leur monstre de base). <Disc d="20/10" /></li>
+            <li>Le Dofus Ivoire aurait un drop très faible (aucun en 70 h cité).</li>
+            <li>Plainte du 17/10 sur l’Auto AFK : 677 combats pour 13,5 milliards d’XP, 0 kamas et 21 objets.</li>
+          </ul>
+        </Joueurs>
         <GameCapture id="patch-2026-10-16-chasse-ciblee" caption="Patch note de la Chasse ciblée (16/10)" />
       </Section>
 
