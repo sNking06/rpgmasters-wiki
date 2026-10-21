@@ -21,7 +21,7 @@ const ROWS: Row[] = [
   { p: 5, cond: 'Étage 30 + 500 000 dégâts cumulés sur le Kralamoure de la Faille', bonus: '+3 PO' },
   { p: 6, cond: 'Étage 40 + 1 000 000 dégâts cumulés sur le Kralamoure de la Faille', bonus: '+3 PM' },
   { p: 7, cond: 'Étage 40 de l’Ascension terminé', bonus: '+1 PA' },
-  { p: 8, cond: 'Étage 60 de l’Ascension terminé', bonus: '—' },
+  { p: 8, cond: 'Niveau 200 + étage 60 de l’Ascension terminé (relevé du 21 oct 2026)', bonus: '—' },
   { p: 9, cond: 'Étage 80 de l’Ascension terminé', bonus: '—' },
   { p: 10, cond: 'Étage 110 de l’Ascension terminé', bonus: '—' },
   { p: 11, cond: 'Étage 140 de l’Ascension terminé', bonus: '—' },
@@ -41,7 +41,7 @@ const MILESTONES: { head: string; tag?: string; key?: boolean; text: string }[] 
   { head: 'P4', tag: 'plus aucune perte', key: true, text: 'Étage 20 de l’Ascension. +1 PA.' },
   { head: 'P5', text: 'Étage 30 + 500 000 dégâts sur le Kralamoure. +3 PO. PA max 14.' },
   { head: 'P6 → P7', text: 'Étage 40 (+ 1 000 000 dégâts pour P6). +3 PM, +1 PA.' },
-  { head: 'P8', text: 'Étage 60. PA max 15.' },
+  { head: 'P8', text: 'Niveau 200 + étage 60 de l’Ascension terminé (relevé du 21 oct 2026). PA max 15.' },
   { head: 'P10', text: 'Étage 110.' },
   { head: 'P15', text: 'Étage 260 + record de 130 étages dans les Abysses.' },
   { head: 'P16 → P20', tag: 'maximum actuel', key: true, text: 'Records Abysses : 260, 390, 520, 650 puis 780 étages. Les suivants : « bientôt disponibles ».' },
@@ -113,6 +113,24 @@ export default function PrestigePage() {
           Conditions et plafonds de PA <M s="T" /> ; bonus de combat (+1 PA, +2 PO…) <M s="T" /> attribués aux numéros de Prestige
           dans l’ordre du tableau du code <M s="D" />.
         </p>
+        <Tip title="Conditions du P8 — relevé du 21 oct 2026">
+          <p>
+            Bloc Prestige (Personnage et inventaire &gt; Caractéristiques et classe) : « Pour passer Prestige 8 : »{' '}
+            <strong>Niveau 200</strong> + <strong>« Étage 60 de l’Ascension terminé »</strong>. Aucune condition de dégâts sur le
+            Kralamoure n’est affichée pour le P8. <M s="T" />
+          </p>
+          <p>
+            La page Ascension indique : « Objectif : terminer l’étage 60 pour pouvoir passer Prestige 8 (obligatoire à partir du
+            Prestige 3) ». <M s="T" />
+          </p>
+        </Tip>
+        <Warn title="Seuils Kralamoure P5 / P6 à reconfirmer">
+          <p>
+            Les seuils de 500 000 (P5) et 1 000 000 (P6) dégâts cumulés sur le Kralamoure viennent de relevés antérieurs ; ils
+            ne sont pas confirmés dans l’affichage récent du jeu (relevé du 21 oct 2026). Ils sont conservés en attendant une
+            nouvelle vérification.
+          </p>
+        </Warn>
         <Tip>
           <p>
             Les étages d’Ascension atteints sont <strong>conservés</strong> après un Prestige. Chaque étage coûte 2 d’énergie.{' '}

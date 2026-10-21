@@ -195,6 +195,12 @@ export default function EnergieXpPage() {
             </>
           }
         />
+        <Tip title="Événement en cours — relevé du 21 oct 2026">
+          <p>
+            À 10 h, la bannière « Événement » affichait <strong>XP ×2</strong> et <strong>Butin ×2</strong>, sans date de fin
+            exacte. <M s="T" />
+          </p>
+        </Tip>
         <More title="Détails des bonus">
           <ul>
             <li>

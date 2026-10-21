@@ -10,12 +10,14 @@ export const metadata: Metadata = {
 export default function AscensionPage() {
   return (
     <>
-      <PageHeader href="/contenus/ascension/" section="prestige" title="Ascension : étages 29-30 et 38-42" intro="Record actuel : étage 41 validé ; étage 42 encore en essai. L’étage 30 est requis pour le Prestige 5. Observations du 13 au 15 oct 2026 pour les étages 29-30, et du 16 au 17 oct 2026 pour les étages 38-42." />
+      <PageHeader href="/contenus/ascension/" section="prestige" title="Ascension : étages 29-30 et 38-42" intro="Record actuel : étage 41 validé ; étage 42 encore en essai. L’étage 30 est requis pour le Prestige 5. Observations du 13 au 15 oct 2026 pour les étages 29-30, et du 16 au 17 oct 2026 pour les étages 38-42 ; étage 42 et objectif P8 : relevé du 21 oct 2026." />
       <TlDr>
         <li>Record actuel : étage 41 validé ; étage 42 encore en essai.</li>
         <li>Étages 29-30 : 3 cartes maximum par tour ; l’arme ne compte pas.</li>
         <li>Ne pas enchaîner 2 sorts de dégâts du même élément ; garder un bouclier pour les Gros coups.</li>
         <li>À l’étage 42, le meilleur essai documenté commence par Toxoliath ; aucun soin ni vol de vie.</li>
+        <li>Le combat d’Ascension n’est pas limité à 10 tours (cette limite vaut pour le Kralamoure) : meilleur essai au 42 jusqu’au tour 17.</li>
+        <li>Objectif affiché : terminer l’étage 60 pour pouvoir passer Prestige 8 (relevé du 21 oct 2026).</li>
       </TlDr>
       <KeyFigures items={[
         {icon:'record', value:'41', label:'Étage validé', note:'Record actuel'},
@@ -79,6 +81,24 @@ export default function AscensionPage() {
           <li>Total effectif avec les relèves : environ <strong>213 000 PV</strong>. <M s="T" /></li>
         </ul>
         <p>Meilleur essai manuel documenté : mort au <strong>tour 17</strong>, Toxoliath tué au tour 12, Minotot à 9 782 PV et Barbéryl presque intact. Le focus Barbéryl en premier a donné de moins bons résultats : morts aux tours 6 à 8. <M s="T" /></p>
+        <h3>Étage 42 — relevé du 21 oct 2026</h3>
+        <p>3 boss, difficulté <strong>Cauchemar</strong>, puissance <strong>×14,96</strong>. <M s="T" /></p>
+        <ul>
+          <li>PV de départ : <strong>Barbéryl Clochecuivre 62 409</strong>, <strong>Toxoliath 52 424</strong>, <strong>Minotot 52 424</strong>. Variation observée : les PV max affichés en combat étaient plus bas, <strong>60 540 / 50 571 / 49 980</strong>. <M s="T" /></li>
+          <li><strong>Barbéryl</strong> : Deuxième souffle (se relève une fois à 40 % de ses PV, plus fort) ; Fureur (plus de 2 cartes jouées dans le même tour, arme non comptée : sa prochaine attaque fait ×2,5). <M s="T" /></li>
+          <li><strong>Toxoliath</strong> : Malédiction des soins (à partir du tour 2, les soins blessent au lieu de soigner) ; Onde de choc (2 sorts de dégâts du même élément d’affilée : onde de 25 % des PV max du joueur) ; s’est donné un bouclier de <strong>+10 114</strong> au tour 5. <M s="T" /></li>
+          <li><strong>Minotot</strong> : Deuxième souffle + Onde de choc. <M s="T" /></li>
+          <li>Une icône flocon apparaît sur les boss après les premières cartes (effet non lu). <M s="T" /></li>
+          <li>Le combat n’est <strong>pas limité à 10 tours</strong> : la limite de 10 tours vaut pour le Kralamoure. Le meilleur essai connu au 42 a duré jusqu’au <strong>tour 17</strong>. <M s="T" /></li>
+        </ul>
+        <Tip title="À retenir — étage 42">
+          <ul>
+            <li><strong>2 cartes max par tour</strong> + l’arme (Claymomore).</li>
+            <li><strong>Alterner les éléments</strong> entre deux sorts de dégâts.</li>
+            <li><strong>Pas de soin après le tour 1</strong>.</li>
+            <li>Environ <strong>213 000 à 223 000 dégâts</strong> à infliger en comptant les relèves et le bouclier.</li>
+          </ul>
+        </Tip>
         <GameCapture id="ascension-etage-42" />
         <Tip title="Meilleure stratégie observée à l’étage 42">
           <p>Focus Toxoliath d’abord, bouclier ou Rempart avant d’attaquer, éléments alternés, aucun soin ni vol de vie. Le plafond de bouclier observé est de 40 % des PV max ; Rempart donne +38 % de résistances dans tous les éléments pendant 1 tour dans ce relevé. <M s="T" /></p>
@@ -96,7 +116,7 @@ export default function AscensionPage() {
         </ul>
         <p>Résistances obtenues : <strong>Neutre 47 %, Terre 15 %, Feu/Eau/Air 50 %</strong> ; Réduction 46 %, avec <strong>14 PA conservés</strong>. <M s="T" /></p>
       </Section>
-      <PageEnd current="/contenus/ascension/" see={[{ href: '/personnage/prestige/', label: 'Prestige' }, { href: '/personnage/classes/feca/', label: 'Guide Féca' }]} sources="Observations en combat : étages 29-30, 13-15 oct 2026 ; étages 38-42 et build défensif, 16-17 oct 2026" />
+      <PageEnd current="/contenus/ascension/" see={[{ href: '/personnage/prestige/', label: 'Prestige' }, { href: '/personnage/classes/feca/', label: 'Guide Féca' }]} sources="Observations en combat : étages 29-30, 13-15 oct 2026 ; étages 38-42 et build défensif, 16-17 oct 2026 ; étage 42 et objectif P8, relevé du 21 oct 2026" />
     </>
   );
 }
