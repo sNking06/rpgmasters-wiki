@@ -138,6 +138,20 @@ export default function JournalPage() {
           ))}
         </ol>
       </Section>
+      <Section id="bugs-connus" title="Bugs connus (Discord, 17–21/10)">
+        <Warn title="Signalés par des joueurs, non confirmés">
+          <p>Relevé partiel du salon #bugs (17 au 21/10/2026), sans pseudo. Le développeur n’a pas confirmé ces bugs ; certains ont pu être corrigés depuis.</p>
+        </Warn>
+        <ul>
+          <li>Fusion refusée alors qu’aucun objet n’est verrouillé.</li>
+          <li>Interface mobile instable ; chat qui reste bloqué en hauteur.</li>
+          <li>Classement de saison peu fiable ; compteur de cartes bloqué vers 1 000 en saison.</li>
+          <li>Joueurs à l’étage 1000 des Abysses mal départagés (pas d’ex æquo).</li>
+          <li>Bonus de la panoplie Crockuzko inactif.</li>
+          <li>Dégâts de la Traversée (Iop) incorrects.</li>
+          <li>Texte sur les croquettes à mettre à jour : elles tombent maintenant aussi en AFK.</li>
+        </ul>
+      </Section>
       <Section id="contradictions" title="Règles qui ont changé">
         <Contra title="À garder en tête">
           <ul>

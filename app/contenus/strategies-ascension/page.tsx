@@ -23,7 +23,7 @@ export default function Page() {
       <PageHeader href="/contenus/strategies-ascension/" art="ascension" title="Stratégies communautaires de l’Ascension" intro="Étages 105 à 260 : ce que dit le développeur, et la place réservée aux conseils de joueurs." />
       <Warn title="Conseils de joueurs, non officiels">
         <p>
-          Les conseils de cette page viennent des discussions du Discord RpgMasters, pas du développeur. Ils n’ont pas été testés par ce wiki :
+          Les conseils de cette page viennent des discussions du Discord RpgMasters, pas du développeur. Ils sont rédigés au conditionnel et n’ont pas été testés par ce wiki :
           notre record est l’étage 41. Seuls les blocs marqués « Discord officiel » viennent d’une annonce signée du développeur.
         </p>
       </Warn>
@@ -47,23 +47,29 @@ export default function Page() {
         </ul>
       </Section>
       <Section id="conseils" title="Conseils de joueurs par tranche d’étages">
-        <Warn title="À compléter">
+        <Warn title="Non officiel : conseils de joueurs">
           <p>
-            Le relevé détaillé des stratégies partagées sur le Discord (étages 105 à 260) n’a pas encore été recopié dans ce wiki. Cette section sera
-            remplie avec la date et le salon de chaque conseil, sans pseudo de joueur.
+            Résumé du salon #boss-et-stratégies (messages du 13 au 21/10/2026), sans pseudo. Rien de tout cela n’a été testé par ce wiki ni confirmé
+            par le développeur : à lire comme des pistes.
           </p>
         </Warn>
-        <TableWrap caption="Tranches d’étages et sources prévues">
+        <ul>
+          <li><strong>Méta « rush »</strong> : selon les joueurs, il vaudrait mieux tuer vite que chercher à tenir, les Transmutés punissant les combats longs.</li>
+          <li><strong>Traversée</strong> serait l’une des cartes les plus jouées à ces étages.</li>
+          <li><strong>Appui</strong> se jouerait avec une <strong>dague</strong>.</li>
+          <li>Contre les boss à <strong>renvoi</strong>, un deck <strong>mono-élément</strong> serait conseillé.</li>
+          <li>Dofus recommandés : <Link href="/equipement/dofus/#passifs">Ébène</Link> (Perforation ×1,3), <Link href="/equipement/dofus/#passifs">Émeraude</Link> (survit une fois à 20 % de PV) et <Link href="/equipement/dofus/#passifs">Ivoire</Link> (aucun coup ordinaire au-delà de 35 % des PV max).</li>
+        </ul>
+        <TableWrap caption="Tranches d’étages et repères">
           <thead><tr><th>Étages</th><th>Repère officiel</th><th>Conseils de joueurs</th></tr></thead>
           <tbody>
-            <tr><td>105 – 110</td><td>Transmutés · P10 à 110</td><td>à recopier</td></tr>
-            <tr><td>111 – 170</td><td>P11 à 140, P12 à 170</td><td>à recopier</td></tr>
-            <tr><td>171 – 230</td><td>P13 à 200, P14 à 230</td><td>à recopier</td></tr>
-            <tr><td>231 – 260</td><td>P15 à 260 · dernier succès</td><td>à recopier</td></tr>
+            <tr><td>105 – 110</td><td>Transmutés · P10 à 110</td><td>rush, Traversée, Dofus Ébène / Émeraude / Ivoire</td></tr>
+            <tr><td>111 – 260</td><td>P11 à 140 … P15 à 260</td><td>mêmes conseils ; mono-élément contre les boss à renvoi</td></tr>
           </tbody>
         </TableWrap>
+        <p>Les messages ne détaillent pas de composition étage par étage, et rien n’a été trouvé pour les étages 42 à 60.</p>
       </Section>
-      <PageEnd current="/contenus/strategies-ascension/" see={[{ href: '/contenus/ascension/', label: 'Ascension (étages observés)' }, { href: '/personnage/prestige/', label: 'Prestige' }, { href: '/a-propos/journal/', label: 'Journal des mises à jour' }]} sources="Discord officiel RpgMasters, #annonces (08/10, 10/10, 12/10, 16/10, 20/10) ; FAQ du jeu relevée le 20/10" />
+      <PageEnd current="/contenus/strategies-ascension/" see={[{ href: '/contenus/ascension/', label: 'Ascension (étages observés)' }, { href: '/personnage/prestige/', label: 'Prestige' }, { href: '/a-propos/journal/', label: 'Journal des mises à jour' }]} sources="Discord officiel RpgMasters, #annonces (08/10, 10/10, 12/10, 16/10, 20/10) ; #boss-et-stratégies, joueurs (13–21/10, non officiel) ; FAQ du jeu relevée le 20/10" />
     </>
   );
 }
