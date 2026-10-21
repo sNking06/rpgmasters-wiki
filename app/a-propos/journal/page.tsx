@@ -1,16 +1,32 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import GameCapture from '@/components/GameCapture';
-import { Contra, Disc, Essentiel, PageEnd, PageHeader, Section, Warn } from '@/components/ui';
+import { Contra, Disc, Essentiel, Jeu, PageEnd, PageHeader, Section, Warn } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Journal des mises à jour',
   description: 'Patch notes officiels de RpgMasters, datés, d’après le salon #annonces du Discord officiel (signés du développeur), du 8 au 20 octobre 2026.',
 };
 
-type Entry = { d: string; title: string; items: string[]; captures?: string[]; links?: { href: string; label: string }[] };
+type Entry = { d: string; jeu?: boolean; title: string; items: string[]; captures?: string[]; links?: { href: string; label: string }[] };
 
 const ENTRIES: Entry[] = [
+  {
+    d: '21/10', jeu: true, title: 'Constats en jeu du 21 octobre (après-midi)',
+    items: [
+      'Énergie : recharge sur le Tableau de bord (carte Énergie), 300 kamas le point, 1 000 points max par jour, plafond 100 ; boutons +1, +10, « +N (max) » et « Illimitée 24 h » à 1 000 000 kamas. 1 combat = 1 énergie.',
+      'Forgemagie : orbes à 100 kamas, 2 000 achats max par jour ; 2 000 orbes (200 000 kamas) ont fait passer le Bouclier de forge du niveau 13 (+1,35 %) au niveau 38 (+2,54 %).',
+      'Roue Bouftou : 1 tour toutes les 3 h, lot du jour 2 000 kamas.',
+      'Bonus de combat vérifiés : grands decks +25 % à 12 cartes (17 max) ; sorts à une ligne, Recel 2 345 au tour 1 puis 3 904 au tour 5 ; Claymomore annule le bonus. Recel, Ravage, Baraka, Outrage 3 PA, Déferlement 4 PA.',
+      'Test Kralamoure non concluant : deck 12 cartes à une ligne 79 521, variante Traversée + Bluff 73 254, contre ≈ 90 000 à 104 000 pour le Deck 7. Tours sautés après « Fin du tour » (voir Bugs connus).',
+    ],
+    links: [
+      { href: '/debuter/energie-xp/#achat-energie', label: 'Énergie' },
+      { href: '/economie/#bris', label: 'Forgemagie' },
+      { href: '/economie/#roue-bouftou', label: 'Roue Bouftou' },
+      { href: '/contenus/kralamoure/#decks-bonus', label: 'Kralamoure, decks' },
+    ],
+  },
   {
     d: '20/10', title: 'Mise à jour du 20 octobre 2026', captures: ['patch-2026-10-20'],
     items: [
@@ -117,7 +133,7 @@ const ENTRIES: Entry[] = [
 export default function JournalPage() {
   return (
     <>
-      <PageHeader href="/a-propos/journal/" section="sources" title="Journal des mises à jour" intro="Les patch notes officiels, du plus récent au plus ancien, d’après le salon #annonces du Discord du jeu." />
+      <PageHeader href="/a-propos/journal/" section="sources" title="Journal des mises à jour" intro="Les patch notes officiels, du plus récent au plus ancien, d’après le salon #annonces du Discord du jeu, et les constats faits en jeu." />
       <Essentiel>
         <li>Source : messages et images signés du développeur (Mehdi) dans <strong>#annonces</strong>, relevés le 21/10/2026 vers 11 h.</li>
         <li>Chaque bloc porte la date de l’annonce ; les règles ont souvent changé plusieurs fois en quelques jours.</li>
@@ -130,7 +146,7 @@ export default function JournalPage() {
         <ol className="patch-list">
           {ENTRIES.map((e) => (
             <li key={e.d} id={`p-${e.d.replace(/[^0-9]+/g, '-')}`}>
-              <h3>{e.title} <Disc d={e.d} /></h3>
+              <h3>{e.title} {e.jeu ? <Jeu /> : <Disc d={e.d} />}</h3>
               <ul>{e.items.map((t, i) => <li key={i}>{t}</li>)}</ul>
               {e.links?.length ? <p>Voir : {e.links.map((l, i) => <span key={l.href}>{i ? ' · ' : ''}<Link href={l.href}>{l.label}</Link></span>)}</p> : null}
               {e.captures?.map((id) => <GameCapture key={id} id={id} />)}
@@ -138,12 +154,13 @@ export default function JournalPage() {
           ))}
         </ol>
       </Section>
-      <Section id="bugs-connus" title="Bugs connus (Discord, 07–21/10)">
+      <Section id="bugs-connus" title="Bugs connus (Discord et jeu, 07–21/10)">
         <Warn title="Signalés par des joueurs, non confirmés">
           <p>Relevé des salons #bugs (07 au 20/10), #général et #aide, sans pseudo. Le développeur confirme rarement une correction dans le salon : beaucoup de ces bugs ont pu être corrigés, et ceux repris dans un patch officiel sont indiqués.</p>
         </Warn>
         <h3>Combat</h3>
         <ul>
+          <li><strong>Tours sautés</strong> à la Faille du Kralamoure : après un clic sur « Fin du tour », le combat est passé du tour 2 au 4, du 5 au 7 puis du 9 au 11, avec l’affichage « Tour 11/10 ». <Jeu /></li>
           <li>Dommages fixes et dommages critiques appliqués seulement à la 1re ligne des sorts multi-lignes (Traversée, Drain, Bluff, Tromperie…), signalé les 09, 12 et 14/10 ; dégâts de la Traversée (Iop) jugés faux le 20/10.</li>
           <li>Déchaînement : la pioche, l’arme jouée entre deux sorts et le Portail de l’Éliotrope compteraient comme des sorts (09/10) ; l’arme ne compte plus pour la Fureur depuis le 20/10 (officiel).</li>
           <li>Renvoi de dégâts affiché aux tours 3-4 mais appliqué dès le tour 2 (16/10) ; Ombre inversant les PV même à 100 % (11/10) ; Razof se déchaînant sans condition (10/10).</li>

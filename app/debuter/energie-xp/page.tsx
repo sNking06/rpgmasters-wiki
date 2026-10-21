@@ -3,7 +3,7 @@ import EnergyPriceChart from '@/components/EnergyPriceChart';
 import XpChart from '@/components/XpChart';
 import GameCapture from '@/components/GameCapture';
 import { Icon, SectionIcon } from '@/components/icons';
-import { KeyFigures, Bars, Contra, Disc, Essentiel, Fiche, M, Meter, More, Officiel, PageEnd, PageHeader, Section, TableWrap, Tip, Warn, fmt } from '@/components/ui';
+import { KeyFigures, Bars, Constat, Contra, Disc, Essentiel, Fiche, M, Meter, More, Officiel, PageEnd, PageHeader, Section, TableWrap, Tip, Warn, fmt } from '@/components/ui';
 import { ENERGY, MONSTER_XP_REF_KNOWN, XP_SOURCE_POINTS, cumulativeXp, energyPointPrice, energyTotalCost } from '@/lib/xp';
 
 export const metadata: Metadata = {
@@ -115,6 +115,13 @@ export default function EnergieXpPage() {
           Le menu Énergie propose aussi une option <strong>« ILLIMITÉE 24 H » à 1 000 000 kamas</strong> (vue le 20 oct 2026, non
           achetée). <M s="T" />
         </p>
+        <Constat title="Recharge en kamas : où et combien">
+          <ul>
+            <li><strong>Tableau de bord → carte Énergie</strong> : <strong>300 kamas le point</strong>, <strong>1 000 points max par jour</strong>, jauge plafonnée à <strong>100</strong>.</li>
+            <li>Boutons : <strong>+1</strong>, <strong>+10</strong>, <strong>« +N (max) »</strong> (remplit jusqu’à 100) et <strong>« Illimitée 24 h »</strong> à <strong>1 000 000 kamas</strong>.</li>
+            <li><strong>1 combat = 1 énergie</strong> (farm de zone, Auto compris).</li>
+          </ul>
+        </Constat>
         <EnergyPriceChart />
         <Warn>
           <p>

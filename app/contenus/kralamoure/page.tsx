@@ -1,6 +1,7 @@
 import GameCapture, { CaptureGallery } from '@/components/GameCapture';
-import { KeyFigures, TlDr, PageHeader, Section, M, Tip, Contra, Disc, Officiel, Joueurs } from '@/components/ui';
-export default function Page(){return <><PageHeader href="/contenus/kralamoure/" title="Kralamoure" intro="Boss de guilde : observations du 13 au 20 octobre 2026."/>      <TlDr>
+import Link from 'next/link';
+import { KeyFigures, TlDr, PageHeader, Section, M, Tip, Contra, Disc, Officiel, Joueurs, Constat, Warn, TableWrap } from '@/components/ui';
+export default function Page(){return <><PageHeader href="/contenus/kralamoure/" title="Kralamoure" intro="Boss de guilde : observations du 13 au 21 octobre 2026."/>      <TlDr>
   <li>Faille en accès libre, uniquement en guilde ; combats illimités, sans énergie.</li>
   <li>Seuls les 3 meilleurs scores du jour comptent ; remise à zéro vers 01:30.</li>
   <li>Le combat dure 10 tours.</li>
@@ -43,6 +44,29 @@ export default function Page(){return <><PageHeader href="/contenus/kralamoure/"
           <p><strong>109 506 dégâts</strong> en un combat avec ce deck, contre <strong>74 420</strong> avec un deck de 14 cartes (15 oct 2026). Monter vite les 5 charges d’Armure, puis tout envoyer. <M s="T" /></p>
         </Tip>
       </Section>
+<Section id="decks-bonus" title="Decks et bonus de combat (test du 21/10)">
+  <Constat title="Bonus de combat vérifiés">
+    <ul>
+      <li><strong>Grands decks</strong> : +5 % par carte au-delà de 7, jusqu’à <strong>+25 % à 12 cartes</strong> ; <strong>17 cartes max</strong> par deck.</li>
+      <li><strong>Sorts à une ligne</strong> : +50 %, puis +20 % par tour, jusqu’à <strong>+150 %</strong>, tant qu’aucun sort multi-lignes n’est lancé. Vérifié : <strong>Recel 2 345</strong> dégâts au tour 1, <strong>3 904</strong> au tour 5.</li>
+      <li><strong>Claymomore</strong> (4 lignes) <strong>annule</strong> ce bonus.</li>
+      <li>Coûts réels : Recel, Ravage, Baraka, Outrage <strong>3 PA</strong> ; Déferlement <strong>4 PA</strong>.</li>
+    </ul>
+  </Constat>
+  <h3>Test : deck « une ligne » contre Deck 7</h3>
+  <p>Deck A (12 cartes) : Recel, Ravage, Baraka, Outrage, Déferlement, Courant, Javeline de Myr, Précipitation, Arcanin, Prélude au Fer, Berserk, Bouclier Féca, avec le Dofus Pourpre.</p>
+  <TableWrap caption="Dégâts sur un combat de Faille, 21/10/2026">
+    <thead><tr><th>Deck</th><th className="num">Dégâts</th></tr></thead>
+    <tbody>
+      <tr><td>Deck A, 12 cartes à une ligne + Dofus Pourpre</td><td className="num">79 521</td></tr>
+      <tr><td>Variante avec Traversée et Bluff</td><td className="num">73 254</td></tr>
+      <tr><td>Deck 7 cartes habituel</td><td className="num">≈ 90 000 à 104 000</td></tr>
+    </tbody>
+  </TableWrap>
+  <Warn title="Test non concluant">
+    <p>Le jeu a <strong>sauté des tours</strong> après « Fin du tour » (2→4, 5→7, 9→11, affichage « Tour 11/10 ») : le deck A a joué moins de tours que prévu. À refaire en jouant chaque tour lentement. Voir <Link href="/a-propos/journal/#bugs-connus">Bugs connus</Link>.</p>
+  </Warn>
+</Section>
 <Section id="historique" title="Historique des règles de la Faille">
   <ol className="timeline">
     <li><span className="tl-head">09/10</span><p>Un Top 10 du meilleur combat du jour, un seul résultat par personnage. <Disc d="09/10" /> Pas de Faille pour les persos de saison.</p></li>

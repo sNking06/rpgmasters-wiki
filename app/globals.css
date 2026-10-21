@@ -3763,3 +3763,8 @@ tbody tr:hover td, .item-table tbody tr:hover td { background: var(--surface-3);
 .patch-list h3 { margin-top: 0; }
 .src-joueur { margin-left: auto; padding: 0.05rem 0.5rem; border-radius: 999px; border: 1px dashed var(--tip-line); color: var(--green); font-size: 0.78em; font-weight: 600; white-space: nowrap; }
 .callout-joueurs { border-style: dashed; }
+
+/* Source : constaté en jeu */
+.src-jeu { display: inline-flex; align-items: center; margin-left: 0.35rem; padding: 0.05rem 0.5rem; border-radius: 999px; border: 1px solid var(--tip-line); color: var(--green); font-size: 0.78em; font-weight: 600; white-space: nowrap; vertical-align: 0.08em; }
+.callout-title .src-jeu { margin-left: auto; }
+.callout-constat { border-left-width: 4px; }

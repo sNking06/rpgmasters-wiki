@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Icon, SectionIcon } from '@/components/icons';
 import GameCapture from '@/components/GameCapture';
-import { Stat, Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, fmt, Contra, Disc, Officiel, Joueurs } from '@/components/ui';
+import { Stat, Bars, Essentiel, Fiche, M, More, PageEnd, PageHeader, Section, TableWrap, Tip, fmt, Contra, Disc, Officiel, Joueurs, Constat, Jeu } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Économie',
@@ -59,7 +59,7 @@ export default function EconomiePage() {
           ['Réserve max', '6'],
           ['Coffre par combat', '≈ 5 %'],
           ['Élan', '25 combats = 1 Épique'],
-          ['Orbes', '8 000 max par jour'],
+          ['Orbes', '100 k pièce · 2 000 achats/jour'],
           ['Taxe HDV', '8 / 12 / 15 %'],
           ['Vente PNJ', '10 k × niveau (max 2 000)'],
           ['Changer de classe', '300 000 k (1er gratuit)'],
@@ -271,8 +271,18 @@ export default function EconomiePage() {
             <li>Les succès de Forgemagie vont jusqu’au niveau 400. <Disc d="10/10" /> Le bonus de forge s’applique aussi aux runes. <Disc d="12/10" /></li>
           </ul>
         </Officiel>
+        <Constat title="Acheter et verser des orbes">
+          <ul>
+            <li>Orbes à <strong>100 kamas pièce</strong>, <strong>2 000 achats max par jour</strong>. <strong>1 orbe = 1 XP</strong> de l’Infini.</li>
+            <li>Exemple réel : <strong>2 000 orbes (200 000 kamas)</strong> → Bouclier de forge du <strong>niveau 13 (+1,35 %)</strong> au <strong>niveau 38 (+2,54 %)</strong>.</li>
+            <li>Progression lente au début ; niveau max <strong>400</strong>, <strong>+150 % au niveau 200</strong> (d’après le jeu).</li>
+          </ul>
+        </Constat>
+        <Tip title="Routine quotidienne">
+          <p>Acheter les 2 000 orbes et les verser <strong>chaque jour</strong> : c’est le levier de puissance le plus durable (gardé au Prestige).</p>
+        </Tip>
         <Contra title="Orbes par jour">
-          <p>Le jeu affiche un maximum de 8 000 orbes par jour ; or 35 000 XP en 14 jours font 2 500 orbes par jour. Le plafond a pu changer depuis le 08/10 : à vérifier en jeu.</p>
+          <p>Le jeu affiche un maximum de 8 000 orbes par jour ; or 35 000 XP en 14 jours font 2 500 orbes par jour. Le 21/10, l’achat est limité à <strong>2 000 orbes par jour</strong> <Jeu /> ; le plafond de 8 000 concernerait les orbes obtenues (bris compris), non vérifié.</p>
         </Contra>
         <GameCapture id="economie-forge" caption="Page Forgemagie : briser des objets et verser les orbes dans le Bouclier de forge" />
       </Section>
@@ -376,6 +386,7 @@ export default function EconomiePage() {
 
       <Section id="roue-bouftou" title="Roue Bouftou">
         <p>Menu « Plus » → Roue Bouftou : <strong>un tour toutes les 3 heures</strong> par compte, perso principal uniquement. <Disc d="17/10" /> Depuis le 20/10, la roue ne tourne qu’après <strong>10 victoires</strong>. <Disc d="20/10" /></p>
+        <p>Rythme confirmé : <strong>1 tour toutes les 3 h</strong> ; lot obtenu ce jour-là : <strong>2 000 kamas</strong>. <Jeu /></p>
         <TableWrap caption="Lots de la Roue Bouftou (17/10)">
           <thead><tr><th>Lot</th><th className="num">Chance</th></tr></thead>
           <tbody>

@@ -355,3 +355,24 @@ export function Joueurs({ title = 'Conseils de joueurs — non officiels', src, 
     </div>
   );
 }
+
+/** Pastille « constaté en jeu le … » (observation directe sur le compte, pas une annonce). */
+export function Jeu({ d = '21/10/2026' }: { d?: string }) {
+  return (
+    <span className="src-jeu" title={`Constaté en jeu le ${d} sur le compte du wiki`}>
+      constaté en jeu le {d}
+    </span>
+  );
+}
+
+/** Encadré « Constaté en jeu » : valeurs relevées directement dans le jeu. */
+export function Constat({ title, d = '21/10/2026', children }: { title: ReactNode; d?: string; children: ReactNode }) {
+  return (
+    <div className="callout callout-info callout-constat">
+      <p className="callout-title">
+        <Icon name="check" size={18} /> {title} <Jeu d={d} />
+      </p>
+      {children}
+    </div>
+  );
+}

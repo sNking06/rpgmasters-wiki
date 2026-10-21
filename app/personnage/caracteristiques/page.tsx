@@ -2,7 +2,7 @@ import GameCapture from '@/components/GameCapture';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { SectionIcon } from '@/components/icons';
-import { El, Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip, Contra, Disc, Officiel, Joueurs } from '@/components/ui';
+import { El, Essentiel, Fiche, M, Meter, More, PageEnd, PageHeader, Section, TableWrap, Tip, Contra, Disc, Officiel, Joueurs, Jeu } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Caractéristiques',
@@ -165,6 +165,7 @@ export default function CaracteristiquesPage() {
             <li><strong>Esquive PA/PM</strong> : 0,02 % de chances par point de gagner +1 PM ; <strong>Retrait PA/PM</strong> : 0,02 % par point de gagner +1 PA (au-delà du plafond) ou +1 pioche.</li>
           </ul>
         </Officiel>
+        <p>Vérifié en jeu : +25 % à 12 cartes, 17 cartes max ; Recel 2 345 → 3 904 dégâts du tour 1 au tour 5 ; Claymomore (4 lignes) annule le bonus. Détails : <Link href="/contenus/kralamoure/#decks-bonus">Kralamoure, decks et bonus</Link>. <Jeu /></p>
         <More title="Constantes de combat du code (11)">
           <p>
             Constantes <code>COMBAT_STATS</code> du code client. Leur sens exact n’est pas documenté ; « Lecture » ne fait que
