@@ -42,10 +42,10 @@ export function M({ s }: { s: Status | Status[] }) {
 export type Crumb = { href: string; label: string };
 
 /** Petite puce « Données du … ». */
-export function DateChip({ extra, strong = false }: { extra?: string; strong?: boolean }) {
+export function DateChip({ extra, strong = false, label = DATA_DATE_LABEL }: { extra?: string; strong?: boolean; label?: string }) {
   return (
     <p className={strong ? 'date-badge' : 'date-chip'}>
-      <Icon name="calendar" size={16} /> {DATA_DATE_LABEL}
+      <Icon name="calendar" size={16} /> {label}
       {extra ? ` · ${extra}` : null}
     </p>
   );
@@ -56,6 +56,7 @@ export function PageHeader({
   intro,
   crumbs = [],
   dateBadge = false,
+  dateLabel,
   section,
   icon,
   art,
@@ -68,6 +69,8 @@ export function PageHeader({
   crumbs?: Crumb[];
   /** Badge de date appuyé (page Saison) au lieu de la petite puce ; une chaîne est ajoutée après la date. */
   dateBadge?: boolean | string;
+  /** Remplace la puce de date globale quand la page a son propre relevé. */
+  dateLabel?: string;
   /** Pictogramme de section (médaillon à côté du titre). */
   section?: SectionKey;
   /** Pictogramme personnalisé (ex. classe), prioritaire sur `section`. */
@@ -92,7 +95,7 @@ export function PageHeader({
           <h1>{title}</h1>
         </div>
         <p className="intro">{intro}</p>
-        <DateChip strong={!!dateBadge} extra={typeof dateBadge === 'string' ? dateBadge : undefined} />
+        <DateChip strong={!!dateBadge} extra={typeof dateBadge === 'string' ? dateBadge : undefined} label={dateLabel} />
       </div>
     </header>
   );
