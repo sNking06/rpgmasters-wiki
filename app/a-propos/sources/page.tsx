@@ -14,7 +14,7 @@ const FILES: [string, string][] = [
   ['rpgmasters-boss-drops.csv', '106 entrées de boss, étapes, lieux et taux affichés ; page Boss et butin.'],
   ['rpgmasters-boss-mechanics.csv', '27 boss de niveaux 150–200, difficultés et textes ; Kralamoure Géant en complément hors liste du bestiaire. Boss <150 non collectés ; Bworker verrouillé.'],
   ['rpgmasters-zones-monsters.csv', 'Liens monstre × zone, niveaux, familles et bonus de victoire ; page Zones et monstres.'],
-  ['rpgmasters-cards.csv', '241 cartes possédées, effets et tags ; page Cartes. 11 cartes non découvertes manquent.'],
+  ['rpgmasters-cards.csv', '253 cartes au 26/10/2026 : 252/252 dans « Ma collection » et Maîtrise des Popokémons (hors liste, sur /deck). Effets souvent déjà stackés. Page Cartes.'],
   ['mecaniques.md', 'Mécaniques tirées des pages et du code client publics (stats, classes, cartes, objets, Prestige, arène, saison, coffres, énergie, lacunes, recommandations Crâ).'],
   ['rea_classement.md', 'Compléments : courbe d’XP, énergie, Elo, dégâts (résultats négatifs), Prestige, classement de saison.'],
   ['passifs_classes.txt', 'Textes des passifs des 19 classes (page /classes).'],
@@ -44,7 +44,7 @@ export default function SourcesPage() {
           Wiki <strong>non officiel</strong>, fait par des fans : il peut contenir des erreurs.
         </li>
         <li>
-          Socle tiré des <strong>pages publiques</strong> du jeu (11 oct 2026) ; complété par des <strong>relevés en jeu</strong> (bestiaire, combats) du 13 au 15 oct 2026.
+          Socle tiré des <strong>pages publiques</strong> du jeu (11 oct 2026) ; complété par des <strong>relevés en jeu</strong> (bestiaire, combats) du 13 au 15 oct 2026. Catalogue de cartes repris le <strong>26 oct 2026</strong>.
         </li>
         <li>
           Relevé le <strong>11 octobre 2026</strong> : rien n’est mis à jour automatiquement.
@@ -153,7 +153,7 @@ export default function SourcesPage() {
               Stats de la table d’objets. <M s="N" />
             </li>
             <li>
-              Cartes communes (hors cartes de classe). <M s="N" />
+              Valeurs de base des cartes sans stacks, et formules de dégâts. Le catalogue du 26/10/2026 couvre les 252 sorts de la collection plus Maîtrise des Popokémons ; les tooltips stackés ne sont pas ramenés à la valeur de base. <M s="N" />
             </li>
             <li>
               Calcul de l’Elo et bonus de série de victoires. <M s="N" />

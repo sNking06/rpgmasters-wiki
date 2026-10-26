@@ -5,12 +5,23 @@ import { Contra, Disc, Essentiel, Jeu, PageEnd, PageHeader, Section, Warn } from
 
 export const metadata: Metadata = {
   title: 'Journal des mises à jour',
-  description: 'Patch notes officiels de RpgMasters, datés, d’après le salon #annonces du Discord officiel (signés du développeur), du 8 au 20 octobre 2026.',
+  description: 'Patch notes officiels de RpgMasters, datés, d’après le salon #annonces du Discord officiel (signés du développeur), du 8 au 20 octobre 2026, et constats en jeu jusqu’au 26 octobre 2026.',
 };
 
 type Entry = { d: string; jeu?: boolean; title: string; items: string[]; captures?: string[]; links?: { href: string; label: string }[] };
 
 const ENTRIES: Entry[] = [
+  {
+    d: '26/10', jeu: true, title: 'Catalogue de sorts complet (26 octobre)',
+    items: [
+      '« Ma collection » → Sorts : 252/252 obtenues. Le filtre Manquants est vide.',
+      '/deck : 253 possédées, dont les 6 cartes Classe et Incarné toujours possédées.',
+      'Maîtrise des Popokémons (Légendaire, 6 PA, la cible reste à 1 PV pendant 5 tours) est sur /deck et absente des 252. Elle reste au catalogue, notée hors liste standard.',
+      'Douze noms en plus du fichier du 15/10 (241 cartes), aucun nom retiré : Boliche, Extinction, Flèche d’Expiation, Force de l’Âge, Félintion, Hécatombe, Inoculation, Maîtrise des Popokémons, Noa, Raillerie, Torpeur, Épée du Destin.',
+      'Les tooltips de /deck incluent les bonus de doublons du compte (242 cartes). Les valeurs de base de « Ma collection » ne sont pas recalculées.',
+    ],
+    links: [{ href: '/equipement/cartes/', label: 'Catalogue des cartes' }],
+  },
   {
     d: '21/10', jeu: true, title: 'Constats en jeu du 21 octobre (après-midi)',
     items: [
@@ -146,7 +157,7 @@ export default function JournalPage() {
         <ol className="patch-list">
           {ENTRIES.map((e) => (
             <li key={e.d} id={`p-${e.d.replace(/[^0-9]+/g, '-')}`}>
-              <h3>{e.title} {e.jeu ? <Jeu /> : <Disc d={e.d} />}</h3>
+              <h3>{e.title} {e.jeu ? <Jeu d={e.d.length === 5 ? `${e.d}/2026` : e.d} /> : <Disc d={e.d} />}</h3>
               <ul>{e.items.map((t, i) => <li key={i}>{t}</li>)}</ul>
               {e.links?.length ? <p>Voir : {e.links.map((l, i) => <span key={l.href}>{i ? ' · ' : ''}<Link href={l.href}>{l.label}</Link></span>)}</p> : null}
               {e.captures?.map((id) => <GameCapture key={id} id={id} />)}
