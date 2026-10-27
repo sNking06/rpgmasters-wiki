@@ -106,10 +106,10 @@ const ENTRIES: Entry[] = [
   {
     d: '12/10', title: 'Patchs du 12 octobre',
     items: [
-      '02:26 — 15 nouveaux passifs de Dofus ; l’Initiative fonctionne ; sorts à une ligne (+50 %, puis +20 % par tour, jusqu’à +150 %) ; grands decks (+5 % par carte au-delà de 7, jusqu’à +25 %) ; 8 decks et 8 équipements ; croquettes à 10 % par victoire.',
-      '08:55 — Arène Ultime (duels 1v1 en direct, Elo séparé, dégâts −60 %) et système d’amis.',
-      '10:44 — Mécaniques des boss affichées sur la carte du boss, avec alerte rouge.',
-      '16:56 — Les Runes (1 % / 0,5 % / 0,1 % par victoire) et le Poutch d’entraînement (100 M de PV).',
+      '02:26: 15 nouveaux passifs de Dofus ; l’Initiative fonctionne ; sorts à une ligne (+50 %, puis +20 % par tour, jusqu’à +150 %) ; grands decks (+5 % par carte au-delà de 7, jusqu’à +25 %) ; 8 decks et 8 équipements ; croquettes à 10 % par victoire.',
+      '08:55: Arène Ultime (duels 1v1 en direct, Elo séparé, dégâts −60 %) et système d’amis.',
+      '10:44: Mécaniques des boss affichées sur la carte du boss, avec alerte rouge.',
+      '16:56: Les Runes (1 % / 0,5 % / 0,1 % par victoire) et le Poutch d’entraînement (100 M de PV).',
     ],
     links: [{ href: '/equipement/dofus/#passifs', label: 'Passifs des Dofus' }, { href: '/economie/#runes', label: 'Runes' }],
   },
@@ -120,10 +120,10 @@ const ENTRIES: Entry[] = [
   {
     d: '10/10', title: 'Équilibrage des classes, Dofus, lot « Fidélité », succès',
     items: [
-      '17:51 — Passifs de classe revalorisés (toutes sauf Iop et Zobal) ; changement de classe à 300 000 kamas.',
-      '18:36 — Effets des 10 Dofus majeurs ; Dofawa : « effet mystère ».',
-      '22:39 — Série de connexion, l’Élan, parrainage, Compagnon, Dimension Écarlate.',
-      '23:24 — 323 succès (Ascension jusqu’à l’étage 260, Prestiges 11 à 15) avec de l’énergie à la clé ; Compagnon : +0,2 % par niveau.',
+      '17:51: Passifs de classe revalorisés (toutes sauf Iop et Zobal) ; changement de classe à 300 000 kamas.',
+      '18:36: Effets des 10 Dofus majeurs ; Dofawa : « effet mystère ».',
+      '22:39: Série de connexion, l’Élan, parrainage, Compagnon, Dimension Écarlate.',
+      '23:24: 323 succès (Ascension jusqu’à l’étage 260, Prestiges 11 à 15) avec de l’énergie à la clé ; Compagnon : +0,2 % par niveau.',
     ],
   },
   {
@@ -165,7 +165,7 @@ export default function JournalPage() {
           ))}
         </ol>
       </Section>
-      <Section id="bugs-connus" title="Bugs connus (Discord et jeu, 07–21/10)">
+      <Section id="bugs-connus" title="Bugs connus (Discord et jeu, 07-21/10)">
         <Warn title="Signalés par des joueurs, non confirmés">
           <p>Relevé des salons #bugs (07 au 20/10), #général et #aide, sans pseudo. Le développeur confirme rarement une correction dans le salon : beaucoup de ces bugs ont pu être corrigés, et ceux repris dans un patch officiel sont indiqués.</p>
         </Warn>
@@ -175,23 +175,23 @@ export default function JournalPage() {
           <li>Dommages fixes et dommages critiques appliqués seulement à la 1re ligne des sorts multi-lignes (Traversée, Drain, Bluff, Tromperie…), signalé les 09, 12 et 14/10 ; dégâts de la Traversée (Iop) jugés faux le 20/10.</li>
           <li>Déchaînement : la pioche, l’arme jouée entre deux sorts et le Portail de l’Éliotrope compteraient comme des sorts (09/10) ; l’arme ne compte plus pour la Fureur depuis le 20/10 (officiel).</li>
           <li>Renvoi de dégâts affiché aux tours 3-4 mais appliqué dès le tour 2 (16/10) ; Ombre inversant les PV même à 100 % (11/10) ; Razof se déchaînant sans condition (10/10).</li>
-          <li>L’IA de l’Auto ne lançait pas Précipitation ni Masque du Psychopathe (07–08/10).</li>
+          <li>L’IA de l’Auto ne lançait pas Précipitation ni Masque du Psychopathe (07-08/10).</li>
           <li>Pourpre et chance de l’Écaflip non cumulés ; réduction de −60 % du PvP appliquée ailleurs ; perforation du Dofus Ébène bloquée à 25 % (encore le 17/10) ; Pandawa soigné par les renvois au-delà de l’étage 100 ; bonus des sorts à une ligne remis à 50 % chaque tour (12/10).</li>
           <li>Pioche bloquée (7 cartes, 6 en main, 3 pioches inutilisables) et valeur des passifs Zobal non mise à l’échelle du Prestige dans le journal (15/10).</li>
-          <li>Déconnexions pour inactivité en plein combat manuel, combats d’Ascension revenus quelques tours en arrière (07–12/10).</li>
+          <li>Déconnexions pour inactivité en plein combat manuel, combats d’Ascension revenus quelques tours en arrière (07-12/10).</li>
         </ul>
         <h3>Objets, runes et Prestige</h3>
         <ul>
           <li>Objets R5 runés disparus au passage de Prestige (12/10) ; impossible de verrouiller un objet runé (13 → 18/10, cadenas sur les objets runés ajoutés le 20/10).</li>
           <li>Dofus et trophées bloqués à R+2 en fusion (14 → 16/10 ; R+5 annoncé le 16/10).</li>
           <li>Panoplies Crockuzko, Pol Ouatnos et Justicier sans bonus (07 → 19/10, correction jamais confirmée).</li>
-          <li>Import d’équipement par code : « Erreur serveur » (13 et 17/10) ; HDV limité à 13-17 ventes sur 20 (13–14/10).</li>
-          <li>08/10 : « Tout cocher » à la vente sélectionnait aussi les Rayonnants (des joueurs en ont vendu par erreur) ; 09/10 : une fusion T2 → T3 aurait tout remis en T1 ; prix des coffres affiché faux (corrigé le 20/10, officiel). Fusion refusée alors que rien n’est verrouillé (17–21/10).</li>
+          <li>Import d’équipement par code : « Erreur serveur » (13 et 17/10) ; HDV limité à 13-17 ventes sur 20 (13-14/10).</li>
+          <li>08/10 : « Tout cocher » à la vente sélectionnait aussi les Rayonnants (des joueurs en ont vendu par erreur) ; 09/10 : une fusion T2 → T3 aurait tout remis en T1 ; prix des coffres affiché faux (corrigé le 20/10, officiel). Fusion refusée alors que rien n’est verrouillé (17-21/10).</li>
         </ul>
         <h3>Comptes, énergie et saison</h3>
         <ul>
-          <li>Énergie illimitée expirée après 5 jours au lieu de 7 ; achats (énergie illimitée 3 jours, 2 000 orbes) non crédités ; série de connexion remise à 1/7 (12–17/10).</li>
-          <li>Saison Héroïque : objets éternels perdus ou gardés à tort à la mort, perso perdu après un crash compté comme défaite (10–12/10).</li>
+          <li>Énergie illimitée expirée après 5 jours au lieu de 7 ; achats (énergie illimitée 3 jours, 2 000 orbes) non crédités ; série de connexion remise à 1/7 (12-17/10).</li>
+          <li>Saison Héroïque : objets éternels perdus ou gardés à tort à la mort, perso perdu après un crash compté comme défaite (10-12/10).</li>
           <li>Classement de saison peu fiable, compteur de cartes bloqué vers 1 000 ; joueurs à l’étage 1000 des Abysses non départagés (19/10).</li>
           <li>Un combat de Krala brisait la série de l’Élan (11/10) ; corrigé le 20/10 (officiel). Interface mobile instable, chat bloqué en hauteur.</li>
         </ul>

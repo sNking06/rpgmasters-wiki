@@ -46,7 +46,7 @@ export function DateChip({ extra, strong = false, label = DATA_DATE_LABEL }: { e
   return (
     <p className={strong ? 'date-badge' : 'date-chip'}>
       <Icon name="calendar" size={16} /> {label}
-      {extra ? ` · ${extra}` : null}
+      {extra ? `, ${extra}` : null}
     </p>
   );
 }
@@ -84,18 +84,20 @@ export function PageHeader({
   const scene = art ?? (href ? illustrationFor(href) : (section && fallback[section]) || 'home');
   return (
     <header className="page-header illustrated-header">
-      <Illustration name={scene} alt="" className="banner-art" />
-      <div className="banner-copy">
-        <div className="title-row">
-          {icon || section ? (
-            <span className="medal medal-lg" aria-hidden="true">
-              {icon ?? (section ? <SectionIcon section={section} size={28} /> : null)}
-            </span>
-          ) : null}
-          <h1>{title}</h1>
+      <div className="page-mast">
+        <div className="banner-copy">
+          <div className="title-row">
+            {icon || section ? (
+              <span className="medal medal-lg" aria-hidden="true">
+                {icon ?? (section ? <SectionIcon section={section} size={28} /> : null)}
+              </span>
+            ) : null}
+            <h1>{title}</h1>
+          </div>
+          <p className="intro">{intro}</p>
+          <DateChip strong={!!dateBadge} extra={typeof dateBadge === 'string' ? dateBadge : undefined} label={dateLabel} />
         </div>
-        <p className="intro">{intro}</p>
-        <DateChip strong={!!dateBadge} extra={typeof dateBadge === 'string' ? dateBadge : undefined} label={dateLabel} />
+        <Illustration name={scene} alt="" className="banner-art page-plate" />
       </div>
     </header>
   );
@@ -104,12 +106,12 @@ export function PageHeader({
 /** Encadré « L'essentiel » : 3 à 5 puces. */
 export function Essentiel({ children, title = 'L’essentiel', list = 'ul', id = 'essentiel-h' }: { children: ReactNode; title?: string; list?: 'ul' | 'build'; id?: string }) {
   return (
-    <aside className="essentiel" aria-labelledby={id}>
+    <section className="essentiel" aria-labelledby={id}>
       <h2 id={id}>
         <Icon name="sparkle" size={18} /> {title}
       </h2>
       {list === 'build' ? <ol className="build">{children}</ol> : <ul>{children}</ul>}
-    </aside>
+    </section>
   );
 }
 
@@ -142,7 +144,7 @@ export function Section({ id, title, children }: { id: string; title: string; ch
     <section id={id} className="section">
       <h2>
         <a href={`#${id}`} className="anchor">
-          {title}
+          <span className="toc-label">{title}</span>
         </a>
       </h2>
       {children}
@@ -279,10 +281,7 @@ export function PageEnd({ current, see, sources }: { current: string; see: Crumb
           <ul className="see-also">
             {see.map((s) => (
               <li key={s.href}>
-                <Link href={s.href}>
-                  {s.label}
-                  <Icon name="arrowRight" size={16} />
-                </Link>
+                <Link href={s.href}>{s.label}</Link>
               </li>
             ))}
           </ul>
@@ -347,7 +346,7 @@ export function Officiel({ title, d, children }: { title: ReactNode; d: string; 
 }
 
 /** Encadré « Conseils de joueurs, non officiels » (Discord, au conditionnel, sans pseudos). */
-export function Joueurs({ title = 'Conseils de joueurs — non officiels', src, children }: { title?: ReactNode; src?: string; children: ReactNode }) {
+export function Joueurs({ title = 'Conseils de joueurs, non officiels', src, children }: { title?: ReactNode; src?: string; children: ReactNode }) {
   return (
     <div className="callout callout-tip callout-joueurs">
       <p className="callout-title">

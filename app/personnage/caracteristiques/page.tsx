@@ -14,13 +14,13 @@ const COMBAT_STATS: [string, string, string][] = [
   ['dodgePerPm', '1', 'Esquive par PM'],
   ['dodgeMax', '50', 'Plafond d’esquive'],
   ['spectralPerPo', '0.4', 'Vision spectrale par point de PO (voir Crâ)'],
-  ['perforationPerPoint', '0.05', '—'],
-  ['perforationMax', '25', '—'],
-  ['erosionPerPoint', '0.05', '—'],
-  ['erosionMax', '25', '—'],
-  ['penetrationPerPoint', '0.8', '—'],
-  ['penetrationMax', '50', '—'],
-  ['dmgReductionMax', '50', '—'],
+  ['perforationPerPoint', '0.05', '\u2014'],
+  ['perforationMax', '25', '\u2014'],
+  ['erosionPerPoint', '0.05', '\u2014'],
+  ['erosionMax', '25', '\u2014'],
+  ['penetrationPerPoint', '0.8', '\u2014'],
+  ['penetrationMax', '50', '\u2014'],
+  ['dmgReductionMax', '50', '\u2014'],
 ];
 
 export default function CaracteristiquesPage() {
@@ -297,7 +297,7 @@ export default function CaracteristiquesPage() {
       </Section>
 
       <Section id="conseils-joueurs" title="Conseils de joueurs : stats, Rayonnants, decks">
-        <Joueurs title="Ordre de stats et plafonds" src="#aide, 15–19/10">
+        <Joueurs title="Ordre de stats et plafonds" src="#aide, 15-19/10">
           <ul>
             <li>Priorité citée : Puissance, Critique jusqu’à 100, PA (45, ou entre 51 et 66 selon les joueurs), Vitalité, tous les éléments, PO, PM, Dommages, Dommages critiques.</li>
             <li>Au-delà de 50 PM, 250 PO, 50 % de résistance et 100 % de critique, la stat ne servirait plus ; les soins seraient inutiles comme stat.</li>
@@ -305,7 +305,7 @@ export default function CaracteristiquesPage() {
             <li>Signalé comme bug, non confirmé : dommages fixes et dommages critiques ne s’appliqueraient qu’à la 1re ligne des sorts multi-lignes ; plafond de perforation du Dofus Ébène bloqué à 25 %.</li>
           </ul>
         </Joueurs>
-        <Joueurs title="Rayonnants et équipement" src="#aide, #équilibrage, 10–18/10">
+        <Joueurs title="Rayonnants et équipement" src="#aide, #équilibrage, 10-18/10">
           <ul>
             <li>Rayonnant +5 : par fusion ou par drop ; il vaudrait mieux viser le drop de l’objet (un R5 demande 81 objets). En Ascension, monter ses Rayonnants, le Bouclier de forge et le compagnon.</li>
             <li><strong>Ceinture Dame Jhessica</strong> : à garder ; son bouclier en % serait multiplié par le Prestige et le compagnon, et cumulable avec le bonus Discord.</li>
@@ -314,7 +314,7 @@ export default function CaracteristiquesPage() {
             <li>Un objet acheté à l’HDV (ou sorti d’un coffre lié 24 h) depuis moins de 24 h ne pourrait pas être runé.</li>
           </ul>
         </Joueurs>
-        <Joueurs title="Codes de deck DM-S et vitrines" src="#suggestions, #boss-et-stratégies, 06–16/10">
+        <Joueurs title="Codes de deck DM-S et vitrines" src="#suggestions, #boss-et-stratégies, 06-16/10">
           <ul>
             <li>Chaque sort aurait un identifiant de 4 caractères ; un deck se partage sous la forme d’un code <code>DM-S-…</code> à copier-coller dans la page Deck pour l’importer.</li>
             <li>Codes partagés par des joueurs (non testés) : deck « Ascension free » <code>DM-S-0870FEK6V7M03MB4TSKBCS7KDBAPG-5P7R</code> ; étages 28-30 <code>DM-S-044GXPF807SPNNK6GNNYYT6VJ40S7JG1JDJCRTXTQ40VCSNTCVK69JVB-C90C</code> ; étage 145 <code>DM-S-0840NT3AQ9KD2S6PCTV69GB6GSN9YT5QQ40V2S8-ZXE2</code>.</li>

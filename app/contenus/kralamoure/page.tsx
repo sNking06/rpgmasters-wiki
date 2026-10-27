@@ -29,7 +29,7 @@ export default function Page(){return <><PageHeader href="/contenus/kralamoure/"
           <li>Le bouclier est <strong>plafonné à 40 % des PV max</strong>. <M s="T" /></li>
           <li>Cliquer « Fin du tour » <strong>une seule fois</strong> par tour. <M s="T" /></li>
         </ul>
-        <Tip title="Record personnel — 17/10/2026">
+        <Tip title="Record personnel: 17/10/2026">
           <p><strong>159 632 dégâts</strong> avec le Deck 7 : Précipitation d’abord, un bouclier presque chaque tour, puis toutes les cartes de dégâts au tour 10. <M s="T" /></p>
         </Tip>
         <p>Lors des combats suivants dans la même journée, une fois le boss déjà terrassé, les dégâts rapportés étaient beaucoup plus faibles : <strong>23 695 à 132 314</strong> observés. La cause de cet écart n’est pas établie. <M s="T" /></p>
@@ -40,7 +40,7 @@ export default function Page(){return <><PageHeader href="/contenus/kralamoure/"
           <li>Record personnel en un combat toujours <strong>159 632</strong> (17 oct 2026). <M s="T" /></li>
         </ul>
         <GameCapture id="guilde-degats-snking" caption="Dégâts de SNking par jour dans le tableau des membres" />
-        <Tip title="Historique — 15 oct 2026">
+        <Tip title="Historique: 15 oct 2026">
           <p><strong>109 506 dégâts</strong> en un combat avec ce deck, contre <strong>74 420</strong> avec un deck de 14 cartes (15 oct 2026). Monter vite les 5 charges d’Armure, puis tout envoyer. <M s="T" /></p>
         </Tip>
       </Section>
@@ -82,7 +82,7 @@ export default function Page(){return <><PageHeader href="/contenus/kralamoure/"
   </Contra>
 </Section>
 <Section id="conseils-joueurs" title="Sorts clés et stats : conseils de joueurs">
-  <Joueurs src="#aide, #boss-et-stratégies, 06–17/10">
+  <Joueurs src="#aide, #boss-et-stratégies, 06-17/10">
     <ul>
       <li><strong>Sorts clés</strong> : Traversée (ses lignes critiques ressortent dans les journaux de combat Krala), Bluff / Tromperie, Masque du Psychopathe (Zobal), sorts de boost ; l’Écaflip (32 % de dégâts doublés) serait intéressant sur le Krala.</li>
       <li><strong>Équipement</strong> : un familier et le Dofus d’Invocation (2 pioches en réserve par tour au lieu de 1) seraient conseillés.</li>

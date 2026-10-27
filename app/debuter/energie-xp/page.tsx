@@ -26,7 +26,7 @@ export default function EnergieXpPage() {
           <strong>100 d’énergie max</strong>, <strong>+1 toutes les 6 min</strong>, même hors ligne. <M s="T" />
         </li>
         <li>
-          Chasse ou Aventure <strong>1</strong> · boss ou étage d’Ascension <strong>2</strong> · Abysses <strong>20</strong>.{' '}
+          Chasse ou Aventure <strong>1</strong>, boss ou étage d’Ascension <strong>2</strong>, Abysses <strong>20</strong>.{' '}
           <M s="T" />
         </li>
         <li>
@@ -203,7 +203,7 @@ export default function EnergieXpPage() {
             </>
           }
         />
-        <Tip title="Événement en cours — relevé du 21 oct 2026">
+        <Tip title="Événement en cours: relevé du 21 oct 2026">
           <p>
             À 10 h, la bannière « Événement » affichait <strong>XP ×2</strong> et <strong>Butin ×2</strong>, sans date de fin
             exacte. <M s="T" />
@@ -268,7 +268,7 @@ export default function EnergieXpPage() {
             <li>Le libellé du bouton n’a pas été revérifié en jeu depuis le 18/10.</li>
           </ul>
         </Contra>
-        <Tip title="Exemple de farm — 19 oct 2026">
+        <Tip title="Exemple de farm: 19 oct 2026">
           <p>
             Jardins d’Hiver en Auto normal, Féca niveau 200, sans aucune défaite sur la journée : au moins{' '}
             <strong>~840 combats</strong>. La dernière série (212/212) affichait <strong>≈5 Md d’XP</strong>, 63 873 kamas,{' '}
@@ -355,7 +355,7 @@ Niveau = plus grand L tel que XP ≥ n[L]`}</code>
           { href: '/personnage/prestige/', label: 'Prestige' },
           { href: '/debuter/faq/#progresser', label: 'FAQ : progresser' },
         ]}
-        sources="txt_faq.txt, txt_saison.txt, rea_classement.md §1–2, mecaniques.md §8 ; Discord officiel, annonces des 10/10, 11/10, 16/10, 18/10 et 20/10"
+        sources="txt_faq.txt, txt_saison.txt, rea_classement.md §1-2, mecaniques.md §8 ; Discord officiel, annonces des 10/10, 11/10, 16/10, 18/10 et 20/10"
       />
     </>
   );

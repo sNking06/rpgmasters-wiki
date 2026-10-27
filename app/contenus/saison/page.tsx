@@ -7,7 +7,7 @@ import { SEASON_END } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Saison des Cartes',
-  description: 'La saison des Cartes de RpgMasters (18–25 oct 2026) : XP ×4, énergie illimitée, packs de cartes, pas de mort définitive, banque, classement 6 modes et récompenses. Relevé du 20 oct 2026.',
+  description: 'La saison des Cartes de RpgMasters (18-25 oct 2026) : XP ×4, énergie illimitée, packs de cartes, pas de mort définitive, banque, classement 6 modes et récompenses. Relevé du 20 oct 2026.',
 };
 
 const ULTIMES = [10, 8, 6, 5, 4, 3, 2, 1, 1, 1];

@@ -26,7 +26,7 @@ export function GameCapture({ id, caption }: { id: string; caption?: string }) {
       </a>
       <figcaption>
         <Icon name="camera" size={16} />
-        <span>{caption ? <>{caption} — </> : null}Capture en jeu, {capture.date}</span>
+        <span>{caption ? <>{caption}: </> : null}Capture en jeu, {capture.date}</span>
       </figcaption>
     </figure>
   );

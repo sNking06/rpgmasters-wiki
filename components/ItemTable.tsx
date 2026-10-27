@@ -50,7 +50,7 @@ export function ItemTable({ onlyDofus = false }: { onlyDofus?: boolean }) {
       <p className="item-count" role="status" aria-live="polite">{rows.length} objet{rows.length > 1 ? 's' : ''} sur {items.length}</p>
       <div className="table-wrap" role="region" aria-label="Tableau comparatif des objets" aria-describedby="item-table-help" tabIndex={0}>
         <table>
-          <caption>Objets de haut niveau et bonus de caractéristiques — tri décroissant.</caption>
+          <caption>Objets de haut niveau et bonus de caractéristiques: tri décroissant.</caption>
           <thead><tr><th scope="col">Objet</th><th scope="col">Emplacement</th><th scope="col">Niveau</th><th scope="col">Rareté</th>{STATS.map(([k, l]) => <th scope="col" key={k}><abbr title={`Bonus de ${l.toLocaleLowerCase('fr')}, affiché en jeu`}>{l}</abbr></th>)}<th scope="col"><abbr title="Bonus de résistances affichés en jeu">Résistances</abbr></th><th scope="col">Panoplie et autres effets</th></tr></thead>
           <tbody>
             {rows.map((i) => (
@@ -59,7 +59,7 @@ export function ItemTable({ onlyDofus = false }: { onlyDofus?: boolean }) {
                 {STATS.map(([k]) => <td key={k} className={sort === k ? 'sorted' : undefined}>{i[k] ?? ''}</td>)}
                 <td className="item-res">{i.Resistances ?? ''}</td>
                 <td className="item-notes">
-                  {i.set ? <div><strong>{i.set}</strong>{i.set_bonus ? ` — ${i.set_bonus}` : ''}</div> : null}
+                  {i.set ? <div><strong>{i.set}</strong>{i.set_bonus ? `: ${i.set_bonus}` : ''}</div> : null}
                   {i.Dommages ? <div>Dommages : {i.Dommages}</div> : null}
                   {i.autres ? <div>{i.autres}</div> : null}
                   {i.obtention ? <div className="muted">Obtention : {i.obtention}</div> : null}

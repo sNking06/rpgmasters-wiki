@@ -1,0 +1,423 @@
+app/a-propos/journal/page.tsx:109
+  - '02:26 — 15 nouveaux passifs de Dofus ; l’Initiative fonctionne ; sorts à une ligne (+50 %, puis +20 % par tour, jusqu’à +150 %) ; grands decks (+5 % par carte au-delà de 7, jusqu’à +25 %) ; 8 decks et 8 équipements ; croquettes à 10 % par victoire.',
+  + '02:26: 15 nouveaux passifs de Dofus ; l’Initiative fonctionne ; sorts à une ligne (+50 %, puis +20 % par tour, jusqu’à +150 %) ; grands decks (+5 % par carte au-delà de 7, jusqu’à +25 %) ; 8 decks et 8 équipements ; croquettes à 10 % par victoire.',
+
+app/a-propos/journal/page.tsx:110
+  - '08:55 — Arène Ultime (duels 1v1 en direct, Elo séparé, dégâts −60 %) et système d’amis.',
+  + '08:55: Arène Ultime (duels 1v1 en direct, Elo séparé, dégâts −60 %) et système d’amis.',
+
+app/a-propos/journal/page.tsx:111
+  - '10:44 — Mécaniques des boss affichées sur la carte du boss, avec alerte rouge.',
+  + '10:44: Mécaniques des boss affichées sur la carte du boss, avec alerte rouge.',
+
+app/a-propos/journal/page.tsx:112
+  - '16:56 — Les Runes (1 % / 0,5 % / 0,1 % par victoire) et le Poutch d’entraînement (100 M de PV).',
+  + '16:56: Les Runes (1 % / 0,5 % / 0,1 % par victoire) et le Poutch d’entraînement (100 M de PV).',
+
+app/a-propos/journal/page.tsx:123
+  - '17:51 — Passifs de classe revalorisés (toutes sauf Iop et Zobal) ; changement de classe à 300 000 kamas.',
+  + '17:51: Passifs de classe revalorisés (toutes sauf Iop et Zobal) ; changement de classe à 300 000 kamas.',
+
+app/a-propos/journal/page.tsx:124
+  - '18:36 — Effets des 10 Dofus majeurs ; Dofawa : « effet mystère ».',
+  + '18:36: Effets des 10 Dofus majeurs ; Dofawa : « effet mystère ».',
+
+app/a-propos/journal/page.tsx:125
+  - '22:39 — Série de connexion, l’Élan, parrainage, Compagnon, Dimension Écarlate.',
+  + '22:39: Série de connexion, l’Élan, parrainage, Compagnon, Dimension Écarlate.',
+
+app/a-propos/journal/page.tsx:126
+  - '23:24 — 323 succès (Ascension jusqu’à l’étage 260, Prestiges 11 à 15) avec de l’énergie à la clé ; Compagnon : +0,2 % par niveau.',
+  + '23:24: 323 succès (Ascension jusqu’à l’étage 260, Prestiges 11 à 15) avec de l’énergie à la clé ; Compagnon : +0,2 % par niveau.',
+
+app/a-propos/journal/page.tsx:168
+  - <Section id="bugs-connus" title="Bugs connus (Discord et jeu, 07–21/10)">
+  + <Section id="bugs-connus" title="Bugs connus (Discord et jeu, 07-21/10)">
+
+app/a-propos/journal/page.tsx:178
+  - <li>L’IA de l’Auto ne lançait pas Précipitation ni Masque du Psychopathe (07–08/10).</li>
+  + <li>L’IA de l’Auto ne lançait pas Précipitation ni Masque du Psychopathe (07-08/10).</li>
+
+app/a-propos/journal/page.tsx:181
+  - <li>Déconnexions pour inactivité en plein combat manuel, combats d’Ascension revenus quelques tours en arrière (07–12/10).</li>
+  + <li>Déconnexions pour inactivité en plein combat manuel, combats d’Ascension revenus quelques tours en arrière (07-12/10).</li>
+
+app/a-propos/journal/page.tsx:188
+  - <li>Import d’équipement par code : « Erreur serveur » (13 et 17/10) ; HDV limité à 13-17 ventes sur 20 (13–14/10).</li>
+  + <li>Import d’équipement par code : « Erreur serveur » (13 et 17/10) ; HDV limité à 13-17 ventes sur 20 (13-14/10).</li>
+
+app/a-propos/journal/page.tsx:189
+  - <li>08/10 : « Tout cocher » à la vente sélectionnait aussi les Rayonnants (des joueurs en ont vendu par erreur) ; 09/10 : une fusion T2 → T3 aurait tout remis en T1 ; prix des coffres affiché faux (corrigé le 20/10, officiel). Fusion refusée alors que rien n’est verrouillé (17–21/10).</li>
+  + <li>08/10 : « Tout cocher » à la vente sélectionnait aussi les Rayonnants (des joueurs en ont vendu par erreur) ; 09/10 : une fusion T2 → T3 aurait tout remis en T1 ; prix des coffres affiché faux (corrigé le 20/10, officiel). Fusion refusée alors que rien n’est verrouillé (17-21/10).</li>
+
+app/a-propos/journal/page.tsx:193
+  - <li>Énergie illimitée expirée après 5 jours au lieu de 7 ; achats (énergie illimitée 3 jours, 2 000 orbes) non crédités ; série de connexion remise à 1/7 (12–17/10).</li>
+  + <li>Énergie illimitée expirée après 5 jours au lieu de 7 ; achats (énergie illimitée 3 jours, 2 000 orbes) non crédités ; série de connexion remise à 1/7 (12-17/10).</li>
+
+app/a-propos/journal/page.tsx:194
+  - <li>Saison Héroïque : objets éternels perdus ou gardés à tort à la mort, perso perdu après un crash compté comme défaite (10–12/10).</li>
+  + <li>Saison Héroïque : objets éternels perdus ou gardés à tort à la mort, perso perdu après un crash compté comme défaite (10-12/10).</li>
+
+app/a-propos/sources/page.tsx:15
+  - ['rpgmasters-boss-mechanics.csv', '27 boss de niveaux 150–200, difficultés et textes ; Kralamoure Géant en complément hors liste du bestiaire. Boss <150 non collectés ; Bworker verrouillé.'],
+  + ['rpgmasters-boss-mechanics.csv', '27 boss de niveaux 150-200, difficultés et textes ; Kralamoure Géant en complément hors liste du bestiaire. Boss <150 non collectés ; Bworker verrouillé.'],
+
+app/a-propos/sources/page.tsx:196
+  - <code>{f}</code> — {d}
+  + <code>{f}</code>: {d}
+
+app/contenus/ascension/page.tsx:35
+  - <h3>Ougah — Fureur</h3>
+  + <h3>Ougah: Fureur</h3>
+
+app/contenus/ascension/page.tsx:40
+  - <h3>Ben le Ripate — Onde de choc</h3>
+  + <h3>Ben le Ripate: Onde de choc</h3>
+
+app/contenus/ascension/page.tsx:63
+  - <Section id="etages-38-42" title="Étages 38 à 42 — observations des 16-17 oct 2026">
+  + <Section id="etages-38-42" title="Étages 38 à 42: observations des 16-17 oct 2026">
+
+app/contenus/ascension/page.tsx:64
+  - <h3>Étage 38 — Père Ver, Grolloum, Comte Razof</h3>
+  + <h3>Étage 38: Père Ver, Grolloum, Comte Razof</h3>
+
+app/contenus/ascension/page.tsx:66
+  - <h3>Étage 39 — Supervizœuf, Ben le Ripate, Bworker</h3>
+  + <h3>Étage 39: Supervizœuf, Ben le Ripate, Bworker</h3>
+
+app/contenus/ascension/page.tsx:68
+  - <h3>Étage 40 — Ush Galesh, Toxoliath, XLII</h3>
+  + <h3>Étage 40: Ush Galesh, Toxoliath, XLII</h3>
+
+app/contenus/ascension/page.tsx:70
+  - <h3>Étage 41 — validé, record actuel</h3>
+  + <h3>Étage 41: validé, record actuel</h3>
+
+app/contenus/ascension/page.tsx:77
+  - <h3>Étage 42 — encore non franchi</h3>
+  + <h3>Étage 42: encore non franchi</h3>
+
+app/contenus/ascension/page.tsx:85
+  - <h3>Étage 42 — relevé du 21 oct 2026</h3>
+  + <h3>Étage 42: relevé du 21 oct 2026</h3>
+
+app/contenus/ascension/page.tsx:95
+  - <Tip title="À retenir — étage 42">
+  + <Tip title="À retenir: étage 42">
+
+app/contenus/ascension/page.tsx:110
+  - <p>Relevé des 16-17 oct 2026 : deck resserré à <strong>11 cartes</strong> — Bouclier Féca, Vertu, Rempart, Couronne d’Épines, Précipitation, Contribution, Péremption, Pelle des Anciens, Ancrage, Frisson, Carnavalo. <M s="T" /></p>
+  + <p>Relevé des 16-17 oct 2026 : deck resserré à <strong>11 cartes</strong>: Bouclier Féca, Vertu, Rempart, Couronne d’Épines, Précipitation, Contribution, Péremption, Pelle des Anciens, Ancrage, Frisson, Carnavalo. <M s="T" /></p>
+
+app/contenus/ascension/page.tsx:123
+  - <li>Plus aucune condition d’Abysses pour le Prestige : seule l’Ascension compte — <strong>P7 : étage 40, P8 : 60, P9 : 80, P10 : 110</strong>.</li>
+  + <li>Plus aucune condition d’Abysses pour le Prestige : seule l’Ascension compte: <strong>P7 : étage 40, P8 : 60, P9 : 80, P10 : 110</strong>.</li>
+
+app/contenus/ascension/page.tsx:134
+  - <PageEnd current="/contenus/ascension/" see={[{ href: '/personnage/prestige/', label: 'Prestige' }, { href: '/personnage/classes/feca/', label: 'Guide Féca' }, { href: '/contenus/strategies-ascension/', label: 'Stratégies 105–260' }]} sources="Observations en combat : étages 29-30, 13-15 oct 2026 ; étages 38-42 et build défensif, 16-17 oct 2026 ; étage 42 et objectif P8, relevé du 21 oct 2026" />
+  + <PageEnd current="/contenus/ascension/" see={[{ href: '/personnage/prestige/', label: 'Prestige' }, { href: '/personnage/classes/feca/', label: 'Guide Féca' }, { href: '/contenus/strategies-ascension/', label: 'Stratégies 105-260' }]} sources="Observations en combat : étages 29-30, 13-15 oct 2026 ; étages 38-42 et build défensif, 16-17 oct 2026 ; étage 42 et objectif P8, relevé du 21 oct 2026" />
+
+app/contenus/kralamoure/page.tsx:32
+  - <Tip title="Record personnel — 17/10/2026">
+  + <Tip title="Record personnel: 17/10/2026">
+
+app/contenus/kralamoure/page.tsx:43
+  - <Tip title="Historique — 15 oct 2026">
+  + <Tip title="Historique: 15 oct 2026">
+
+app/contenus/kralamoure/page.tsx:85
+  - <Joueurs src="#aide, #boss-et-stratégies, 06–17/10">
+  + <Joueurs src="#aide, #boss-et-stratégies, 06-17/10">
+
+app/contenus/saison/page.tsx:10
+  - description: 'La saison des Cartes de RpgMasters (18–25 oct 2026) : XP ×4, énergie illimitée, packs de cartes, pas de mort définitive, banque, classement 6 modes et récompenses. Relevé du 20 oct 2026.',
+  + description: 'La saison des Cartes de RpgMasters (18-25 oct 2026) : XP ×4, énergie illimitée, packs de cartes, pas de mort définitive, banque, classement 6 modes et récompenses. Relevé du 20 oct 2026.',
+
+app/contenus/strategies-ascension/page.tsx:66
+  - <tr><td>105 – 110</td><td>Transmutés · P10 à 110</td><td>rush, Traversée, Dofus Ébène / Émeraude / Ivoire</td></tr>
+  + <tr><td>105 à 110</td><td>Transmutés · P10 à 110</td><td>rush, Traversée, Dofus Ébène / Émeraude / Ivoire</td></tr>
+
+app/contenus/strategies-ascension/page.tsx:67
+  - <tr><td>111 – 260</td><td>P11 à 140 … P15 à 260</td><td>mêmes conseils ; mono-élément contre les boss à renvoi</td></tr>
+  + <tr><td>111 à 260</td><td>P11 à 140 … P15 à 260</td><td>mêmes conseils ; mono-élément contre les boss à renvoi</td></tr>
+
+app/contenus/strategies-ascension/page.tsx:74
+  - <Joueurs src="#boss-et-stratégies, 06–19/10">
+  + <Joueurs src="#boss-et-stratégies, 06-19/10">
+
+app/contenus/strategies-ascension/page.tsx:80
+  - <tr><td>17 – 18</td><td>Supervizoeuf ; au 18, le boss scellerait les cartes les plus chères. Les indices seraient dans le texte du boss.</td><td>07/10</td></tr>
+  + <tr><td>17 à 18</td><td>Supervizoeuf ; au 18, le boss scellerait les cartes les plus chères. Les indices seraient dans le texte du boss.</td><td>07/10</td></tr>
+
+app/contenus/strategies-ascension/page.tsx:83
+  - <tr><td>36 – 37</td><td>36 : 2 cartes de pioche dans les trophées + boucliers, Auto possible. 37 (Phossile, Razof, Père Ver) : 2 sorts par tour max ; focus Kolosso (sauf tours 4-5 : renvoi), puis Père Ver, puis Razof ; pas de sort de zone, Vertu chaque tour, Précipitation sur le mob qui tape le plus fort, jamais 2 fois le même élément d’affilée.</td><td>07/10 · 09/10</td></tr>
+  + <tr><td>36 à 37</td><td>36 : 2 cartes de pioche dans les trophées + boucliers, Auto possible. 37 (Phossile, Razof, Père Ver) : 2 sorts par tour max ; focus Kolosso (sauf tours 4-5 : renvoi), puis Père Ver, puis Razof ; pas de sort de zone, Vertu chaque tour, Précipitation sur le mob qui tape le plus fort, jamais 2 fois le même élément d’affilée.</td><td>07/10 · 09/10</td></tr>
+
+app/contenus/strategies-ascension/page.tsx:86
+  - <tr><td>52 – 55</td><td>52 : deck full bouclier (Couronne, Vertu, Odorat, Précipitation, Bluff). 55 : Supernova + Tromperie + Évolution + Vertu + Précipitation ; focus Ougah (2 cartes, le corps-à-corps ne compte pas), puis Vertu + Précipitation suffiraient contre Bworker et Barbéryl. Scaraboss : garder 3 PA.</td><td>08/10</td></tr>
+  + <tr><td>52 à 55</td><td>52 : deck full bouclier (Couronne, Vertu, Odorat, Précipitation, Bluff). 55 : Supernova + Tromperie + Évolution + Vertu + Précipitation ; focus Ougah (2 cartes, le corps-à-corps ne compte pas), puis Vertu + Précipitation suffiraient contre Bworker et Barbéryl. Scaraboss : garder 3 PA.</td><td>08/10</td></tr>
+
+app/contenus/strategies-ascension/page.tsx:96
+  - <tr><td>130 – 131</td><td>130 : Kolosso → Toxo → Korriandre, pas de soin possible sur Korriandre, la laisser en dernier. 131 : focus le mob le plus à gauche, gros dégâts puis bouclier ; les 3 premiers tours en Auto puis manuel ; perforation à plafonner, build mono-élément.</td><td>12/10 · 13/10</td></tr>
+  + <tr><td>130 à 131</td><td>130 : Kolosso → Toxo → Korriandre, pas de soin possible sur Korriandre, la laisser en dernier. 131 : focus le mob le plus à gauche, gros dégâts puis bouclier ; les 3 premiers tours en Auto puis manuel ; perforation à plafonner, build mono-élément.</td><td>12/10 · 13/10</td></tr>
+
+app/contenus/strategies-ascension/page.tsx:98
+  - <tr><td>185</td><td>Commencer par Barbéryl avec une Traversée très boostée, feu de zone pour toucher aussi le Sac, focus le Sac jusqu’à son Reflet Feu, puis Précipitation + Odorat sur lui en boucle.</td><td>18–19/10</td></tr>
+  + <tr><td>185</td><td>Commencer par Barbéryl avec une Traversée très boostée, feu de zone pour toucher aussi le Sac, focus le Sac jusqu’à son Reflet Feu, puis Précipitation + Odorat sur lui en boucle.</td><td>18-19/10</td></tr>
+
+app/contenus/strategies-ascension/page.tsx:105
+  - <p>Étages cités comme blocages (11–17/10) : 37, 92, 97–99, 102, 105, 127, 129, 131, 135, 140, 210, 232, 235, 240, 242, 245.</p>
+  + <p>Étages cités comme blocages (11-17/10) : 37, 92, 97-99, 102, 105, 127, 129, 131, 135, 140, 210, 232, 235, 240, 242, 245.</p>
+
+app/contenus/strategies-ascension/page.tsx:109
+  - <Joueurs src="#boss-et-stratégies, 06–21/10">
+  + <Joueurs src="#boss-et-stratégies, 06-21/10">
+
+app/contenus/strategies-ascension/page.tsx:122
+  - <Joueurs src="#boss-et-stratégies, 07–09/10">
+  + <Joueurs src="#boss-et-stratégies, 07-09/10">
+
+app/contenus/strategies-ascension/page.tsx:132
+  - <Joueurs src="#boss-et-stratégies et #équilibrage, 09–18/10">
+  + <Joueurs src="#boss-et-stratégies et #équilibrage, 09-18/10">
+
+app/contenus/strategies-ascension/page.tsx:144
+  - <Joueurs src="#boss-et-stratégies, 07–18/10">
+  + <Joueurs src="#boss-et-stratégies, 07-18/10">
+
+app/contenus/strategies-ascension/page.tsx:154
+  - <PageEnd current="/contenus/strategies-ascension/" see={[{ href: '/contenus/ascension/', label: 'Ascension (étages observés)' }, { href: '/personnage/prestige/', label: 'Prestige' }, { href: '/a-propos/journal/', label: 'Journal des mises à jour' }]} sources="Discord officiel RpgMasters, #annonces (08/10, 10/10, 12/10, 16/10, 20/10) ; #boss-et-stratégies, #aide et #équilibrage, joueurs (06–21/10, non officiel) ; FAQ du jeu relevée le 20/10" />
+  + <PageEnd current="/contenus/strategies-ascension/" see={[{ href: '/contenus/ascension/', label: 'Ascension (étages observés)' }, { href: '/personnage/prestige/', label: 'Prestige' }, { href: '/a-propos/journal/', label: 'Journal des mises à jour' }]} sources="Discord officiel RpgMasters, #annonces (08/10, 10/10, 12/10, 16/10, 20/10) ; #boss-et-stratégies, #aide et #équilibrage, joueurs (06-21/10, non officiel) ; FAQ du jeu relevée le 20/10" />
+
+app/debuter/energie-xp/page.tsx:206
+  - <Tip title="Événement en cours — relevé du 21 oct 2026">
+  + <Tip title="Événement en cours: relevé du 21 oct 2026">
+
+app/debuter/energie-xp/page.tsx:271
+  - <Tip title="Exemple de farm — 19 oct 2026">
+  + <Tip title="Exemple de farm: 19 oct 2026">
+
+app/debuter/energie-xp/page.tsx:358
+  - sources="txt_faq.txt, txt_saison.txt, rea_classement.md §1–2, mecaniques.md §8 ; Discord officiel, annonces des 10/10, 11/10, 16/10, 18/10 et 20/10"
+  + sources="txt_faq.txt, txt_saison.txt, rea_classement.md §1-2, mecaniques.md §8 ; Discord officiel, annonces des 10/10, 11/10, 16/10, 18/10 et 20/10"
+
+app/economie/page.tsx:113
+  - <td>—</td>
+  + <td>aucune</td>
+
+app/economie/page.tsx:341
+  - Énergie : 300 kamas le point (plus cher au-delà de 600 points/jour) —{' '}
+  + Énergie : 300 kamas le point (plus cher au-delà de 600 points/jour): {' '}
+
+app/economie/page.tsx:375
+  - <Joueurs src="#aide, #captures, 16–17/10">
+  + <Joueurs src="#aide, #captures, 16-17/10">
+
+app/equipement/panoplies/page.tsx:7
+  - ['A. Gouffre 3/3','Lancepince d’Exécrabe, Visage de Mureine, Dorsale de Willorque T2','13 813','Neutre 50 · Terre 38 · Feu/Eau/Air 50 %','46 %','19 406','—'],
+  + ['A. Gouffre 3/3','Lancepince d’Exécrabe, Visage de Mureine, Dorsale de Willorque T2','13 813','Neutre 50 · Terre 38 · Feu/Eau/Air 50 %','46 %','19 406',': '],
+
+app/monde/boss/page.tsx:6
+  - export const metadata: Metadata = { title: 'Boss et butin', description: '106 entrées du bestiaire, leurs butins et les mécaniques relevées pour 27 boss de niveaux 150–200.' };
+  + export const metadata: Metadata = { title: 'Boss et butin', description: '106 entrées du bestiaire, leurs butins et les mécaniques relevées pour 27 boss de niveaux 150-200.' };
+
+app/monde/boss/page.tsx:9
+  - <PageHeader href="/monde/boss/" section="economie" title="Boss et butin" intro="106 entrées du bestiaire, leurs butins et les mécaniques relevées pour 27 boss de niveaux 150–200." />
+  + <PageHeader href="/monde/boss/" section="economie" title="Boss et butin" intro="106 entrées du bestiaire, leurs butins et les mécaniques relevées pour 27 boss de niveaux 150-200." />
+
+app/monde/boss/page.tsx:11
+  - <Warn title="Mécaniques : couverture et règles générales"><p>Les mécaniques des boss de niveau inférieur à 150 n’ont pas été collectées. 27 boss de niveaux 150–200 sont documentés ; Bworker (180) était verrouillé.</p><p>Abysses : la mécanique de chaque boss est tirée au hasard à chaque descente et adoucie ; elle n’est donc pas listée ici.</p><p>Ascension : dès l’étage 101, les boss Transmutés ont 2–3 mécaniques parmi Épuisement final, Sceau, Élément mouvant, Inversion, Échange de PV et Rancune (une seule dès l’étage 140). Dès l’étage 140 : Écho, Glas, Lien d’âme, Accoutumance, Seuil de douleur, Hâte.</p><p>Dès l’étape 400 de l’Aventure, tous les boss pulvérisent celui qui garde un bouclier 6 tours d’affilée ; ils préviennent un tour avant.</p></Warn>
+  + <Warn title="Mécaniques : couverture et règles générales"><p>Les mécaniques des boss de niveau inférieur à 150 n’ont pas été collectées. 27 boss de niveaux 150-200 sont documentés ; Bworker (180) était verrouillé.</p><p>Abysses : la mécanique de chaque boss est tirée au hasard à chaque descente et adoucie ; elle n’est donc pas listée ici.</p><p>Ascension : dès l’étage 101, les boss Transmutés ont 2-3 mécaniques parmi Épuisement final, Sceau, Élément mouvant, Inversion, Échange de PV et Rancune (une seule dès l’étage 140). Dès l’étage 140 : Écho, Glas, Lien d’âme, Accoutumance, Seuil de douleur, Hâte.</p><p>Dès l’étape 400 de l’Aventure, tous les boss pulvérisent celui qui garde un bouclier 6 tours d’affilée ; ils préviennent un tour avant.</p></Warn>
+
+app/monde/boss/page.tsx:15
+  - <PageEnd current="/monde/boss/" see={[{ href: '/equipement/objets/', label: 'Objets' }, { href: '/a-propos/sources/', label: 'Sources et limites' }]} sources="Bestiaire et collection en jeu, compte SNking, relevé du 15 octobre 2026 vers 07:00–07:30 ; fichiers CSV et README-rpgmasters.md" />
+  + <PageEnd current="/monde/boss/" see={[{ href: '/equipement/objets/', label: 'Objets' }, { href: '/a-propos/sources/', label: 'Sources et limites' }]} sources="Bestiaire et collection en jeu, compte SNking, relevé du 15 octobre 2026 vers 07:00-07:30 ; fichiers CSV et README-rpgmasters.md" />
+
+app/monde/zones/page.tsx:10
+  - <Essentiel><li>Relevé du bestiaire filtré sur les niveaux 150–200 ; certaines plages de zones commencent plus bas.</li><li>Recherche une zone, un monstre, une famille ou un objet.</li><li>Les résultats sont regroupés par zone avec leur plage de niveaux.</li></Essentiel>
+  + <Essentiel><li>Relevé du bestiaire filtré sur les niveaux 150-200 ; certaines plages de zones commencent plus bas.</li><li>Recherche une zone, un monstre, une famille ou un objet.</li><li>Les résultats sont regroupés par zone avec leur plage de niveaux.</li></Essentiel>
+
+app/monde/zones/page.tsx:15
+  - <PageEnd current="/monde/zones/" see={[{ href: '/equipement/objets/', label: 'Objets' }, { href: '/a-propos/sources/', label: 'Sources et limites' }]} sources="Bestiaire et collection en jeu, compte SNking, relevé du 15 octobre 2026 vers 07:00–07:30 ; fichiers CSV et README-rpgmasters.md" />
+  + <PageEnd current="/monde/zones/" see={[{ href: '/equipement/objets/', label: 'Objets' }, { href: '/a-propos/sources/', label: 'Sources et limites' }]} sources="Bestiaire et collection en jeu, compte SNking, relevé du 15 octobre 2026 vers 07:00-07:30 ; fichiers CSV et README-rpgmasters.md" />
+
+app/personnage/caracteristiques/page.tsx:17
+  - ['perforationPerPoint', '0.05', '—'],
+  + ['perforationPerPoint', '0.05', ': '],
+
+app/personnage/caracteristiques/page.tsx:18
+  - ['perforationMax', '25', '—'],
+  + ['perforationMax', '25', ': '],
+
+app/personnage/caracteristiques/page.tsx:19
+  - ['erosionPerPoint', '0.05', '—'],
+  + ['erosionPerPoint', '0.05', ': '],
+
+app/personnage/caracteristiques/page.tsx:20
+  - ['erosionMax', '25', '—'],
+  + ['erosionMax', '25', ': '],
+
+app/personnage/caracteristiques/page.tsx:21
+  - ['penetrationPerPoint', '0.8', '—'],
+  + ['penetrationPerPoint', '0.8', ': '],
+
+app/personnage/caracteristiques/page.tsx:22
+  - ['penetrationMax', '50', '—'],
+  + ['penetrationMax', '50', ': '],
+
+app/personnage/caracteristiques/page.tsx:23
+  - ['dmgReductionMax', '50', '—'],
+  + ['dmgReductionMax', '50', ': '],
+
+app/personnage/caracteristiques/page.tsx:300
+  - <Joueurs title="Ordre de stats et plafonds" src="#aide, 15–19/10">
+  + <Joueurs title="Ordre de stats et plafonds" src="#aide, 15-19/10">
+
+app/personnage/caracteristiques/page.tsx:308
+  - <Joueurs title="Rayonnants et équipement" src="#aide, #équilibrage, 10–18/10">
+  + <Joueurs title="Rayonnants et équipement" src="#aide, #équilibrage, 10-18/10">
+
+app/personnage/caracteristiques/page.tsx:317
+  - <Joueurs title="Codes de deck DM-S et vitrines" src="#suggestions, #boss-et-stratégies, 06–16/10">
+  + <Joueurs title="Codes de deck DM-S et vitrines" src="#suggestions, #boss-et-stratégies, 06-16/10">
+
+app/personnage/classes/page.tsx:40
+  - <span className="feature-title">Crâ — fiche détaillée</span>
+  + <span className="feature-title">Crâ: fiche détaillée</span>
+
+app/personnage/classes/page.tsx:67
+  - <tr><td>Féca</td><td>Armure : 5 charges, −6 % de dégâts subis et +6 % de dégâts chacune (jusqu’à −30 % / +30 %) — plafonnée à 20 % le 13/10</td></tr>
+  + <tr><td>Féca</td><td>Armure : 5 charges, −6 % de dégâts subis et +6 % de dégâts chacune (jusqu’à −30 % / +30 %): plafonnée à 20 % le 13/10</td></tr>
+
+app/personnage/prestige/page.tsx:24
+  - { p: 8, cond: 'Niveau 200 + étage 60 de l’Ascension terminé (relevé du 21 oct 2026)', bonus: '—' },
+  + { p: 8, cond: 'Niveau 200 + étage 60 de l’Ascension terminé (relevé du 21 oct 2026)', bonus: ': ' },
+
+app/personnage/prestige/page.tsx:25
+  - { p: 9, cond: 'Étage 80 de l’Ascension terminé', bonus: '—' },
+  + { p: 9, cond: 'Étage 80 de l’Ascension terminé', bonus: ': ' },
+
+app/personnage/prestige/page.tsx:26
+  - { p: 10, cond: 'Étage 110 de l’Ascension terminé', bonus: '—' },
+  + { p: 10, cond: 'Étage 110 de l’Ascension terminé', bonus: ': ' },
+
+app/personnage/prestige/page.tsx:27
+  - { p: 11, cond: 'Étage 140 de l’Ascension terminé', bonus: '—' },
+  + { p: 11, cond: 'Étage 140 de l’Ascension terminé', bonus: ': ' },
+
+app/personnage/prestige/page.tsx:28
+  - { p: 12, cond: 'Étage 170 de l’Ascension terminé', bonus: '—' },
+  + { p: 12, cond: 'Étage 170 de l’Ascension terminé', bonus: ': ' },
+
+app/personnage/prestige/page.tsx:29
+  - { p: 13, cond: 'Étage 200 de l’Ascension terminé', bonus: '—' },
+  + { p: 13, cond: 'Étage 200 de l’Ascension terminé', bonus: ': ' },
+
+app/personnage/prestige/page.tsx:30
+  - { p: 14, cond: 'Étage 230 de l’Ascension terminé', bonus: '—' },
+  + { p: 14, cond: 'Étage 230 de l’Ascension terminé', bonus: ': ' },
+
+app/personnage/prestige/page.tsx:31
+  - { p: 15, cond: 'Étage 260 de l’Ascension terminé + record de 130 étages dans les Abysses', bonus: '—' },
+  + { p: 15, cond: 'Étage 260 de l’Ascension terminé + record de 130 étages dans les Abysses', bonus: ': ' },
+
+app/personnage/prestige/page.tsx:32
+  - { p: 16, cond: 'Record de 260 étages dans les Abysses', bonus: '—' },
+  + { p: 16, cond: 'Record de 260 étages dans les Abysses', bonus: ': ' },
+
+app/personnage/prestige/page.tsx:33
+  - { p: 17, cond: 'Record de 390 étages dans les Abysses', bonus: '—' },
+  + { p: 17, cond: 'Record de 390 étages dans les Abysses', bonus: ': ' },
+
+app/personnage/prestige/page.tsx:34
+  - { p: 18, cond: 'Record de 520 étages dans les Abysses', bonus: '—' },
+  + { p: 18, cond: 'Record de 520 étages dans les Abysses', bonus: ': ' },
+
+app/personnage/prestige/page.tsx:35
+  - { p: 19, cond: 'Record de 650 étages dans les Abysses', bonus: '—' },
+  + { p: 19, cond: 'Record de 650 étages dans les Abysses', bonus: ': ' },
+
+app/personnage/prestige/page.tsx:36
+  - { p: 20, cond: 'Record de 780 étages dans les Abysses', bonus: '—' },
+  + { p: 20, cond: 'Record de 780 étages dans les Abysses', bonus: ': ' },
+
+app/personnage/prestige/page.tsx:116
+  - <Tip title="Conditions du P8 — relevé du 21 oct 2026">
+  + <Tip title="Conditions du P8: relevé du 21 oct 2026">
+
+app/personnage/prestige/page.tsx:231
+  - Vous perdez <strong>équipement, inventaire, ventes en cours à l’HDV et kamas</strong> — sauf l’objet choisi et les
+  + Vous perdez <strong>équipement, inventaire, ventes en cours à l’HDV et kamas</strong>: sauf l’objet choisi et les
+
+components/BestiaryCaveats.tsx:3
+  - return <Warn title="Limites du relevé — 15 octobre 2026 vers 07:00">
+  + return <Warn title="Limites du relevé: 15 octobre 2026 vers 07:00">
+
+components/BossList.tsx:19
+  - {b.mechanics.length ? b.mechanics.map((m, i) => <div key={i}><h4>{m.tier} — {m.mechanic}</h4><p>{m.text}</p><p className="muted">Sources en jeu : {m.sources}</p></div>) : <p>Mécaniques non collectées pour ce boss (ou verrouillées en jeu).</p>}
+  + {b.mechanics.length ? b.mechanics.map((m, i) => <div key={i}><h4>{m.tier}: {m.mechanic}</h4><p>{m.text}</p><p className="muted">Sources en jeu : {m.sources}</p></div>) : <p>Mécaniques non collectées pour ce boss (ou verrouillées en jeu).</p>}
+
+components/CardAnalysis.tsx:35
+  - <strong>{card.name}</strong> — {spellText(card)}
+  + <strong>{card.name}</strong>: {spellText(card)}
+
+components/CardAnalysis.tsx:162
+  - <strong>{role.label}</strong> ({role.value}) — {role.names.slice(0, 8).join(', ')}
+  + <strong>{role.label}</strong> ({role.value}): {role.names.slice(0, 8).join(', ')}
+
+components/CardTable.tsx:91
+  - <td className="item-notes">{c.notes || '—'}</td>
+  + <td className="item-notes">{c.notes || ': '}</td>
+
+components/CatalogFilters.tsx:10
+  - return <p className="item-count" role="status" aria-live="polite">{count} {noun} sur {total}{count === 0 ? ' — Aucun résultat pour ces filtres.' : ''}</p>;
+  + return <p className="item-count" role="status" aria-live="polite">{count} {noun} sur {total}{count === 0 ? ': Aucun résultat pour ces filtres.' : ''}</p>;
+
+components/CraAdvice.tsx:23
+  - Ce sont les éléments des sorts de signature (Flèche Punitive = Terre 23–26 ; Flèche Explosive = Feu 14–17 en zone). La
+  + Ce sont les éléments des sorts de signature (Flèche Punitive = Terre 23-26 ; Flèche Explosive = Feu 14-17 en zone). La
+
+components/GameCapture.tsx:29
+  - <span>{caption ? <>{caption} — </> : null}Capture en jeu, {capture.date}</span>
+  + <span>{caption ? <>{caption}: </> : null}Capture en jeu, {capture.date}</span>
+
+components/ItemTable.tsx:53
+  - <caption>Objets de haut niveau et bonus de caractéristiques — tri décroissant.</caption>
+  + <caption>Objets de haut niveau et bonus de caractéristiques: tri décroissant.</caption>
+
+components/ItemTable.tsx:62
+  - {i.set ? <div><strong>{i.set}</strong>{i.set_bonus ? ` — ${i.set_bonus}` : ''}</div> : null}
+  + {i.set ? <div><strong>{i.set}</strong>{i.set_bonus ? `: ${i.set_bonus}` : ''}</div> : null}
+
+components/WorldDetails.tsx:6
+  - 'Barbéryl Clochecuivre': { pv: '62 409', pvMax: '60 540', meca: ['Deuxième souffle : se relève une fois à 40 % de ses PV, plus fort.', 'Fureur : plus de 2 cartes jouées dans le même tour (arme non comptée) — sa prochaine attaque fait ×2,5.'] },
+  + 'Barbéryl Clochecuivre': { pv: '62 409', pvMax: '60 540', meca: ['Deuxième souffle : se relève une fois à 40 % de ses PV, plus fort.', 'Fureur : plus de 2 cartes jouées dans le même tour (arme non comptée): sa prochaine attaque fait ×2,5.'] },
+
+components/WorldDetails.tsx:10
+  - function Etage42({ name }: { name: string }) { const e = ETAGE42[name]; if (!e) return null; return <Section id="ascension-42" title="Ascension étage 42 — relevé du 21 oct 2026"><p>3 boss (Barbéryl Clochecuivre, Toxoliath, Minotot), difficulté <strong>Cauchemar</strong>, puissance <strong>×14,96</strong>.</p><p>PV de départ : <strong>{e.pv}</strong>. Variation observée : PV max affiché en combat plus bas, <strong>{e.pvMax}</strong>.</p><ul>{e.meca.map((m, i) => <li key={i}>{m}</li>)}<li>Une icône flocon apparaît sur les boss après les premières cartes (effet non lu).</li></ul><Tip title="À retenir"><ul><li>2 cartes max par tour + l’arme.</li><li>Alterner les éléments.</li><li>Pas de soin après le tour 1.</li><li>Environ 213 000 à 223 000 dégâts à infliger sur l’étage en comptant les relèves et le bouclier.</li><li>Pas de limite de 10 tours à l’Ascension : meilleur essai connu jusqu’au tour 17.</li></ul></Tip><p><a href="/contenus/ascension/#etages-38-42">Détail de l’étage 42 sur la page Ascension</a></p></Section>; }
+  + function Etage42({ name }: { name: string }) { const e = ETAGE42[name]; if (!e) return null; return <Section id="ascension-42" title="Ascension étage 42: relevé du 21 oct 2026"><p>3 boss (Barbéryl Clochecuivre, Toxoliath, Minotot), difficulté <strong>Cauchemar</strong>, puissance <strong>×14,96</strong>.</p><p>PV de départ : <strong>{e.pv}</strong>. Variation observée : PV max affiché en combat plus bas, <strong>{e.pvMax}</strong>.</p><ul>{e.meca.map((m, i) => <li key={i}>{m}</li>)}<li>Une icône flocon apparaît sur les boss après les premières cartes (effet non lu).</li></ul><Tip title="À retenir"><ul><li>2 cartes max par tour + l’arme.</li><li>Alterner les éléments.</li><li>Pas de soin après le tour 1.</li><li>Environ 213 000 à 223 000 dégâts à infliger sur l’étage en comptant les relèves et le bouclier.</li><li>Pas de limite de 10 tours à l’Ascension : meilleur essai connu jusqu’au tour 17.</li></ul></Tip><p><a href="/contenus/ascension/#etages-38-42">Détail de l’étage 42 sur la page Ascension</a></p></Section>; }
+
+components/WorldDetails.tsx:11
+  - export function BossDetails({boss:b}:{boss:typeof bossEntries[number]}){return <><PageHeader href={`/monde/boss/${b.slug}/`} title={b.name} intro={`Niveau ${b.level} · ${b.location}`}/><BestiaryCaveats/>{b.slug === 'kralamoure-geant' ? <GameCapture id="guilde-faille-top10" caption="Faille du Kralamoure et top 10 du jour" /> : null}{['Minotot', 'Toxoliath', 'Barbéryl Clochecuivre'].includes(b.name) ? <GameCapture id="ascension-etage-42" caption={`${b.name} à l’étage 42 de l’Ascension, avec les deux autres boss de l’étage`} /> : null}<Etage42 name={b.name} /><Section id="mecaniques" title="Mécaniques par difficulté">{b.mechanics.length?b.mechanics.map((m,i)=><article key={i}><h3>{m.tier} — {m.mechanic}</h3><p>{m.text}</p><p className="muted">Sources en jeu : {m.sources}</p></article>):<p>Mécaniques non collectées pour ce boss (ou verrouillées en jeu).</p>}</Section><Section id="butin" title="Butin affiché">{b.drops.length?<TableWrap caption={`Butin de ${b.name}`}><thead><tr><th scope="col">Objet</th><th scope="col">Rareté</th><th scope="col">Taux affiché</th></tr></thead><tbody>{b.drops.map((d,i)=><tr key={i}><td>{d.item}</td><td>{d.rarity}</td><td>{d.drop_pct}</td></tr>)}</tbody></TableWrap>:<p>Aucun relevé de butin dans ce fichier.</p>}</Section></>;}
+  + export function BossDetails({boss:b}:{boss:typeof bossEntries[number]}){return <><PageHeader href={`/monde/boss/${b.slug}/`} title={b.name} intro={`Niveau ${b.level} · ${b.location}`}/><BestiaryCaveats/>{b.slug === 'kralamoure-geant' ? <GameCapture id="guilde-faille-top10" caption="Faille du Kralamoure et top 10 du jour" /> : null}{['Minotot', 'Toxoliath', 'Barbéryl Clochecuivre'].includes(b.name) ? <GameCapture id="ascension-etage-42" caption={`${b.name} à l’étage 42 de l’Ascension, avec les deux autres boss de l’étage`} /> : null}<Etage42 name={b.name} /><Section id="mecaniques" title="Mécaniques par difficulté">{b.mechanics.length?b.mechanics.map((m,i)=><article key={i}><h3>{m.tier}: {m.mechanic}</h3><p>{m.text}</p><p className="muted">Sources en jeu : {m.sources}</p></article>):<p>Mécaniques non collectées pour ce boss (ou verrouillées en jeu).</p>}</Section><Section id="butin" title="Butin affiché">{b.drops.length?<TableWrap caption={`Butin de ${b.name}`}><thead><tr><th scope="col">Objet</th><th scope="col">Rareté</th><th scope="col">Taux affiché</th></tr></thead><tbody>{b.drops.map((d,i)=><tr key={i}><td>{d.item}</td><td>{d.rarity}</td><td>{d.drop_pct}</td></tr>)}</tbody></TableWrap>:<p>Aucun relevé de butin dans ce fichier.</p>}</Section></>;}
+
+content/cra.tsx:14
+  - const EL_KIND: Record<string, 'terre' | 'feu' | 'none'> = { Terre: 'terre', Feu: 'feu', '—': 'none' };
+  + const EL_KIND: Record<string, 'terre' | 'feu' | 'none'> = { Terre: 'terre', Feu: 'feu', ': ': 'none' };
+
+content/cra.tsx:15
+  - const EL_ICON: Record<string, ElementKey> = { Terre: 'terre', Feu: 'feu', '—': 'neutre' };
+  + const EL_ICON: Record<string, ElementKey> = { Terre: 'terre', Feu: 'feu', ': ': 'neutre' };
+
+content/cra.tsx:33
+  - <strong>Stats : Force (Terre)</strong> en priorité — le gros sort Flèche Punitive est Terre. <M s={['T', 'D']} />
+  + <strong>Stats : Force (Terre)</strong> en priorité: le gros sort Flèche Punitive est Terre. <M s={['T', 'D']} />
+
+content/cra.tsx:109
+  - <El kind={EL_KIND[c.element]}>{c.element === '—' ? 'Buff' : c.element}</El>
+  + <El kind={EL_KIND[c.element]}>{c.element === ': ' ? 'Buff' : c.element}</El>
+
+content/cra.tsx:131
+  - <td className="num">{c.cc ?? '—'}</td>
+  + <td className="num">{c.cc ?? ': '}</td>

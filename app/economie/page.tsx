@@ -110,7 +110,7 @@ export default function EconomiePage() {
             <tr>
               <td>Classique</td>
               <td className="num">{fmt(5000)} k</td>
-              <td>—</td>
+              <td>aucune</td>
             </tr>
             <tr>
               <td>Chanceux</td>
@@ -338,7 +338,7 @@ export default function EconomiePage() {
               Changement de classe : 1er gratuit, puis 300 000 kamas. <M s="T" />
             </li>
             <li>
-              Énergie : 300 kamas le point (plus cher au-delà de 600 points/jour) —{' '}
+              Énergie : 300 kamas le point (plus cher au-delà de 600 points/jour): {' '}
               <Link href="/debuter/energie-xp/#achat-energie">Énergie & XP</Link>. <M s="T" />
             </li>
             <li>
@@ -372,7 +372,7 @@ export default function EconomiePage() {
           <li>On garde l’XP ; on renonce aux kamas, coffres, cartes, butin bonus et drops légendaires. Prospection et événements de drop ne changent pas les 5 %. Indisponible en saison. <Disc d="16/10" /></li>
           <li><strong>Pity</strong> : l’objet ciblé tombe automatiquement tous les <strong>100 combats</strong> en chasse ciblée, tous les <strong>200</strong> en Auto AFK. <Disc d="date non relevée" /></li>
         </ul>
-        <Joueurs src="#aide, #captures, 16–17/10">
+        <Joueurs src="#aide, #captures, 16-17/10">
           <ul>
             <li>« Pas opé, mais ça permet de viser ce qu’on cherche » : la chasse ciblée servirait surtout pour un objet précis.</li>
             <li>Pour le farm de butin classique, des joueurs prendraient plutôt un stuff Prospection (avec double rune de Prospection) et le Dofus Dokille, en Auto.</li>

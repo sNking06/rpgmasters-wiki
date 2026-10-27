@@ -30,7 +30,7 @@ export default function Lightbox() {
     let previousOverflow: string | undefined;
     function restore() {
       if (previousOverflow !== undefined) {
-        document.body.style.overflow = previousOverflow;
+        document.body.style.overflowY = previousOverflow;
         previousOverflow = undefined;
       }
       setCapture(null);
@@ -45,8 +45,8 @@ export default function Lightbox() {
       links.current = Array.from(document.querySelectorAll<HTMLAnchorElement>('a[data-lightbox]'));
       opener.current = link;
       show(links.current.indexOf(link));
-      previousOverflow = document.body.style.overflow;
-      document.body.style.overflow = 'hidden';
+      previousOverflow = document.body.style.overflowY;
+      document.body.style.overflowY = 'hidden';
       modal.showModal();
     }
     function keydown(event: KeyboardEvent) {

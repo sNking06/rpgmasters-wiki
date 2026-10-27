@@ -1,0 +1,28 @@
+{
+  "scanned": "2026-10-27",
+  "findings": {
+    "fonts": "Rowdies (display, app/fonts, next/font local in app/layout.tsx L13-19) and Lexend (body, app/layout.tsx L21-24). Unused files also present: Cinzel, Source Sans 3. Mono is a system stack (--font-mono, app/globals.css L89).",
+    "palette": "Custom properties on :root in app/globals.css L10-100 (dark default, ink brown #171005, gold #f4c260, teal #a3d6ca) and :root[data-theme='light'] L103-174 (ivory and olive). Not a named brand file.",
+    "motion": "CSS only. --ease in globals.css L98. Scroll-driven reveals and reduced-motion cuts described in README. No motion library.",
+    "spacing": "Custom: --maxw 46rem, --widew 74rem, --header-h 60px, radii 8/12/16/24 (globals.css L90-97). No Tailwind.",
+    "framework": "Next.js 15.5 App Router, static export, trailingSlash (next.config.mjs). React 19. CSS in app/globals.css plus components. No design.md."
+  },
+  "preserve": [
+    "Every fact, link, form, handler, route, id and data attribute",
+    "Theme toggle wiring: localStorage key theme, data-theme light|dark, inline head script",
+    "Search command palette (Ctrl/Cmd-K and /)",
+    "Sidebar tree, breadcrumbs, section neighbors, TOC",
+    "SVG logo and section icons drawn for the wiki",
+    "Illustrations and dated game captures",
+    "French copy except lines a copy gate names"
+  ],
+  "introduce": [
+    "Dealt editorial theme (system replaces the brown-gold-teal look; it is a project direction, not a locked brand)",
+    "tokens.css and base.css",
+    "New shell, home and page-header composition",
+    "Light and dark token pairs on the existing data-theme switch",
+    "Hallmark floor: focus-visible, overflow-x clip, no tracked-caps labels, no eyebrows"
+  ],
+  "product": "Unofficial French fan wiki for RpgMasters. 47 routes. Shared chrome in components/Header.tsx, WikiNavigation.tsx, ui.tsx, SectionLanding.tsx.",
+  "genre": "editorial (inferred). A mechanics wiki is an index and long entries. Playful was the games mapping and is refused: the copy is a sober reference. Atmospheric was the other candidate; editorial wins because tables, a tree and a theme toggle need a reading system."
+}

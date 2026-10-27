@@ -7,5 +7,5 @@ export function SelectFilter({ label, value, options, onChange }: { label: strin
   return <label>{label}<select value={value} onChange={e => onChange(e.target.value)}><option value="">Tous</option>{options.map(s => <option key={s} value={s}>{s || 'Non renseigné'}</option>)}</select></label>;
 }
 export function ResultCount({ count, total, noun }: { count: number; total: number; noun: string }) {
-  return <p className="item-count" role="status" aria-live="polite">{count} {noun} sur {total}{count === 0 ? ' — Aucun résultat pour ces filtres.' : ''}</p>;
+  return <p className="item-count" role="status" aria-live="polite">{count} {noun} sur {total}{count === 0 ? '. Aucun résultat pour ces filtres.' : ''}</p>;
 }

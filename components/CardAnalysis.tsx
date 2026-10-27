@@ -32,7 +32,7 @@ function SpellList({ names }: { names: readonly string[] }) {
         const card = requireCard(name);
         return (
           <li key={name}>
-            <strong>{card.name}</strong> — {spellText(card)}
+            <strong>{card.name}</strong>: {spellText(card)}
           </li>
         );
       })}
@@ -159,7 +159,7 @@ export function CardAnalysis() {
           <ul>
             {stats.byRole.map((role) => (
               <li key={role.id}>
-                <strong>{role.label}</strong> ({role.value}) — {role.names.slice(0, 8).join(', ')}
+                <strong>{role.label}</strong> ({role.value}): {role.names.slice(0, 8).join(', ')}
                 {role.names.length > 8 ? '…' : ''}
               </li>
             ))}
