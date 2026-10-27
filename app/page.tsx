@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="home">
+    <>
       <header className="hero">
         <div className="mast-grid">
           <div className="mast-copy">
@@ -43,10 +43,12 @@ export default function Home() {
           </div>
           <Illustration name="home" alt="" priority className="banner-art hero-plate" />
         </div>
+      </header>
 
-        <nav aria-labelledby="sujets-h" className="home-index">
+      <section aria-labelledby="sujets-h" className="home-index">
           <h2 id="sujets-h">Par où commencer ?</h2>
           <p className="index-label">Les sujets clés</p>
+          <nav aria-label="Sujets clés">
           <ul className="hub">
             {MAIN_NAV.map((n) => (
               <li key={n.href}>
@@ -69,13 +71,13 @@ export default function Home() {
               </li>
             ))}
           </ul>
-        </nav>
-      </header>
+          </nav>
+      </section>
 
       <section aria-labelledby="en-jeu-h" className="home-section">
         <h2 id="en-jeu-h">À quoi ressemble le jeu ?</h2>
         <GameCapture id="tableau-de-bord" caption="En jeu. Le tableau de bord : saison en cours, progression et quêtes du jour" />
       </section>
-    </div>
+    </>
   );
 }

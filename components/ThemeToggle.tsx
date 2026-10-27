@@ -19,7 +19,7 @@ function apply(t: Theme) {
  * en CSS : le rendu serveur et le rendu client restent identiques.
  */
 export default function ThemeToggle() {
-  // Thème sombre « Dofus » par défaut ; le clair n'est appliqué que sur choix explicite (mémorisé).
+  // Plateau clair par défaut ; le sombre n'est appliqué que sur choix explicite (mémorisé).
   const toggle = () => {
     const next: Theme = current() === 'light' ? 'dark' : 'light';
     apply(next);
@@ -32,12 +32,11 @@ export default function ThemeToggle() {
     <button type="button" className="icon-btn theme-toggle" onClick={toggle}>
       <span className="when-dark">
         <Icon name="sun" size={20} />
-        <span className="sr-only">Passer au thème clair</span>
       </span>
       <span className="when-light">
         <Icon name="moon" size={20} />
-        <span className="sr-only">Passer au thème sombre</span>
       </span>
+      <span className="sr-only">Changer le thème</span>
     </button>
   );
 }

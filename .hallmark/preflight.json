@@ -1,28 +1,24 @@
 {
   "scanned": "2026-10-27",
   "findings": {
-    "fonts": "Rowdies (display, app/fonts, next/font local in app/layout.tsx L13-19) and Lexend (body, app/layout.tsx L21-24). Unused files also present: Cinzel, Source Sans 3. Mono is a system stack (--font-mono, app/globals.css L89).",
-    "palette": "Custom properties on :root in app/globals.css L10-100 (dark default, ink brown #171005, gold #f4c260, teal #a3d6ca) and :root[data-theme='light'] L103-174 (ivory and olive). Not a named brand file.",
-    "motion": "CSS only. --ease in globals.css L98. Scroll-driven reveals and reduced-motion cuts described in README. No motion library.",
-    "spacing": "Custom: --maxw 46rem, --widew 74rem, --header-h 60px, radii 8/12/16/24 (globals.css L90-97). No Tailwind.",
-    "framework": "Next.js 15.5 App Router, static export, trailingSlash (next.config.mjs). React 19. CSS in app/globals.css plus components. No design.md."
+    "fonts": "Epilogue + IBM Plex Mono (next/font, app/layout.tsx L13-L24). Local OFL files unused by the Ink system: Rowdies, Lexend, Cinzel, Source Sans 3 (app/fonts/).",
+    "palette": "OKLCH Ink tokens in app/tokens.css :root and :root[data-theme=dark]. Near-white paper, zero-chroma ink, teal accent hue 188. design.md locks this Ink system.",
+    "motion": "Token durations only (--dur-micro/short/long). No motion library. Colour transitions on controls.",
+    "spacing": "Hallmark scaffold scale in app/tokens.css (--space-*, --gutter, --container 1440px). No Tailwind.",
+    "framework": "Next.js 15 static export, app router, React 19 (package.json). French fan wiki. Theme toggle via data-theme + localStorage."
   },
   "preserve": [
-    "Every fact, link, form, handler, route, id and data attribute",
-    "Theme toggle wiring: localStorage key theme, data-theme light|dark, inline head script",
-    "Search command palette (Ctrl/Cmd-K and /)",
-    "Sidebar tree, breadcrumbs, section neighbors, TOC",
-    "SVG logo and section icons drawn for the wiki",
-    "Illustrations and dated game captures",
-    "French copy except lines a copy gate names"
+    "French copy verbatim",
+    "every route, link, handler, search, theme toggle (data-theme), tables, captures, illustrations",
+    "IBM Plex Mono for code and keyboard hints (project face, outlier role)",
+    "element hues as data (terre, feu, eau, air)",
+    "dark mode, re-derived, attribute name kept"
   ],
   "introduce": [
-    "Dealt editorial theme (system replaces the brown-gold-teal look; it is a project direction, not a locked brand)",
-    "tokens.css and base.css",
-    "New shell, home and page-header composition",
-    "Light and dark token pairs on the existing data-theme switch",
-    "Hallmark floor: focus-visible, overflow-x clip, no tracked-caps labels, no eyebrows"
+    "custom Dofus-inspired system replacing the rejected Ink lock in design.md",
+    "shape, chrome, hero composition, placard sections",
+    "Rowdies display and Figtree body",
+    "azure frame, stone wells, gold trim, four element bands"
   ],
-  "product": "Unofficial French fan wiki for RpgMasters. 47 routes. Shared chrome in components/Header.tsx, WikiNavigation.tsx, ui.tsx, SectionLanding.tsx.",
-  "genre": "editorial (inferred). A mechanics wiki is an index and long entries. Playful was the games mapping and is refused: the copy is a sober reference. Atmospheric was the other candidate; editorial wins because tables, a tree and a theme toggle need a reading system."
+  "conflict": "design.md locks Ink. Steven rejected that result and asked to replace the system. The user instruction wins; design.md is rewritten on purpose after the scaffold."
 }

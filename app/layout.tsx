@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import Link from 'next/link';
-import { Epilogue, IBM_Plex_Mono } from 'next/font/google';
+import localFont from 'next/font/local';
+import { Figtree, IBM_Plex_Mono } from 'next/font/google';
 import type { ReactNode } from 'react';
 import Header from '@/components/Header';
 import Lightbox from '@/components/Lightbox';
@@ -10,10 +11,17 @@ import { Icon, Logo } from '@/components/icons';
 import { DATA_DATE_LABEL, GAME_URL, SITE_DESCRIPTION, SITE_NAME } from '@/lib/site';
 import './globals.css';
 
-const epilogue = Epilogue({
+const rowdies = localFont({
+  src: [
+    { path: './fonts/Rowdies-Regular.ttf', weight: '400', style: 'normal' },
+    { path: './fonts/Rowdies-Bold.ttf', weight: '700', style: 'normal' },
+  ],
+  variable: '--font-rowdies',
+  display: 'swap',
+});
+const figtree = Figtree({
   subsets: ['latin', 'latin-ext'],
-  weight: ['400', '600', '700'],
-  variable: '--font-epilogue',
+  variable: '--font-figtree',
   display: 'swap',
 });
 const plex = IBM_Plex_Mono({
@@ -39,22 +47,26 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#2a2824',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#003852' },
+    { media: '(prefers-color-scheme: dark)', color: '#001929' },
+  ],
   colorScheme: 'dark light',
   width: 'device-width',
   initialScale: 1,
 };
 
-/** Posé avant le premier rendu : thème mémorisé, sinon celui du système (aucun flash). */
-const THEME_SCRIPT = `(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t='dark'}document.documentElement.dataset.theme=t}catch(e){}})();`;
+/** Posé avant le premier rendu : thème mémorisé, sinon le plateau clair (aucun flash). */
+const THEME_SCRIPT = `(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t='light'}document.documentElement.dataset.theme=t}catch(e){}})();`;
+const STAMP = `/* Hallmark · shape: Element board · genre: playful · theme: custom · redesign: full · job: visit · idea: "A four-element game board for this French fan wiki" · vibe: "warm comic fantasy codex"
+ * paper: oklch(95% 0.028 88) · accent: oklch(40% 0.13 232) · display: Rowdies · body: Figtree · hero: plate beside the title, element placards under it · nav: azure bar, gold current · footer: azure close · imagery: the wiki's own plates and dated captures · signature: the seven sections banded in terre, feu, eau and air
+ * axes: light/rounded-sans/chromatic-blue · posture: full-palette · contrast: pass · fold: pass · modes: light+dark · copy: verbatim · v2.0.0 */`;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="fr" className={`${epilogue.variable} ${plex.variable}`} suppressHydrationWarning>
+    <html lang="fr" className={`${rowdies.variable} ${figtree.variable} ${plex.variable}`} suppressHydrationWarning>
       <head>
-        <style>{`/* Hallmark · shape: Photographic · genre: editorial · theme: Ink (deal 3/3, seed french-players-look-rpgmasters-3405·a1b5d06e·2026-10-27·r0) · redesign: full · job: listen · draw: 4fa0a3
- * hero: Banner, Index (/) · nav: search-led bar · footer: letter close · imagery: the wiki's own plates and dated captures · signature: the ruled index of the seven sections · ink: paper
- * axes: light/grotesk-sans/chromatic-teal · posture: restrained · contrast: pass · fold: pass · v2.0.0 */`}</style>
+        <style>{STAMP}</style>
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
       </head>
       <body>

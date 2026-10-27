@@ -2,32 +2,35 @@
 
 The locked system. Every Hallmark run reads this first and pages share it. Change it on purpose; the file is the rule.
 
+Replaced the Ink lock on purpose: that redesign was rejected. This file is the Dofus-inspired board.
+
 ## System
-- Genre: editorial
-- Shape of the first page: Photographic (home is an Index; interior articles use Banner)
-- Theme: Ink
-- Axes: light/grotesk-sans/chromatic-teal · posture: restrained
+- Genre: playful
+- Shape of the first page: Element board (home plate beside the title, interior articles keep a banner mast)
+- Theme: custom (vibe: "warm comic fantasy codex")
+- Axes: light/rounded-sans/chromatic-blue · posture: full-palette
 
 ## Tokens
 `app/tokens.css` is the source of truth. The roles:
 ```css
 :root {
-  --color-paper: oklch(99.5% 0.003 100);  --color-paper-2: oklch(97% 0.004 100);  --color-paper-3: oklch(94% 0.006 100);
-  --color-ink: oklch(16% 0 0);  --color-ink-2: oklch(28% 0 0);  --color-muted: oklch(44% 0 0);  --color-rule: oklch(89% 0.004 100);
-  --color-accent: oklch(50% 0.095 188);  --color-accent-ink: oklch(99.5% 0.003 100);  --color-focus: oklch(50% 0.095 188);
-  --font-display: "Epilogue", ui-sans-serif, system-ui, sans-serif;  --font-body: var(--font-display);
+  --color-paper: oklch(95% 0.028 88);  --color-paper-2: oklch(92% 0.032 86);  --color-paper-3: oklch(88% 0.04 82);
+  --color-ink: oklch(28% 0.045 55);  --color-ink-2: oklch(36% 0.04 55);  --color-muted: oklch(44% 0.04 55);  --color-rule: oklch(78% 0.035 80);
+  --color-accent: oklch(40% 0.13 232);  --color-accent-ink: oklch(97% 0.016 88);  --color-focus: oklch(40% 0.14 232);
+  --font-display: "Rowdies", ui-sans-serif, sans-serif;  --font-body: "Figtree", ui-sans-serif, sans-serif;
   --font-outlier: "IBM Plex Mono", ui-monospace, monospace;
-  --radius-card: 12px;  --radius-pill: 999px;  --rule-hair: 1px;  --shadow-card: 0 20px 40px oklch(20% 0 0 / 0.16);
+  --radius-card: 18px;  --radius-pill: 999px;  --rule-hair: 1px;  --shadow-card: 0 12px 28px oklch(32% 0.06 232 / 0.16);
 }
 ```
-The spacing scale, the type scale, the easings and the durations are the scaffold's and live in `app/tokens.css`. Dark reading is `:root[data-theme='dark']` in the same file (hue 100, paper near L 16, ink near L 94, accent lifted, shadow off). Element hues (terre, feu, eau, air) are data, not a second accent.
+The spacing scale, the type scale, the easings and the durations are the scaffold's and live in `app/tokens.css`. The frame is `--color-world` (azure, hue 232) with `--color-gold` trim. Terre, feu, eau and air are data hues used as placard bands, not a second accent. Dark reading is `:root[data-theme='dark']` in the same file (hues held, paper near L 16, ink near L 94, accent lifted for text, shadow off).
 
 ## Controls
-- Primary: ink fill · radius 10px · height 44px
-- Secondary: paper outline · same radius and height
+- Primary: azure accent fill, accent-ink label · radius 12px · height 44px
+- Secondary: stone outline · same radius and height
+- Current nav: gold fill, gold-ink label
 
 ## Motion
-- Character: still; colour only on press and hover (`--dur-micro`); under reduced motion everything ends at once.
+- Character: still; colour and a 1px press only (`--dur-micro`); under reduced motion everything ends at once.
 
 ## Exports
 `app/tokens.css` in this project. Tailwind, DTCG or shadcn blocks are added here on request, per `export-formats.md`.
