@@ -29,10 +29,10 @@ export default function Home() {
               <OpenSearchButton className="btn btn-ghost">
                 Rechercher <kbd aria-hidden="true">/</kbd>
               </OpenSearchButton>
-              <p className="date-chip">
-                <Icon name="calendar" size={16} /> {DATA_DATE_LABEL}
-              </p>
             </div>
+            <p className="date-chip">
+              <Icon name="calendar" size={16} /> {DATA_DATE_LABEL}
+            </p>
             <p className="hero-note">
               <Icon name="warning" size={16} />
               <span>
@@ -43,7 +43,6 @@ export default function Home() {
           </div>
           <Illustration name="home" alt="" priority className="banner-art hero-plate" />
         </div>
-      </header>
 
       <section aria-labelledby="sujets-h" className="home-index">
           <h2 id="sujets-h">Par où commencer ?</h2>
@@ -73,6 +72,7 @@ export default function Home() {
           </ul>
           </nav>
       </section>
+      </header>
 
       <section aria-labelledby="en-jeu-h" className="home-section">
         <h2 id="en-jeu-h">À quoi ressemble le jeu ?</h2>

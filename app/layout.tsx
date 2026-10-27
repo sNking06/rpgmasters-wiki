@@ -59,8 +59,9 @@ export const viewport: Viewport = {
 /** Posé avant le premier rendu : thème mémorisé, sinon le plateau clair (aucun flash). */
 const THEME_SCRIPT = `(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t='light'}document.documentElement.dataset.theme=t}catch(e){}})();`;
 const STAMP = `/* Hallmark · shape: Element board · genre: playful · theme: custom · redesign: full · job: visit · idea: "A four-element game board for this French fan wiki" · vibe: "warm comic fantasy codex"
- * paper: oklch(95% 0.028 88) · accent: oklch(40% 0.13 232) · display: Rowdies · body: Figtree · hero: plate beside the title, element placards under it · nav: azure bar, gold current · footer: azure close · imagery: the wiki's own plates and dated captures · signature: the seven sections banded in terre, feu, eau and air
- * axes: light/rounded-sans/chromatic-blue · posture: full-palette · contrast: pass · fold: pass · modes: light+dark · copy: verbatim · v2.0.0 */`;
+ * paper: oklch(95% 0.028 88) · accent: oklch(40% 0.13 232) · display: Rowdies · body: Figtree · hero: small plate beside the title, seven element tiles fill the fold · nav: azure bar, gold current · footer: azure close · imagery: the wiki's own plates and dated captures · signature: the seven sections banded in terre, feu, eau and air
+ * axes: light/rounded-sans/chromatic-blue · posture: full-palette · contrast: pass · fold: pass · modes: light+dark · copy: verbatim · v2.0.0 */
+/* Hallmark · hero-review: fix · 3 findings · 3 resolved */`;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

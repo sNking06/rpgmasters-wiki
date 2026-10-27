@@ -1,9 +1,10 @@
 /* Hallmark · shape: Element board · genre: playful · theme: custom · redesign: full · job: visit · idea: "A four-element game board for this French fan wiki" · vibe: "warm comic fantasy codex"
- * paper: oklch(95% 0.028 88) · accent: oklch(40% 0.13 232) · display: Rowdies · body: Figtree · hero: plate beside the title, element placards under it · nav: azure bar, gold current · footer: azure close · imagery: the wiki's own plates and dated captures · signature: the seven sections banded in terre, feu, eau and air
+ * paper: oklch(95% 0.028 88) · accent: oklch(40% 0.13 232) · display: Rowdies · body: Figtree · hero: small plate beside the title, seven element tiles fill the fold · nav: azure bar, gold current · footer: azure close · imagery: the wiki's own plates and dated captures · signature: the seven sections banded in terre, feu, eau and air
  * axes: light/rounded-sans/chromatic-blue · posture: full-palette · contrast: pass · fold: pass · modes: light+dark · copy: verbatim · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E5 S4 R4 V5 · weakest: P, the stone well is warm so the azure frame and the four bands carry the board */
 /* Hallmark · waive 77 · callouts and essentiel blocks stay text · these wiki sections already hold the captures and the tables */
 /* Hallmark · dismissed 28a · the hero plate is the first paint, captures stay lazy below it */
+/* Hallmark · hero-review: fix · 3 findings · 3 resolved */
 @import url("./tokens.css");
 @import url("./base.css");
 
@@ -147,6 +148,7 @@ html:has(.site-header.menu-open) { overflow-y: hidden; }
 .footer-ornament { display: flex; align-items: center; gap: var(--space-sm); margin-top: var(--space-lg); color: var(--color-gold); }
 .footer-ornament span { flex: 1; max-width: 8rem; height: var(--rule-bar); background: var(--color-gold); }
 .footer-legal { margin-top: var(--space-lg); font-size: var(--text-sm); color: var(--color-world-muted); max-width: 65ch; }
+.hero .date-chip { margin-top: var(--space-xs); }
 .date-chip, .date-badge {
   display: inline-flex; align-items: center; gap: var(--space-xs);
   margin: 0; font-size: var(--text-sm); color: var(--color-muted);
@@ -161,52 +163,60 @@ html:has(.site-header.menu-open) { overflow-y: hidden; }
 .hero, .home-index, .home-section { min-width: 0; }
 .hero { display: flex; flex-direction: column; justify-content: flex-start; gap: var(--space-lg); }
 .mast-grid {
-  display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  gap: var(--space-lg); align-items: center;
+  display: grid; grid-template-columns: 9.5rem minmax(0, 1fr);
+  gap: var(--space-md); align-items: center;
 }
 .hero-plate { grid-column: 1; grid-row: 1; }
 .mast-copy { grid-column: 2; grid-row: 1; }
-.hero h1 { font-size: var(--text-3xl); max-width: 12ch; }
-.hero h2 { font-size: var(--text-2xl); max-width: none; margin: 0 0 var(--space-xs); }
-.hero-sub { font-size: var(--text-lead); max-width: 36ch; color: var(--color-ink-2); }
-.hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm); margin-top: var(--space-md); }
+.hero h1 { font-size: var(--text-3xl); max-width: 14ch; }
+.hero h2 { font-size: var(--text-xl); max-width: none; margin: 0; }
+.hero-sub { font-size: var(--text-md); max-width: 42ch; margin: var(--space-2xs) 0 0; color: var(--color-ink-2); }
+.hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-xs) var(--space-sm); margin-top: var(--space-sm); }
 .hero-note {
   display: flex; gap: var(--space-sm); align-items: flex-start;
-  margin-top: var(--space-md); font-size: var(--text-sm); color: var(--color-ink-2); max-width: 52ch;
+  margin: var(--space-xs) 0 0; font-size: var(--text-sm); color: var(--color-ink-2); max-width: 62ch;
 }
-.hero-plate { height: 300px; }
+.hero-plate { height: 9.5rem; }
 .page-plate { height: 220px; }
 .hero-plate, .page-plate {
   width: 100%; object-fit: cover; border-radius: var(--radius-card);
   box-shadow: var(--shadow-plate);
   outline: var(--rule-bar) solid var(--color-gold); outline-offset: calc(var(--rule-bar) * -1);
 }
-.index-label { font-size: var(--text-sm); color: var(--color-muted); margin: 0 0 var(--space-xs); }
-.hub { list-style: none; margin: var(--space-sm) 0 0; padding: 0; display: grid; gap: var(--space-xs); }
-.hub > li:nth-child(4n+1) { --band: color-mix(in oklch, var(--el-eau) 18%, var(--color-paper)); }
-.hub > li:nth-child(4n+2) { --band: color-mix(in oklch, var(--el-feu) 18%, var(--color-paper)); }
-.hub > li:nth-child(4n+3) { --band: color-mix(in oklch, var(--el-terre) 22%, var(--color-paper)); }
-.hub > li:nth-child(4n) { --band: color-mix(in oklch, var(--el-air) 18%, var(--color-paper)); }
+.index-label { font-size: var(--text-sm); color: var(--color-muted); margin: 0; }
+.hero .home-index { margin-top: var(--space-sm); }
+.hub { list-style: none; margin: var(--space-xs) 0 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-xs); }
+.hero .hub { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.hub > li:has(.date-badge) { grid-column: 1 / -1; }
+.hub > li:nth-child(4n+1) { --band: var(--band-eau); }
+.hub > li:nth-child(4n+2) { --band: var(--band-feu); }
+.hub > li:nth-child(4n+3) { --band: var(--band-terre); }
+.hub > li:nth-child(4n) { --band: var(--band-air); }
 .hub > li { border: 0; }
 .hub-card {
-  display: grid; grid-template-columns: 72px minmax(0, 1fr) auto; gap: var(--space-sm); align-items: center;
-  min-height: 72px; padding: var(--space-xs) var(--space-sm);
-  background: var(--band, var(--color-paper-2)); color: var(--color-ink);
+  display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: var(--space-xs); align-items: center;
+  min-height: 0; padding: var(--space-xs);
+  background: var(--band, var(--color-paper-2)); color: var(--band-ink);
   border-radius: var(--radius-control); text-decoration: none;
+  outline: var(--rule-bar) solid var(--color-gold); outline-offset: calc(var(--rule-bar) * -1);
 }
 .hub-card:hover { background: var(--color-gold); color: var(--color-gold-ink); }
-.hub-card:hover .hub-desc, .hub-card:hover .hub-arrow { color: var(--color-gold-ink); }
+.hub-card:hover .hub-desc, .hub-card:hover .hub-arrow, .hub-card:hover .medal { color: var(--color-gold-ink); }
 .hub-copy {
   display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: var(--space-xs);
   align-items: center; min-width: 0;
 }
 .hub-copy .medal { grid-row: 1 / span 2; }
 .hub-title, .hub-desc, .hub-copy .date-badge { grid-column: 2; line-height: 1.2; }
-.card-thumbnail { width: 72px; height: 52px; object-fit: cover; border-radius: var(--radius-control); }
-.medal { display: inline-flex; color: var(--color-ink); }
-.hub-title { display: block; font-weight: 700; letter-spacing: 0; text-transform: none; }
-.hub-desc { display: block; color: var(--color-muted); font-size: var(--text-sm); }
-.hub-arrow { font-size: var(--text-sm); font-weight: 600; white-space: nowrap; color: var(--color-accent); }
+.card-thumbnail { width: 52px; height: 44px; object-fit: cover; border-radius: var(--radius-control); }
+.medal { display: inline-flex; color: var(--band-ink); }
+.hub-title { display: block; font-weight: 700; letter-spacing: 0; text-transform: none; color: var(--band-ink); }
+.hub-desc { display: block; color: var(--band-muted); font-size: var(--text-sm); }
+.hub-arrow { font-size: var(--text-sm); font-weight: 600; white-space: nowrap; color: var(--band-ink); }
+.hub-card .date-badge {
+  justify-self: start; padding: 0; border-radius: 0;
+  background: transparent; color: var(--band-muted); white-space: normal;
+}
 .home-index { margin-top: var(--space-lg); }
 .main p { max-width: 48ch; }
 .home-section { margin-top: var(--section-gap); }
@@ -463,13 +473,13 @@ mark { background: var(--color-gold); color: var(--color-gold-ink); }
   .mast-copy { grid-row: 1; }
   .hero-plate { grid-row: 2; height: 180px; }
   .page-plate { height: 180px; }
-  .hub-card { grid-template-columns: 64px minmax(0, 1fr); }
+  .hub-card { grid-template-columns: 52px minmax(0, 1fr); }
   .hub-arrow { display: none; }
-  .card-thumbnail { width: 64px; height: 44px; }
+  .card-thumbnail { width: 52px; height: 44px; }
 }
 @media (max-width: 40rem) {
   .brand-sub, .search-kbd { display: none; }
-  .fiche-row, .bars li, .item-filters, .filter-wrap { grid-template-columns: minmax(0, 1fr); }
+  .fiche-row, .bars li, .item-filters, .filter-wrap, .hero .hub { grid-template-columns: minmax(0, 1fr); }
   .prev-next { flex-direction: column; }
   .pn, .pn-next { max-width: none; text-align: left; margin-left: 0; }
 }
