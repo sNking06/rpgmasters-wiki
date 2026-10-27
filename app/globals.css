@@ -5,6 +5,7 @@
 /* Hallmark · waive 77 · callouts and essentiel blocks stay text · these wiki sections already hold the captures and the tables */
 /* Hallmark · dismissed 28a · the hero plate is the first paint, captures stay lazy below it */
 /* Hallmark · hero-review: fix · 3 findings · 3 resolved */
+/* Hallmark · finish-review: subagent · 5 findings · 5 resolved · gap: none */
 @import url("./tokens.css");
 @import url("./base.css");
 
@@ -103,6 +104,31 @@ html:has(.site-header.menu-open) { overflow-y: hidden; }
 .wiki-tree summary::-webkit-details-marker { display: none; }
 .wiki-tree nav ul { list-style: none; margin: 0; padding: 0; }
 .wiki-tree li { border-top: var(--rule-hair) solid var(--color-rule); }
+.wiki-tree nav > ul > li { border-top: 0; margin-top: var(--space-2xs); }
+.wiki-tree nav > ul > li > a,
+.wiki-tree nav > ul > li > .tree-row {
+  border-radius: var(--radius-control); color: var(--band-ink); background: var(--band-terre);
+}
+.wiki-tree nav > ul > li:nth-child(4n+1) > a,
+.wiki-tree nav > ul > li:nth-child(4n+1) > .tree-row { background: var(--band-eau); }
+.wiki-tree nav > ul > li:nth-child(4n+2) > a,
+.wiki-tree nav > ul > li:nth-child(4n+2) > .tree-row { background: var(--band-feu); }
+.wiki-tree nav > ul > li:nth-child(4n+3) > a,
+.wiki-tree nav > ul > li:nth-child(4n+3) > .tree-row { background: var(--band-terre); }
+.wiki-tree nav > ul > li:nth-child(4n) > a,
+.wiki-tree nav > ul > li:nth-child(4n) > .tree-row { background: var(--band-air); }
+.wiki-tree nav > ul > li > a {
+  display: block; padding: var(--space-xs) var(--space-sm); color: var(--band-ink);
+  text-decoration: none; font-size: var(--text-sm); font-weight: 700;
+}
+.wiki-tree nav > ul > li > .tree-row a,
+.wiki-tree nav > ul > li > .tree-row button { color: var(--band-ink); }
+.wiki-tree nav > ul > li > .tree-row a { padding-left: var(--space-sm); }
+.wiki-tree nav > ul > li > a[aria-current='page'],
+.wiki-tree nav > ul > li > .tree-row a[aria-current='page'] {
+  color: var(--band-ink);
+  box-shadow: inset 0 0 0 var(--rule-bar) var(--color-gold);
+}
 .tree-row { display: flex; align-items: stretch; gap: var(--space-2xs); }
 .tree-row a { flex: 1; min-width: 0; padding: var(--space-xs) 0; color: inherit; text-decoration: none; font-size: var(--text-sm); }
 .tree-label { display: block; }
@@ -303,6 +329,17 @@ input, select, textarea {
   border: var(--rule-hair) solid var(--color-muted); border-radius: var(--radius-control);
   background: var(--color-paper); color: var(--color-ink);
 }
+input[type='checkbox'] {
+  appearance: none; width: 1.25rem; height: 1.25rem; min-height: 0; margin: 0; padding: 0; flex: none;
+  border: var(--rule-bar) solid var(--color-ink); border-radius: 4px;
+  background: var(--color-paper-2); display: grid; place-items: center;
+}
+input[type='checkbox']:checked { background: var(--color-accent); border-color: var(--color-accent); }
+input[type='checkbox']:checked::after {
+  content: ""; width: 0.3rem; height: 0.55rem;
+  border: solid var(--color-accent-ink); border-width: 0 2px 2px 0;
+  transform: rotate(45deg) translate(-1px, -2px);
+}
 textarea { height: auto; min-height: 44px; padding: var(--space-sm); }
 label { font-size: var(--text-sm); }
 
@@ -327,6 +364,9 @@ th { font-weight: 600; font-size: var(--text-sm); letter-spacing: 0; text-transf
 td.num, .num, .stat-value, .bar-val { font-variant-numeric: tabular-nums; }
 .item-filters, .filter-wrap { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-sm); align-items: end; margin: var(--space-md) 0; }
 .item-filters label, .filter-wrap label { display: flex; flex-direction: column; gap: var(--space-2xs); }
+.item-filters label:has(input[type='checkbox']) {
+  flex-direction: row; align-items: center; align-self: end; min-height: 44px; gap: var(--space-sm);
+}
 .item-count, .class-count { font-size: var(--text-sm); color: var(--color-muted); font-variant-numeric: tabular-nums; }
 .rarity-legend { display: flex; flex-wrap: wrap; gap: var(--space-xs); list-style: none; margin: var(--space-sm) 0; padding: 0; }
 .rarity { display: inline-block; padding: var(--space-3xs) var(--space-sm); border-radius: var(--radius-pill); border: var(--rule-hair) solid var(--color-rule); font-size: var(--text-sm); color: var(--color-ink); }
@@ -352,14 +392,15 @@ details[open] > summary .sum-chev { transform: rotate(180deg); }
 .class-card summary > span { min-width: 0; }
 details:not([open]) > :not(summary) { display: none; }
 .class-name { font-family: var(--font-display); font-weight: 700; letter-spacing: 0; }
-.class-passive, .class-short { color: var(--color-muted); font-weight: 400; }
+.class-passive, .class-short { color: var(--band-muted); font-weight: 400; }
 .class-short { display: block; font-size: var(--text-sm); }
+.class-card a { color: var(--color-gold); }
 .class-filter { width: min(100%, 28rem); }
 .class-empty { margin-top: var(--space-md); }
-.class-card:nth-child(4n+1) { background: color-mix(in oklch, var(--el-eau) 12%, var(--color-paper)); }
-.class-card:nth-child(4n+2) { background: color-mix(in oklch, var(--el-feu) 12%, var(--color-paper)); }
-.class-card:nth-child(4n+3) { background: color-mix(in oklch, var(--el-terre) 14%, var(--color-paper)); }
-.class-card:nth-child(4n) { background: color-mix(in oklch, var(--el-air) 12%, var(--color-paper)); }
+.class-grid > li:nth-child(4n+1) .class-card { background: var(--band-eau); color: var(--band-ink); }
+.class-grid > li:nth-child(4n+2) .class-card { background: var(--band-feu); color: var(--band-ink); }
+.class-grid > li:nth-child(4n+3) .class-card { background: var(--band-terre); color: var(--band-ink); }
+.class-grid > li:nth-child(4n) .class-card { background: var(--band-air); color: var(--band-ink); }
 
 .feature {
   display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--space-md); align-items: center;
@@ -457,6 +498,9 @@ details:not([open]) > :not(summary) { display: none; }
 .capture-lightbox img { max-height: 70vh; margin: var(--space-md) auto; }
 mark { background: var(--color-gold); color: var(--color-gold-ink); }
 
+@media (min-width: 68.75rem) {
+  .wiki-tree:not([open]) > nav { display: block; }
+}
 @media (max-width: 68.75rem) {
   .shell { grid-template-columns: minmax(0, 1fr); }
   .toc-col { display: none; }
