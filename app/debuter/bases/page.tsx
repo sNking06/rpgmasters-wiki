@@ -6,9 +6,8 @@ export default function Page(){return <><PageHeader href="/debuter/bases/" title
       <section id="astuces" className="section home-section">
         <div className="tips-layout">
           <div className="tips-aside">
-            <p className="section-kicker">Quoi faire en premier</p>
             <h2>Les 5 astuces pour grimper vite</h2>
-            <p className="section-lead">Tirées de la FAQ publique du jeu.</p>
+            <p className="section-lead">Quoi faire en premier, tirées de la FAQ publique du jeu.</p>
           </div>
           <ol className="tips">
             <li>

@@ -1,0 +1,27 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "site",
+  "shape": "Photographic",
+  "theme": "Ink",
+  "axes": "light/grotesk-sans/chromatic-teal",
+  "hero": "Index",
+  "nav": "search-led bar",
+  "footer": "letter close",
+  "imagery": "the wiki own plates and dated captures",
+  "entry": "ruled index",
+  "fingerprint": "photographic-ink-index-search-letter-ruled",
+  "sections": "index, capture, article mast",
+  "signature": "the ruled index of the seven sections",
+  "prompt": "French players looking up RpgMasters mechanics",
+  "draw": "4fa0a3",
+  "genre": "editorial",
+  "posture": "restrained",
+  "waived": [
+   "22",
+   "77"
+  ],
+  "date": "2026-10-27"
+ }
+]

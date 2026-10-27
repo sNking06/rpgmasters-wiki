@@ -88,7 +88,7 @@ export function CardTable() {
                 <td>{value(c, 'element').replaceAll(';', ', ')}</td>
                 <td className="item-notes">{c.effect}</td>
                 <td>{c.lines}</td>
-                <td className="item-notes">{c.notes || '—'}</td>
+                <td className="item-notes">{c.notes || '\u2014'}</td>
               </tr>
             ))}
             {!rows.length && (

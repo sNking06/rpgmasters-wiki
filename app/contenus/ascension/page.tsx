@@ -32,12 +32,12 @@ export default function AscensionPage() {
         <li>Garder un bouclier (ex. <strong>Vertu au tour 1</strong>) pour les Gros coups. L’étage 30 a été passé ainsi. <M s="T" /></li>
       </Essentiel>
       <Section id="boss" title="Étages 29-30 : les boss">
-        <h3>Ougah — Fureur</h3>
+        <h3>Ougah: Fureur</h3>
         <ul>
           <li>Plus de 3 cartes jouées dans un tour : sa prochaine attaque est multipliée par <strong>1,8</strong>. La carte d’arme n’est pas comptée. <M s="T" /></li>
           <li>Rage : il « se déchaîne » ensuite avec un gros Gros coup. <M s="T" /></li>
         </ul>
-        <h3>Ben le Ripate — Onde de choc</h3>
+        <h3>Ben le Ripate: Onde de choc</h3>
         <ul>
           <li>2 sorts de dégâts du même élément à la suite = <strong>25 % de tes PV max</strong> en dégâts. <M s="T" /></li>
         </ul>
@@ -60,21 +60,21 @@ export default function AscensionPage() {
           <p>Observations d’un seul joueur sur quelques combats : les valeurs exactes peuvent varier selon les stats.</p>
         </Warn>
       </Section>
-      <Section id="etages-38-42" title="Étages 38 à 42 — observations des 16-17 oct 2026">
-        <h3>Étage 38 — Père Ver, Grolloum, Comte Razof</h3>
+      <Section id="etages-38-42" title="Étages 38 à 42: observations des 16-17 oct 2026">
+        <h3>Étage 38: Père Ver, Grolloum, Comte Razof</h3>
         <p>Protection donne de gros boucliers. La Fureur de Père Ver multiplie son attaque par <strong>2,5 au-delà de 2 cartes dans le tour</strong> ; les armes ne comptent pas. Étage passé avec 2 cartes par tour et l’arme. <M s="T" /></p>
-        <h3>Étage 39 — Supervizœuf, Ben le Ripate, Bworker</h3>
+        <h3>Étage 39: Supervizœuf, Ben le Ripate, Bworker</h3>
         <p>Fureur présente ; son seuil et son multiplicateur ne sont pas précisés dans ce relevé. <M s="T" /></p>
-        <h3>Étage 40 — Ush Galesh, Toxoliath, XLII</h3>
+        <h3>Étage 40: Ush Galesh, Toxoliath, XLII</h3>
         <p>Étage palier : Fureur plus douce, <strong>plus de 3 cartes = attaque ×1,8</strong>. <M s="T" /></p>
-        <h3>Étage 41 — validé, record actuel</h3>
+        <h3>Étage 41: validé, record actuel</h3>
         <p>Kimbo : environ 52 000 PV ; Fuji Givrefoux Nourricière : environ 62 000 PV ; Bworker : environ 52 000 PV. <M s="T" /></p>
         <ul>
           <li>Vol de 1 PA par tour et sceau sur la carte la plus chère. <M s="T" /></li>
           <li>Onde de choc : deux sorts de dégâts du même élément à la suite infligent 25 % des PV max ; l’arme ne compte pas. <M s="T" /></li>
           <li>Malédiction des soins, boucliers de 10 000 à 12 000 et Rage observés pendant le combat. <M s="T" /></li>
         </ul>
-        <h3>Étage 42 — encore non franchi</h3>
+        <h3>Étage 42: encore non franchi</h3>
         <ul>
           <li><strong>Barbéryl Clochecuivre : 62 409 PV</strong>, Deuxième souffle (relève à 40 %) et Fureur au-delà de 2 cartes : attaque ×2,5. <M s="T" /></li>
           <li><strong>Toxoliath : 52 424 PV</strong>, Malédiction des soins et Onde de choc. <M s="T" /></li>
@@ -82,7 +82,7 @@ export default function AscensionPage() {
           <li>Total effectif avec les relèves : environ <strong>213 000 PV</strong>. <M s="T" /></li>
         </ul>
         <p>Meilleur essai manuel documenté : mort au <strong>tour 17</strong>, Toxoliath tué au tour 12, Minotot à 9 782 PV et Barbéryl presque intact. Le focus Barbéryl en premier a donné de moins bons résultats : morts aux tours 6 à 8. <M s="T" /></p>
-        <h3>Étage 42 — relevé du 21 oct 2026</h3>
+        <h3>Étage 42: relevé du 21 oct 2026</h3>
         <p>3 boss, difficulté <strong>Cauchemar</strong>, puissance <strong>×14,96</strong>. <M s="T" /></p>
         <ul>
           <li>PV de départ : <strong>Barbéryl Clochecuivre 62 409</strong>, <strong>Toxoliath 52 424</strong>, <strong>Minotot 52 424</strong>. Variation observée : les PV max affichés en combat étaient plus bas, <strong>60 540 / 50 571 / 49 980</strong>. <M s="T" /></li>
@@ -92,7 +92,7 @@ export default function AscensionPage() {
           <li>Une icône flocon apparaît sur les boss après les premières cartes (effet non lu). <M s="T" /></li>
           <li>Le combat n’est <strong>pas limité à 10 tours</strong> : la limite de 10 tours vaut pour le Kralamoure. Le meilleur essai connu au 42 a duré jusqu’au <strong>tour 17</strong>. <M s="T" /></li>
         </ul>
-        <Tip title="À retenir — étage 42">
+        <Tip title="À retenir: étage 42">
           <ul>
             <li><strong>2 cartes max par tour</strong> + l’arme (Claymomore).</li>
             <li><strong>Alterner les éléments</strong> entre deux sorts de dégâts.</li>
@@ -107,7 +107,7 @@ export default function AscensionPage() {
         <Warn><p>Cette stratégie a donné le meilleur essai documenté ; elle n’a pas encore permis de valider l’étage 42.</p></Warn>
       </Section>
       <Section id="build-defensif" title="Build défensif Féca pour l’Ascension">
-        <p>Relevé des 16-17 oct 2026 : deck resserré à <strong>11 cartes</strong> — Bouclier Féca, Vertu, Rempart, Couronne d’Épines, Précipitation, Contribution, Péremption, Pelle des Anciens, Ancrage, Frisson, Carnavalo. <M s="T" /></p>
+        <p>Relevé des 16-17 oct 2026 : deck resserré à <strong>11 cartes</strong>: Bouclier Féca, Vertu, Rempart, Couronne d’Épines, Précipitation, Contribution, Péremption, Pelle des Anciens, Ancrage, Frisson, Carnavalo. <M s="T" /></p>
         <p>Avec les pièces ci-dessous, la survie observée est passée de <strong>11 429 PV et une mort au tour 2</strong> à <strong>13 568 PV et une mort au tour 17</strong>. <M s="T" /></p>
         <ul>
           <li><strong>Dofus Émeraude</strong> : +400 Vitalité, survit une fois avec 20 % des PV. <M s="T" /></li>
@@ -120,7 +120,7 @@ export default function AscensionPage() {
       <Section id="officiel" title="Ce que dit le développeur">
         <Officiel title="Ascension et Prestige" d="08/10">
           <ul>
-            <li>Plus aucune condition d’Abysses pour le Prestige : seule l’Ascension compte — <strong>P7 : étage 40, P8 : 60, P9 : 80, P10 : 110</strong>.</li>
+            <li>Plus aucune condition d’Abysses pour le Prestige : seule l’Ascension compte: <strong>P7 : étage 40, P8 : 60, P9 : 80, P10 : 110</strong>.</li>
             <li>Étages 101 et plus : boss <strong>Transmutés</strong> aux mécaniques inédites (voir <Link href="/contenus/strategies-ascension/">Stratégies de l’Ascension</Link>).</li>
           </ul>
         </Officiel>
@@ -131,7 +131,7 @@ export default function AscensionPage() {
           <li>Le Colisée est retiré des prérequis du Prestige (en travaux). <Disc d="14/10" /></li>
         </ul>
       </Section>
-      <PageEnd current="/contenus/ascension/" see={[{ href: '/personnage/prestige/', label: 'Prestige' }, { href: '/personnage/classes/feca/', label: 'Guide Féca' }, { href: '/contenus/strategies-ascension/', label: 'Stratégies 105–260' }]} sources="Observations en combat : étages 29-30, 13-15 oct 2026 ; étages 38-42 et build défensif, 16-17 oct 2026 ; étage 42 et objectif P8, relevé du 21 oct 2026" />
+      <PageEnd current="/contenus/ascension/" see={[{ href: '/personnage/prestige/', label: 'Prestige' }, { href: '/personnage/classes/feca/', label: 'Guide Féca' }, { href: '/contenus/strategies-ascension/', label: 'Stratégies 105-260' }]} sources="Observations en combat : étages 29-30, 13-15 oct 2026 ; étages 38-42 et build défensif, 16-17 oct 2026 ; étage 42 et objectif P8, relevé du 21 oct 2026" />
     </>
   );
 }

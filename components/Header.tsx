@@ -40,8 +40,10 @@ export default function Header() {
             <span className="brand-sub">wiki non officiel</span>
           </span>
         </Link>
-        <div className="header-tools">
+        <div className="header-search">
           <Search onOpen={() => setOpen(false)} />
+        </div>
+        <div className="header-tools">
           <ThemeToggle />
           <button
             type="button"
@@ -61,8 +63,7 @@ export default function Header() {
             <li key={n.href}>
               <Link href={n.href} aria-current={isActive(pathname, n.href) ? 'page' : undefined}>
                 <SectionIcon section={n.icon} size={19} className="nav-icon" />
-                <span className="nav-label-long">{n.label}</span>
-                <span className="nav-label-short">{n.label}</span>
+                <span className="nav-label">{n.label}</span>
               </Link>
             </li>
           ))}

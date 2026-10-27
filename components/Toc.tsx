@@ -47,13 +47,13 @@ export default function Toc() {
         {items.map((it) => (
           <li key={it.id}>
             <a href={`#${it.id}`} aria-current={active === it.id ? 'location' : undefined} onClick={() => setActive(it.id)}>
-              {it.label}
+              <span className="toc-label">{it.label}</span>
             </a>
           </li>
         ))}
       </ol>
       <a href="#contenu" className="toc-top">
-        ↑ Haut de page
+        Haut de page
       </a>
     </nav>
   );

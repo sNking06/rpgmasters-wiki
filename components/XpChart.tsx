@@ -93,8 +93,8 @@ export default function XpChart({ points }: { points: Pt[] }) {
         ))}
       </svg>
       <figcaption>
-        ● cité dans les sources · ○ calculé (niveaux 2 à 6) · tirets = simple liaison visuelle entre points connus, pas des
-        valeurs réelles.
+        Point plein : cité dans les sources. Cercle : calculé (niveaux 2 à 6). Les tirets sont une liaison visuelle entre
+        points connus, pas des valeurs réelles.
       </figcaption>
     </figure>
   );

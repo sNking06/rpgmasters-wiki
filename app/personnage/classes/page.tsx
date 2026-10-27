@@ -2,7 +2,7 @@ import GameCapture from '@/components/GameCapture';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import ClassGrid from '@/components/ClassGrid';
-import { ClassIcon, Icon } from '@/components/icons';
+import { ClassIcon } from '@/components/icons';
 import { Contra, Disc, Essentiel, M, More, PageEnd, PageHeader, Section, TableWrap, Tip } from '@/components/ui';
 import { CLASSES, IOP_CARDS } from '@/lib/classes';
 
@@ -37,13 +37,12 @@ export default function ClassesPage() {
           <ClassIcon name="Crâ" size={28} />
         </span>
         <span>
-          <span className="feature-title">Crâ — fiche détaillée</span>
+          <span className="feature-title">Crâ: fiche détaillée</span>
           <span className="feature-desc">Build conseillé, cartes exclusives, vision spectrale et PO.</span>
         </span>
-        <Icon name="arrowRight" size={22} className="feature-arrow" />
       </Link>
 
-      <p><Link href="/personnage/classes/feca/">Féca — armure et cartes exclusives →</Link></p>
+      <p><Link href="/personnage/classes/feca/">Féca, armure et cartes exclusives</Link></p>
       <Section id="liste" title="Les 19 classes et leur passif">
         <p>Touchez une classe pour lire le texte complet de son passif.</p>
         <ClassGrid classes={CLASSES} />
@@ -65,7 +64,7 @@ export default function ClassesPage() {
         <TableWrap caption="Passifs annoncés le 10/10 et retouches suivantes">
           <thead><tr><th>Classe</th><th>Passif annoncé</th></tr></thead>
           <tbody>
-            <tr><td>Féca</td><td>Armure : 5 charges, −6 % de dégâts subis et +6 % de dégâts chacune (jusqu’à −30 % / +30 %) — plafonnée à 20 % le 13/10</td></tr>
+            <tr><td>Féca</td><td>Armure : 5 charges, −6 % de dégâts subis et +6 % de dégâts chacune (jusqu’à −30 % / +30 %): plafonnée à 20 % le 13/10</td></tr>
             <tr><td>Osamodas</td><td>Invocations +100 %, +20 % par invocation active (3 max, +60 %) ; 12/10 : invocations répercutent 25 % de ses dégâts ; 17/10 : 25 % → 50 %</td></tr>
             <tr><td>Enutrof</td><td>Jusqu’à 10 Pièces, +5 % chacune (+50 %)</td></tr>
             <tr><td>Sram</td><td>+30 % sous 50 % de PV ennemis, +60 % sous 25 %</td></tr>

@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import Link from 'next/link';
-import localFont from 'next/font/local';
+import { Epilogue, IBM_Plex_Mono } from 'next/font/google';
 import type { ReactNode } from 'react';
 import Header from '@/components/Header';
 import Lightbox from '@/components/Lightbox';
@@ -10,17 +10,17 @@ import { Icon, Logo } from '@/components/icons';
 import { DATA_DATE_LABEL, GAME_URL, SITE_DESCRIPTION, SITE_NAME } from '@/lib/site';
 import './globals.css';
 
-const displayFont = localFont({
-  src: [
-    { path: './fonts/Rowdies-Light.ttf', weight: '300', style: 'normal' },
-    { path: './fonts/Rowdies-Regular.ttf', weight: '400', style: 'normal' },
-    { path: './fonts/Rowdies-Bold.ttf', weight: '700', style: 'normal' },
-  ],
-  variable: '--font-display', display: 'swap', fallback: ['Arial', 'sans-serif'],
+const epilogue = Epilogue({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400', '600', '700'],
+  variable: '--font-epilogue',
+  display: 'swap',
 });
-const bodyFont = localFont({
-  src: './fonts/Lexend.ttf', weight: '100 900',
-  variable: '--font-body', display: 'swap', fallback: ['Segoe UI', 'Arial', 'sans-serif'],
+const plex = IBM_Plex_Mono({
+  subsets: ['latin', 'latin-ext'],
+  weight: '400',
+  variable: '--font-plex',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#171005',
+  themeColor: '#2a2824',
   colorScheme: 'dark light',
   width: 'device-width',
   initialScale: 1,
@@ -50,8 +50,11 @@ const THEME_SCRIPT = `(function(){try{var t=localStorage.getItem('theme');if(t!=
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="fr" className={`${displayFont.variable} ${bodyFont.variable}`} suppressHydrationWarning>
+    <html lang="fr" className={`${epilogue.variable} ${plex.variable}`} suppressHydrationWarning>
       <head>
+        <style>{`/* Hallmark · shape: Photographic · genre: editorial · theme: Ink (deal 3/3, seed french-players-look-rpgmasters-3405·a1b5d06e·2026-10-27·r0) · redesign: full · job: listen · draw: 4fa0a3
+ * hero: Banner, Index (/) · nav: search-led bar · footer: letter close · imagery: the wiki's own plates and dated captures · signature: the ruled index of the seven sections · ink: paper
+ * axes: light/grotesk-sans/chromatic-teal · posture: restrained · contrast: pass · fold: pass · v2.0.0 */`}</style>
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
       </head>
       <body>
@@ -71,12 +74,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </div>
         </div>
         <footer className="site-footer">
-          <div className="footer-ornament" aria-hidden="true">
-            <span />
-            <Icon name="diamond" size={14} />
-            <span />
-          </div>
-          <div className="footer-inner">
+          <div className="footer-letter">
             <div className="footer-brand">
               <Logo size={40} id="logo-footer" />
               <div>
@@ -86,6 +84,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                   erreurs : vérifiez en jeu.
                 </p>
               </div>
+            </div>
+            <div className="footer-ornament" aria-hidden="true">
+              <span />
+              <Icon name="diamond" size={14} />
+              <span />
             </div>
             <div className="footer-meta">
               <p className="date-chip">
@@ -105,10 +108,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 </li>
               </ul>
             </div>
+            <p className="footer-legal">
+              Pictogrammes et illustrations sont dessinés pour ce wiki ; les seules images du jeu sont des captures d’écran datées, à titre d’illustration.
+            </p>
           </div>
-          <p className="footer-legal">
-            Pictogrammes et illustrations sont dessinés pour ce wiki ; les seules images du jeu sont des captures d’écran datées, à titre d’illustration.
-          </p>
         </footer>
         <Lightbox />
       </body>

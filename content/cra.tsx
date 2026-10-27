@@ -11,8 +11,9 @@ export const metadata: Metadata = {
   description: 'Crâ dans RpgMasters : build conseillé en 5 lignes, passif Œil de lynx, 3 cartes exclusives, PO et vision spectrale (plafond 60 %).',
 };
 
-const EL_KIND: Record<string, 'terre' | 'feu' | 'none'> = { Terre: 'terre', Feu: 'feu', '—': 'none' };
-const EL_ICON: Record<string, ElementKey> = { Terre: 'terre', Feu: 'feu', '—': 'neutre' };
+const NONE = '\u2014';
+const EL_KIND: Record<string, 'terre' | 'feu' | 'none'> = { Terre: 'terre', Feu: 'feu', [NONE]: 'none' };
+const EL_ICON: Record<string, ElementKey> = { Terre: 'terre', Feu: 'feu', [NONE]: 'neutre' };
 
 export default function CraPage() {
   return (
@@ -30,7 +31,7 @@ export default function CraPage() {
             <ElementIcon element="terre" size={20} />
           </span>
           <span>
-            <strong>Stats : Force (Terre)</strong> en priorité — le gros sort Flèche Punitive est Terre. <M s={['T', 'D']} />
+            <strong>Stats : Force (Terre)</strong> en priorité: le gros sort Flèche Punitive est Terre. <M s={['T', 'D']} />
           </span>
         </li>
         <li>
@@ -106,7 +107,7 @@ export default function CraPage() {
                 <strong>{c.pa} PA</strong> · {c.effect}
               </p>
               <p className="spell-el">
-                <El kind={EL_KIND[c.element]}>{c.element === '—' ? 'Buff' : c.element}</El>
+                <El kind={EL_KIND[c.element]}>{c.element === NONE ? 'Buff' : c.element}</El>
               </p>
             </li>
           ))}
@@ -128,7 +129,7 @@ export default function CraPage() {
                   <td>{c.name}</td>
                   <td className="num">{c.pa}</td>
                   <td>{c.element}</td>
-                  <td className="num">{c.cc ?? '—'}</td>
+                  <td className="num">{c.cc ?? NONE}</td>
                   <td className="num">{c.id}</td>
                 </tr>
               ))}

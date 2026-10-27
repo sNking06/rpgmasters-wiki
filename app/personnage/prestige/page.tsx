@@ -21,19 +21,19 @@ const ROWS: Row[] = [
   { p: 5, cond: 'Étage 30 de l’Ascension · plus de condition Kralamoure depuis le 18/10 (avant : 500 000 dégâts cumulés)', bonus: '+3 PO' },
   { p: 6, cond: 'Étage 40 de l’Ascension · plus de condition Kralamoure depuis le 18/10 (avant : 1 000 000 dégâts cumulés)', bonus: '+3 PM' },
   { p: 7, cond: 'Étage 40 de l’Ascension terminé', bonus: '+1 PA' },
-  { p: 8, cond: 'Niveau 200 + étage 60 de l’Ascension terminé (relevé du 21 oct 2026)', bonus: '—' },
-  { p: 9, cond: 'Étage 80 de l’Ascension terminé', bonus: '—' },
-  { p: 10, cond: 'Étage 110 de l’Ascension terminé', bonus: '—' },
-  { p: 11, cond: 'Étage 140 de l’Ascension terminé', bonus: '—' },
-  { p: 12, cond: 'Étage 170 de l’Ascension terminé', bonus: '—' },
-  { p: 13, cond: 'Étage 200 de l’Ascension terminé', bonus: '—' },
-  { p: 14, cond: 'Étage 230 de l’Ascension terminé', bonus: '—' },
-  { p: 15, cond: 'Étage 260 de l’Ascension terminé + record de 130 étages dans les Abysses', bonus: '—' },
-  { p: 16, cond: 'Record de 260 étages dans les Abysses', bonus: '—' },
-  { p: 17, cond: 'Record de 390 étages dans les Abysses', bonus: '—' },
-  { p: 18, cond: 'Record de 520 étages dans les Abysses', bonus: '—' },
-  { p: 19, cond: 'Record de 650 étages dans les Abysses', bonus: '—' },
-  { p: 20, cond: 'Record de 780 étages dans les Abysses', bonus: '—' },
+  { p: 8, cond: 'Niveau 200 + étage 60 de l’Ascension terminé (relevé du 21 oct 2026)', bonus: '\u2014' },
+  { p: 9, cond: 'Étage 80 de l’Ascension terminé', bonus: '\u2014' },
+  { p: 10, cond: 'Étage 110 de l’Ascension terminé', bonus: '\u2014' },
+  { p: 11, cond: 'Étage 140 de l’Ascension terminé', bonus: '\u2014' },
+  { p: 12, cond: 'Étage 170 de l’Ascension terminé', bonus: '\u2014' },
+  { p: 13, cond: 'Étage 200 de l’Ascension terminé', bonus: '\u2014' },
+  { p: 14, cond: 'Étage 230 de l’Ascension terminé', bonus: '\u2014' },
+  { p: 15, cond: 'Étage 260 de l’Ascension terminé + record de 130 étages dans les Abysses', bonus: '\u2014' },
+  { p: 16, cond: 'Record de 260 étages dans les Abysses', bonus: '\u2014' },
+  { p: 17, cond: 'Record de 390 étages dans les Abysses', bonus: '\u2014' },
+  { p: 18, cond: 'Record de 520 étages dans les Abysses', bonus: '\u2014' },
+  { p: 19, cond: 'Record de 650 étages dans les Abysses', bonus: '\u2014' },
+  { p: 20, cond: 'Record de 780 étages dans les Abysses', bonus: '\u2014' },
 ].map((r) => ({ ...r, pa: paCap(r.p) }));
 
 const MILESTONES: { head: string; tag?: string; key?: boolean; text: string }[] = [
@@ -113,7 +113,7 @@ export default function PrestigePage() {
           Conditions et plafonds de PA <M s="T" /> ; bonus de combat (+1 PA, +2 PO…) <M s="T" /> attribués aux numéros de Prestige
           dans l’ordre du tableau du code <M s="D" />.
         </p>
-        <Tip title="Conditions du P8 — relevé du 21 oct 2026">
+        <Tip title="Conditions du P8: relevé du 21 oct 2026">
           <p>
             Bloc Prestige (Personnage et inventaire &gt; Caractéristiques et classe) : « Pour passer Prestige 8 : »{' '}
             <strong>Niveau 200</strong> + <strong>« Étage 60 de l’Ascension terminé »</strong>. Aucune condition de dégâts sur le
@@ -178,7 +178,7 @@ export default function PrestigePage() {
           </p>
         </Officiel>
         <ul>
-          <li><strong>P7 : étage 40 · P8 : étage 60 · P9 : étage 80 · P10 : étage 110</strong>. <Disc d="08/10" /></li>
+          <li><strong>P7 : étage 40, P8 : étage 60, P9 : étage 80, P10 : étage 110</strong>. <Disc d="08/10" /></li>
           <li><strong>P15 et plus</strong> : conditions liées aux Abysses (records d’étages), comme dans la FAQ du jeu. <M s="T" /></li>
           <li><strong>P5 et P6</strong> : plus de condition de dégâts à la Faille du Kralamoure. <Disc d="18/10" /></li>
           <li>Plafond de <strong>PA : 12, puis 13 (P2), 14 (P5), 15 (P8)</strong>, comme le tableau ci-dessus.</li>
@@ -228,7 +228,7 @@ export default function PrestigePage() {
         </div>
         <Warn title="Avant le Prestige 4">
           <p>
-            Vous perdez <strong>équipement, inventaire, ventes en cours à l’HDV et kamas</strong> — sauf l’objet choisi et les
+            Vous perdez <strong>équipement, inventaire, ventes en cours à l’HDV et kamas</strong>: sauf l’objet choisi et les
             objets éternels. <M s="T" />
           </p>
           <p>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import {KeyFigures, Bars, M, PageHeader, Section, TableWrap, Tip} from '@/components/ui';
 export const metadata={title:'Panoplies'};
 const TESTS:[string,string,string,string,string,string,string][]=[
- ['A. Gouffre 3/3','Lancepince d’Exécrabe, Visage de Mureine, Dorsale de Willorque T2','13 813','Neutre 50 · Terre 38 · Feu/Eau/Air 50 %','46 %','19 406','—'],
+ ['A. Gouffre 3/3','Lancepince d’Exécrabe, Visage de Mureine, Dorsale de Willorque T2','13 813','Neutre 50, Terre 38, Feu/Eau/Air 50 %','46 %','19 406','\u2014'],
  ['B. Gouffre 3/3 + Sanctuaire 2/3','A + Étreinte Végétale T2, Grèves Écarlates','13 943','50 % partout','46 %','19 652','Eau 442'],
  ['C. Malédiction de Cire Momore 6/6 (gardée)','Chagrin de Cire, Âmes Hurlantes, Lourd Fardeau T2, Triste Sceau T2, Claymomore, Éternelle Poursuite +5','14 335','50 % partout','89 % affichée (plafond 50 %)','19 883','Eau 365 · Terre/Feu/Air 333'],
 ];

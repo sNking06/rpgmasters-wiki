@@ -20,7 +20,7 @@ const RECOS: Reco[] = [
     s: ['T', 'D'],
     body: (
       <>
-        Ce sont les éléments des sorts de signature (Flèche Punitive = Terre 23–26 ; Flèche Explosive = Feu 14–17 en zone). La
+        Ce sont les éléments des sorts de signature (Flèche Punitive = Terre 23-26 ; Flèche Explosive = Feu 14-17 en zone). La
         FAQ dit de mettre les points dans la caractéristique de l’élément des sorts de dégâts. Le gros sort mono-cible (4 PA)
         est Terre → Force est le choix le plus cohérent tant que le deck repose sur lui (déduit, non chiffré). Éviter de
         disperser sur Chance/Agilité, sauf si les cartes communes choisies sont de ces éléments.
